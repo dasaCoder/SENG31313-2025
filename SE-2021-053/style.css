@@ -5,7 +5,12 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
+    margin: 0px 50px;
     background: #080808;
     color: #fff;
 }
@@ -25,12 +30,14 @@ body {
 }
 
 .column1 {
-    flex-basis: 35%;
+    flex-basis: 50%;
+
 
 }
 
 .column2 {
-    flex-basis: 55%;
+    flex-basis: 35%;
+
 
 }
 
@@ -38,11 +45,13 @@ nav {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 10px 0;
+    margin-top: 15px;
 }
 
 .image {
-    height: 770px;
+    margin-top: 15px;
+    height: 750px;
+    border-radius: 50px;
 }
 
 nav ul li {
@@ -75,8 +84,8 @@ nav ul li a:hover::after {
 
 .header-text {
     font-size: 30px;
-    margin-top: 300px;
-    ;
+    margin-top: 30%;
+
 }
 
 .header-text h1 {
@@ -113,7 +122,7 @@ nav ul li a:hover::after {
     height: 100vh;
     background-size: cover;
     background-position: center;
-    
+
 
 }
 
@@ -140,6 +149,7 @@ nav ul li a:hover::after {
     position: absolute;
     object-fit: cover;
     z-index: 0;
+    border-radius: 50px;
 }
 
 p {
@@ -148,7 +158,7 @@ p {
     line-height: 25px;
     margin-top: 50px;
     width: 90%;
-    
+
 
 }
 
