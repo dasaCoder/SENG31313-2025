@@ -6,40 +6,34 @@
   <title>About Me</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
-
-  <style>
-    /* Reusable Button Style */
-    .btn {
-      @apply py-2 px-6 rounded-lg transition duration-300;
-    }
-  </style>
+<link rel="stylesheet" href="../css/styles.css">
 </head>
 <body class="min-h-screen flex flex-col bg-gradient-to-r from-green-100 to-green-400">
 
-  <!-- Header -->
   <div id="header-container"></div>  
 
-  <!-- Main Content -->
   <main class="flex-grow flex justify-center items-center p-6">
-    <div class="mt-10 max-w-4xl w-full text-center bg-white p-8 rounded-lg shadow-xl border border-gray-200 hover:shadow-2xl transition duration-300">
-      <h1 class="text-4xl font-extrabold text-gray-800 mb-6">About Me</h1>
+    <div class="mt-10 max-w-4xl w-full text-center bg-white p-8 rounded-lg shadow-xl border border-gray-200 hover:shadow-2xl transition duration-300 animate-fade">
+      <h1 class="text-4xl font-extrabold text-gray-800 mb-6 animate-slide">About Me</h1>
+      <div class="flex justify-center">
+        <img src="../assets/portfolio.jpg" alt="profile Image" class="w-3/4 h-80 object-cover rounded-md mb-4 animate-scale">
+      </div>
+      <p class="text-lg text-gray-700 mb-4 text-left animate-slide">
+          Hello, I'm <b>a passionate software engineer </b>with a strong background in web development and
+          a love for creating visually appealing and functional applications. My goal is to craft
+          seamless user experiences while building clean and maintainable code.
+        </p>
 
-      <p class="text-lg text-gray-700 mb-4 text-left">
-        Hello, I'm <b>a passionate software engineer </b>with a strong background in web development and
-        a love for creating visually appealing and functional applications. My goal is to craft
-        seamless user experiences while building clean and maintainable code.
-      </p>
-
-      <p class="text-lg text-gray-700 mb-6 text-left">
+      <p class="text-lg text-gray-700 mb-6 text-left animate-slide">
         I enjoy solving complex problems and constantly learning new technologies to stay ahead in
         the ever-evolving tech landscape.
       </p>
 
       <!-- Skills Section -->
-      <section class="mb-8">
+      <section class="mb-8 animate-fade">
         <h2 class="text-2xl font-semibold text-gray-800 mb-4">Skills & Expertise</h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-          <div class="bg-green-100 p-6 rounded-lg shadow-lg transition duration-300 hover:shadow-2xl hover:bg-green-200">
+          <div class="bg-green-100 p-6 rounded-lg shadow-lg transition duration-300 hover:shadow-2xl hover:bg-green-200 animate-card">
             <h3 class="text-xl font-semibold text-gray-800 mb-3">Frontend Development</h3>
             <ul class="text-left list-disc pl-5 text-gray-600">
               <li>React.js</li>
@@ -48,7 +42,7 @@
             </ul>
           </div>
 
-          <div class="bg-green-100 p-6 rounded-lg shadow-lg transition duration-300 hover:shadow-2xl hover:bg-green-200">
+          <div class="bg-green-100 p-6 rounded-lg shadow-lg transition duration-300 hover:shadow-2xl hover:bg-green-200 animate-card">
             <h3 class="text-xl font-semibold text-gray-800 mb-3">Backend Development</h3>
             <ul class="text-left list-disc pl-5 text-gray-600">
               <li>Spring Boot</li>
@@ -57,7 +51,7 @@
             </ul>
           </div>
 
-          <div class="bg-green-100 p-6 rounded-lg shadow-lg transition duration-300 hover:shadow-2xl hover:bg-green-200">
+          <div class="bg-green-100 p-6 rounded-lg shadow-lg transition duration-300 hover:shadow-2xl hover:bg-green-200 animate-card">
             <h3 class="text-xl font-semibold text-gray-800 mb-3">Tools & Technologies</h3>
             <ul class="text-left list-disc pl-5 text-gray-600">
               <li>Git & GitHub</li>
@@ -70,7 +64,7 @@
       </section>
 
       <!-- Contact Section -->
-      <section>
+      <section class="animate-fade">
         <h2 class="text-2xl font-semibold text-gray-800 mb-4">Let's Connect</h2>
         <p class="text-lg text-gray-700 mb-4">
           Feel free to reach out if you'd like to collaborate or have any questions!

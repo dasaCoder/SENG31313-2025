@@ -6,24 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Cpath d='M16 0 L16 32 L32 16 Z' fill='%23000000'/%3E%3C/svg%3E">
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="../css/styles.css"> <!-- Make sure the path is correct -->
 </head>
 
 <body>
     <div id="header-container"></div> <!-- loading the header -->
+
     <main>
-        <div class="flex flex-col md:flex-row items-center justify-center md:justify-between min-h-screen bg-gradient-to-r from-white to-green-500 text-gray-900 p-8 md:p-10">
+        <div class="flex flex-col md:flex-row items-center justify-center md:justify-between min-h-screen bg-gradient-to-r from-white to-green-500 text-gray-900 p-8 md:p-10 animate-bg">
             <!-- Left Section -->
             <div class="md:w-1/2 flex flex-col items-start text-left space-y-4 md:pl-16 px-4">
-                <h1 class="text-3xl md:text-5xl lg:text-6xl font-extrabold animate-fade-in">
-                    Hi! I'm <span class="text-green-700"><br>Sahani Mohottige</span>
+                <h1 class="text-3xl md:text-5xl lg:text-6xl font-extrabold text-green-700 animate-text">
+                    Hi! I'm <br> Sahani Mohottige
                 </h1>
-                <p class="text-lg md:text-xl lg:text-2xl bg-green-100 text-green-800 px-5 py-3 rounded-lg shadow-lg">
+                <p class="text-lg md:text-xl lg:text-2xl bg-green-100 text-green-800 px-5 py-3 rounded-lg shadow-lg animate-text">
                     A Passionate Full Stack Developer
                 </p>
                 <a href="projects.html">
-                    <button class="mt-4 px-6 py-3 bg-green-700 text-white font-semibold rounded-lg shadow-lg hover:bg-green-800 transition duration-300">
+                    <button class="mt-4 px-6 py-3 bg-green-700 text-white font-semibold rounded-lg shadow-lg hover:bg-green-800 transition duration-300 animate-button">
                         View My Work
                     </button>
                 </a>
@@ -32,10 +34,11 @@
             <!-- Right Section (Profile Image) -->
             <div class="md:w-1/2 flex justify-center mt-16 md:mt-0">
                 <img src="../assets/myProfile.jpg" alt="Profile"
-                    class="w-64 h-64 md:w-[25rem] md:h-[25rem] rounded-full shadow-2xl object-cover">
+                    class="w-64 h-64 md:w-[25rem] md:h-[25rem] rounded-full shadow-2xl object-cover animate-image">
             </div>
         </div>
     </main>
+
     <div id="footer-container"></div> <!-- loading the footer -->
     <script src="../js/loadComponents.js"></script>
 </body>

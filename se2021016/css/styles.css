@@ -1,0 +1,95 @@
+/* Global Animations */
+
+/* Fade-In Animation */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Slide-Up Animation */
+@keyframes slideUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Hover Effects */
+.hover-scale:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Gradient Animation for Background */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.animate-bg {
+    background-size: 200% 200%;
+    animation: gradientAnimation 6s infinite ease-in-out;
+}
+
+/* Button Hover Bounce */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+.animate-button:hover {
+    animation: bounce 0.7s ease-in-out;
+}
+
+/* Profile Image Hover Effect */
+.animate-image {
+    transition: transform 0.7s ease-in-out;
+}
+
+.animate-image:hover {
+    transform: scale(1.05);
+}
+
+/* Home Page - Text Fade & Slide Animation */
+@keyframes fadeSlide {
+    0% { opacity: 0; transform: translateX(-50px); }
+    100% { opacity: 1; transform: translateX(0); }
+}
+
+.animate-text {
+    animation: fadeSlide 1.5s ease-out forwards;
+}
+
+/* Page-Specific Animations */
+
+/* About Page - Profile Image Animation */
+@keyframes scaleUp {
+    0% { transform: scale(0.9); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+.animate-scale {
+    animation: scaleUp 1s ease-out forwards;
+}
+
+/* Skills Card Animation */
+@keyframes cardFadeIn {
+    0% { opacity: 0; transform: translateY(30px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.animate-card {
+    animation: cardFadeIn 1s ease-out forwards;
+}
+
+/* Apply Animations to Common Elements */
+.animate-fade {
+    animation: fadeIn 1.5s ease-out forwards;
+}
+
+.animate-slide {
+    animation: slideUp 1.5s ease-out forwards;
+}
+
+.animate-form {
+    animation: slideUp 1.5s ease-out forwards; /* Same as slideUp for forms */
+}
