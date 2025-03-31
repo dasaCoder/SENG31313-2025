@@ -1,88 +1,30 @@
-### **Assignment: Personal Portfolio Web Page Development**  
+  **Project Description** 
+This is a personal portfolio website built using HTML, CSS, and JavaScript. It showcases my skills, projects, and contact details in a visually appealing and professional manner. The website is designed with an elegant theme featuring gold and black colors, smooth animations, and interactive elements to enhance user experience.  
 
-#### **Objective:**  
-Develop a **personal portfolio web page** using **HTML, CSS, and JavaScript**. This project will assess your ability to design a creative, functional, and aesthetically pleasing website while ensuring proper use of version control through GitHub.  
+Key features of the portfolio include:  
+  Home Page - A welcoming introduction.  
+  About Me  – Information about my background, skills, and interests.  
+  Projects – A showcase of my work with images and descriptions. 
+  Education & Experience - my education qualifications and my work expirience. 
+  Skills  – A section highlighting my technical expertise.  
+  Contact Section – Links to my email, social media, and phone number for easy communication.  
 
----
+The website is fully responsive, ensuring a seamless experience across all devices. It is hosted on a free platform for easy access.
+  
+  **Libraries Used**
+  Google Fonts
+  Custom CSS & JavaScript
+  Font Awesome or Similar Icons (Potentially for Social Media and Contact Icons)
+  Vanilla JavaScript – You are using pure JavaScript without any external JS libraries.
+  CSS Class Manipulation – Adding/removing classes for animations (.show, .visible, .loaded).
+  Event Listeners – Handling DOMContentLoaded, scroll, mousemove, and click events.
+  Custom Cursor – Tracks mouse movement and updates the position of .custom-cursor.
+  Smooth Section Reveal on Scroll – Elements fade in as they enter the viewport.
+  Hover & Click Effects on Skills – Displays tooltips and alerts when interacting with skills.
+  Collapsible Skill Categories – Expands and collapses skill sections on click.
 
-### **Guidelines:**  
-✅ **Use only HTML, CSS, and JavaScript** (No frameworks like React (its a framework btw 🙃) , Angular, or Vue).  
-✅ **Third-party JS/CSS libraries are allowed** (e.g., Bootstrap, Tailwind CSS, jQuery, GSAP).  
-✅ The portfolio should be **creative, unique, and visually appealing**.  
-✅ Include at least the following sections:  
-   - **Home Page** (Introduction)  
-   - **About Me** (Skills & Interests)  
-   - **Projects** (Showcase your work)  
-   - **Contact Section** (Contact form or social links)  
-✅ **Host the website on a free platform** (GitHub Pages, Netlify, Vercel, etc.). **Extra marks will be awarded for hosting.**  
-
----
-
-### **GitHub Submission Instructions:**  
-1. **Clone the repository**:  
-   ```
-   git clone https://github.com/dasaCoder/SENG31313-2025.git
-   cd SENG31313-2025
-   ```
-2. **Create a new branch** with your student number:  
-   ```
-   git checkout -b feature/<student_no>
-   ```
-   **Example:** `feature/se204123`  
-3. **Inside the repository, create a folder named after your student number** inside the correct category:  
-   ```
-   se/20XX/YYY
-   ```
-   **Example:** `se/2025/001`  
-4. **Upload all your project files** (HTML, CSS, JS, assets) inside your folder.  
-5. **Host your website** on a free hosting platform:  
-   - **GitHub Pages:** [Guide](https://pages.github.com/)  
-   - **Netlify:** [Guide](https://www.netlify.com/)  
-   - **Vercel:** [Guide](https://vercel.com/)  
-6. **Create a `README.md` file** inside your folder with the following details:  
-   - **Project Description**  
-   - **Libraries Used** (if any)  
-   - **Live Hosted Link** (URL of the hosted site)  
-   - **How to Run the Project Locally**  
-7. **Commit and push your code**:  
-   ```
-   git add .
-   git commit -m "Added portfolio for <student_no>"
-   git push origin feature/<student_no>
-   ```
-8. **Create a pull request (PR)** to merge your branch into the main repository.  
-
-🚀 **Extra Marks for Proper GitHub Submission & Hosting the Site**  
-
----
-
-### **Evaluation Criteria:**  
-
-| Criteria                  | Marks (%) |
-|---------------------------|----------|
-| **Creativity & Uniqueness** | 25%      |
-| **Design & Appearance**    | 25%      |
-| **Functionality & Usability** | 20%      |
-| **Code Quality (HTML, CSS, JS)** | 10%      |
-| **Hosting the Site**       | 10%      |
-| **Proper GitHub Submission** | 10%      |
-
----
-
-### **Submission Deadline:**  
-📅 ** 8th of May **  
-
-### **Helpful Resources:**  
-- [GitHub Docs](https://docs.github.com/en/get-started)  
-- [Git Basics](https://git-scm.com/doc)  
-- [GitHub Pages](https://pages.github.com/)  
-- [Netlify](https://www.netlify.com/)  
-- [Vercel](https://vercel.com/)  
-- [W3Schools HTML, CSS, JS](https://www.w3schools.com/)  
-- [Bootstrap](https://getbootstrap.com/) (For styling)  
-- [Animate.css](https://animate.style/) (For animations)  
-
-### **Note:**  
-If you are unfamiliar with Git and GitHub, **learn the basics before starting**. Proper version control and **hosting the site** will be **rewarded with extra marks**. 🚀  
-
-Good luck! 💡
+**Live Hosted Link** 
+  https://kaleidoscopic-starlight-efab11.netlify.app/
+  
+  **How to Run the Project Locally**  
+  go tothe project folder and double click on the index file.
