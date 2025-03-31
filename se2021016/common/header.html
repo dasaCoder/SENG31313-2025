@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <nav class="bg-gradient-to-r from-green-500 to-green-700 shadow-md fixed w-full top-0 left-0 z-50">
+            <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+                <!-- Logo -->
+                 <div class="flex items-center space-x-2">
+            <img src="../assets/logo.jpg" alt="Logo" class="h-8 w-8 md:h-10 md:w-10 rounded-full">
+            <span class="text-white text-2xl font-bold">Portfolio</span>
+                 </div>
+
+                <!-- Navbar Links -->
+                <ul class="hidden md:flex space-x-6 text-white text-lg font-medium">
+                    <li><a href="index.html" class="hover:text-gray-200 transition">Home</a></li>
+                    <li><a href="about.html" class="hover:text-gray-200 transition">About</a></li>
+                    <li><a href="projects.html" class="hover:text-gray-200 transition">Projects</a></li>
+                    <li><a href="contact.html" class="hover:text-gray-200 transition">Contact</a></li>
+                </ul>
+
+                <!-- Mobile Menu Button -->
+                <button id="menu-btn" class="md:hidden text-white text-2xl focus:outline-none">
+                    ☰
+                </button>
+            </div>
+
+            <!-- Mobile Menu (Hidden by Default) -->
+            <ul id="mobile-menu" class="hidden bg-green-600 text-white text-center p-4 space-y-2 md:hidden">
+                <li><a href="index.html" class="block hover:bg-green-700 py-2 rounded">Home</a></li>
+                <li><a href="about.html" class="block hover:bg-green-700 py-2 rounded">About</a></li>
+                <li><a href="projects.html" class="block hover:bg-green-700 py-2 rounded">Projects</a></li>
+                <li><a href="contact.html" class="block hover:bg-green-700 py-2 rounded">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById("menu-btn").addEventListener("click", function() {
+            document.getElementById("mobile-menu").classList.toggle("hidden");
+        });
+    </script>
+</body>
+</html>
