@@ -6,19 +6,19 @@
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="pt-16"> <!-- Adjust padding-top based on actual navbar height -->
+<body class="pt-20"> <!-- Increased top padding to match navbar height -->
 
     <header>
-        <nav class="bg-gradient-to-r from-green-400 to-green-600 shadow-md fixed w-full top-0 left-0 z-50">
-            <div class="max-w-7xl mx-auto px-6 py-2 flex justify-between items-center">
+        <nav class="bg-gradient-to-r from-green-400 to-green-600 shadow-md fixed w-full top-0 left-0 z-50 h-12 md:h-14 flex items-center">
+            <div class="max-w-7xl mx-auto px-6 flex justify-between items-center w-full">
                 <!-- Logo -->
                 <div class="flex items-center space-x-2">
                     <img src="../assets/logo.jpg" alt="Logo" class="h-8 w-8 md:h-10 md:w-10 rounded-full">
-                    <span class="text-white text-2xl font-bold">Portfolio</span>
+                    <span class="text-white text-xl md:text-2xl font-bold">Portfolio</span>
                 </div>
 
                 <!-- Navbar Links -->
-                <ul class="hidden md:flex space-x-20 text-gray-800 p-4 text-lg font-bold">
+                <ul class="hidden md:flex space-x-10 lg:space-x-20 text-white text-lg font-bold">
                     <li><a href="home.html" class="hover:text-gray-200 transition">Home</a></li>
                     <li><a href="about.html" class="hover:text-gray-200 transition">About</a></li>
                     <li><a href="projects.html" class="hover:text-gray-200 transition">Projects</a></li>
@@ -28,22 +28,21 @@
                 <!-- Mobile Menu Button -->
                 <button id="menu-btn" class="md:hidden focus:outline-none">
                     <div class="hamburger-icon flex flex-col justify-between w-8 h-6">
-                      <span class="block h-1 bg-white rounded-md"></span>
-                      <span class="block h-1 bg-white rounded-md"></span>
-                      <span class="block h-1 bg-white rounded-md"></span>
+                      <span class="block h-1 w-8 bg-white rounded-md"></span>
+                      <span class="block h-1 w-8 bg-white rounded-md"></span>
+                      <span class="block h-1 w-8 bg-white rounded-md"></span>
                     </div>
                 </button>                  
-
             </div>
-
-            <!-- Mobile Menu (Hidden by Default) -->
-            <ul id="mobile-menu" class="hidden p-4 bg-green-600 text-black text-center p-4 space-y-2 md:hidden z-50">
-                <li><a href="home.html" class="block hover:bg-green-700 py-2 rounded">Home</a></li>
-                <li><a href="about.html" class="block hover:bg-green-700 py-2 rounded">About</a></li>
-                <li><a href="projects.html" class="block hover:bg-green-700 py-2 rounded">Projects</a></li>
-                <li><a href="contact.html" class="block hover:bg-green-700 py-2 rounded">Contact</a></li>
-            </ul>
         </nav>
+
+        <!-- Mobile Menu (Hidden by Default) -->
+        <ul id="mobile-menu" class="hidden absolute top-16 left-0 w-full p-4 bg-green-600 text-white text-center space-y-2 md:hidden z-50">
+            <li><a href="home.html" class="block hover:bg-green-700 py-2 rounded">Home</a></li>
+            <li><a href="about.html" class="block hover:bg-green-700 py-2 rounded">About</a></li>
+            <li><a href="projects.html" class="block hover:bg-green-700 py-2 rounded">Projects</a></li>
+            <li><a href="contact.html" class="block hover:bg-green-700 py-2 rounded">Contact</a></li>
+        </ul>
     </header>
 
     <script>
@@ -61,5 +60,6 @@
             });
         });
     </script>
+
 </body>
 </html>
