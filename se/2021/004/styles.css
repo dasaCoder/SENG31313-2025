@@ -349,3 +349,213 @@ nav {
     object-fit: cover;
     border-radius: 5px;
 }
+/* Contact Section */
+#contact {
+    background-color: var(--white);
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.contact-form {
+    background-color: var(--light-color);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+/* Contact Section Styles */
+/* Contact Section Styles */
+.contact-container {
+display: flex;
+gap: 40px;
+align-items: flex-start;
+flex-wrap: wrap; /* Allow elements to wrap on small screens */
+}
+
+.contact-form {
+width: 100%;
+max-width: 600px;
+}
+
+.social-section {
+background: #f8f9fa;
+padding: 30px;
+border-radius: 10px;
+width: 100%;
+max-width: 400px;
+box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+margin-top: 30px; /* Ensure it does not stick to the form */
+}
+
+.social-section h3 {
+text-align: center;
+margin-bottom: 20px;
+font-size: 1.5rem;
+color: var(--primary-color);
+}
+
+.social-icons {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 15px;
+justify-items: center;
+}
+
+.social-icons a {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 50px;
+height: 50px;
+background: #e1e1e1;
+border-radius: 50%;
+color: var(--primary-color);
+font-size: 1.5rem;
+transition: all 0.3s ease;
+box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.social-icons a:hover {
+background: var(--primary-color);
+color: #fff;
+transform: translateY(-3px);
+}
+
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+.contact-container {
+flex-direction: column;
+}
+
+.social-section {
+max-width: 100%;
+}
+
+.social-icons {
+grid-template-columns: repeat(6, 1fr);
+}
+}
+
+@media (max-width: 480px) {
+.social-icons {
+grid-template-columns: repeat(3, 1fr);
+}
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-color);
+    color: var(--white);
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .hero-content, .hero-image {
+        flex: 100%;
+        padding-right: 0;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .volunteer-item {
+        flex-direction: column;
+    }
+    
+    .volunteer-image, 
+    .volunteer-video,
+    .volunteer-collage {
+        width: 100%;
+    }
+    
+    .volunteer-collage img {
+        height: 150px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 80px);
+        background-color: var(--white);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.5s ease;
+    }
+    
+    .nav-links.active {
+        left: 0;
+    }
+    
+    .nav-links li {
+        margin: 15px 0;
+    }
+    
+    .hamburger {
+        display: block;
+    }
+    
+    .achievement-content {
+        flex-direction: column;
+    }
+    
+    .achievement-image {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .skills-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
