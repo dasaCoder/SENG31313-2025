@@ -155,3 +155,88 @@ nav {
     font-size: 1.1rem;
     margin-bottom: 30px;
 }
+/* About Section */
+#about {
+    background-color: var(--white);
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.education {
+    margin-bottom: 40px;
+    font-size: large;
+}
+
+.education-item {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: var(--light-color);
+    border-radius: 5px;
+}
+
+.tabs {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.tab-btn {
+    padding: 10px 20px;
+    background-color: var(--light-color);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tab-btn.active {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 20px;
+    font-size: large;
+}
+
+.skill-item {
+    text-align: center;
+    padding: 15px;
+    background-color: var(--light-color);
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.skill-item:hover {
+    transform: translateY(-5px);
+}
+
+.skill-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.achievement{
+    font-size: large;
+    font-weight: bold;
+}
+
+.achievement-content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.achievement-image {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
