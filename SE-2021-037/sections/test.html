@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ismail's Portfolio</title>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#3498db',
+                        secondary: '#2980b9',
+                        dark: '#2c3e50',
+                        text: '#333',
+                        subtext: '#7f8c8d',
+                    },
+                    keyframes: {
+                        rotate: {
+                          '0%': { transform: 'rotate(0deg)' },
+                          '100%': { transform: 'rotate(360deg)' },
+                        },
+                        fadeInLeft: {
+                          '0%': { opacity: '0', transform: 'translateX(-30px)' },
+                          '100%': { opacity: '1', transform: 'translateX(0)' },
+                        },
+                        fadeInRight: {
+                          '0%': { opacity: '0', transform: 'translateX(30px)' },
+                          '100%': { opacity: '1', transform: 'translateX(0)' },
+                        },
+                    },
+                    animation: {
+                        rotate: 'rotate 20s linear infinite',
+                        fadeInLeft: 'fadeInLeft 1s forwards',
+                        fadeInRight: 'fadeInRight 1s forwards',
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-text font-poppins overflow-x-hidden">
+
+          <!-- Header/Navigation -->
+    <header class="bg-white shadow-md fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-5">
+            <nav class="flex justify-between items-center py-5">
+                <a href="#" class="font-bold text-2xl text-text">MY PORTFOLIO</a>
+                <ul id="navLinks" class="hidden md:flex space-x-10">
+                    <li><a href="#about" class="font-medium hover:text-primary transition-colors">ABOUT</a></li>
+                    <li><a href="#education" class="font-medium hover:text-primary transition-colors">EDUCATION</a></li>
+                    <li><a href="#skills" class="font-medium hover:text-primary transition-colors">SKILLS</a></li>
+                    <li><a href="#contact" class="font-medium hover:text-primary transition-colors">CONTACT</a></li>
+                </ul>
+                <button class="bg-primary text-white py-2 px-5 rounded-full font-medium flex items-center hover:bg-secondary transition-all transform hover:-translate-y-1 hover:shadow-lg">
+                    <i class="fas fa-comment mr-2"></i>
+                    Let's Talk
+                </button>
+                <button id="mobileMenuBtn" class="md:hidden text-2xl">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="about" class="min-h-screen flex items-center pt-20">
+        <div class="max-w-7xl mx-auto px-5">
+            <div class="flex flex-col-reverse md:flex-row items-center">
+                <div class="w-full md:w-3/5 text-center md:text-left mt-10 md:mt-0">
+                    <p class="text-primary text-lg font-medium mb-2">Hello! I'am Ismail —</p>
+                    <h1 class="text-4xl md:text-5xl font-bold text-dark mb-5 leading-tight">I'am a Beginner Web Developer</h1>
+                    <p class="text-subtext leading-relaxed mb-8 max-w-xl mx-auto md:mx-0">I am currently studying at STT Terpadu Nurul Fikri majoring in Informatics Engineering. Sometimes have the motivation to learn and improve new skills. I hope to develop further in the future to gain real world work experience in web development.</p>
+                    <div class="flex flex-wrap justify-center md:justify-start gap-4 mb-10">
+                        <a href="#contact" class="bg-primary text-white py-3 px-7 rounded-full font-medium flex items-center hover:bg-secondary transition-all transform hover:-translate-y-1 hover:shadow-lg">
+                            <i class="fas fa-briefcase mr-2"></i>
+                            Hire Me
+                        </a>
+                        <a href="#" class="border border-primary text-text py-3 px-7 rounded-full font-medium flex items-center hover:bg-gray-100 transition-all transform hover:-translate-y-1 hover:shadow-md">
+                            <i class="fas fa-download mr-2"></i>
+                            Download CV
+                        </a>
+                    </div>
+                    <div class="flex justify-center md:justify-start space-x-5">
+                        <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 text-text hover:bg-primary hover:text-white transition-all transform hover:-translate-y-1 hover:shadow-md">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 text-text hover:bg-primary hover:text-white transition-all transform hover:-translate-y-1 hover:shadow-md">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 text-text hover:bg-primary hover:text-white transition-all transform hover:-translate-y-1 hover:shadow-md">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 text-text hover:bg-primary hover:text-white transition-all transform hover:-translate-y-1 hover:shadow-md">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="w-full md:w-2/5 flex justify-center">
+                    <div class="relative w-64 h-64 md:w-72 md:h-72">
+                        <div class="absolute inset-0 border-2 border-dashed border-primary rounded-full animate-rotate"></div>
+                        <div class="absolute inset-2 bg-white rounded-full shadow-xl overflow-hidden border-8 border-white">
+                            <img src="/api/placeholder/400/400" alt="Ismail" class="w-full h-full object-cover object-center">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="relative py-24">
+        <div class="absolute inset-0 bg-primary -z-10">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#3498db" fill-opacity="1" d="M0,192L48,176C96,160,192,128,288,122.7C384,117,480,139,576,144C672,149,768,139,864,122.7C960,107,1056,85,1152,96C1248,107,1344,149,1392,170.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            </svg>
+        </div>
+        <div class="max-w-7xl mx-auto px-5">
+            <div class="text-center mb-16 relative z-10">
+                <h2 class="text-4xl font-bold text-white mb-2">Education</h2>
+                <p class="text-lg text-white opacity-90">History of Education</p>
+                <div class="w-20 h-1 bg-white rounded mx-auto mt-3"></div>
+            </div>
+            <div class="relative max-w-2xl mx-auto">
+                <!-- Timeline line -->
+                <div class="absolute left-1/2 -translate-x-1/2 top-0 bottom-0 w-1 bg-white rounded hidden md:block"></div>
+                
+                <!-- Timeline items -->
+                <div class="md:w-5/12 bg-white p-5 rounded-lg shadow-lg mb-8 ml-0 md:ml-auto md:mr-16 opacity-0 animate-fadeInRight">
+                    <div class="absolute left-1/2 top-7 -translate-x-1/2 w-5 h-5 bg-primary rounded-full border-4 border-white shadow-md hidden md:block"></div>
+                    <div class="text-primary font-semibold mb-1">2020 - Now</div>
+                    <div class="text-xl font-medium text-dark mb-2">STT Terpadu Nurul Fikri</div>
+                    <div class="text-subtext leading-relaxed">Majoring in Informatics Engineering</div>
+                </div>
+                
+                <div class="md:w-5/12 bg-white p-5 rounded-lg shadow-lg mb-8 ml-0 opacity-0 animate-fadeInLeft">
+                    <div class="absolute left-1/2 top-7 -translate-x-1/2 w-5 h-5 bg-primary rounded-full border-4 border-white shadow-md hidden md:block"></div>
+                    <div class="text-primary font-semibold mb-1">2017 - 2020</div>
+                    <div class="text-xl font-medium text-dark mb-2">SMK Al-Hasra</div>
+                    <div class="text-subtext leading-relaxed">Computer and Network Engineering</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section (Placeholder) -->
+    <section id="skills" class="py-24 flex items-center justify-center">
+        <div class="max-w-7xl mx-auto px-5">
+            <h2 class="text-4xl font-bold text-center text-dark">Skills Section (To Be Completed)</h2>
+        </div>
+    </section>
+
+    <!-- Contact Section (Placeholder) -->
+    <section id="contact" class="py-24 flex items-center justify-center">
+        <div class="max-w-7xl mx-auto px-5">
+            <h2 class="text-4xl font-bold text-center text-dark">Contact Section (To Be Completed)</h2>
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.getElementById('navLinks');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('hidden');
+            navLinks.classList.toggle('flex');
+            navLinks.classList.toggle('flex-col');
+            navLinks.classList.toggle('absolute');
+            navLinks.classList.toggle('top-20');
+            navLinks.classList.toggle('left-0');
+            navLinks.classList.toggle('w-full');
+            navLinks.classList.toggle('bg-white');
+            navLinks.classList.toggle('shadow-lg');
+            navLinks.classList.toggle('p-5');
+            navLinks.classList.toggle('z-50');
+            
+            if (navLinks.classList.contains('flex-col')) {
+                navLinks.querySelectorAll('li').forEach(li => {
+                    li.classList.add('my-3');
+                });
+            } else {
+                navLinks.querySelectorAll('li').forEach(li => {
+                    li.classList.remove('my-3');
+                });
+            }
+        });
+
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Animation on Scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100');
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+
+        document.querySelectorAll('.opacity-0').forEach(item => {
+            observer.observe(item);
+        });
+
+        // Optional: Typing Animation
+        // Uncomment to enable
+        /*
+        const text = "I'am a Beginner Web Developer";
+        const heroTitle = document.querySelector('h1');
+        let i = 0;
+
+        function typeWriter() {
+            if (i < text.length) {
+                heroTitle.textContent = text.substring(0, i + 1) + '|';
+                i++;
+                setTimeout(typeWriter, 100);
+            } else {
+                heroTitle.textContent = text;
+                // Start blinking cursor
+                setInterval(() => {
+                    heroTitle.textContent = heroTitle.textContent.endsWith('|') ? 
+                        text : text + '|';
+                }, 500);
+            }
+        }
+
+        window.onload = typeWriter;
+        */
+    </script>
+</body>
+</html>
