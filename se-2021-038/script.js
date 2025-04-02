@@ -212,7 +212,7 @@ gsap.from('.profile-image img', {
 
 
 
-// About section animations on scroll
+// About section
 const aboutObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {

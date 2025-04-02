@@ -145,6 +145,17 @@ h6,
 
 
 
+/* About section*/
+@media (max-width: 767px) {
+  #about-col-2 {
+    padding-left: 0;
+  }
+}
+
+
+
+
+
 /* Custom styles for footer section*/
 
 .footer-link {
