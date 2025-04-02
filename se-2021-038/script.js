@@ -152,14 +152,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
 //HERO SECTION
 
-// GSAP Typewriting Animation for Profession Text
 const professions = ["Software Engineering", "App Development", "Web Development"];
 let currentIndex = 0;
 const professionElement = document.querySelector('.profession-text');
 
 function typeText(text, callback) {
     let i = 0;
-    professionElement.textContent = ""; // Clear text
+    professionElement.textContent = "";
 
     function type() {
         if (i < text.length) {
@@ -194,21 +193,20 @@ function deleteText(callback) {
 function updateProfession() {
     typeText(professions[currentIndex], () => {
         currentIndex = (currentIndex + 1) % professions.length;
-        updateProfession(); // Loop to next profession
+        updateProfession();
     });
 }
 
-// Start animation
 setTimeout(updateProfession, 1000);
 
 
-// Reveal animation for the image
 gsap.from('.profile-image img', {
     opacity: 0,
     scale: 0.8,
     duration: 1.2,
     ease: "power3.out"
 });
+
 
 
 

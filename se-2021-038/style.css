@@ -43,10 +43,22 @@ h6,
 
 /* Hero section*/
 
+.profile-image-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 767px) {
+  .profile-image-column {
+    margin-top: -100px;
+  }
+}
+
 .profile-image {
   position: relative;
 }
-
 
 .glow-animation {
   position: absolute;
