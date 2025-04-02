@@ -252,13 +252,10 @@ aboutObserver.observe(document.getElementById('about'));
 
 // What I Do section
 document.addEventListener('DOMContentLoaded', function() {
-    // Initial setup - hide cards
     gsap.set('.service-card', { opacity: 0, y: 50 });
     
-    // Create the intersection observer
     const servicesObserver = new IntersectionObserver((entries) => {
         if (entries[0].isIntersecting) {
-            // Animate in the cards when the section is visible
             gsap.to('.service-card', {
                 opacity: 1,
                 y: 0,
@@ -267,12 +264,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 ease: "power2.out"
             });
             
-            // Once animation has run, no need to observe anymore
             servicesObserver.unobserve(document.querySelector('#what-i-do'));
         }
     }, { threshold: 0.2 });
     
-    // Start observing the services section
     servicesObserver.observe(document.querySelector('#what-i-do'));
 });
 
