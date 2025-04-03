@@ -553,7 +553,7 @@ gsap.from('.swiper-slide', {
 
 
 
-// Contact Section Animations
+// Contact Section
 const contactSection = document.querySelector('#contact');
 
 // Animate contact form
@@ -609,7 +609,7 @@ gsap.from('#contact-info .flex.items-start', {
   ease: 'power2.out'
 });
 
-// Animate social media icons with a bouncy effect
+// Animate social media icons
 gsap.from('#contact-info .flex.space-x-4 a', {
   scrollTrigger: {
     trigger: '#contact-info .flex.space-x-4',
@@ -623,7 +623,7 @@ gsap.from('#contact-info .flex.space-x-4 a', {
   ease: 'back.out(1.7)'
 });
 
-// Adding hover animations to buttons and clickable elements
+// Adding hover animations to buttons
 const addHoverAnimation = (selector) => {
   const elements = document.querySelectorAll(selector);
   
