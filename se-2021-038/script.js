@@ -409,6 +409,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+
+
 // Footer animations
 const footerObserver = new IntersectionObserver((entries) => {
 entries.forEach(entry => {
