@@ -59,12 +59,6 @@
                     class="text-gray-800 text-lg hover:text-[#1C75D3] py-2 border-b border-gray-200">What I Do</a>
                 <a href="#portfolio"
                     class="text-gray-800 text-lg hover:text-[#1C75D3] py-2 border-b border-gray-200">Portfolio</a>
-                <a href="#skills"
-                    class="text-gray-800 text-lg hover:text-[#1C75D3] py-2 border-b border-gray-200">Skills</a>
-                <a href="#experiences"
-                    class="text-gray-800 text-lg hover:text-[#1C75D3] py-2 border-b border-gray-200">Experiences</a>
-                <a href="#testimonials"
-                    class="text-gray-800 text-lg hover:text-[#1C75D3] py-2 border-b border-gray-200">Testimonials</a>
                 <a href="#contact"
                     class="text-gray-800 text-lg hover:text-[#1C75D3] py-2 border-b border-gray-200">Contact</a>
 
@@ -113,12 +107,6 @@
                     I Do</a>
                 <a href="#portfolio"
                     class="text-gray-800 dark-mode-text text-base hover:text-[#1C75D3] transition-all duration-300 nav-link">Portfolio</a>
-                <a href="#skills"
-                    class="text-gray-800 dark-mode-text text-base hover:text-[#1C75D3] transition-all duration-300 nav-link">Skills</a>
-                <a href="#experiences"
-                    class="text-gray-800 dark-mode-text text-base hover:text-[#1C75D3] transition-all duration-300 nav-link">Experiences</a>
-                <a href="#testimonials"
-                    class="text-gray-800 dark-mode-text text-base hover:text-[#1C75D3] transition-all duration-300 nav-link">Testimonials</a>
                 <a href="#contact"
                     class="text-gray-800 dark-mode-text text-base hover:text-[#1C75D3] transition-all duration-300 nav-link">Contact</a>
             </div>
@@ -220,9 +208,10 @@
 
 
                 <!-- Right Column -->
-                <div class="profile-image-column lg:w-5/12 h-full lg:flex lg:order-2 justify-center">
-                    <div class="profile-image mx-auto lg:mx-0 max-w-sm relative">
+                <div class="profile-image-column lg:w-6/12 h-full lg:flex lg:order-2 justify-center">
+                    <div class="profile-image mx-auto lg:mx-0 relative">
                         <div class="glow-animation"></div>
+                        <div class="glow-animation-2"></div>
                         <img src="./assets/profile-image.png" alt="Profile image"
                             class="w-full rounded-full z-10 relative">
                     </div>
@@ -719,14 +708,224 @@
                 </div>
 
 
-            </div>
+                <!-- Portfolio Item 8 -->
+                <div class="portfolio-item rounded-lg overflow-hidden shadow-lg bg-white" data-category="flutter">
+                    <div class="relative">
+                        <img src="./assets/flutter-1.jpg" alt="Fuel Quota App" class="w-full h-64 object-cover">
+                        <div
+                            class="portfolio-overlay absolute inset-0 flex flex-col justify-center items-center text-white p-6 bg-black bg-opacity-80 opacity-0 transition-opacity duration-300">
+                            <h3 class="text-xl font-bold mb-2">Fuel Quota App</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-lg mb-2">Fuel Quota App</h3>
+                        <p class="text-gray-700 mb-4">
+                            The Fuel Quota app offers secure login and registration, allowing users to manage their
+                            profiles with ease. It features a dashboard for tracking fuel usage, a transaction history
+                            for past activities, and QR code scanning for quick access. Users can also update their fuel
+                            quotas seamlessly.
+                        </p>
+                        <div class="flex space-x-3 mb-4">
+                            <span class="px-3 py-1 bg-gray-200 rounded-full text-sm">Flutter</span>
+                            <span class="px-3 py-1 bg-gray-200 rounded-full text-sm">Dart</span>
+                            <span class="px-3 py-1 bg-gray-200 rounded-full text-sm">SpringBoot</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div class="flex space-x-2">
+                                <a href="./assets/flutter-1-pdf.pdf" target="_blank"
+                                    class="text-[#4C9EEB] hover:text-[#1C75D3] transition-all duration-300 flex items-center">
+                                    <i class="fas fa-eye mr-1"></i> View
+                                </a>
+                                <a href="https://github.com/Rami2212/FuelWiseLK.git" target="_blank"
+                                    class="text-[#4C9EEB] hover:text-[#1C75D3] transition-all duration-300 flex items-center">
+                                    <i class="fab fa-github mr-1"></i> Code
+                                </a>
+                            </div>
+                            <span class="text-sm text-gray-500">2024</span>
+                        </div>
+                    </div>
+                </div>
 
-            <!-- Show More Button -->
-            <div class="text-center mt-12">
-                <a href="#"
-                    class="inline-block px-8 py-3 bg-[#4C9EEB] text-white rounded-full font-medium hover:bg-[#1C75D3] transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
-                    Show More Projects
-                </a>
+                <!-- Portfolio Item 9 -->
+                <div class="portfolio-item rounded-lg overflow-hidden shadow-lg bg-white" data-category="flutter">
+                    <div class="relative">
+                        <img src="./assets/flutter-4.jpg" alt="Object Detector App" class="w-full h-64 object-cover">
+                        <div
+                            class="portfolio-overlay absolute inset-0 flex flex-col justify-center items-center text-white p-6 bg-black bg-opacity-80 opacity-0 transition-opacity duration-300">
+                            <h3 class="text-xl font-bold mb-2">Object Detector App</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-lg mb-2">Object Detector App</h3>
+                        <p class="text-gray-700 mb-4">
+                            An Object Detector App using Flutter, Dart, and the TFLite model (TensorFlow Lite) allows to
+                            detect objects in real-time through mobilr phone’s camera. The app uses a pre-trained
+                            TensorFlow Lite model to identify various objects in the camera feed and display the results
+                            directly on the screen.
+                        </p>
+                        <div class="flex space-x-3 mb-4">
+                            <span class="px-3 py-1 bg-gray-200 rounded-full text-sm">Flutter</span>
+                            <span class="px-3 py-1 bg-gray-200 rounded-full text-sm">Dart</span>
+                            <span class="px-3 py-1 bg-gray-200 rounded-full text-sm">TFLite</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div class="flex space-x-2">
+                                <a href="./assets/flutter-4-pdf.pdf" target="_blank"
+                                    class="text-[#4C9EEB] hover:text-[#1C75D3] transition-all duration-300 flex items-center">
+                                    <i class="fas fa-eye mr-1"></i> View
+                                </a>
+                                <a href="https://github.com/Rami2212/flutter_object_detection_app.git" target="_blank"
+                                    class="text-[#4C9EEB] hover:text-[#1C75D3] transition-all duration-300 flex items-center">
+                                    <i class="fab fa-github mr-1"></i> Code
+                                </a>
+                            </div>
+                            <span class="text-sm text-gray-500">2024</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Portfolio Item 10 -->
+                <div class="portfolio-item rounded-lg overflow-hidden shadow-lg bg-white" data-category="flutter">
+                    <div class="relative">
+                        <img src="./assets/flutter-2.jpg" alt="Fuel Quota App" class="w-full h-64 object-cover">
+                        <div
+                            class="portfolio-overlay absolute inset-0 flex flex-col justify-center items-center text-white p-6 bg-black bg-opacity-80 opacity-0 transition-opacity duration-300">
+                            <h3 class="text-xl font-bold mb-2">Fuel Quota App</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-lg mb-2">Fuel Quota App</h3>
+                        <p class="text-gray-700 mb-4">
+                            A BMI Calculator app built using Kotlin allows users to calculate their Body Mass Index
+                            (BMI) by entering their weight and height. The app provides instant results and categorizes
+                            the BMI into different ranges (underweight, normal, overweight, and obese).
+                        </p>
+                        <div class="flex space-x-3 mb-4">
+                            <span class="px-3 py-1 bg-gray-200 rounded-full text-sm">Kotlin</span>
+                            <span class="px-3 py-1 bg-gray-200 rounded-full text-sm">Gradle</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div class="flex space-x-2">
+                                <a href="./assets/flutter-2-pdf.pdf" target="_blank"
+                                    class="text-[#4C9EEB] hover:text-[#1C75D3] transition-all duration-300 flex items-center">
+                                    <i class="fas fa-eye mr-1"></i> View
+                                </a>
+                                <a href="https://github.com/Rami2212/Kotlin-BMI-Calculator-Mobil-App.git"
+                                    target="_blank"
+                                    class="text-[#4C9EEB] hover:text-[#1C75D3] transition-all duration-300 flex items-center">
+                                    <i class="fab fa-github mr-1"></i> Code
+                                </a>
+                            </div>
+                            <span class="text-sm text-gray-500">2024</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Portfolio Item 11 -->
+                <div class="portfolio-item rounded-lg overflow-hidden shadow-lg bg-white" data-category="flutter">
+                    <div class="relative">
+                        <img src="./assets/flutter-3.jpg" alt="Fuel Quota App" class="w-full h-64 object-cover">
+                        <div
+                            class="portfolio-overlay absolute inset-0 flex flex-col justify-center items-center text-white p-6 bg-black bg-opacity-80 opacity-0 transition-opacity duration-300">
+                            <h3 class="text-xl font-bold mb-2">Clap App</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-lg mb-2">Clap App</h3>
+                        <p class="text-gray-700 mb-4">
+                            A simple Clap app in Kotlin that plays a clap sound when a button is pressed.
+                        </p>
+                        <div class="flex space-x-3 mb-4">
+                            <span class="px-3 py-1 bg-gray-200 rounded-full text-sm">Kotlin</span>
+                            <span class="px-3 py-1 bg-gray-200 rounded-full text-sm">Gradle</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div class="flex space-x-2">
+                                <a href="./assets/flutter-3-pdf.pdf" target="_blank"
+                                    class="text-[#4C9EEB] hover:text-[#1C75D3] transition-all duration-300 flex items-center">
+                                    <i class="fas fa-eye mr-1"></i> View
+                                </a>
+                                <a href="https://github.com/Rami2212/Kotlin-ClapApp.git" target="_blank"
+                                    class="text-[#4C9EEB] hover:text-[#1C75D3] transition-all duration-300 flex items-center">
+                                    <i class="fab fa-github mr-1"></i> Code
+                                </a>
+                            </div>
+                            <span class="text-sm text-gray-500">2024</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Portfolio Item 12 -->
+                <div class="portfolio-item rounded-lg overflow-hidden shadow-lg bg-white" data-category="wordpress">
+                    <div class="relative">
+                        <img src="./assets/wordpress-1.jpg" alt="Fuel Quota App" class="w-full h-64 object-cover">
+                        <div
+                            class="portfolio-overlay absolute inset-0 flex flex-col justify-center items-center text-white p-6 bg-black bg-opacity-80 opacity-0 transition-opacity duration-300">
+                            <h3 class="text-xl font-bold mb-2">Wordpress Website</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-lg mb-2">Wordpress Website</h3>
+                        <p class="text-gray-700 mb-4">
+                            A wordpress website created using elementor website builder for cleaning service.
+                        </p>
+                        <div class="flex space-x-3 mb-4">
+                            <span class="px-3 py-1 bg-gray-200 rounded-full text-sm">Wordpress</span>
+                            <span class="px-3 py-1 bg-gray-200 rounded-full text-sm">Elementor</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div class="flex space-x-2">
+                                <a href="./assets/wordpress-1-pdf.pdf" target="_blank"
+                                    class="text-[#4C9EEB] hover:text-[#1C75D3] transition-all duration-300 flex items-center">
+                                    <i class="fas fa-eye mr-1"></i> View
+                                </a>
+                                <!-- <a href="https://github.com/Rami2212/Kotlin-ClapApp.git" target="_blank"
+                                    class="text-[#4C9EEB] hover:text-[#1C75D3] transition-all duration-300 flex items-center">
+                                    <i class="fab fa-github mr-1"></i> Code
+                                </a> -->
+                            </div>
+                            <span class="text-sm text-gray-500">2022</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Portfolio Item 13 -->
+                <div class="portfolio-item rounded-lg overflow-hidden shadow-lg bg-white" data-category="wordpress">
+                    <div class="relative">
+                        <img src="./assets/wordpress-2.jpg" alt="Fuel Quota App" class="w-full h-64 object-cover">
+                        <div
+                            class="portfolio-overlay absolute inset-0 flex flex-col justify-center items-center text-white p-6 bg-black bg-opacity-80 opacity-0 transition-opacity duration-300">
+                            <h3 class="text-xl font-bold mb-2">Wordpress Website</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-lg mb-2">Wordpress Website</h3>
+                        <p class="text-gray-700 mb-4">
+                            A wordpress website created using elementor website builder for digital marketing agency.
+                        </p>
+                        <div class="flex space-x-3 mb-4">
+                            <span class="px-3 py-1 bg-gray-200 rounded-full text-sm">Wordpress</span>
+                            <span class="px-3 py-1 bg-gray-200 rounded-full text-sm">Elementor</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div class="flex space-x-2">
+                                <a href="./assets/wordpress-2-pdf.pdf" target="_blank"
+                                    class="text-[#4C9EEB] hover:text-[#1C75D3] transition-all duration-300 flex items-center">
+                                    <i class="fas fa-eye mr-1"></i> View
+                                </a>
+                                <!-- <a href="https://github.com/Rami2212/Kotlin-ClapApp.git" target="_blank"
+                                    class="text-[#4C9EEB] hover:text-[#1C75D3] transition-all duration-300 flex items-center">
+                                    <i class="fab fa-github mr-1"></i> Code
+                                </a> -->
+                            </div>
+                            <span class="text-sm text-gray-500">2022</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -1436,8 +1635,7 @@
             <!-- Copyright -->
             <div class="text-center">
                 <p class="text-gray-400">
-                    &copy; <span id="current-year">2025</span> - All Rights Reserved | Designed with
-                    <i class="fas fa-heart text-[#4C9EEB]"></i> by
+                    &copy; <span id="current-year">2025</span> - All Rights Reserved | Designed by
                     <a href="#" class="text-[#4C9EEB] hover:text-white transition duration-300">Ramitha Iddamalgoda</a>
                 </p>
             </div>
