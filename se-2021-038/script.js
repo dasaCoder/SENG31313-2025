@@ -411,6 +411,79 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+// Experience section
+
+// Add CSS styles for timeline elements
+if (!document.querySelector('style#timeline-styles')) {
+  const styleElement = document.createElement('style');
+  styleElement.id = 'timeline-styles';
+  styleElement.textContent = `
+      .timeline-dot {
+          position: absolute;
+          left: -10px;
+          top: 10px;
+          width: 16px;
+          height: 16px;
+          background-color: #4C9EEB;
+          border-radius: 50%;
+          z-index: 2;
+          box-shadow: 0 0 5px rgba(76, 158, 235, 0.8);
+      }
+      .timeline-item:not(:last-child)::before {
+          content: '';
+          position: absolute;
+          left: 7px;
+          top: 30px;
+          bottom: -10px;
+          width: 2px;
+          background-color: #e1e4e8;
+      }
+  `;
+  document.head.appendChild(styleElement);
+}
+
+// Function to animate timeline items
+function animateTimeline() {
+  const timelineItems = document.querySelectorAll('.timeline-item');
+  if (timelineItems.length > 0) {
+      // Set initial state
+      gsap.set(timelineItems, { opacity: 0, y: 50 });
+
+      // Animate items with stagger effect
+      gsap.to(timelineItems, {
+          opacity: 1,
+          y: 0,
+          duration: 0.8,
+          stagger: 0.2,
+          ease: "power2.out",
+          scrollTrigger: {
+              trigger: "#experience",
+              start: "top 70%",
+              toggleActions: "play none none none"
+          }
+      });
+  }
+}
+
+// Ensure ScrollTrigger is loaded before running animation
+let retryCount = 0;
+function waitForScrollTrigger(callback) {
+  if (typeof ScrollTrigger !== 'undefined') {
+      callback();
+  } else if (retryCount < 10) {  // Prevent infinite loop
+      retryCount++;
+      setTimeout(() => waitForScrollTrigger(callback), 100);
+  } else {
+      console.error("ScrollTrigger not loaded. Ensure GSAP ScrollTrigger is included.");
+  }
+}
+
+// Start animation when ScrollTrigger is available
+waitForScrollTrigger(animateTimeline);
+
+
+
+
 // Footer animations
 const footerObserver = new IntersectionObserver((entries) => {
 entries.forEach(entry => {
