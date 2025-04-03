@@ -155,6 +155,27 @@ h6,
 
 
 
+/* Skills section*/
+
+.skill-progress {
+  width: 100%;
+  height: 10px;
+  background-color: #e2e8f0;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.skill-progress-bar {
+  height: 100%;
+  background-color: #4C9EEB;
+  width: 0%;
+  border-radius: 5px;
+  transition: width 1s ease-in-out;
+}
+
+
+
+
 
 /* Custom styles for footer section*/
 

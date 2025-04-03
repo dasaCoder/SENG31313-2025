@@ -213,6 +213,7 @@ gsap.from('.profile-image img', {
 
 
 // About section
+
 const aboutObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -275,13 +276,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-// Portfolio section animations on scroll
+
+
+// Portfolio section
+
 const portfolioItems = document.querySelectorAll('.portfolio-item');
 
 const portfolioObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
-      // Stagger animation for portfolio items
       gsap.to(portfolioItems, {
         opacity: 1,
         y: 0,
@@ -296,12 +299,26 @@ const portfolioObserver = new IntersectionObserver((entries) => {
 
 portfolioObserver.observe(document.getElementById('portfolio'));
 
+
+
+// Portfolio hover effect
+portfolioItems.forEach(item => {
+  const overlay = item.querySelector('.portfolio-overlay');
+  
+  item.addEventListener('mouseenter', () => {
+      gsap.to(overlay, { opacity: 1, duration: 0.1 });
+  });
+  
+  item.addEventListener('mouseleave', () => {
+      gsap.to(overlay, { opacity: 0, duration: 0.1 });
+  });
+});
+
 // Portfolio filtering functionality
 const filterBtns = document.querySelectorAll('.filter-btn');
 
 filterBtns.forEach(btn => {
   btn.addEventListener('click', function() {
-    // Remove active class from all buttons
     filterBtns.forEach(btn => {
       btn.classList.remove('active');
       btn.classList.remove('bg-[#4C9EEB]');
@@ -310,7 +327,6 @@ filterBtns.forEach(btn => {
       btn.classList.add('text-gray-700');
     });
     
-    // Add active class to clicked button
     this.classList.add('active');
     this.classList.add('bg-[#4C9EEB]');
     this.classList.add('text-white');
@@ -324,7 +340,6 @@ filterBtns.forEach(btn => {
       const category = item.getAttribute('data-category');
       
       if (filter === 'all' || filter === category) {
-        // Show the item with animation
         gsap.to(item, {
           opacity: 1,
           scale: 1,
@@ -332,7 +347,6 @@ filterBtns.forEach(btn => {
           display: 'block'
         });
       } else {
-        // Hide the item with animation
         gsap.to(item, {
           opacity: 0,
           scale: 0.95,
@@ -345,6 +359,54 @@ filterBtns.forEach(btn => {
     });
   });
 });
+
+
+
+
+
+
+
+// Skills section
+document.addEventListener('DOMContentLoaded', function() {
+  // Initialize skill progress bars
+  const skillBars = document.querySelectorAll('.skill-progress-bar');
+  
+  // Function to animate skill bars
+  function animateSkillBars() {
+      skillBars.forEach(bar => {
+          const progress = bar.getAttribute('data-progress');
+          bar.style.width = '0%';
+          
+          setTimeout(() => {
+              bar.style.width = progress + '%';
+          }, 300);
+      });
+  }
+  
+  // Animate on scroll
+  function checkIfInView() {
+      const skillsSection = document.getElementById('skills');
+      if (!skillsSection) return;
+      
+      const position = skillsSection.getBoundingClientRect();
+      
+      // If skills section is in viewport
+      if(position.top < window.innerHeight && position.bottom >= 0) {
+          animateSkillBars();
+          // Remove event listener after animation is triggered
+          window.removeEventListener('scroll', checkIfInView);
+      }
+  }
+  
+  // Check if skills section is in view on load
+  checkIfInView();
+  
+  // Add scroll event listener
+  window.addEventListener('scroll', checkIfInView);
+});
+
+
+
 
 
 // Footer animations
