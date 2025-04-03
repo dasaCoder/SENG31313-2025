@@ -442,14 +442,11 @@ if (!document.querySelector('style#timeline-styles')) {
   document.head.appendChild(styleElement);
 }
 
-// Function to animate timeline items
 function animateTimeline() {
   const timelineItems = document.querySelectorAll('.timeline-item');
   if (timelineItems.length > 0) {
-      // Set initial state
       gsap.set(timelineItems, { opacity: 0, y: 50 });
 
-      // Animate items with stagger effect
       gsap.to(timelineItems, {
           opacity: 1,
           y: 0,
@@ -465,12 +462,11 @@ function animateTimeline() {
   }
 }
 
-// Ensure ScrollTrigger is loaded before running animation
 let retryCount = 0;
 function waitForScrollTrigger(callback) {
   if (typeof ScrollTrigger !== 'undefined') {
       callback();
-  } else if (retryCount < 10) {  // Prevent infinite loop
+  } else if (retryCount < 10) { 
       retryCount++;
       setTimeout(() => waitForScrollTrigger(callback), 100);
   } else {
@@ -478,8 +474,188 @@ function waitForScrollTrigger(callback) {
   }
 }
 
-// Start animation when ScrollTrigger is available
 waitForScrollTrigger(animateTimeline);
+
+
+
+
+
+
+// Testimonials section
+const testimonialSwiper = new Swiper('.testimonial-slider', {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+  }
+});
+
+// Testimonials Section Animations
+const testimonialSection = document.querySelector('#testimonials');
+
+// Animate section title
+gsap.from('.section-title', {
+  scrollTrigger: {
+    trigger: testimonialSection,
+    start: 'top 70%',
+  },
+  y: 50,
+  opacity: 0,
+  duration: 0.8,
+  ease: 'power3.out'
+});
+
+// Reveal the testimonial slider
+gsap.to('.testimonial-slider', {
+  scrollTrigger: {
+    trigger: testimonialSection,
+    start: 'top 60%',
+  },
+  opacity: 1,
+  duration: 1,
+  ease: 'power2.out',
+  delay: 0.4
+});
+
+// Staggered animation for individual testimonials
+gsap.from('.swiper-slide', {
+  scrollTrigger: {
+    trigger: '.testimonial-slider',
+    start: 'top 70%',
+  },
+  y: 60,
+  opacity: 0,
+  stagger: 0.2,
+  duration: 0.8,
+  ease: 'back.out(1.7)',
+  delay: 0.6
+});
+
+
+
+
+
+
+// Contact Section Animations
+const contactSection = document.querySelector('#contact');
+
+// Animate contact form
+gsap.to('#contact-form', {
+  scrollTrigger: {
+    trigger: contactSection,
+    start: 'top 60%',
+  },
+  opacity: 1,
+  x: 0,
+  duration: 0.8,
+  ease: 'power3.out'
+});
+
+// Animate contact info
+gsap.to('#contact-info', {
+  scrollTrigger: {
+    trigger: contactSection,
+    start: 'top 60%',
+  },
+  opacity: 1,
+  x: 0,
+  duration: 0.8,
+  delay: 0.3,
+  ease: 'power3.out'
+});
+
+// Animate contact form elements
+gsap.from('#contact-form input, #contact-form textarea', {
+  scrollTrigger: {
+    trigger: '#contact-form',
+    start: 'top 70%',
+  },
+  y: 20,
+  opacity: 0,
+  stagger: 0.1,
+  duration: 0.6,
+  delay: 0.5,
+  ease: 'power2.out'
+});
+
+// Animate contact info elements
+gsap.from('#contact-info .flex.items-start', {
+  scrollTrigger: {
+    trigger: '#contact-info',
+    start: 'top 70%',
+  },
+  x: -30,
+  opacity: 0,
+  stagger: 0.15,
+  duration: 0.7,
+  delay: 0.7,
+  ease: 'power2.out'
+});
+
+// Animate social media icons with a bouncy effect
+gsap.from('#contact-info .flex.space-x-4 a', {
+  scrollTrigger: {
+    trigger: '#contact-info .flex.space-x-4',
+    start: 'top 85%',
+  },
+  scale: 0,
+  opacity: 0,
+  stagger: 0.1,
+  duration: 0.5,
+  delay: 1,
+  ease: 'back.out(1.7)'
+});
+
+// Adding hover animations to buttons and clickable elements
+const addHoverAnimation = (selector) => {
+  const elements = document.querySelectorAll(selector);
+  
+  elements.forEach(element => {
+    element.addEventListener('mouseenter', () => {
+      gsap.to(element, {
+        scale: 1.05,
+        duration: 0.3,
+        ease: 'power1.out'
+      });
+    });
+    
+    element.addEventListener('mouseleave', () => {
+      gsap.to(element, {
+        scale: 1,
+        duration: 0.3,
+        ease: 'power1.out'
+      });
+    });
+  });
+};
+
+// Apply hover animations
+addHoverAnimation('button[type="submit"]');
+addHoverAnimation('.swiper-button-next, .swiper-button-prev');
+
+document.addEventListener('DOMContentLoaded', () => {
+  
+});
+
+
+
 
 
 

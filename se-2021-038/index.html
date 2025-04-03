@@ -23,6 +23,16 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 </head>
 
 <body class="bg-gray-100">
@@ -965,7 +975,8 @@
                         </div>
                         <h4 class="text-lg text-gray-600 mb-4"></h4>
                         <p class="text-gray-700">
-                            Building scalable web and mobile applications with modern technologies, integrating frontend and backend solutions, and ensuring seamless user experiences.
+                            Building scalable web and mobile applications with modern technologies, integrating frontend
+                            and backend solutions, and ensuring seamless user experiences.
                         </p>
                     </div>
                 </div>
@@ -980,7 +991,8 @@
                         </div>
                         <h4 class="text-lg text-gray-600 mb-4"></h4>
                         <p class="text-gray-700">
-                            Developed cross-platform mobile applications using Flutter, enhancing user engagement and optimizing performance.
+                            Developed cross-platform mobile applications using Flutter, enhancing user engagement and
+                            optimizing performance.
                         </p>
                     </div>
                 </div>
@@ -995,7 +1007,8 @@
                         </div>
                         <h4 class="text-lg text-gray-600 mb-4">WebCraft Agency</h4>
                         <p class="text-gray-700">
-                            Designed and developed responsive websites, focusing on UI/UX, performance optimization, and SEO best practices.
+                            Designed and developed responsive websites, focusing on UI/UX, performance optimization, and
+                            SEO best practices.
                         </p>
                     </div>
                 </div>
@@ -1010,10 +1023,124 @@
                         </div>
                         <h4 class="text-lg text-gray-600 mb-4"></h4>
                         <p class="text-gray-700">
-                            Created and customized WordPress websites, including themes, plugins, and e-commerce solutions for diverse clients.
+                            Created and customized WordPress websites, including themes, plugins, and e-commerce
+                            solutions for diverse clients.
                         </p>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl lg:text-4xl font-bold text-center mb-16 section-title mx-auto">
+                Client <span class="text-[#4C9EEB]">Testimonials</span>
+            </h2>
+
+            <!-- Testimonial Slider -->
+            <div class="swiper testimonial-slider opacity-0">
+                <div class="swiper-wrapper">
+                    <!-- Testimonial 1 -->
+                    <div class="swiper-slide">
+                        <div class="bg-gray-50 p-8 rounded-lg shadow-md">
+                            <div class="text-[#4C9EEB] text-4xl mb-4">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p class="text-gray-700 italic mb-6">
+                                "Great website, was very understanding around my lack of knowledge of all things to do with websites . Highly recommend"
+                            </p>
+                            <div class="flex items-center">
+                                <!-- <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                                    <img src="/api/placeholder/100/100" alt="Client 1"
+                                        class="w-full h-full object-cover">
+                                </div> -->
+                                <div>
+                                    <h4 class="font-bold">Helen Muslek</h4>
+                                    <p class="text-sm text-gray-600">Fiverr</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="swiper-slide">
+                        <div class="bg-gray-50 p-8 rounded-lg shadow-md">
+                            <div class="text-[#4C9EEB] text-4xl mb-4">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p class="text-gray-700 italic mb-6">
+                                "Ramitha did an EXCEPTIONAL job on my website! His professionalism and attention to detail FAR EXCEEDED my expectations. Working with him was a breeze due to his timely delivery, deep understanding, and great communications!"
+                            </p>
+                            <div class="flex items-center">
+                                <!-- <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                                    <img src="/api/placeholder/100/100" alt="Client 2"
+                                        class="w-full h-full object-cover">
+                                </div> -->
+                                <div>
+                                    <h4 class="font-bold">R Reiman</h4>
+                                    <p class="text-sm text-gray-600">Fiverr</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="swiper-slide">
+                        <div class="bg-gray-50 p-8 rounded-lg shadow-md">
+                            <div class="text-[#4C9EEB] text-4xl mb-4">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p class="text-gray-700 italic mb-6">
+                                "Ramitha is my go-to tech guy! He is reliable, fast and efficient. I would recommend him to anyone looking to accomplish a goal."
+                            </p>
+                            <div class="flex items-center">
+                                <!-- <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                                    <img src="/api/placeholder/100/100" alt="Client 3"
+                                        class="w-full h-full object-cover">
+                                </div> -->
+                                <div>
+                                    <h4 class="font-bold">Eunece</h4>
+                                    <p class="text-sm text-gray-600">Fiverr</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 4 -->
+                    <div class="swiper-slide">
+                        <div class="bg-gray-50 p-8 rounded-lg shadow-md">
+                            <div class="text-[#4C9EEB] text-4xl mb-4">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p class="text-gray-700 italic mb-6">
+                                "Working with Ramitha was smooth as silk I was under the gun for a few deadlines for a few clients needed website revisions and blog creations, Ramitha delivered the goods on time with no do overs, thanks Ram AI Digital Path"
+                            </p>
+                            <div class="flex items-center">
+                                <!-- <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                                    <img src="/api/placeholder/100/100" alt="Client 4"
+                                        class="w-full h-full object-cover">
+                                </div> -->
+                                <div>
+                                    <h4 class="font-bold">Gregary</h4>
+                                    <p class="text-sm text-gray-600">Fiverr</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slider Controls -->
+                <div class="swiper-pagination mt-8"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
         </div>
     </section>
@@ -1028,7 +1155,7 @@
     <!-- JavaScript -->
     <script src="script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
 </body>
 
