@@ -12,11 +12,11 @@ async function loadSection(url, containerId) {
 // Load all sections when DOM is loaded
 document.addEventListener("DOMContentLoaded", async () => {
   // Load all sections
-  await loadSection("/SE-2021-037/sections/header.html", "header-container");
-  await loadSection("/SE-2021-037/sections/hero.html", "hero-container");
-  await loadSection("/SE-2021-037/sections/education.html", "education-container");
-  await loadSection("/SE-2021-037/sections/skills.html", "skills-container");
-  await loadSection("/SE-2021-037/sections/contact.html", "contact-container");
+  await loadSection("SE-2021-037/sections/header.html", "header-container");
+  await loadSection("SE-2021-037/sections/hero.html", "hero-container");
+  await loadSection("SE-2021-037/sections/education.html", "education-container");
+  await loadSection("SE-2021-037/sections/skills.html", "skills-container");
+  await loadSection("SE-2021-037/sections/contact.html", "contact-container");
 
   // Mobile Menu Toggle
   const mobileMenuBtn = document.getElementById("mobileMenuBtn");
