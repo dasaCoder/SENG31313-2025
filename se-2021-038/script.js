@@ -664,7 +664,6 @@ document.addEventListener('DOMContentLoaded', () => {
 const footerObserver = new IntersectionObserver((entries) => {
 entries.forEach(entry => {
 if (entry.isIntersecting) {
-  // Animate footer columns with staggered effect
   gsap.from('.footer-col', {
     opacity: 0,
     y: 30,
@@ -683,9 +682,13 @@ if (footerSection) {
 footerObserver.observe(footerSection);
 }
 
-// -----------------
+
+
+
+
+
 // Back to top button
-// -----------------
+
 const backToTopBtn = document.getElementById('back-to-top');
 
 window.addEventListener('scroll', () => {
@@ -703,9 +706,8 @@ gsap.to(backToTopBtn, {
 }
 });
 
-// -----------------
 // Smooth scrolling
-// -----------------
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 anchor.addEventListener('click', function (e) {
 e.preventDefault();
@@ -735,9 +737,8 @@ if (targetElement) {
 });
 });
 
-// -----------------
-// Form validation (if contact form exists)
-// -----------------
+// Form validation
+
 const contactForm = document.getElementById('contact-form');
 
 if (contactForm) {
@@ -745,6 +746,7 @@ contactForm.addEventListener('submit', function(e) {
 e.preventDefault();
 
 // Basic form validation
+
 let isValid = true;
 const requiredFields = contactForm.querySelectorAll('[required]');
 
@@ -753,7 +755,6 @@ requiredFields.forEach(field => {
     isValid = false;
     field.classList.add('border-red-500');
     
-    // Add error message if it doesn't exist
     let errorMessage = field.nextElementSibling;
     if (!errorMessage || !errorMessage.classList.contains('error-message')) {
       errorMessage = document.createElement('p');
@@ -764,7 +765,6 @@ requiredFields.forEach(field => {
   } else {
     field.classList.remove('border-red-500');
     
-    // Remove error message if it exists
     const errorMessage = field.nextElementSibling;
     if (errorMessage && errorMessage.classList.contains('error-message')) {
       errorMessage.remove();
@@ -772,26 +772,21 @@ requiredFields.forEach(field => {
   }
 });
 
-// If form is valid, you can submit it or show success message
 if (isValid) {
-  // For demo, just show success message
   const successMessage = document.createElement('div');
   successMessage.className = 'bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative mt-4';
   successMessage.innerHTML = '<strong>Success!</strong> Your message has been sent.';
   
   contactForm.appendChild(successMessage);
   
-  // Reset form
   contactForm.reset();
   
-  // Remove success message after 5 seconds
   setTimeout(() => {
     successMessage.remove();
   }, 5000);
 }
 });
 
-// Remove validation styling on input
 contactForm.querySelectorAll('input, textarea').forEach(field => {
 field.addEventListener('input', function() {
   this.classList.remove('border-red-500');
