@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raveesha's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" crossorigin="anonymous"></script>   
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo"></div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#volunteer">Volunteer</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="container">
+            <div class="hero">
+                <div class="hero-content">
+                    <h1>Welcome!</h1>
+                    <p>I am <strong>Raveesha Hashani Amarawickrama</strong>, a third-year Software Engineering undergraduate at the University of Kelaniya. I specialize in MERN stack development, with a strong focus on UI/UX design, front-end technologies, and integrating emerging trends like AI and AR/VR.</p>
+                    <p>My interests also extend to caption writing, teamwork, and nature travel, where I find inspiration for creativity and innovation. I am committed to continuous learning on React, Angular, MongoDB, UX/UI design, and Git.</p>
+                    <a href="#contact" class="btn">Get In Touch</a>
+                </div>
+                <div class="hero-image">
+                    <img src="assets/images/profile.jpg" alt="Raveesha Hashani Amarawickrama">
+                </div>
+            </div>
+        </div>
+    </section>
+
+ <!-- About Section -->
+ <section id="about">
+    <div class="container">
+        <h2 class="section-title">About Me</h2>
+        
+        <div class="about-grid">
+            <div>
+                <div class="education">
+                    <h3>Education</h3>
+                    <div class="education-item">
+                        <h4>School Education</h4>
+                        <p>H/Theraputta National School</p>
+                        <p>2005 - 2019</p>
+                    </div>
+                    <div class="education-item">
+                        <h4>Higher Education</h4>
+                        <p>BSc in Software Engineering</p>
+                        <p>University of Kelaniya, Sri Lanka</p>
+                        <p>September 2023 - Present</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div>
+                <h3>My Skills</h3>
+                <div class="tabs">
+                    <button class="tab-btn active" onclick="changeTab('Languages')">Languages</button>
+</div>
+                
+                <div id="Languages" class="tab-content active">
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+                            <p>Java</p>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                            <p>Python</p>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                            <p>JavaScript</p>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C">
+                            <p>C</p>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP">
+                            <p>PHP</p>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+                            <p>HTML</p>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL">
+                            <p>SQL</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="Frameworks" class="tab-content">
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" alt="Angular">
+                            <p>Angular</p>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+                            <p>React</p>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
+                            <p>Node.js</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="Databases" class="tab-content">
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+                            <p>MySQL</p>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB">
+                            <p>MongoDB</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="achievement">Achievement</div>
+        <div class="achievement-content">
+            <img src="assets/images/team.png" alt="Team Codex" class="achievement-image">
+            <div>
+                <h3>1st Place in Junior Hack 6.0</h3>
+                <p>Our team, <strong>"Codex"</strong>, consisting of team members <strong>Lakshitha Madushan</strong>, <strong>Raveesha Hashani</strong>, <strong>Buddika Madumali</strong>, and <strong>Tharushi Lakshani</strong>, secured the <strong>1st place</strong> in <strong>Junior Hack 6.0</strong>, the prestigious coding competition organized by the Software Engineering Students' Association, University of Kelaniya.</p>
+                <p>The competition was held in <strong>January 2025</strong>. Competing against <strong>16 teams</strong>, we showcased our skills, problem-solving abilities, and teamwork!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects">
+    <div class="container">
+        <h2 class="section-title">My Projects</h2>
+        
+        <div class="projects-grid">
+            <div class="project-card">
+                <video controls width="100%" height="auto" class="project-image">
+                    <source src="assets/videos/video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="project-info">
+                    <h3>Book Hub</h3>
+                    <p>An innovative online library system with flexible membership options, secure payments, and admin analytics.</p>
+                    <div class="project-links">
+                        <a href="https://lnkd.in/dqGcp8pq" class="btn">Code</a>
+                    </div>
+                </div>
+          
+        </div>
+            
+            <div class="project-card">
+                <img src="assets/images/zero-plastic-1.jpg" alt="Zero Plastic" class="project-image">
+                <div class="project-info">
+                    <h3>Zero Plastic Web Project</h3>
+                    <p>A clean and user-friendly UI to promote plastic waste reduction with interactive prototypes.</p>
+                    <div class="project-links">
+                        <a href="https://zeroplastickelaniya.lk/" class="btn" target="_blank">View Design</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <img src="assets/images/chat.png" alt="Voice Chat App" class="project-image">
+                <div class="project-info">
+                    <h3>Voice-Enabled Chat Application</h3>
+                    <p>An intuitive UI for elderly users with voice-to-text conversion and large text for better usability.</p>
+                    <div class="project-links">
+                        <a href="https://www.figma.com/design/qitMkgzCHt8U6ii6y32twM/Interactive-Project?node-id=0-1&p=f&t=l05L4qsvIND04zjq-0" class="btn" target="_blank">View Design</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <img src="assets/images/fuel.png" alt="Fuel Management" class="project-image">
+                <div class="project-info">
+                    <h3>Fuel Management System</h3>
+                    <p>Web and mobile app for efficient fuel tracking, transactions, and inventory management.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/NadeeshaMedagama/fuel-quota-management-system.git" class="btn" target="_blank">View Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Blog Section -->
+<section id="blog">
+    <div class="container">
+        <h2 class="section-title">Latest Blog Articles</h2>
+        
+        <div class="blog-grid">
+            <div class="blog-card">
+                <img src="assets/images/server.png" alt="Serverless Architecture" class="blog-image">
+                <div class="blog-content">
+                    <h3>Serverless Architecture</h3>
+                    <p class="blog-date">20/03/2025</p>
+                    <p>Revolutionizing Web Development in 2024</p>
+                    <a href="https://medium.com/@raveeshaamarawickrama200/serverless-architecture-revolutionizing-web-development-in-2024-4b80cfb4b547" class="btn" target="_blank">Read More</a>
+                </div>
+            </div>
+            
+            <div class="blog-card">
+                <img src="assets/images/vscode.png" alt="VS Code" class="blog-image">
+                <div class="blog-content">
+                    <h3>Why VS Code becomes the standard for web development ?????</h3>
+                    <p class="blog-date">7/5/2024</p>
+                    <p>Exploring the reasons behind VS Code's dominance</p>
+                    <a href="https://medium.com/@raveeshaamarawickrama200/why-vs-code-becomes-the-standard-for-web-development-aa36619a0538" class="btn" target="_blank">Read More</a>
+                </div>
+            </div>
+            
+            <div class="blog-card">
+                <img src="assets/images/license.png" alt="Software Licensing" class="blog-image">
+                <div class="blog-content">
+                    <h3>Software Licensing</h3>
+                    <p class="blog-date">2/16/2024</p>
+                    <p>Understanding different software licensing models</p>
+                    <a href="https://medium.com/@raveeshaamarawickrama200/software-licensing-dd586fa5cb1d" class="btn" target="_blank">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Volunteer Section -->
+<section id="volunteer">
+    <div class="container">
+        <h2 class="section-title">Volunteer Experience</h2>
+        
+        <div class="volunteer-item">
+            <img src="assets/images/ieee.jpg" alt="IEEE Design Team" class="volunteer-image">
+            <div>
+                <h3>IEEE - Head of the Design</h3>
+                <p>As the Head of the Design team at IEEE, I led a group of talented designers to create visually appealing and user-friendly designs for various projects and events. My role involved coordinating with other teams, ensuring timely delivery of designs, and maintaining high-quality standards.</p>
+            </div>
+        </div>
+        
+        <div class="volunteer-item">
+            <video controls class="volunteer-video">
+                <source src="assets/video/rotaract.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div>
+                <h3>Rotaract - Main OC Ignite Sri Lanka 1.0 PR Coordinator</h3>
+                <p>As the PR Coordinator for Ignite Sri Lanka 1.0, I managed public relations and communication strategies to promote the event. I collaborated with media outlets, designed promotional materials, and ensured effective outreach to the target audience.</p>
+            </div>
+        </div>
+        
+        <div class="volunteer-item">
+            <div class="volunteer-collage">
+                <img src="assets/images/zero-plastic-1.jpg" alt="Zero Plastic 1">
+                <img src="assets/images/zero-plastic-2.jpg" alt="Zero Plastic 2">
+                <img src="assets/images/zero-plastic-3.jpg" alt="Zero Plastic 3">
+            </div>
+            <div>
+                <h3>Zero Plastic - Tech Live Project OC Member</h3>
+                <p>As an OC member for the Zero Plastic Tech Live Project, I contributed to organizing and executing a project aimed at reducing plastic waste. My responsibilities included coordinating with stakeholders, managing event logistics, and promoting sustainability initiatives.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+    <div class="container">
+        <h2 class="section-title">Contact Me</h2>
+        
+        <div class="contact-container">
+            <form class="contact-form" action="https://formsubmit.co/raveeshaamarawickrama200@gmail.com" method="POST">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Write your name here" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Let me know your Email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="What would you like to tell me" required></textarea>
+                </div>
+                
+                <input type="hidden" name="_subject" value="New Portfolio Contact!">
+                <input type="hidden" name="_autoresponse" value="Thank you for contacting me! I'll get back to you soon.">
+                <input type="hidden" name="_template" value="table">
+                
+                <button type="submit" class="btn">Send Email</button>
+            </form>
+
+            <!-- Social Links Section - Updated to match screenshot -->
+            <div class="social-section">
+               
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/raveesha-amarawickrama-1383592a4/" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/Raveesha-Amarawickrama" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=100089544730818" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="mailto:raveeshaamarawickrama200@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://wa.me/94762219168" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <p>&copy; 2025 Raveesha Hashani Amarawickrama. All Rights Reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>
