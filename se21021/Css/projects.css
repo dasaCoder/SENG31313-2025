@@ -13,7 +13,7 @@
     display: flex;  
     align-items: center;  
     justify-content: space-between;  
-    background-image: url(../images/blueBg.jpg);  
+    background-image: url(/SENG31313-2025/se21021/images/blueBg.jpg);  
     background-size: cover; 
     background-position: center;  
     background-repeat: no-repeat;  
@@ -29,7 +29,7 @@
     display: flex;  
     align-items: center;  
     justify-content: space-between;  
-    background-image: url(../images/pinkBg.jpg);  
+    background-image: url(/SENG31313-2025/se21021/images/pinkBg.jpg);  
     background-size: cover;  
     background-position: center; 
     background-repeat: no-repeat; 
@@ -45,7 +45,7 @@
     display: flex;  
     align-items: center;  
     justify-content: space-between;  
-    background-image: url(../images/pupleBg.png);  
+    background-image: url(/SENG31313-2025/se21021/images/pupleBg.png);  
     background-size: cover;  
     background-position: center; 
     background-repeat: no-repeat;  
