@@ -9,19 +9,19 @@ document.addEventListener('DOMContentLoaded', function () {
     const darkModeElements = document.querySelectorAll('.dark-mode-text, .dark-mode-icon, .dark-mode-hamburger');
 
     // Animation for header
-    gsap.from('#logo', {
-        duration: 1,
-        y: -50,
-        opacity: 0,
-        ease: 'power3.out',
-    });
+    // gsap.from('#logo', {
+    //     duration: 0.1,
+    //     y: -50,
+    //     opacity: 0,
+    //     ease: 'power3.out',
+    // });
 
-    gsap.from('.nav-link', {
-        duration: 1,
-        y: -50,
-        opacity: 0,
-        ease: 'power3.out',
-    });
+    // gsap.from('.nav-link', {
+    //     duration: 0.1,
+    //     y: -50,
+    //     opacity: 0,
+    //     ease: 'power3.out',
+    // });
 
     // Sticky Header
     function handleScroll() {
@@ -736,64 +736,82 @@ if (targetElement) {
 });
 });
 
+
+
 // Form validation
 
-const contactForm = document.getElementById('contact-form');
+const contactForm = document.getElementById('contactForm');
 
 if (contactForm) {
-contactForm.addEventListener('submit', function(e) {
-e.preventDefault();
+  contactForm.addEventListener('submit', async function(e) {
+    e.preventDefault();
 
-// Basic form validation
+    let isValid = true;
+    const requiredFields = contactForm.querySelectorAll('input, textarea');
 
-let isValid = true;
-const requiredFields = contactForm.querySelectorAll('[required]');
+    requiredFields.forEach(field => {
+      if (!field.value.trim()) {
+        isValid = false;
+        field.classList.add('border-red-500');
 
-requiredFields.forEach(field => {
-  if (!field.value.trim()) {
-    isValid = false;
-    field.classList.add('border-red-500');
-    
-    let errorMessage = field.nextElementSibling;
-    if (!errorMessage || !errorMessage.classList.contains('error-message')) {
-      errorMessage = document.createElement('p');
-      errorMessage.classList.add('error-message', 'text-red-500', 'text-sm', 'mt-1');
-      errorMessage.textContent = 'This field is required';
-      field.parentNode.insertBefore(errorMessage, field.nextSibling);
+        let errorMessage = field.nextElementSibling;
+        if (!errorMessage || !errorMessage.classList.contains('error-message')) {
+          errorMessage = document.createElement('p');
+          errorMessage.classList.add('error-message', 'text-red-500', 'text-sm', 'mt-1');
+          errorMessage.textContent = 'This field is required';
+          field.parentNode.insertBefore(errorMessage, field.nextSibling);
+        }
+      } else {
+        field.classList.remove('border-red-500');
+        const errorMessage = field.nextElementSibling;
+        if (errorMessage && errorMessage.classList.contains('error-message')) {
+          errorMessage.remove();
+        }
+      }
+    });
+
+    if (isValid) {
+      const formData = new FormData(contactForm);
+
+      try {
+        const response = await fetch(contactForm.action, {
+          method: 'POST',
+          body: formData,
+          headers: {
+            Accept: 'application/json'
+          }
+        });
+
+        if (response.ok) {
+          const successMessage = document.createElement('div');
+          successMessage.className = 'bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative mt-4';
+          successMessage.innerHTML = '<strong>Success!</strong> Your message has been sent.';
+
+          const wrapper = document.getElementById('form-wrapper');
+          contactForm.appendChild(successMessage);
+
+          contactForm.reset();
+
+          setTimeout(() => {
+            successMessage.remove();
+          }, 5000);
+        }
+      } catch (error) {
+        alert('Something went wrong. Try again!');
+      }
     }
-  } else {
-    field.classList.remove('border-red-500');
-    
-    const errorMessage = field.nextElementSibling;
-    if (errorMessage && errorMessage.classList.contains('error-message')) {
-      errorMessage.remove();
-    }
-  }
-});
+  });
 
-if (isValid) {
-  const successMessage = document.createElement('div');
-  successMessage.className = 'bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative mt-4';
-  successMessage.innerHTML = '<strong>Success!</strong> Your message has been sent.';
-  
-  contactForm.appendChild(successMessage);
-  
-  contactForm.reset();
-  
-  setTimeout(() => {
-    successMessage.remove();
-  }, 5000);
-}
-});
+  contactForm.querySelectorAll('input, textarea').forEach(field => {
+    field.addEventListener('input', function () {
+      this.classList.remove('border-red-500');
 
-contactForm.querySelectorAll('input, textarea').forEach(field => {
-field.addEventListener('input', function() {
-  this.classList.remove('border-red-500');
-  
-  const errorMessage = this.nextElementSibling;
-  if (errorMessage && errorMessage.classList.contains('error-message')) {
-    errorMessage.remove();
-  }
-});
-});
+      const errorMessage = this.nextElementSibling;
+      if (errorMessage && errorMessage.classList.contains('error-message')) {
+        errorMessage.remove();
+      }
+    });
+  });
+
+
 }
