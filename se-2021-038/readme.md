@@ -54,7 +54,6 @@ To make the contact form functional using FormSubmit:
 ```
 https://rami2212.github.io/My-Portfolio/
 ```
-*Replace the URL with your actual GitHub Pages link.*
 
 ## 🛠️ How to Run the Project Locally
 Follow these steps to run the project on your local machine:
