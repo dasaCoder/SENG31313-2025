@@ -6,9 +6,10 @@
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="pt-20"> <!-- Increased top padding to match navbar height -->
+<body class="pt-20 transition-all duration-300"> <!-- Padding for fixed navbar -->
 
     <header>
+        <!-- Navbar -->
         <nav class="bg-gradient-to-r from-green-400 to-green-600 shadow-md fixed w-full top-0 left-0 z-50 h-12 md:h-14 flex items-center">
             <div class="max-w-7xl mx-auto px-6 flex justify-between items-center w-full">
                 <!-- Logo -->
@@ -17,7 +18,7 @@
                     <span class="text-white text-xl md:text-2xl font-bold">Portfolio</span>
                 </div>
 
-                <!-- Navbar Links (Desktop) -->
+                <!-- Desktop Menu -->
                 <ul class="hidden md:flex space-x-10 lg:space-x-20 text-white text-lg font-bold">
                     <li><a href="home.html" class="hover:text-gray-700 transition">Home</a></li>
                     <li><a href="about.html" class="hover:text-gray-700 transition">About</a></li>
@@ -25,26 +26,38 @@
                     <li><a href="contact.html" class="hover:text-gray-700 transition">Contact</a></li>
                 </ul>
 
-                <!-- Mobile Menu Button (Hamburger Icon) -->
+                <!-- menu bar -->
                 <button id="menu-btn" class="md:hidden focus:outline-none">
                     <div class="hamburger-icon flex flex-col justify-between w-8 h-6">
-                      <span class="block h-1 w-8 bg-white rounded-md"></span>
-                      <span class="block h-1 w-8 bg-white rounded-md"></span>
-                      <span class="block h-1 w-8 bg-white rounded-md"></span>
+                        <span class="block h-1 w-8 bg-white rounded-md"></span>
+                        <span class="block h-1 w-8 bg-white rounded-md"></span>
+                        <span class="block h-1 w-8 bg-white rounded-md"></span>
                     </div>
-                </button>                  
+                </button>
             </div>
         </nav>
 
-        <!-- Mobile Menu (Hidden by Default) -->
-        <ul id="mobile-menu" class="absolute top-16 left-0 w-full p-4 bg-green-600 text-white text-center space-y-2 md:hidden hidden z-50">
-            <li><a href="home.html" class="block hover:bg-green-700 py-2 rounded">Home</a></li>
-            <li><a href="about.html" class="block hover:bg-green-700 py-2 rounded">About</a></li>
-            <li><a href="projects.html" class="block hover:bg-green-700 py-2 rounded">Projects</a></li>
-            <li><a href="contact.html" class="block hover:bg-green-700 py-2 rounded">Contact</a></li>
-        </ul>
-   </header>
-   <script src="../js/app.js"></script> 
+<!-- Mobile Menu (Pushes content down, with top margin to avoid overlap) -->
+<ul id="mobile-menu" class="w-full p-2 mt-12 bg-green-600 text-white text-center md:hidden hidden z-40 shadow-md rounded-b-xl transition-all duration-300">
+    <li><a href="home.html" class="block hover:bg-green-700 py-2 rounded">Home</a></li>
+    <li><a href="about.html" class="block hover:bg-green-700 py-2 rounded">About</a></li>
+    <li><a href="projects.html" class="block hover:bg-green-700 py-2 rounded">Projects</a></li>
+    <li><a href="contact.html" class="block hover:bg-green-700 py-2 rounded">Contact</a></li>
+</ul>
+    </header>
+
+    <script>
+        const menuBtn = document.getElementById("menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+
+        menuBtn.addEventListener("click", () => {
+            // Smooth scroll to top so menu is visible
+            window.scrollTo({ top: 0, behavior: "smooth" });
+
+            // Toggle visibility
+            mobileMenu.classList.toggle("hidden");
+        });
+    </script>
 
 </body>
 </html>
