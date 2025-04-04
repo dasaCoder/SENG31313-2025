@@ -4,7 +4,7 @@ tailwind.config = {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
       },
-      // Removed custom colors (primary, dark, etc.) used only in the Skills section.
+      // Removed custom colors (such as primary: "#3498db" and dark: "#2c3e50")
       keyframes: {
         fadeInLeft: {
           "0%": { opacity: "0", transform: "translateX(-30px)" },
@@ -22,3 +22,4 @@ tailwind.config = {
     },
   },
 };
+module.exports = tailwind.config;
