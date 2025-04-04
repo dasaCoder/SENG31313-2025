@@ -17,7 +17,7 @@
     -webkit-transform: scale(1); /* Added vendor prefixes */
     -moz-transform: scale(1);
     transform: scale(1); /* Added default state */
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.7s ease-in-out;
 }
 
 .hover-scale:hover {
@@ -101,3 +101,27 @@
 .animate-form {
     animation: slideUp 1.5s ease-out forwards; /* Same as slideUp for forms */
 }
+
+/* Add shake animation */
+@keyframes shake {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(10px); /* Adjust this value for bump effect */
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .no-scroll {
+    overflow: hidden; /* Prevent scroll */
+    position: relative;
+  }
+  
+  /* Apply bump effect when the user tries to scroll */
+  .no-scroll.shake {
+    animation: shake 0.5s ease-in-out;
+  }
+  
