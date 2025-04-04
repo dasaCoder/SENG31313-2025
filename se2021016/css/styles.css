@@ -13,9 +13,17 @@
 }
 
 /* Hover Effects */
+.hover-scale {
+    -webkit-transform: scale(1); /* Added vendor prefixes */
+    -moz-transform: scale(1);
+    transform: scale(1); /* Added default state */
+    transition: transform 0.5s ease-in-out;
+}
+
 .hover-scale:hover {
+    -webkit-transform: scale(1.05); /* Vendor prefixes for smooth scaling */
+    -moz-transform: scale(1.05);
     transform: scale(1.05);
-    transition: transform 0.3s ease-in-out;
 }
 
 /* Gradient Animation for Background */

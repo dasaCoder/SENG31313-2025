@@ -43,24 +43,8 @@
             <li><a href="projects.html" class="block hover:bg-green-700 py-2 rounded">Projects</a></li>
             <li><a href="contact.html" class="block hover:bg-green-700 py-2 rounded">Contact</a></li>
         </ul>
-    </header>
-
-    <script>
-        // Mobile menu toggle
-        document.getElementById("menu-btn").addEventListener("click", function() {
-            const menu = document.getElementById("mobile-menu");
-            // Toggle the visibility of the mobile menu
-            menu.classList.toggle("hidden");
-        });
-
-        // Close mobile menu when a link is clicked
-        const mobileLinks = document.querySelectorAll("#mobile-menu a");
-        mobileLinks.forEach(link => {
-            link.addEventListener("click", () => {
-                document.getElementById("mobile-menu").classList.add("hidden");
-            });
-        });
-    </script>
+   </header>
+   <script src="../js/app.js"></script> 
 
 </body>
 </html>
