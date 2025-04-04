@@ -78,7 +78,7 @@ h2 {
     display: flex; 
     justify-content: space-evenly; 
     flex-wrap: nowrap;  
-    background-image: url('../images/skillsBgImage.webp'); 
+    background-image: url('/SENG31313-2025/se21021/images/skillsBgImage.webp'); 
     background-size: cover; 
     background-position: center;  
     background-repeat: no-repeat; 
