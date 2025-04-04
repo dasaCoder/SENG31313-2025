@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+    <header>
+        <h2 class="logo">Buddhika </h2>
+           
+        <nav>
+            
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section class="hero">
+        <div class="hero-text">
+            <h3>Hello, It's Me</h3>
+            <h1>Buddhika Madumali</h1>
+            <h2>And I'm a <span class="highlight">Frontend Developer</span></h2>
+            <p>I am currently pursuing a four-year Bachelor’s degree (Hons) in Software Engineering at the University of Kelaniya.
+             As a third-year student, I have gained a strong foundation in front-end development, specializing in building interactive and user-friendly web applications.
+              
+               </p>
+
+            <div class="social-icons">
+                <a href="https://www.facebook.com/share/1EGCvx5yPt/" target="_blank"><img src="assets/images/facebook.png" alt="Facebook"></a>
+                <a href="https://www.linkedin.com/in/buddhika-madumali-486ab0291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                target="_blank"
+                ><img src="assets/images/linkedin.png" alt="LinkedIn"></a>
+            </div>
+
+            
+            <a href="assets/cv.pdf" download="cv.pdf" target="_blank">
+            <button class="btn" id="downloadCV">Download CV</button>
+              </a>
+        </div>
+
+        
+        <div class="hero-image animate__animated animate__backInRight">
+            <img src="assets/images/buddhi.jpg" alt="Profile Picture">
+        </div>
+    </section>
+    <section id="about">
+        <h1>About Me</h1>
+        <div class="about-section">
+        <h2>Skills</h2>
+        
+        
+    
+        <div class="categories">
+            <button class="category-btn active" data-category="languages">Languages</button>
+            <button class="category-btn" data-category="frameworks">Frameworks & Libraries</button>
+            <button class="category-btn" data-category="tools">Tools</button>
+            <button class="category-btn" data-category="databases">Databases</button>
+        </div>
+
+       
+        <div class="skills-box">
+            <div id="languages" class="skills-grid active">
+                <div class="skill"><img src="assets/icons/c.png" alt="c">C</div>
+                <div class="skill"><img src="assets/icons/java.png" alt="Java">Java</div>
+              <div class="skill"><img src="assets/icons/javascript.png" alt="JS">JavaScript</div>
+              <div class="skill"><img src="assets/icons/html.png" alt="HTML">HTML</div>
+              <div class="skill"><img src="assets/icons/css.png" alt="CSS">CSS</div>
+              <div class="skill"><img src="assets/icons/php.png" alt="PHP">PHP</div>
+            </div>
+
+            <div id="frameworks" class="skills-grid">
+                <div class="skill"><img src="assets/icons/react.png" alt="React">React</div>
+                <div class="skill"><img src="assets/icons/spring boot.png" alt="Springboot">Spring Boot</div>
+            </div>
+
+            <div id="tools" class="skills-grid">
+                <div class="skill"><img src="assets/icons/github.png" alt="Git">Git</div>
+                <div class="skill"><img src="assets/icons/jira.png" alt="Jira">Jira</div>
+              <div class="skill"><img src="assets/icons/powerbi.png" alt="Power Bi">Power Bi</div>
+              <div class="skill"><img src="assets/icons/figma.png" alt="Figma">Figma</div>
+            </div>
+
+            <div id="databases" class="skills-grid">
+                <div class="skill"><img src="assets/icons/mysql.png" alt="MySQL">MySQL</div>
+              
+            </div>
+        </div>
+    </div>
+  
+
+    </section>
+
+    <section id="education">
+        <h1>Education</h1>
+        <div class="edu-section">
+            <p> I am currently pursuing a four-year Bachelor’s degree (Hons) in Software Engineering at the University of Kelaniya.
+                As a third-year student, I have gained a strong foundation in front-end development, specializing in building interactive and user-friendly web applications.</p>
+                <div class="card">
+            <div class="edu-card">
+                <img src="assets/images/dharmasoka.jpg" alt="School">
+                <div>
+                <h3>G/Dharmasoka College</h3>
+                <p>Duration:2013 - 2021</p>
+                <p>A/L index:61378147</p>
+            </div>
+            </div>
+            <div class="edu-card">
+                <img src="assets/images/university.jpg" alt="kelani">
+                <div>
+                <h3>University of Kelaniya</h3>
+                <p>Degree: Bachelor of Science Hons in Software Engineering</p>
+                <p>Duration: 4 years</p>
+            </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h1>Projects</h1>
+        <div class="projects-container">
+            <div class="project-box">
+                <h2>E-commerce Application</h2>
+                <img src="assets/images/e-life.jpg" alt="e-life">
+                <p>Mobile accessories selling platform.This application includes both product  selling and 
+                    service providing features.React,Springboot used as technologies.
+                </p>
+                <button><a href="https://github.com/Buddhikamadumali">View on GitHub</a></button>
+            </div>
+            <div class="project-box">
+                <h2>Fuel Management System</h2>
+                <img src="assets/images/fuel.jpg" alt="fuel">
+                <p>This system has web application for normal users and mobile application for fuel station employees
+                    .React,Springboot,React native used as technologies.</p>
+                <button><a href="https://github.com/Buddhikamadumali">View on GitHub</a></button>
+            </div>
+            <div class="project-box">
+                <h2>ToDo apllication</h2>
+                <img src="assets/images/todo.jpg" alt="todo">
+                <p>Single page web application for manage day to day tasks.React,Springboot are used as technologies.</p>
+                <button><a href="https://github.com/Buddhikamadumali">View on GitHub</a></button>
+            </div>
+            <div class="project-box">
+                <h2>Expense Tracker</h2>
+                <img src="assets/images/expense-tracker.jpg" alt="Expense-tracker">
+                <p>Single page web application  for manage day to day expenses and calculate the total expense amount.React and Springboot used as the technologies </p>
+                <button><a href="https://github.com/Buddhikamadumali">View on GitHub</a></button>
+            </div>
+            <div class="project-box">
+                <h2>My Portfoilo</h2>
+                <img src="assets/images/image.png" alt="portfolio">
+                <p>Single page application.Created using HTML,CSS and javascript </p>
+                <button><a href="https://github.com/Buddhikamadumali">View on GitHub</a></button>
+            </div>
+        
+        </div>
+    </section>
+    <footer>
+        <section id="contact">
+
+            <div>
+                <h1>Contact Me.</h1>
+                <p>E-mail : <a href="buddhikamadumali4@gmail.com"> buddhikamadumali4@gmail.com</a></p>
+                <p>Mobile : 0761082274</p>
+                <p>Whatsapp : 0761082274</p>
+
+                <div>
+                    <a href="https://www.facebook.com/share/1EGCvx5yPt/" target="_blank"><img src="assets/images/facebook.png" alt="FB"></a>
+                    <a href="https://www.linkedin.com/in/buddhika-madumali-486ab0291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                        <img src="assets/images/linkedin.png" alt="LinkedIN"></a>
+                </div>
+
+            </div>
+            <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+
+        </section>
+    </footer>
+    
+
+</body>
+</html>
