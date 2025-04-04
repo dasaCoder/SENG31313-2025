@@ -1,169 +1,227 @@
-<!-- Skills Section -->
-<section id="skills" class="py-16 bg-gray-50">
-  <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-    <h2 class="mb-12 text-3xl font-bold text-center text-dark">Skills</h2>
-
-    <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
-      <div class="p-6 bg-white shadow-md rounded-xl">
-        <h3 class="mb-4 text-xl font-bold text-blue-600">Technical Skills</h3>
-
-        <div class="space-y-4">
-          <div>
-            <div class="flex justify-between mb-1">
-              <span class="font-medium">Web Development</span>
-              <span>90%</span>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skills Section</title>
+    <!-- Using Tailwind CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <style>
+      /* Inline custom classes extracted from tailwind.config.js for the Skills section */
+      .text-dark {
+        color: #2c3e50;
+      }
+      .text-blue-600 {
+        color: #3498db;
+      }
+      /* Custom background color class (used instead of Tailwind's primary color) */
+      .bg-primary-custom {
+        background-color: #3498db;
+      }
+      /* Custom text color class (used for icons, etc.) */
+      .text-primary-custom {
+        color: #3498db;
+      }
+      /* Custom background opacity class for languages */
+      .bg-opacity-10-custom {
+        background-color: rgba(52, 152, 219, 0.1);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 bg-gray-50">
+      <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <h2 class="mb-12 text-3xl font-bold text-center text-dark">Skills</h2>
+        
+        <!-- Technical Skills Cards -->
+        <div class="mb-12">
+          <h3 class="mb-6 text-xl font-bold text-center text-blue-600">Technical Skills</h3>
+          <div class="flex flex-wrap justify-center">
+            <!-- Web Development -->
+            <div class="relative p-4 m-2 overflow-hidden bg-white shadow-md rounded-xl" style="width: 200px;">
+              <div class="absolute bottom-0 left-0 h-1 bg-primary-custom" style="width: 90%"></div>
+              <h4 class="mb-2 font-medium">Web Development</h4>
+              <div class="flex items-center">
+                <div class="mr-2">
+                  <svg class="w-5 h-5 text-primary-custom" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zm0 6a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1v-2zm0 6a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1v-2z"></path>
+                  </svg>
+                </div>
+                <span class="text-sm text-gray-600">90%</span>
+              </div>
             </div>
-            <div class="w-full h-2 bg-gray-200 rounded-full">
-              <div class="h-2 bg-[#3498DB] rounded-full" style="width: 90%"></div>
+            
+            <!-- Java -->
+            <div class="relative p-4 m-2 overflow-hidden bg-white shadow-md rounded-xl" style="width: 200px;">
+              <div class="absolute bottom-0 left-0 h-1 bg-primary-custom" style="width: 85%"></div>
+              <h4 class="mb-2 font-medium">Java</h4>
+              <div class="flex items-center">
+                <div class="mr-2">
+                  <svg class="w-5 h-5 text-primary-custom" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                  </svg>
+                </div>
+                <span class="text-sm text-gray-600">85%</span>
+              </div>
+            </div>
+            
+            <!-- JavaScript -->
+            <div class="relative p-4 m-2 overflow-hidden bg-white shadow-md rounded-xl" style="width: 200px;">
+              <div class="absolute bottom-0 left-0 h-1 bg-primary-custom" style="width: 80%"></div>
+              <h4 class="mb-2 font-medium">JavaScript</h4>
+              <div class="flex items-center">
+                <div class="mr-2">
+                  <svg class="w-5 h-5 text-primary-custom" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M2 5a2 2 0 012-2h12a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V5zm3 1h10v8H5V6z" clip-rule="evenodd"></path>
+                  </svg>
+                </div>
+                <span class="text-sm text-gray-600">80%</span>
+              </div>
+            </div>
+            
+            <!-- PHP -->
+            <div class="relative p-4 m-2 overflow-hidden bg-white shadow-md rounded-xl" style="width: 200px;">
+              <div class="absolute bottom-0 left-0 h-1 bg-primary-custom" style="width: 75%"></div>
+              <h4 class="mb-2 font-medium">PHP</h4>
+              <div class="flex items-center">
+                <div class="mr-2">
+                  <svg class="w-5 h-5 text-primary-custom" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zm0 6a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6z"></path>
+                  </svg>
+                </div>
+                <span class="text-sm text-gray-600">75%</span>
+              </div>
+            </div>
+            
+            <!-- Python -->
+            <div class="relative p-4 m-2 overflow-hidden bg-white shadow-md rounded-xl" style="width: 200px;">
+              <div class="absolute bottom-0 left-0 h-1 bg-primary-custom" style="width: 70%"></div>
+              <h4 class="mb-2 font-medium">Python</h4>
+              <div class="flex items-center">
+                <div class="mr-2">
+                  <svg class="w-5 h-5 text-primary-custom" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                  </svg>
+                </div>
+                <span class="text-sm text-gray-600">70%</span>
+              </div>
+            </div>
+            
+            <!-- React -->
+            <div class="relative p-4 m-2 overflow-hidden bg-white shadow-md rounded-xl" style="width: 200px;">
+              <div class="absolute bottom-0 left-0 h-1 bg-primary-custom" style="width: 70%"></div>
+              <h4 class="mb-2 font-medium">React</h4>
+              <div class="flex items-center">
+                <div class="mr-2">
+                  <svg class="w-5 h-5 text-primary-custom" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd"></path>
+                  </svg>
+                </div>
+                <span class="text-sm text-gray-600">70%</span>
+              </div>
             </div>
           </div>
-
-          <div>
-            <div class="flex justify-between mb-1">
-              <span class="font-medium">Java</span>
-              <span>85%</span>
+        </div>
+        
+        <!-- Soft Skills and Languages -->
+        <div class="mb-8">
+          <div style="display: flex; flex-wrap: wrap; margin: -8px;">
+            <!-- Soft Skills -->
+            <div style="flex: 1; min-width: 300px; margin: 8px;">
+              <div class="relative p-6 overflow-hidden bg-white shadow-md rounded-xl">
+                <div class="absolute top-0 left-0 w-2 h-full bg-primary-custom"></div>
+                <h3 class="mb-4 text-xl font-bold text-blue-600">Soft Skills</h3>
+                <div style="display: flex; flex-wrap: wrap; margin: -4px;">
+                  <div style="flex: 1; min-width: 45%; margin: 4px;" class="p-3 rounded-lg bg-gray-50">
+                    <div class="flex items-center mb-2">
+                      <svg class="w-5 h-5 mr-2 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                      </svg>
+                      <span class="font-medium">Analytics</span>
+                    </div>
+                    <p class="text-sm text-gray-600">Strong analytical and quantitative skills</p>
+                  </div>
+                  
+                  <div style="flex: 1; min-width: 45%; margin: 4px;" class="p-3 rounded-lg bg-gray-50">
+                    <div class="flex items-center mb-2">
+                      <svg class="w-5 h-5 mr-2 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                      </svg>
+                      <span class="font-medium">Communication</span>
+                    </div>
+                    <p class="text-sm text-gray-600">Excellent communication and interpersonal abilities</p>
+                  </div>
+                  
+                  <div style="flex: 1; min-width: 45%; margin: 4px;" class="p-3 rounded-lg bg-gray-50">
+                    <div class="flex items-center mb-2">
+                      <svg class="w-5 h-5 mr-2 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                      </svg>
+                      <span class="font-medium">Collaboration</span>
+                    </div>
+                    <p class="text-sm text-gray-600">Ability to work effectively independently and in teams</p>
+                  </div>
+                  
+                  <div style="flex: 1; min-width: 45%; margin: 4px;" class="p-3 rounded-lg bg-gray-50">
+                    <div class="flex items-center mb-2">
+                      <svg class="w-5 h-5 mr-2 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                      </svg>
+                      <span class="font-medium">Full-Stack</span>
+                    </div>
+                    <p class="text-sm text-gray-600">Proficient in building full-stack web applications</p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="w-full h-2 bg-gray-200 rounded-full">
-              <div class="h-2 bg-[#3498DB] rounded-full" style="width: 85%"></div>
-            </div>
-          </div>
-
-          <div>
-            <div class="flex justify-between mb-1">
-              <span class="font-medium">JavaScript</span>
-              <span>80%</span>
-            </div>
-            <div class="w-full h-2 bg-gray-200 rounded-full">
-              <div class="h-2 bg-[#3498DB] rounded-full" style="width: 80%"></div>
-            </div>
-          </div>
-
-          <div>
-            <div class="flex justify-between mb-1">
-              <span class="font-medium">PHP</span>
-              <span>75%</span>
-            </div>
-            <div class="w-full h-2 bg-gray-200 rounded-full">
-              <div class="h-2 bg-[#3498DB] rounded-full" style="width: 75%"></div>
-            </div>
-          </div>
-
-          <div>
-            <div class="flex justify-between mb-1">
-              <span class="font-medium">Python</span>
-              <span>70%</span>
-            </div>
-            <div class="w-full h-2 bg-gray-200 rounded-full">
-              <div class="h-2 bg-[#3498DB] rounded-full" style="width: 70%"></div>
-            </div>
-          </div>
-
-          <div>
-            <div class="flex justify-between mb-1">
-              <span class="font-medium">React</span>
-              <span>70%</span>
-            </div>
-            <div class="w-full h-2 bg-gray-200 rounded-full">
-              <div class="h-2 bg-[#3498DB] rounded-full" style="width: 70%"></div>
+            
+            <!-- Languages -->
+            <div style="flex: 1; min-width: 300px; margin: 8px;">
+              <div class="p-6 bg-white shadow-md rounded-xl">
+                <h3 class="mb-4 text-xl font-bold text-blue-600">Languages</h3>
+                <div class="space-y-6">
+                  <div class="flex items-center">
+                    <div class="mr-4">
+                      <div class="flex items-center justify-center w-16 h-16 rounded-full bg-primary-custom bg-opacity-10-custom">
+                        <span class="text-xl font-bold text-primary-custom">9/10</span>
+                      </div>
+                    </div>
+                    <div>
+                      <h4 class="font-medium">English</h4>
+                      <div class="flex mt-2">
+                        <div class="w-8 h-2 rounded-l-full bg-primary-custom"></div>
+                        <div class="w-8 h-2 bg-primary-custom"></div>
+                        <div class="w-8 h-2 bg-primary-custom"></div>
+                        <div class="w-8 h-2 bg-primary-custom"></div>
+                        <div class="w-8 h-2 rounded-r-full bg-primary-custom"></div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="flex items-center">
+                    <div class="mr-4">
+                      <div class="flex items-center justify-center w-16 h-16 rounded-full bg-primary-custom bg-opacity-10-custom">
+                        <span class="text-xl font-bold text-primary-custom">2/10</span>
+                      </div>
+                    </div>
+                    <div>
+                      <h4 class="font-medium">Japanese</h4>
+                      <div class="flex mt-2">
+                        <div class="w-8 h-2 rounded-l-full bg-primary-custom"></div>
+                        <div class="w-8 h-2 bg-gray-200"></div>
+                        <div class="w-8 h-2 bg-gray-200"></div>
+                        <div class="w-8 h-2 bg-gray-200"></div>
+                        <div class="w-8 h-2 bg-gray-200 rounded-r-full"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-
-      <div class="p-6 bg-white shadow-md rounded-xl">
-        <h3 class="mb-4 text-xl font-bold text-blue-600">Soft Skills</h3>
-
-        <ul class="space-y-3">
-          <li class="flex items-center">
-            <svg
-              class="w-5 h-5 mr-2 text-green-500"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M5 13l4 4L19 7"
-              ></path>
-            </svg>
-            Strong analytical and quantitative skills
-          </li>
-          <li class="flex items-center">
-            <svg
-              class="w-5 h-5 mr-2 text-green-500"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M5 13l4 4L19 7"
-              ></path>
-            </svg>
-            Excellent communication and interpersonal abilities
-          </li>
-          <li class="flex items-center">
-            <svg
-              class="w-5 h-5 mr-2 text-green-500"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M5 13l4 4L19 7"
-              ></path>
-            </svg>
-            Ability to work effectively both independently and as part of a team
-          </li>
-          <li class="flex items-center">
-            <svg
-              class="w-5 h-5 mr-2 text-green-500"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M5 13l4 4L19 7"
-              ></path>
-            </svg>
-            Proficient in building full-stack web applications
-          </li>
-        </ul>
-
-        <h3 class="mt-6 mb-4 text-xl font-bold text-blue-500">Languages</h3>
-
-        <div class="space-y-4">
-          <div>
-            <div class="flex justify-between mb-1">
-              <span class="font-medium">English</span>
-              <span>9/10</span>
-            </div>
-            <div class="w-full h-2 bg-gray-200 rounded-full">
-              <div class="h-2 bg-[#3498DB] rounded-full" style="width: 90%"></div>
-            </div>
-          </div>
-
-          <div>
-            <div class="flex justify-between mb-1">
-              <span class="font-medium">Japanese</span>
-              <span>2/10</span>
-            </div>
-            <div class="w-full h-2 bg-gray-200 rounded-full">
-              <div class="h-2 bg-[#3498DB] rounded-full" style="width: 20%"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
+  </body>
+</html>

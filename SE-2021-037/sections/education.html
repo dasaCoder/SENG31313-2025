@@ -1,74 +1,72 @@
-<section id="education" class="py-24 text-white bg-blue-500">
-  <!-- Education Header -->
-  <div class="container px-4 mx-auto mb-16 text-center">
-    <h2 class="mb-4 text-4xl font-bold">Education</h2>
-    <h3 class="mb-5 text-lg">Academic Journey</h3>
-    <div class="w-20 h-1 mx-auto bg-white rounded"></div>
+<section id="education" class="relative py-24 overflow-hidden text-white bg-blue-500">
+  <!-- Background Elements -->
+  <div class="absolute inset-0 pointer-events-none">
+    <div class="absolute top-0 left-0 w-full h-64 transform -skew-y-3 bg-blue-600"></div>
+    <div class="absolute bottom-0 right-0 w-64 h-64 bg-white rounded-full opacity-10"></div>
+    <div class="absolute w-32 h-32 rotate-45 bg-white top-1/4 left-1/4 opacity-10"></div>
   </div>
 
-  <!-- Education Cards -->
-  <div class="container px-4 mx-auto">
-    <div class="grid max-w-5xl grid-cols-1 gap-8 mx-auto md:grid-cols-2">
-      
-      <!-- Card 1 -->
-      <div class="overflow-hidden transition-all duration-300 transform bg-white rounded-lg shadow-lg hover:-translate-y-2 hover:shadow-xl">
-        <div class="px-4 py-2 bg-blue-600">
-          <span class="font-semibold text-white">07/2023 - Present</span>
-        </div>
-        <div class="p-6">
-          <h3 class="mb-2 text-xl font-bold text-gray-800">Bachelor of Science Honors in Software Engineering</h3>
-          <p class="mb-2 text-gray-600">University of Kelaniya</p>
-          <p class="text-sm text-gray-500">GPA: 3.78/4.0</p>
-        </div>
-      </div>
-      
-      <!-- Card 2 -->
-      <div class="overflow-hidden transition-all duration-300 transform bg-white rounded-lg shadow-lg hover:-translate-y-2 hover:shadow-xl">
-        <div class="px-4 py-2 bg-blue-600">
-          <span class="font-semibold text-white">04/2022 - 04/2023</span>
-        </div>
-        <div class="p-6">
-          <h3 class="mb-2 text-xl font-bold text-gray-800">Pearson Diploma in Information Technology</h3>
-          <p class="text-gray-600">ESOFT Metro Campus</p>
-        </div>
-      </div>
-      
-      <!-- Card 3 -->
-      <div class="overflow-hidden transition-all duration-300 transform bg-white rounded-lg shadow-lg hover:-translate-y-2 hover:shadow-xl">
-        <div class="px-4 py-2 bg-blue-600">
-          <span class="font-semibold text-white">Advanced Level</span>
-        </div>
-        <div class="p-6">
-          <h3 class="mb-2 text-xl font-bold text-gray-800">General Certificate of Education Advanced Level</h3>
-          <p class="mb-2 text-gray-600">Trinity College Kandy</p>
-          <p class="text-sm text-gray-500">Result: 3B's</p>
-        </div>
-      </div>
-      
-      <!-- Card 4 -->
-      <div class="overflow-hidden transition-all duration-300 transform bg-white rounded-lg shadow-lg hover:-translate-y-2 hover:shadow-xl">
-        <div class="px-4 py-2 bg-blue-600">
-          <span class="font-semibold text-white">Ordinary Level</span>
-        </div>
-        <div class="p-6">
-          <h3 class="mb-2 text-xl font-bold text-gray-800">General Certificate of Education Ordinary Level</h3>
-          <p class="mb-2 text-gray-600">Trinity College Kandy</p>
-          <p class="text-sm text-gray-500">Result: 9A's</p>
-        </div>
-      </div>
+  <!-- Education Header -->
+  <div class="container relative px-4 mx-auto">
+    <div class="inline-block px-8 py-4 mb-12 bg-blue-600 rounded-lg shadow-lg">
+      <h2 class="text-4xl font-bold">Education</h2>
+      <div class="w-full h-1 mt-2 bg-white"></div>
     </div>
-  </div>
-  
-  <!-- Decorative Elements - Simple and Reliable -->
-  <div class="absolute inset-0 hidden pointer-events-none opacity-10 md:block">
-    <div class="absolute top-20 left-20">
-      <div class="w-16 h-16 bg-white rounded-full"></div>
-    </div>
-    <div class="absolute bottom-20 right-20">
-      <div class="w-24 h-24 bg-white rounded"></div>
-    </div>
-    <div class="absolute top-1/2 left-1/4">
-      <div class="w-20 h-20 rotate-45 bg-white"></div>
+    
+    <!-- Timeline Layout with Fixed Numbers -->
+    <div class="relative max-w-5xl mx-auto">
+      <!-- Timeline Line -->
+      <div class="absolute hidden w-1 h-full bg-white md:block left-1/2"></div>
+      
+      <!-- Timeline Items -->
+      <div class="relative space-y-24">
+        <!-- Item 1 -->
+        <div class="flex flex-col items-center md:flex-row">
+          <div class="mb-8 md:w-1/2 md:pr-12 md:text-right md:mb-0">
+            <span class="inline-block px-4 py-2 mb-3 font-bold bg-blue-600 rounded-full">07/2023 - Present</span>
+            <h3 class="text-2xl font-bold">Bachelor of Science Honors in Software Engineering</h3>
+            <p class="mt-2">University of Kelaniya</p>
+            <div class="inline-block px-3 py-1 mt-2 font-semibold text-blue-600 bg-white rounded">GPA: 3.78/4.0</div>
+          </div>
+          <div class="absolute z-10 flex items-center justify-center w-16 h-16 text-2xl font-bold text-blue-600 transform -translate-x-1/2 bg-white rounded-full left-1/2">1</div>
+          <div class="md:w-1/2 md:pl-12"></div>
+        </div>
+        
+        <!-- Item 2 -->
+        <div class="flex flex-col items-center md:flex-row">
+          <div class="md:w-1/2 md:pr-12"></div>
+          <div class="absolute z-10 flex items-center justify-center w-16 h-16 text-2xl font-bold text-blue-600 transform -translate-x-1/2 bg-white rounded-full left-1/2">2</div>
+          <div class="mb-8 md:w-1/2 md:pl-12 md:text-left md:mb-0">
+            <span class="inline-block px-4 py-2 mb-3 font-bold bg-blue-600 rounded-full">04/2022 - 04/2023</span>
+            <h3 class="text-2xl font-bold">Pearson Diploma in Information Technology</h3>
+            <p class="mt-2">ESOFT Metro Campus</p>
+          </div>
+        </div>
+        
+        <!-- Item 3 -->
+        <div class="flex flex-col items-center md:flex-row">
+          <div class="mb-8 md:w-1/2 md:pr-12 md:text-right md:mb-0">
+            <span class="inline-block px-4 py-2 mb-3 font-bold bg-blue-600 rounded-full">Advanced Level</span>
+            <h3 class="text-2xl font-bold">General Certificate of Education Advanced Level</h3>
+            <p class="mt-2">Trinity College Kandy</p>
+            <div class="inline-block px-3 py-1 mt-2 font-semibold text-blue-600 bg-white rounded">Result: 3B's</div>
+          </div>
+          <div class="absolute z-10 flex items-center justify-center w-16 h-16 text-2xl font-bold text-blue-600 transform -translate-x-1/2 bg-white rounded-full left-1/2">3</div>
+          <div class="md:w-1/2 md:pl-12"></div>
+        </div>
+        
+        <!-- Item 4 -->
+        <div class="flex flex-col items-center md:flex-row">
+          <div class="md:w-1/2 md:pr-12"></div>
+          <div class="absolute z-10 flex items-center justify-center w-16 h-16 text-2xl font-bold text-blue-600 transform -translate-x-1/2 bg-white rounded-full left-1/2">4</div>
+          <div class="md:w-1/2 md:pl-12 md:text-left">
+            <span class="inline-block px-4 py-2 mb-3 font-bold bg-blue-600 rounded-full">Ordinary Level</span>
+            <h3 class="text-2xl font-bold">General Certificate of Education Ordinary Level</h3>
+            <p class="mt-2">Trinity College Kandy</p>
+            <div class="inline-block px-3 py-1 mt-2 font-semibold text-blue-600 bg-white rounded">Result: 9A's</div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
