@@ -149,6 +149,66 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
+//Welcome Popup
+
+const welcomePopup = document.getElementById('welcomePopup');
+  const viewPortfolioBtn = document.getElementById('viewPortfolioBtn');
+  
+  // Show popup after 1 second
+  setTimeout(() => {
+    // Make the popup visible first (but still opacity 0)
+    gsap.set(welcomePopup, { visibility: 'visible' });
+    
+    // Animate the popup appearing
+    gsap.to(welcomePopup, {
+      opacity: 1,
+      duration: 0.5,
+      ease: 'power2.out'
+    });
+    
+    // Animate the modal with a slight bounce
+    const popupContent = welcomePopup.querySelector('.relative');
+    gsap.from(popupContent, {
+      y: 50,
+      scale: 0.9,
+      duration: 0.6,
+      ease: 'back.out(1.5)'
+    });
+  }, 1000);
+  
+  // Close popup when the button is clicked
+  viewPortfolioBtn.addEventListener('click', () => {
+    gsap.to(welcomePopup, {
+      opacity: 0,
+      duration: 0.3,
+      onComplete: () => {
+        welcomePopup.style.visibility = 'hidden';
+        // Optionally scroll to portfolio section
+        const portfolioSection = document.getElementById('navbar');
+        if (portfolioSection) {
+          portfolioSection.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    });
+  });
+  
+  // Also close when clicking outside the popup
+  welcomePopup.addEventListener('click', (e) => {
+    if (e.target === welcomePopup) {
+      gsap.to(welcomePopup, {
+        opacity: 0,
+        duration: 0.3,
+        onComplete: () => {
+          welcomePopup.style.visibility = 'hidden';
+        }
+      });
+    }
+  });
+
+
+
+
+
 //HERO SECTION
 
 const professions = ["Software Engineering", "App Development", "Web Development"];
