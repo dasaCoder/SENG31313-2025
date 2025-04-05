@@ -602,7 +602,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
 
     // Load about
-    await loadSection("./sections/about.html", "about-container");
+    await loadSection("./SE-2021-037/sections/about.html", "about-container");
 
     // Load education section then initialize its animations
     const educationLoaded = await loadSection(
