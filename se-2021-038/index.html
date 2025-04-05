@@ -16,6 +16,9 @@
 
     <!-- GSAP CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.1/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 
     <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
@@ -25,10 +28,6 @@
 
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-
-    <!-- GSAP -->
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js"></script>
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -1519,6 +1518,81 @@
 
 
 
+    <!-- Floating Action Button -->
+    <div id="contactFAB"
+        class="fixed bottom-8 right-8 w-14 h-14 bg-[#4C9EEB] text-white rounded-full flex items-center justify-center shadow-lg cursor-pointer z-40 hover:bg-[#1C75D3]">
+        <i class="fas fa-comment-dots text-xl"></i>
+    </div>
+
+    <!-- Contact Popup -->
+    <div id="contactPopup" class="fixed bottom-24 right-8 z-50 pointer-events-none opacity-0">
+        <div class="relative bg-white rounded-lg shadow-xl w-80 max-h-[70vh] flex flex-col">
+            <!-- Close Button -->
+            <button id="closeContactBtn" class="absolute top-2 right-2 text-gray-500 hover:text-gray-700 z-10">
+                <i class="fas fa-times text-lg"></i>
+            </button>
+            <!-- Content -->
+            <div class="p-4 pt-10 overflow-y-auto">
+                <h2 class="text-xl font-bold text-[#4C9EEB] mb-4">Contact Me</h2>
+                <!-- Contact Details & Social Media Only -->
+                <div class="space-y-4">
+                    <div class="flex items-center">
+                        <div
+                            class="w-8 h-8 rounded-full bg-[#4C9EEB] bg-opacity-20 flex items-center justify-center mr-3">
+                            <i class="fas fa-envelope text-[#4C9EEB] text-sm"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-500">Email</p>
+                            <p class="text-sm text-gray-800">ramithapathmilarp@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <div
+                            class="w-8 h-8 rounded-full bg-[#4C9EEB] bg-opacity-20 flex items-center justify-center mr-3">
+                            <i class="fas fa-phone text-[#4C9EEB] text-sm"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-500">Phone</p>
+                            <p class="text-sm text-gray-800">+94 76 90 10 389</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <div
+                            class="w-8 h-8 rounded-full bg-[#4C9EEB] bg-opacity-20 flex items-center justify-center mr-3">
+                            <i class="fas fa-map-marker-alt text-[#4C9EEB] text-sm"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-500">Location</p>
+                            <p class="text-sm text-gray-800">Colombo, Sri Lanka</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Social Media Links -->
+                <div class="mt-6">
+                    <h3 class="text-sm font-semibold text-gray-800 mb-2">Connect With Me</h3>
+                    <div class="flex space-x-3">
+                        <a href="https://github.com/Rami2212"
+                            class="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center hover:bg-[#4C9EEB] hover:text-white transition-all duration-300">
+                            <i class="fab fa-github text-sm"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/ramitha-iddamalgoda/"
+                            class="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center hover:bg-[#4C9EEB] hover:text-white transition-all duration-300">
+                            <i class="fab fa-linkedin-in text-sm"></i>
+                        </a>
+                        <a href="https://www.facebook.com/rami2212/"
+                            class="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center hover:bg-[#4C9EEB] hover:text-white transition-all duration-300">
+                            <i class="fab fa-facebook-f text-sm"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
 
 
 
@@ -1675,7 +1749,7 @@
             </div>
 
             <!-- Back to Top Button -->
-            <div class="fixed bottom-8 right-8 opacity-0" id="back-to-top">
+            <div class="fixed bottom-8 right-24 opacity-0 z-50" id="back-to-top">
                 <a href="#"
                     class="bg-[#4C9EEB] text-white w-10 h-10 rounded-full flex items-center justify-center shadow-lg hover:bg-[#1C75D3] transition-all duration-300 transform hover:scale-110">
                     <i class="fas fa-arrow-up"></i>
@@ -1688,6 +1762,94 @@
     <script src="script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get elements
+            const contactFAB = document.getElementById('contactFAB');
+            const contactPopup = document.getElementById('contactPopup');
+            const closeContactBtn = document.getElementById('closeContactBtn');
+            const contactForm = document.getElementById('contactForm');
+            const popupContent = contactPopup.querySelector('.relative');
+
+            // Open popup function
+            function openPopup() {
+                gsap.to(contactPopup, {
+                    opacity: 1,
+                    duration: 0.3,
+                    ease: "power2.inOut",
+                    onStart: function () {
+                        contactPopup.classList.remove('pointer-events-none');
+                        contactPopup.classList.add('pointer-events-auto');
+                    }
+                });
+                gsap.fromTo(popupContent,
+                    { y: 20 },
+                    { y: 0, duration: 0.4, ease: "back.out(1.7)", delay: 0.1 }
+                );
+            }
+
+            // Close popup function
+            function closePopup() {
+                gsap.to(popupContent, {
+                    y: 20,
+                    duration: 0.3,
+                    ease: "power2.in"
+                });
+                gsap.to(contactPopup, {
+                    opacity: 0,
+                    duration: 0.2,
+                    ease: "power2.in",
+                    onComplete: function () {
+                        contactPopup.classList.add('pointer-events-none');
+                        contactPopup.classList.remove('pointer-events-auto');
+                    }
+                });
+            }
+
+            // Add bounce animation to FAB
+            contactFAB.addEventListener('mouseenter', function () {
+                gsap.to(contactFAB, {
+                    scale: 1.1,
+                    duration: 0.3,
+                    ease: "back.out(1.7)"
+                });
+            });
+
+            contactFAB.addEventListener('mouseleave', function () {
+                gsap.to(contactFAB, {
+                    scale: 1,
+                    duration: 0.3,
+                    ease: "power2.out"
+                });
+            });
+
+            // Event listeners
+            contactFAB.addEventListener('click', function (e) {
+                e.preventDefault();
+                openPopup();
+            });
+
+            closeContactBtn.addEventListener('click', function (e) {
+                e.preventDefault();
+                closePopup();
+            });
+
+            contactPopup.addEventListener('click', function (e) {
+                if (e.target === contactPopup) {
+                    closePopup();
+                }
+            });
+
+            contactForm.addEventListener('submit', function (e) {
+                e.preventDefault();
+                // Form handling logic here
+                alert('Message sent successfully!');
+                closePopup();
+            });
+        });
+    </script>
 
 </body>
 
