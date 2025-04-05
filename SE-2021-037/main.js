@@ -590,7 +590,7 @@ function initializeAboutAnimations() {
 document.addEventListener("DOMContentLoaded", async () => {
   try {
     // Load header
-    await loadSection(".sections/header.html", "header-container");
+    await loadSection("./sections/header.html", "header-container");
 
     // Load hero section and initialize typed text effect afterward
     const heroLoaded = await loadSection(
