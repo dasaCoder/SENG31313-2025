@@ -235,6 +235,322 @@ function initializeSkillsSection() {
   checkPosition();
 }
 
+// Contact Section initialization: animations and form handling
+function initializeContactSection() {
+  // Check if an element is in the viewport
+  function isElementInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return (
+      rect.top <=
+        (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.bottom >= 0
+    );
+  }
+
+  // Handle scroll-triggered animations for contact section elements
+  function handleScrollAnimation() {
+    // Animate contact heading
+    const contactHeading = document.getElementById("contact-heading");
+    if (
+      contactHeading &&
+      isElementInViewport(contactHeading) &&
+      contactHeading.classList.contains("opacity-0")
+    ) {
+      contactHeading.classList.remove("opacity-0", "translate-y-10");
+      contactHeading.classList.add(
+        "transition-all",
+        "duration-1000",
+        "ease-out",
+        "opacity-100",
+        "translate-y-0"
+      );
+    }
+
+    // Animate contact info card and its child items
+    const infoCard = document.getElementById("contact-info-card");
+    if (
+      infoCard &&
+      isElementInViewport(infoCard) &&
+      infoCard.classList.contains("opacity-0")
+    ) {
+      setTimeout(() => {
+        infoCard.classList.remove("opacity-0", "-translate-x-10");
+        infoCard.classList.add(
+          "transition-all",
+          "duration-1000",
+          "ease-out",
+          "opacity-100",
+          "translate-x-0"
+        );
+
+        // Animate each contact item with a delay
+        const contactItems = document.querySelectorAll(".contact-item");
+        contactItems.forEach((item, index) => {
+          setTimeout(() => {
+            item.classList.remove("opacity-0");
+            item.classList.add(
+              "transition-all",
+              "duration-700",
+              "ease-out",
+              "opacity-100"
+            );
+          }, 300 * (index + 1));
+        });
+
+        // Animate social links
+        setTimeout(() => {
+          const socialLinks = document.getElementById("social-links");
+          if (socialLinks) {
+            socialLinks.classList.remove("opacity-0");
+            socialLinks.classList.add(
+              "transition-all",
+              "duration-700",
+              "ease-out",
+              "opacity-100"
+            );
+          }
+        }, 1200);
+      }, 300);
+    }
+
+    // Animate contact form card and its form fields
+    const formCard = document.getElementById("contact-form-card");
+    if (
+      formCard &&
+      isElementInViewport(formCard) &&
+      formCard.classList.contains("opacity-0")
+    ) {
+      setTimeout(() => {
+        formCard.classList.remove("opacity-0", "translate-x-10");
+        formCard.classList.add(
+          "transition-all",
+          "duration-1000",
+          "ease-out",
+          "opacity-100",
+          "translate-x-0"
+        );
+
+        // Animate each form field with a delay
+        const formFields = document.querySelectorAll(".form-field");
+        formFields.forEach((field, index) => {
+          setTimeout(() => {
+            field.classList.remove("opacity-0");
+            field.classList.add(
+              "transition-all",
+              "duration-700",
+              "ease-out",
+              "opacity-100"
+            );
+          }, 200 * (index + 1));
+        });
+      }, 500);
+    }
+  }
+
+  // Trigger animations on scroll and initial load
+  window.addEventListener("scroll", handleScrollAnimation);
+  setTimeout(handleScrollAnimation, 300);
+
+  // Handle contact form submission animation
+  const contactForm = document.getElementById("contact-form");
+  const submitBtn = document.getElementById("submit-btn");
+  if (contactForm && submitBtn) {
+    contactForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      // Button loading animation
+      submitBtn.innerHTML =
+        '<i class="mr-2 fas fa-spinner fa-spin"></i> Sending...';
+      submitBtn.disabled = true;
+      submitBtn.classList.add("bg-teal-400");
+
+      // Simulate form submission (replace with actual form handling)
+      setTimeout(() => {
+        // Success animation
+        submitBtn.innerHTML = '<i class="mr-2 fas fa-check"></i> Message Sent!';
+        submitBtn.classList.remove("bg-teal-400");
+        submitBtn.classList.add("bg-green-500");
+
+        // Reset form after a delay
+        setTimeout(() => {
+          contactForm.reset();
+          submitBtn.innerHTML =
+            '<i class="mr-2 fas fa-paper-plane"></i> Send Message';
+          submitBtn.disabled = false;
+          submitBtn.classList.remove("bg-green-500");
+          submitBtn.classList.add("bg-teal-500");
+        }, 3000);
+      }, 2000);
+    });
+  }
+
+  // Add hover animations to contact info icons
+  const contactIcons = document.querySelectorAll(
+    ".contact-item div:first-child"
+  );
+  contactIcons.forEach((icon) => {
+    icon.addEventListener("mouseenter", function () {
+      this.classList.add("animate-pulse");
+    });
+
+    icon.addEventListener("mouseleave", function () {
+      this.classList.remove("animate-pulse");
+    });
+  });
+
+  // Optional: Add typing effect to the message textarea
+  const messageField = document.getElementById("message");
+  if (messageField) {
+    messageField.addEventListener("focus", function () {
+      if (this.value === "") {
+        const placeholder = "Hi there! I'm interested in...";
+        let i = 0;
+
+        const typingEffect = setInterval(() => {
+          if (this.value === "") {
+            // Continue only if user hasn't started typing
+            if (i < placeholder.length) {
+              this.setAttribute(
+                "placeholder",
+                placeholder.substring(0, i + 1) + "|"
+              );
+              i++;
+            } else {
+              clearInterval(typingEffect);
+              this.setAttribute("placeholder", placeholder);
+            }
+          } else {
+            clearInterval(typingEffect);
+          }
+        }, 100);
+      }
+    });
+
+    messageField.addEventListener("blur", function () {
+      this.setAttribute("placeholder", "Your message here...");
+    });
+  }
+}
+
+// ------------------------
+// Education Section Animations
+// ------------------------
+
+function initializeEducationSection() {
+  // Elements to animate in the education section
+  const elementsToAnimate = [
+    document.getElementById("education-heading"),
+    document.getElementById("education-item-1"),
+    document.getElementById("education-item-2"),
+    document.getElementById("education-item-3"),
+    document.getElementById("education-item-4"),
+  ];
+
+  // Function to check if an element is in the viewport
+  function isInViewport(element) {
+    if (!element) return false;
+    const rect = element.getBoundingClientRect();
+    return (
+      rect.top <=
+        (window.innerHeight || document.documentElement.clientHeight) * 0.8 &&
+      rect.bottom >= 0
+    );
+  }
+
+  // Function to animate elements when they come into view
+  function animateOnScroll() {
+    elementsToAnimate.forEach((element) => {
+      if (
+        element &&
+        isInViewport(element) &&
+        element.classList.contains("opacity-0")
+      ) {
+        // Add a slight delay for each element to create a cascade effect
+        setTimeout(() => {
+          element.classList.remove("opacity-0");
+          element.classList.add("opacity-100");
+
+          // Remove transform for smooth transition
+          if (element.classList.contains("-translate-x-10")) {
+            element.classList.remove("-translate-x-10");
+            element.classList.add("translate-x-0");
+          } else if (element.classList.contains("translate-x-10")) {
+            element.classList.remove("translate-x-10");
+            element.classList.add("translate-x-0");
+          } else if (element.classList.contains("translate-y-10")) {
+            element.classList.remove("translate-y-10");
+            element.classList.add("translate-y-0");
+          }
+        }, 150);
+      }
+    });
+  }
+
+  // Add transition effects to all elements
+  elementsToAnimate.forEach((element) => {
+    if (element) {
+      element.classList.add("transition-all", "duration-1000", "ease-out");
+    }
+  });
+
+  // Run on load and scroll
+  window.addEventListener("scroll", animateOnScroll);
+  window.addEventListener("resize", animateOnScroll);
+
+  // Initial check in case elements are already in viewport when page loads
+  animateOnScroll();
+}
+
+// ------------------------
+// About Section Animations
+// ------------------------
+
+// Extracted from the inline script in about.html
+function initializeAboutAnimations() {
+  // Show cards when they come into view
+  setTimeout(function () {
+    var cards = document.querySelectorAll(".card-animate");
+    cards.forEach(function (card) {
+      card.classList.add("show");
+    });
+  }, 600);
+
+  // Animate skill bars
+  setTimeout(function () {
+    var skillBars = document.querySelectorAll(".skill-progress-bar");
+    skillBars.forEach(function (bar) {
+      var width = bar.getAttribute("data-width");
+      bar.style.width = width + "%";
+    });
+  }, 1500);
+
+  // Intersection Observer for elements that should animate when scrolled into view
+  if ("IntersectionObserver" in window) {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("in-view");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        threshold: 0.2,
+      }
+    );
+
+    // Observe all elements with animation classes
+    document
+      .querySelectorAll(
+        ".fade-in, .fade-in-delay-1, .fade-in-delay-2, .slide-in-left, .slide-in-right"
+      )
+      .forEach((el) => {
+        observer.observe(el);
+      });
+  }
+}
+
 // Load sections and initialize functionalities when DOM is ready
 document.addEventListener("DOMContentLoaded", async () => {
   try {
@@ -249,10 +565,14 @@ document.addEventListener("DOMContentLoaded", async () => {
       initializeTypedText();
     }
     await loadSection("SE-2021-037/sections/about.html", "about-container");
-    await loadSection(
+    // Load education section then initialize its animations
+    const educationLoaded = await loadSection(
       "SE-2021-037/sections/education.html",
       "education-container"
     );
+    if (educationLoaded) {
+      initializeEducationSection();
+    }
     const skillsLoaded = await loadSection(
       "SE-2021-037/sections/skills.html",
       "skills-container"
@@ -270,7 +590,14 @@ document.addEventListener("DOMContentLoaded", async () => {
       initializeCarousel();
     }
 
-    await loadSection("SE-2021-037/sections/contact.html", "contact-container");
+    // Load the contact section then initialize its functionality
+    const contactLoaded = await loadSection(
+      "SE-2021-037/sections/contact.html",
+      "contact-container"
+    );
+    if (contactLoaded) {
+      initializeContactSection();
+    }
 
     // Mobile Menu Toggle
     const mobileMenuBtn = document.getElementById("mobileMenuBtn");
@@ -305,6 +632,11 @@ document.addEventListener("DOMContentLoaded", async () => {
         }
       });
     });
+
+    // If the about section is present on the page, initialize its animations.
+    if (document.getElementById("about")) {
+      initializeAboutAnimations();
+    }
   } catch (error) {
     console.error("Error initializing DOM content:", error);
   }
