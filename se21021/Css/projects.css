@@ -20,11 +20,18 @@
     padding: 20px;  
     border-radius: 10px;  
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 3);  
-    width: 93%; 
+    width: 90%; 
     height: 400px; 
     margin-left: 35px; 
     margin-bottom: 30px;
+    animation: fadeSlideIn 1.5s ease-out;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+   
 }  
+.project-container1:hover {
+    transform: scale(1.03);
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.4);
+}
 .project-container2 {  
     display: flex;  
     align-items: center;  
@@ -36,11 +43,17 @@
     padding: 20px;  
     border-radius: 10px;  
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 3);  
-    width: 93%; 
+    width: 90%; 
     height: 400px; 
     margin-left: 35px; 
     margin-bottom: 30px;
+    animation: fadeSlideIn 1.5s ease-out;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }  
+.project-container2:hover {
+    transform: scale(1.03);
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.4);
+}
 .project-container3 {  
     display: flex;  
     align-items: center;  
@@ -52,11 +65,17 @@
     padding: 20px;  
     border-radius: 10px;  
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 3);  
-    width: 93%;
+    width: 90%;
     height: 400px; 
     margin-left: 35px; 
     margin-bottom: 30px;
-}  
+    animation: fadeSlideIn 1.5s ease-out;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+} 
+.project-container3:hover {
+    transform: scale(1.03);
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.4);
+}
 .project-card {
     max-width: 90%;
     margin-top: 5px;
@@ -78,6 +97,14 @@
     font-weight: bold;
     margin-left: 30px;
     margin-right: 40px;
+}
+.project-details1 {
+    background: rgb(255, 255, 255);
+ font-size: 0.8em;
+    border-radius: 5px;
+    padding: 30px;
+    color: black;
+    text-align: left;
 }
 .project-details {
     background: rgb(255, 255, 255);
@@ -102,8 +129,8 @@
     height: auto;
     border-radius: 5px;
 
-    margin-top: 80px;
-    opacity: 0;
+
+    opacity: 0.5;
  
 
 }
@@ -116,40 +143,67 @@
     align-items: flex-start;
 }
 
-@keyframes fadeIn {  
-    from {  
-        opacity: 0;  
-        transform: translateY(20px);  
-    }  
-    to {  
-        opacity: 1;  
-        transform: translateY(0); 
-    }  
-}  
 
-.project-container1,  
-.project-container2,  
-.project-container3 {  
-    opacity: 0;  
-    transform: translateY(20px);  
-    animation: fadeIn 0.8s forwards; 
-    animation-delay: 0s;
-}  
+@keyframes fadeSlideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
-.project-container1:hover,  
-.project-container2:hover,  
-.project-container3:hover {  
-    transform: scale(1.05);   
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);  
-    transition: transform 0.3s ease, box-shadow 0.3s ease;  
-}  
- 
-.project-image img {  
-    transition: opacity 0.3s; 
-}  
 
-.project-container1:hover .project-image img,  
-.project-container2:hover .project-image img,  
-.project-container3:hover .project-image img {  
-    opacity: 1; 
+@media screen and (max-width: 768px) {
+    #projects h2 {
+        font-size: 2em;
+        margin-left: 20px;
+        text-align: center;
+    }
+
+    .project-container1,
+    .project-container2,
+    .project-container3 {
+        flex-direction: column; 
+        height: auto; 
+        margin-left: auto;
+        margin-right: auto;
+        padding: 15px;
+        width: 95%;
+        
+    
+    }
+
+    .project-card h3 {
+        font-size: 1.5em;
+        margin-left: 10px;
+    }
+
+    .project-card h4,
+    .project-card p {
+        font-size: 0.9em;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .project-image {
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+    .project-image img {
+        width: 90%;
+        margin-right: 0;
+        opacity: 0.9;
+    }
+
+    .project-details,
+    .project-details1,
+    .contribution-details {
+        padding: 15px;
+        font-size: 0.9em;
+    }
 }
