@@ -6,8 +6,11 @@ This is my personal portfolio website built to showcase my skills, projects, and
 🧰 Libraries & Technologies Used
 
 HTML5
+
 CSS3
+
 JavaScript (Vanilla)
+
 Media Queries (for responsive design)
 
 🌐 Live Hosted Link
