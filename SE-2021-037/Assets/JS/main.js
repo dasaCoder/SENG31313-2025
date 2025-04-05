@@ -591,26 +591,26 @@ function initializeAboutAnimations() {
 document.addEventListener("DOMContentLoaded", async () => {
   try {
     // Load other sections as needed
-    await loadSection("SE-2021-037/sections/header.html", "header-container");
+    await loadSection("sections/header.html", "header-container");
     // Load hero section and initialize typed text effect afterward
     const heroLoaded = await loadSection(
-      "SE-2021-037/sections/hero.html",
+      "sections/hero.html",
       "hero-container"
     );
     if (heroLoaded) {
       initializeTypedText();
     }
-    await loadSection("SE-2021-037/sections/about.html", "about-container");
+    await loadSection("sections/about.html", "about-container");
     // Load education section then initialize its animations
     const educationLoaded = await loadSection(
-      "SE-2021-037/sections/education.html",
+      "sections/education.html",
       "education-container"
     );
     if (educationLoaded) {
       initializeEducationSection();
     }
     const skillsLoaded = await loadSection(
-      "SE-2021-037/sections/skills.html",
+      "sections/skills.html",
       "skills-container"
     );
     if (skillsLoaded) {
@@ -619,7 +619,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     // Load projects section then initialize the carousel
     const projectsLoaded = await loadSection(
-      "SE-2021-037/sections/projects.html",
+      "sections/projects.html",
       "projects-container"
     );
     if (projectsLoaded) {
@@ -628,7 +628,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     // Load the contact section then initialize its functionality
     const contactLoaded = await loadSection(
-      "SE-2021-037/sections/contact.html",
+      "sections/contact.html",
       "contact-container"
     );
     if (contactLoaded) {
