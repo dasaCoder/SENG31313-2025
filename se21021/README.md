@@ -29,9 +29,10 @@ Locate the index.html file.
 Right-click and choose "Open with browser"
 Or use the Live Server extension in VS Code for real-time preview.
 
+
 This is a static front-end project and does not require any server or database setup.
 
-👩💻 Student No: SE2021021
+👩💻 Student No: SE/2021/021
 
 Let me know if you'd like to include sections for screenshots, features, or future updates too!
 
