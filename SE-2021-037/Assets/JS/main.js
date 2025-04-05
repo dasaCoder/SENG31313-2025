@@ -352,8 +352,10 @@ function initializeContactSection() {
   setTimeout(handleScrollAnimation, 300);
 
   // Handle contact form submission animation
+  // Handle contact form submission animation
   const contactForm = document.getElementById("contact-form");
   const submitBtn = document.getElementById("submit-btn");
+
   if (contactForm && submitBtn) {
     contactForm.addEventListener("submit", function (e) {
       e.preventDefault();
@@ -364,22 +366,56 @@ function initializeContactSection() {
       submitBtn.disabled = true;
       submitBtn.classList.add("bg-teal-400");
 
-      // Simulate form submission (replace with actual form handling)
-      setTimeout(() => {
-        // Success animation
-        submitBtn.innerHTML = '<i class="mr-2 fas fa-check"></i> Message Sent!';
-        submitBtn.classList.remove("bg-teal-400");
-        submitBtn.classList.add("bg-green-500");
+      const formData = new FormData(contactForm);
 
-        // Reset form after a delay
-        setTimeout(() => {
-          contactForm.reset();
-          submitBtn.innerHTML =
-            '<i class="mr-2 fas fa-paper-plane"></i> Send Message';
-          submitBtn.disabled = false;
-          submitBtn.classList.remove("bg-green-500");
-          submitBtn.classList.add("bg-teal-500");
-        }, 3000);
+      // Wait 2 seconds for animation, then send the form via AJAX
+      setTimeout(async () => {
+        try {
+          const response = await fetch(
+            "https://formsubmit.co/ajax/minindubim%40gmail.com",
+            {
+              method: "POST",
+              headers: {
+                Accept: "application/json",
+              },
+              body: formData,
+            }
+          );
+
+          if (response.ok) {
+            // Success animation
+            submitBtn.innerHTML =
+              '<i class="mr-2 fas fa-check"></i> Message Sent!';
+            submitBtn.classList.remove("bg-teal-400");
+            submitBtn.classList.add("bg-green-500");
+
+            // Reset form after a delay
+            setTimeout(() => {
+              contactForm.reset();
+              submitBtn.innerHTML =
+                '<i class="mr-2 fas fa-paper-plane"></i> Send Message';
+              submitBtn.disabled = false;
+              submitBtn.classList.remove("bg-green-500");
+              submitBtn.classList.add("bg-teal-500");
+            }, 3000);
+          } else {
+            throw new Error("FormSubmit response not OK");
+          }
+        } catch (error) {
+          console.error("Form submission error:", error);
+          submitBtn.innerHTML = '<i class="mr-2 fas fa-times"></i> Failed!';
+          submitBtn.classList.remove("bg-teal-400");
+          submitBtn.classList.add("bg-red-500");
+
+          // Reset button after a delay
+          setTimeout(() => {
+            submitBtn.innerHTML =
+              '<i class="mr-2 fas fa-paper-plane"></i> Send Message';
+            submitBtn.disabled = false;
+            submitBtn.classList.remove("bg-red-500");
+            submitBtn.classList.add("bg-teal-500");
+          }, 3000);
+        }
       }, 2000);
     });
   }
