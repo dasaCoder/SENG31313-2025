@@ -74,6 +74,7 @@ cd se-2021-038
 
 ## 💡 Features
 * ✅ Fully responsive and mobile-friendly design
+* ✅ Welcome popup
 * ✅ Smooth scrolling and animations
 * ✅ **Filterable project portfolio** (e.g., Web, App, Design)
 * ✅ Interactive **testimonials slider** using Swiper.js
