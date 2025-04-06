@@ -17,6 +17,7 @@ https://67f2679dea4a3e7ca461731d--tranquil-cendol-d38f8c.netlify.app/
 💻 How to Run the Project Locally:
 
 Clone or download the project folder.
+git clone https://github.com/Kirisi15/Portfolio.git
 
 Open the folder in any code editor (e.g., VS Code).
 
