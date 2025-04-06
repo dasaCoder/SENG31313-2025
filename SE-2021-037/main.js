@@ -753,6 +753,8 @@ document.addEventListener("DOMContentLoaded", async () => {
 
       // Event listener for menu toggle
       mobileMenuBtn.addEventListener("click", () => {
+        // Prevent the click event from bubbling up
+        e.stopPropagation();
         mobileNav.classList.toggle("hidden");
 
         // Toggle between hamburger and X icon
