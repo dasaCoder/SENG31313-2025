@@ -25,4 +25,8 @@
     margin-bottom: -10px;
   }
 
-  
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
