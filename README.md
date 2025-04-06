@@ -1,88 +1,134 @@
-### **Assignment: Personal Portfolio Web Page Development**  
+# Personal Portfolio Website
 
-#### **Objective:**  
-Develop a **personal portfolio web page** using **HTML, CSS, and JavaScript**. This project will assess your ability to design a creative, functional, and aesthetically pleasing website while ensuring proper use of version control through GitHub.  
+A modern, responsive personal portfolio website showcasing my skills, projects, education, and professional experience.
 
----
+## 🌟 Live Demo
+https://67f277c5901b4b2ab838b3ed--cozy-kitsune-0ef19a.netlify.app/
+## ✨ Features
 
-### **Guidelines:**  
-✅ **Use only HTML, CSS, and JavaScript** (No frameworks like React (its a framework btw 🙃) , Angular, or Vue).  
-✅ **Third-party JS/CSS libraries are allowed** (e.g., Bootstrap, Tailwind CSS, jQuery, GSAP).  
-✅ The portfolio should be **creative, unique, and visually appealing**.  
-✅ Include at least the following sections:  
-   - **Home Page** (Introduction)  
-   - **About Me** (Skills & Interests)  
-   - **Projects** (Showcase your work)  
-   - **Contact Section** (Contact form or social links)  
-✅ **Host the website on a free platform** (GitHub Pages, Netlify, Vercel, etc.). **Extra marks will be awarded for hosting.**  
+### 📱 Responsive Design
+- Fully responsive layout that works on all devices
+- Mobile-first approach
+- Smooth animations and transitions
 
----
+### 🎨 Modern UI Components
+- **Navigation Bar**
+  - Smooth scrolling to sections
+  - Responsive menu
+  - Active section highlighting
 
-### **GitHub Submission Instructions:**  
-1. **Clone the repository**:  
-   ```
-   git clone https://github.com/dasaCoder/SENG31313-2025.git
-   cd SENG31313-2025
-   ```
-2. **Create a new branch** with your student number:  
-   ```
-   git checkout -b feature/<student_no>
-   ```
-   **Example:** `feature/se204123`  
-3. **Inside the repository, create a folder named after your student number** inside the correct category:  
-   ```
-   se/20XX/YYY
-   ```
-   **Example:** `se/2025/001`  
-4. **Upload all your project files** (HTML, CSS, JS, assets) inside your folder.  
-5. **Host your website** on a free hosting platform:  
-   - **GitHub Pages:** [Guide](https://pages.github.com/)  
-   - **Netlify:** [Guide](https://www.netlify.com/)  
-   - **Vercel:** [Guide](https://vercel.com/)  
-6. **Create a `README.md` file** inside your folder with the following details:  
-   - **Project Description**  
-   - **Libraries Used** (if any)  
-   - **Live Hosted Link** (URL of the hosted site)  
-   - **How to Run the Project Locally**  
-7. **Commit and push your code**:  
-   ```
-   git add .
-   git commit -m "Added portfolio for <student_no>"
-   git push origin feature/<student_no>
-   ```
-8. **Create a pull request (PR)** to merge your branch into the main repository.  
+- **Hero Section**
+  - Dynamic text animation
+  - Professional profile image
+  - Direct CV download
+  - Call-to-action buttons
 
-🚀 **Extra Marks for Proper GitHub Submission & Hosting the Site**  
+- **About Section**
+  - Professional introduction
+  - Experience badges
+  - Skills showcase with filtering options
+  - Technical expertise display
 
----
+- **Projects Section**
+  - Interactive project cards
+  - Project preview images
+  - Live demo links
+  - GitHub repository links
 
-### **Evaluation Criteria:**  
+- **Blog Section**
+  - Featured blog posts
+  - Category tags
+  - Reading time estimates
+  - Direct links to full articles
 
-| Criteria                  | Marks (%) |
-|---------------------------|----------|
-| **Creativity & Uniqueness** | 25%      |
-| **Design & Appearance**    | 25%      |
-| **Functionality & Usability** | 20%      |
-| **Code Quality (HTML, CSS, JS)** | 10%      |
-| **Hosting the Site**       | 10%      |
-| **Proper GitHub Submission** | 10%      |
+- **Education Section**
+  - Timeline layout
+  - Academic achievements
+  - Course highlights
 
----
+- **Contact Section**
+  - Contact form
+  - Social media links
+  - Professional contact information
 
-### **Submission Deadline:**  
-📅 ** 8th of May **  
+## 🛠️ Technologies Used
 
-### **Helpful Resources:**  
-- [GitHub Docs](https://docs.github.com/en/get-started)  
-- [Git Basics](https://git-scm.com/doc)  
-- [GitHub Pages](https://pages.github.com/)  
-- [Netlify](https://www.netlify.com/)  
-- [Vercel](https://vercel.com/)  
-- [W3Schools HTML, CSS, JS](https://www.w3schools.com/)  
-- [Bootstrap](https://getbootstrap.com/) (For styling)  
-- [Animate.css](https://animate.style/) (For animations)  
+### Frontend
+- HTML5
+- CSS3
+  - Flexbox
+  - CSS Grid
+  - Custom Properties
+  - Animations
+- JavaScript
+  - DOM Manipulation
+  - Event Handling
+  - Dynamic Content
+  - Smooth Scrolling
 
-### **Note:**  
-If you are unfamiliar with Git and GitHub, **learn the basics before starting**. Proper version control and **hosting the site** will be **rewarded with extra marks**. 🚀  
+### Design & UI
+- Font Awesome Icons
+- Custom CSS Animations
+- Responsive Images
+- CSS Variables for Theming
 
-Good luck! 💡
+### Tools & Deployment
+- Git & GitHub
+- VS Code
+- Chrome DevTools
+
+## 🎯 Future Enhancements
+- [ ] Dark/Light theme toggle
+- [ ] Blog CMS integration
+- [ ] Project filtering system
+- [ ] Contact form backend integration
+- [ ] Performance optimization
+- [ ] SEO improvements
+
+## 📂 Project Structure
+portfolio/
+├── pages/
+│ └── home.html
+├── assets/
+│ ├── css/
+│ │ ├── home.css
+│ │ ├── about.css
+│ │ ├── blogs.css
+│ │ ├── contact.css
+│ │ ├── education.css
+│ │ ├── footer.css
+│ │ └── project.css
+│ ├── js/
+│ │ └── script.js
+│ └── images/
+│ └── [project images]
+└── README.md
+
+## 🚀 Getting Started
+
+1. **Clone the repository**
+```bash
+git clone https://github.com/dasaCoder/SENG31313-2025.git
+```
+
+2. **Navigate to project directory**
+```bash
+cd SENG31313-2025
+```
+
+3. **Open in browser**
+- Open `pages/home.html` in your preferred browser
+- For development, use a local server (like Live Server in VS Code)
+
+## 💻 Development
+
+1. **Prerequisites**
+- Basic knowledge of HTML, CSS, and JavaScript
+- Code editor (VS Code recommended)
+- Git for version control
+
+2. **Making Changes**
+- Edit HTML files in `pages/`
+- Modify styles in `assets/css/`
+- Update scripts in `assets/js/`
+- Add images to `assets/images/`
