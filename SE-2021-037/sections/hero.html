@@ -11,7 +11,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Include TypedJS library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
-    <style>
+    <!-- <style>
       @keyframes custom-rotate {
         0% {
           transform: rotate(0deg);
@@ -73,11 +73,11 @@
       .apostrophe-fix {
         font-family: Arial, sans-serif;
       }
-    </style>
+    </style> -->
   </head>
   <body>
-    <!-- Hero Section -->
-    <section id="home" class="flex items-center min-h-screen pt-20">
+    <!-- Hero Section with Improved Mobile Responsiveness -->
+    <section id="home" class="flex items-center min-h-screen pt-24 pb-10">
       <div class="px-5 mx-auto max-w-7xl">
         <!-- Use flex-col-reverse for mobile and flex-row for desktop -->
         <div
@@ -92,8 +92,11 @@
               <h1
                 class="mb-5 text-4xl font-bold leading-tight md:text-5xl text-dark apostrophe-fix"
               >
-                I'm a 
-                <span id="typed-text-container" class="relative inline-block">
+                I'm a
+                <span
+                  id="typed-text-container"
+                  class="relative inline-block min-w-[240px]"
+                >
                   <span id="typed-text"> </span>
                 </span>
               </h1>
@@ -124,7 +127,7 @@
                 Download CV
               </a>
             </div>
-            <div class="flex justify-center space-x-5 md:justify-start">
+            <div class="flex justify-center mb-8 space-x-5 md:justify-start">
               <!-- Social Icons Section -->
               <div
                 class="flex justify-center space-x-5 delay-500 lg:justify-start fade-up"
@@ -165,7 +168,7 @@
           </div>
           <!-- Right column - Image -->
           <div class="flex justify-center w-full md:w-2/5">
-            <div class="relative w-64 h-64 md:w-96 md:h-96">
+            <div class="relative w-60 h-60 md:w-96 md:h-96">
               <!-- Dotted Border -->
               <div
                 class="absolute inset-0 border-2 border-dashed rounded-full border-[#3498DB] custom-rotate"

@@ -740,22 +740,65 @@ document.addEventListener("DOMContentLoaded", async () => {
     // Mobile Menu Toggle
     const mobileMenuBtn = document.getElementById("mobileMenuBtn");
     const navLinks = document.getElementById("navLinks");
+
     if (mobileMenuBtn && navLinks) {
+      // Make sure the hamburger icon is properly visible
+      if (!mobileMenuBtn.innerHTML.trim()) {
+        mobileMenuBtn.innerHTML = '<i class="fas fa-bars text-xl"></i>';
+      }
+
+      // Make mobile menu button visible and properly styled
+      mobileMenuBtn.classList.remove("hidden");
+      mobileMenuBtn.classList.add("block", "md:hidden", "focus:outline-none");
+
+      // Event listener for menu toggle
       mobileMenuBtn.addEventListener("click", () => {
         navLinks.classList.toggle("hidden");
-        navLinks.classList.toggle("flex");
-        navLinks.classList.toggle("flex-col");
-        navLinks.classList.toggle("absolute");
-        navLinks.classList.toggle("top-20");
-        navLinks.classList.toggle("left-0");
-        navLinks.classList.toggle("w-full");
-        navLinks.classList.toggle("bg-white");
-        navLinks.classList.toggle("shadow-lg");
-        navLinks.classList.toggle("p-5");
-        navLinks.classList.toggle("z-50");
 
-        navLinks.querySelectorAll("li").forEach((li) => {
-          li.classList.toggle("my-3", navLinks.classList.contains("flex-col"));
+        // Toggle between hamburger and X icon
+        if (navLinks.classList.contains("hidden")) {
+          mobileMenuBtn.innerHTML = '<i class="fas fa-bars text-xl"></i>';
+        } else {
+          mobileMenuBtn.innerHTML = '<i class="fas fa-times text-xl"></i>';
+
+          // Apply mobile menu styling when open
+          navLinks.classList.add(
+            "flex",
+            "flex-col",
+            "absolute",
+            "top-16",
+            "left-0",
+            "w-full",
+            "bg-white",
+            "shadow-lg",
+            "p-5",
+            "z-50"
+          );
+
+          // Style individual nav items for mobile
+          navLinks.querySelectorAll("li").forEach((li) => {
+            li.classList.add("my-3", "text-center", "w-full");
+          });
+        }
+      });
+
+      // Close menu when clicking outside
+      document.addEventListener("click", (e) => {
+        if (
+          !navLinks.contains(e.target) &&
+          !mobileMenuBtn.contains(e.target) &&
+          !navLinks.classList.contains("hidden")
+        ) {
+          navLinks.classList.add("hidden");
+          mobileMenuBtn.innerHTML = '<i class="fas fa-bars text-xl"></i>';
+        }
+      });
+
+      // Close menu when clicking a nav link
+      navLinks.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+          navLinks.classList.add("hidden");
+          mobileMenuBtn.innerHTML = '<i class="fas fa-bars text-xl"></i>';
         });
       });
     }

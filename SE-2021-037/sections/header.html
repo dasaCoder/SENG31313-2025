@@ -1,31 +1,31 @@
-<!-- Header/Navigation with improved layout stability -->
-<header class="fixed top-0 z-50 w-full bg-white shadow-md">
-    <div class="px-5 mx-auto max-w-7xl">
-        <nav class="flex items-center justify-between py-5">
-            <a href="#" class="text-2xl font-bold text-text">MY PORTFOLIO</a>
-            <ul id="navLinks" class="hidden space-x-10 md:flex">
-                <li><a href="#home" class="font-medium transition-colors hover:text-primary">HOME</a></li>
-                <li><a href="#about" class="font-medium transition-colors hover:text-primary">ABOUT</a></li>
-                <li><a href="#education" class="font-medium transition-colors hover:text-primary">EDUCATION</a></li>
-                <li><a href="#skills" class="font-medium transition-colors hover:text-primary">SKILLS</a></li>
-                <li><a href="#projects" class="font-medium transition-colors hover:text-primary">PROJECTS</a></li>
-            </ul>
-            <!-- Hide on mobile, show on desktop -->
-            <div class="items-center hidden md:flex">
-                <a href="#contact" class="flex items-center px-5 py-2 font-medium text-white transition-all transform rounded-full bg-primary hover:bg-secondary hover:-translate-y-1 hover:shadow-lg">
-                    <i class="mr-2 fas fa-comment"></i>
-                    <span>Let's Talk</span>
-                </a>
-            </div>
-            <!-- Mobile controls with fixed positioning -->
-            <div class="flex items-center space-x-4 md:hidden">
-                <a href="#contact" class="flex items-center px-4 py-2 font-medium text-white transition-all transform rounded-full bg-primary hover:bg-secondary hover:-translate-y-1 hover:shadow-lg">
-                    <i class="fas fa-comment"></i>
-                </a>
-                <button id="mobileMenuBtn" class="text-2xl">
-                    <i class="fas fa-bars"></i>
-                </button>
-            </div>
-        </nav>
+<header class="fixed top-0 left-0 z-50 w-full bg-white shadow-md">
+  <div class="container flex items-center justify-between px-5 py-4 mx-auto">
+    <!-- Logo -->
+    <a href="#" class="text-2xl font-bold text-primary">Minindu</a>
+    
+    <!-- Desktop Navigation & Contact Button -->
+    <div class="items-center hidden space-x-8 md:flex">
+      <!-- Navigation Links -->
+      <ul id="navLinks" class="flex items-center space-x-8">
+        <li><a href="#home" class="font-medium hover:text-primary">Home</a></li>
+        <li><a href="#about" class="font-medium hover:text-primary">About</a></li>
+        <li><a href="#education" class="font-medium hover:text-primary">Education</a></li>
+        <li><a href="#skills" class="font-medium hover:text-primary">Skills</a></li>
+        <li><a href="#projects" class="font-medium hover:text-primary">Projects</a></li>
+        <li><a href="#contact" class="font-medium hover:text-primary">Contact</a></li>
+      </ul>
+      <!-- "Let's Talk" Button -->
+      <div class="items-center">
+        <a href="#contact" class="flex items-center px-5 py-2 font-medium text-white transition-all transform rounded-full bg-primary hover:bg-secondary hover:-translate-y-1 hover:shadow-lg">
+          <i class="mr-2 fas fa-comment"></i>
+          <span>Let's Talk</span>
+        </a>
+      </div>
     </div>
+    
+    <!-- Mobile Menu Button - Always Visible on Mobile -->
+    <button id="mobileMenuBtn" class="block md:hidden focus:outline-none">
+      <i class="text-xl fas fa-bars"></i>
+    </button>
+  </div>
 </header>
