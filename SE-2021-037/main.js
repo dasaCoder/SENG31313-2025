@@ -752,8 +752,9 @@ document.addEventListener("DOMContentLoaded", async () => {
       mobileMenuBtn.classList.add("block", "md:hidden", "focus:outline-none");
 
       // Event listener for menu toggle
-      mobileMenuBtn.addEventListener("click", () => {
+      mobileMenuBtn.addEventListener("click", (e) => {
         // Prevent the click event from bubbling up
+        e.preventDefault();
         e.stopPropagation();
         mobileNav.classList.toggle("hidden");
 
