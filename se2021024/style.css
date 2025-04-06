@@ -124,19 +124,21 @@ button:hover {
   }
 
  
-  /*About me and Skills both*/
-  .about-section, .skills {
+  /*About me and Skills blogs*/
+  #about-section, #skills, #blogs {
     margin: auto;
     padding: 30px 150px;
   }
 
-  .about-section h1, .skills h1{
+  #about-section h1, #skills h1 , #blogs h1{
     font-size: 100px;
     color: rgba(0, 0, 0 ,0.3);
     text-align: center;
     margin-bottom: 50px;
   }
 
+
+  /*About me and Skills both*/
   .tabs , .skill-tabs{
     display: flex;
     gap: 20px;
@@ -218,7 +220,11 @@ button:hover {
   }
 
   /*Skills*/
-  .skills .skill-tabs{
+  #skills {
+    width: 1000px;
+  }
+
+  #skills .skill-tabs{
     justify-content: center;
   }
 
@@ -226,26 +232,22 @@ button:hover {
     margin: 10px;
   }
 
-  .skills .components{
+  #skills .components{
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .skills .image{
+  #skills .image{
     width: 50px;
     height: auto;
     margin: 10px;
   }
 
-  .skills .image img{
+  #skills .image img{
     width: 100%;
     height: auto;
     object-fit: cover;
-  }
-
-  .skills {
-    width: 1000px;
   }
 
 .using-now-components,
@@ -268,3 +270,95 @@ button:hover {
   padding: 10px;
   margin: 50px 20px 20px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/*BLOG*/
+#blogs .cards {
+  display: flex;
+  gap: 30px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 10px;
+}
+
+/* Hide scroll bar*/
+#blogs .cards::-webkit-scrollbar {
+  display: none;
+}
+
+#blogs .card {
+  flex: 0 0 calc(33.33% - 20px); /* 3 per row with gap */
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+#blogs .card:hover {
+  transform: scale(1.05); 
+  transition: transform 0.3s ease; 
+}
+
+#blogs .image {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 2px 2px rgba(0,0,0,0.2);
+}
+
+#blogs .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#blogs .card p {
+  font-size: 14px;
+  color: #262727;
+  text-align: justify;
+  margin-top: 30px;
+}
+
+#blogs .card a {
+  text-decoration: none;
+}
+
+#blogs .scroll-hint {
+  text-align: center;
+  font-size: 14px;
+  color: #0b0b0b;
+  margin-top: 10px;
+  animation: blink 2s infinite;
+}
+
+#blogs .view-more {
+  width: 200px;
+  height: auto;
+  padding: 10px 25px;
+  background-color: #232ba8;
+  color: white !important;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  display: block; 
+  margin: 20px auto 0; 
+  text-align: center;
+}
+
+#blogs .view-more:hover {
+  background-color: #323541;
+}
+
