@@ -130,7 +130,7 @@ function initializeCarousel() {
   });
 }
 
-// Typed text initialization extracted into its own function
+// Improved Typed text initialization function
 function initializeTypedText() {
   const typedElement = document.getElementById("typed-text");
   if (!typedElement) return;
@@ -138,12 +138,16 @@ function initializeTypedText() {
   if (typeof Typed !== "undefined") {
     new Typed("#typed-text", {
       strings: ["Web Developer", "Software Engineer", "Fullstack Developer"],
-      typeSpeed: 500,
-      backSpeed: 500,
-      backDelay: 1500,
+      typeSpeed: 100, // Slightly faster to reduce layout shifts
+      backSpeed: 100, // Slightly faster to reduce layout shifts
+      backDelay: 1000, // Shorter delay between changes
       startDelay: 500,
       loop: true,
-      showCursor: false,
+      showCursor: false, // We handle cursor in CSS
+      onStringTyped: function () {
+        // Force layout recalculation after typing to prevent layout shifts
+        document.body.style.minHeight = document.body.offsetHeight + "px";
+      },
     });
     console.log("Typed.js initialized successfully");
   } else {
@@ -152,7 +156,7 @@ function initializeTypedText() {
   }
 }
 
-// Fallback function using plain JavaScript if Typed.js fails
+// Improved fallback function for more stable layout
 function fallbackTyping() {
   const textElement = document.getElementById("typed-text");
   if (!textElement) return;
@@ -161,6 +165,9 @@ function fallbackTyping() {
   let roleIndex = 0;
   let charIndex = 0;
   let isDeleting = false;
+
+  // Start with the first role to prevent empty space
+  textElement.textContent = roles[0];
 
   function typeText() {
     const currentText = roles[roleIndex];
@@ -186,7 +193,9 @@ function fallbackTyping() {
     setTimeout(typeText, typeSpeed);
   }
 
-  typeText();
+  // Start with a value to maintain layout
+  textElement.textContent = "Web Developer";
+  setTimeout(typeText, 1500);
 }
 
 // Skills Section initialization: tab switching and scroll animations
@@ -586,6 +595,85 @@ function initializeAboutAnimations() {
   }
 }
 
+// ------------------------
+// Footer Section Animations
+// ------------------------
+
+// Function to initialize footer animations
+function initializeFooterAnimations() {
+  // Update copyright year automatically
+  document.getElementById("copyright-year").textContent =
+    new Date().getFullYear();
+
+  // Intersection Observer for footer sections
+  const footerSections = [
+    document.getElementById("footer-about"),
+    document.getElementById("footer-links"),
+    document.getElementById("footer-contact"),
+    document.getElementById("footer-newsletter"),
+    document.getElementById("footer-copyright"),
+  ];
+
+  // Create observer configuration
+  const footerObserverConfig = {
+    root: null, // viewport
+    rootMargin: "0px",
+    threshold: 0.2, // 20% of the element is visible
+  };
+
+  // Create observer instance
+  const footerObserver = new IntersectionObserver(function (entries) {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        // Add animation classes based on column position
+        const index = footerSections.indexOf(entry.target);
+
+        if (index === 0) {
+          entry.target.classList.add("animate-fadeInLeft");
+        } else if (index === 1) {
+          entry.target.classList.add("animate-fadeInUp");
+        } else if (index === 2) {
+          entry.target.classList.add("animate-fadeInUp");
+        } else if (index === 3) {
+          entry.target.classList.add("animate-fadeInRight");
+        } else {
+          entry.target.classList.add("animate-fadeIn");
+        }
+
+        // Stop observing once animation is triggered
+        footerObserver.unobserve(entry.target);
+      }
+    });
+  }, footerObserverConfig);
+
+  // Start observing each section
+  footerSections.forEach((section) => {
+    if (section) {
+      footerObserver.observe(section);
+    }
+  });
+
+
+  // Observer for animations
+  document.addEventListener("DOMContentLoaded", function () {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = 1;
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    const animateElements = document.querySelectorAll(
+      ".animate-fadeIn, .animate-fadeInLeft, .animate-fadeInRight, .animate-fadeInUp"
+    );
+    animateElements.forEach((el) => observer.observe(el));
+  });
+}
+
 // Load sections and initialize functionalities when DOM is ready
 document.addEventListener("DOMContentLoaded", async () => {
   try {
@@ -638,6 +726,15 @@ document.addEventListener("DOMContentLoaded", async () => {
     );
     if (contactLoaded) {
       initializeContactSection();
+    }
+
+    // Load the footer section then initialize its animations
+    const footerLoaded = await loadSection(
+      "./sections/footer.html",
+      "footer-container"
+    );
+    if (footerLoaded) {
+      initializeFooterAnimations();
     }
 
     // Mobile Menu Toggle

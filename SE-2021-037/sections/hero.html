@@ -32,9 +32,10 @@
       /* Modified styles for typed text container */
       #typed-text-container {
         display: inline-block;
-        min-width: 240px; /* Adjust this width based on your longest text */
+        min-width: 240px; /* Fixed width container */
         white-space: nowrap;
-        position: relative; /* Ensure it doesn't affect the layout of other elements */
+        overflow: hidden; /* Prevent overflow that could cause layout shifts */
+        text-overflow: ellipsis;
       }
       @keyframes blink {
         0%,
@@ -44,6 +45,10 @@
         50% {
           opacity: 0;
         }
+      }
+      /* Fix for layout stability */
+      .text-container {
+        min-height: 6rem; /* Ensure text container has stable height */
       }
     </style>
   </head>
@@ -60,20 +65,16 @@
             <p class="mb-2 text-lg font-medium text-primary">
               Hello! I'am Minindu
             </p>
-            <h1
-              class="mb-5 text-4xl font-bold leading-tight md:text-5xl text-dark"
-            >
-              I'am a
-              <span
-                id="typed-text-container"
-                class="relative inline-block h-10"
+            <div class="text-container">
+              <h1
+                class="mb-5 text-4xl font-bold leading-tight md:text-5xl text-dark"
               >
-                <span
-                  id="typed-text"
-                  class="absolute top-0 left-0 w-full typing"
-                ></span>
-              </span>
-            </h1>
+                I'am a
+                <span id="typed-text-container" class="relative inline-block">
+                  <span id="typed-text" class="typing"></span>
+                </span>
+              </h1>
+            </div>
             <p
               class="max-w-xl mx-auto mb-8 leading-relaxed text-subtext md:mx-0"
             >
@@ -141,7 +142,6 @@
           </div>
           <!-- Right column - Image -->
           <div class="flex justify-center w-full md:w-2/5">
-            <!-- Removed the translate-x-20 class that was causing layout issues -->
             <div
               class="relative w-64 h-64 md:w-96 md:h-96"
             >

@@ -1,4 +1,4 @@
-<!-- Header/Navigation -->
+<!-- Header/Navigation with improved layout stability -->
 <header class="fixed top-0 z-50 w-full bg-white shadow-md">
     <div class="px-5 mx-auto max-w-7xl">
         <nav class="flex items-center justify-between py-5">
@@ -11,16 +11,18 @@
                 <li><a href="#projects" class="font-medium transition-colors hover:text-primary">PROJECTS</a></li>
             </ul>
             <!-- Hide on mobile, show on desktop -->
-            <a href="#contact" class="items-center hidden px-5 py-2 font-medium text-white transition-all transform rounded-full md:flex bg-primary hover:bg-secondary hover:-translate-y-1 hover:shadow-lg">
-                <i class="mr-2 fas fa-comment"></i>
-                <span>Let's Talk</span>
-            </a>
-            <!-- Always show on mobile -->
-            <div class="flex items-center space-x-4">
-                <a href="#contact" class="flex items-center px-4 py-2 font-medium text-white transition-all transform rounded-full md:hidden bg-primary hover:bg-secondary hover:-translate-y-1 hover:shadow-lg">
+            <div class="items-center hidden md:flex">
+                <a href="#contact" class="flex items-center px-5 py-2 font-medium text-white transition-all transform rounded-full bg-primary hover:bg-secondary hover:-translate-y-1 hover:shadow-lg">
+                    <i class="mr-2 fas fa-comment"></i>
+                    <span>Let's Talk</span>
+                </a>
+            </div>
+            <!-- Mobile controls with fixed positioning -->
+            <div class="flex items-center space-x-4 md:hidden">
+                <a href="#contact" class="flex items-center px-4 py-2 font-medium text-white transition-all transform rounded-full bg-primary hover:bg-secondary hover:-translate-y-1 hover:shadow-lg">
                     <i class="fas fa-comment"></i>
                 </a>
-                <button id="mobileMenuBtn" class="text-2xl md:hidden">
+                <button id="mobileMenuBtn" class="text-2xl">
                     <i class="fas fa-bars"></i>
                 </button>
             </div>
