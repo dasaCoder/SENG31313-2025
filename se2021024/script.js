@@ -26,3 +26,34 @@ tabs.forEach(function(tab){
         }
     });
 });
+
+
+//Skills
+var skill_tabs = document.querySelectorAll(".skill-tab");
+var skill_contents = document.querySelectorAll(".skill-tab-content");
+
+skill_tabs.forEach(function(skill_tab){
+    skill_tab.addEventListener("click", function(){
+        skill_tabs.forEach(function(t){
+            // Remove 'active' from all tabs
+            t.classList.remove("active");
+        });
+        skill_tab.classList.add("active");
+
+        var skill_target = skill_tab.getAttribute("skill-data-tab");
+
+        //hide all the content
+        skill_contents.forEach(function(skill_content){
+            skill_content.classList.remove("active");
+            skill_content.style.display = "none";
+        });
+
+        //show matching content
+        var skill_activeContent = document.getElementById(skill_target);
+        if(skill_activeContent) {
+            skill_activeContent.classList.add("active");
+            skill_activeContent.style.display = "block";
+            skill_activeContent.style.justifyContent = "space-between";
+        }
+    });
+});
