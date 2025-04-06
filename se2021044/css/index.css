@@ -7,3 +7,11 @@
         padding-top: 80px; 
       
 }
+
+#linearGradient{
+    background: linear-gradient(to right, #24BEC4, #7CC48C);
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    display: inline-block;
+    background-size: 100% 100%;
+}
