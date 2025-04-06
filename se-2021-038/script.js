@@ -798,6 +798,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 
 
+
 // Form validation
 
 const contactForm = document.getElementById('contactForm');
