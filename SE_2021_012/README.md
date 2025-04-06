@@ -29,7 +29,7 @@ This portfolio is built to:
 ---
 
 ## **Live Hosted Link**
-🌐 **[View Live Portfolio](https://your-portfolio-url.netlify.app/)** *(replace with your actual URL)*
+🌐 **[View Live Portfolio](https://your-portfolio-url.netlify.app/)** *[(https://nadeeshamedagamaportfolioproject.netlify.app/)]*
 
 ---
 
