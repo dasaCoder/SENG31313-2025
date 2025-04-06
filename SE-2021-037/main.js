@@ -739,9 +739,9 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     // Mobile Menu Toggle
     const mobileMenuBtn = document.getElementById("mobileMenuBtn");
-    const navLinks = document.getElementById("mobileNav");
+    const mobileNav = document.getElementById("mobileNav");
 
-    if (mobileMenuBtn && navLinks) {
+    if (mobileMenuBtn && mobileNav) {
       // Make sure the hamburger icon is properly visible
       if (!mobileMenuBtn.innerHTML.trim()) {
         mobileMenuBtn.innerHTML = '<i class="fas fa-bars text-xl"></i>';
@@ -753,51 +753,32 @@ document.addEventListener("DOMContentLoaded", async () => {
 
       // Event listener for menu toggle
       mobileMenuBtn.addEventListener("click", () => {
-        navLinks.classList.toggle("hidden");
+        mobileNav.classList.toggle("hidden");
 
         // Toggle between hamburger and X icon
-        if (navLinks.classList.contains("hidden")) {
+        if (mobileNav.classList.contains("hidden")) {
           mobileMenuBtn.innerHTML = '<i class="fas fa-bars text-xl"></i>';
         } else {
           mobileMenuBtn.innerHTML = '<i class="fas fa-times text-xl"></i>';
-
-          // Apply mobile menu styling when open
-          navLinks.classList.add(
-            "flex",
-            "flex-col",
-            "absolute",
-            "top-16",
-            "left-0",
-            "w-full",
-            "bg-white",
-            "shadow-lg",
-            "p-5",
-            "z-50"
-          );
-
-          // Style individual nav items for mobile
-          navLinks.querySelectorAll("li").forEach((li) => {
-            li.classList.add("my-3", "text-center", "w-full");
-          });
         }
       });
 
       // Close menu when clicking outside
       document.addEventListener("click", (e) => {
         if (
-          !navLinks.contains(e.target) &&
+          !mobileNav.contains(e.target) &&
           !mobileMenuBtn.contains(e.target) &&
-          !navLinks.classList.contains("hidden")
+          !mobileNav.classList.contains("hidden")
         ) {
-          navLinks.classList.add("hidden");
+          mobileNav.classList.add("hidden");
           mobileMenuBtn.innerHTML = '<i class="fas fa-bars text-xl"></i>';
         }
       });
 
       // Close menu when clicking a nav link
-      navLinks.querySelectorAll("a").forEach((link) => {
+      mobileNav.querySelectorAll("a").forEach((link) => {
         link.addEventListener("click", () => {
-          navLinks.classList.add("hidden");
+          mobileNav.classList.add("hidden");
           mobileMenuBtn.innerHTML = '<i class="fas fa-bars text-xl"></i>';
         });
       });
