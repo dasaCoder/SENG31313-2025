@@ -47,6 +47,10 @@ body{
     font-weight: 300;
 }
 
+body.hide-scrolling{
+    overflow-y: hidden;
+}
+
 body::before{
     content: '';
     position:fixed;
@@ -86,6 +90,10 @@ ul{
 .main{
     max-width: 1200px;
     margin:auto;
+    transition: all 0.5s ease-in-out;
+ }
+ .main.fade-out{
+    opacity: 0;
  }
  .container{
     padding: 0 40px;
@@ -392,6 +400,12 @@ button{
     z-index: 200;
     overflow-y: auto;
     visibility: hidden;
+
+}
+.portfolio-popup.open{
+    visibility: visible;
+    overflow: auto;
+
 }
 .pp-inner{
     min-height: 100vh;
@@ -408,7 +422,16 @@ button{
     width: 100%;
     border: 1px solid var(--white-alpha-40);
     backdrop-filter: var(--backdrop-filter-blur);
+    opacity: 0;
+    transform: scale(0.9);
 }
+
+.portfolio-popup.open .pp-content{
+    opacity: 1;
+    transform: scale(1);
+    transition: all 0.5s ease;
+}
+
 .pp-header{
     position: relative ;
 }
