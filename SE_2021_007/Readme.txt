@@ -10,9 +10,7 @@ CSS
 
 JavaScript
 
-Bootstrap
-
-Font Awesome (for icons)
+box icons (for icons)
 
 🌍 Live Hosted Link:
 https://67f230d0d6f65106905b6e74--incredible-mermaid-fa4e49.netlify.app/
