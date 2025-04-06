@@ -1,0 +1,157 @@
+
+.projects-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.project-card {    
+    border: 1px solid #22d3d3;
+    border-radius: 15px;
+    padding: 1rem 1.5rem;
+    margin-bottom: 2rem;
+    margin-top: -1.5rem ;   
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 1250px;
+    width: 100%;
+    justify-content: center;
+    overflow-x: visible;
+}
+
+.project-content {
+    display: flex;
+    gap: 0.01rem;
+    flex-wrap: wrap;
+}
+
+.project-left {
+    flex: 4;
+    min-width: 700px;
+    margin-right: 0;
+}
+
+.project-right {
+    flex: 3;
+    min-width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+    margin-left: 0;
+    margin-top: -4em;
+}
+
+.project-right img {
+    max-width: 100%;
+    height: auto;    
+    border-radius: 5px;
+    object-fit: cover;
+    margin-left: 0;
+}
+
+.project-title {
+    font-size: 19px;
+    text-align: center;
+    margin-bottom: 1.6rem;
+    margin-top: 1rem;
+}
+
+.features-container {
+    border: 1px solid #22d3d3;
+    border-radius: 10px;
+    padding: 1.3rem;
+    margin-bottom: 1rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 85%;
+    
+}
+
+.feature-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 0.3rem;
+    font-size: 16px;
+}
+
+.feature-item:last-child {
+    margin-bottom: 0;
+}
+
+.feature-checkmark {
+    color: #22d3d3;
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+.feature-name {
+    font-weight: 600;
+    margin-right: 0.5rem;
+}
+
+.feature-description {
+    flex: 1;
+}
+
+.contributions-container {
+    border: 1px solid #22d3d3;
+    border-radius: 10px;
+    padding: 1.2rem;
+    margin-bottom: 1rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 85%;
+}
+
+.contributions-title {
+    font-size: 17px;
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+
+.contribution-text {
+    margin-bottom: 0.3rem;
+    margin-top: 0;
+}
+
+.github-link-container {
+    border: 1px solid #22d3d3;
+    border-radius: 10px;
+    padding: 0.7rem;
+    display: inline-block;
+}
+
+.github-text a{
+    color: #fff;
+    text-decoration: none;    
+}
+
+@media (max-width: 768px) {
+    .project-title {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 1450px) {
+    .project-card {
+        width: 90%;
+    }
+}
+
+.kid-images {
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+    flex-wrap: wrap; 
+    margin-top: 1rem;
+}
+
+.kid-images img {
+    width: 180px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+#cal{
+    width: 18em;
+    height: auto;
+}
