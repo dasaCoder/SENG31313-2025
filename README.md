@@ -6,7 +6,7 @@ Welcome to my personal portfolio website — a sleek, responsive, and dynamic sh
 
 ## 🚀 Live Hosted Link
 🟢 **Hosted on Vercel**  
-👉 [https://your-vercel-project.vercel.app](https://your-vercel-project.vercel.app)  
+👉[ [https://your-vercel-project.vercel.app](https://your-vercel-project.vercel.app)  ](https://seng-31313-2025-seven.vercel.app/)
 *(Replace this with your actual hosted link)*
 
 ---
