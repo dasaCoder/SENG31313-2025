@@ -1,0 +1,32 @@
+#mainBody{
+    font-family: "Poppins", sans-serif;  
+    margin: 0;
+    color: white;
+    background-color: black;
+    
+        padding-top: 80px; 
+      
+}
+
+#linearGradient{
+    background: linear-gradient(to right, #24BEC4, #7CC48C);
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    display: inline-block;
+    background-size: 100% 100%;
+}
+
+#topic-line{
+    border: none;
+    height: 1.8px;
+    background: white;
+    width: 70px;
+    margin-left: 4px;
+    margin-bottom: -10px;
+  }
+
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}

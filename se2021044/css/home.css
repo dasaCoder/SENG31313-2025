@@ -1,0 +1,108 @@
+.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5vw;
+    flex-wrap: wrap; 
+    margin-top: -7em;
+    border-top: 0;
+}
+
+#profile img {
+    width:43vw;     
+    height: auto;  
+    margin-top: -2em;
+    margin-left: -3em;   
+}
+
+#rightContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;      
+}
+
+#name{
+    font-family: "Inter", sans-serif; 
+    font-weight: 100;
+    font-size: 2.5em; 
+    margin-top: 1.8em;
+    align-items: center;
+    margin-bottom: -0.2em;
+}
+
+.position{
+    margin-bottom: 0.7em;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.hewage{
+    margin-top: -0.5em;
+    padding-left: 10px;
+}
+
+.home p{
+    font-family:  "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 0;    
+    max-width: 40em;
+    line-height: 1.7;
+    font-size: 16px; 
+    margin-bottom: 40px;   
+}
+
+.home button{
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 1em 2.5em;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;  
+    max-width: 15em;
+}
+
+@media screen and (max-width: 1300px) {
+    .home {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0.1em; 
+    }
+
+    #profile img {
+        width: 50vw; 
+        margin-top: 0; 
+        margin-left: 0;
+    }
+
+    #rightContent {
+        align-items: center; 
+        text-align: center; 
+        padding: 2em; 
+    }
+
+    #name h1 {
+        font-size: 1.5em; 
+    }
+
+    #name .hewage{
+        margin-left: -1.75em;
+    }
+
+    .position {
+        font-size: 1.5em; 
+    }
+
+    .home p {
+        font-size: 14px; 
+        max-width: 70%; 
+        margin-bottom: 40px;
+    }
+
+    .home button {
+        font-size: 14px; 
+        padding: 0.8em 2em; 
+    }
+}
