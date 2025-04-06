@@ -1,0 +1,99 @@
+.skills-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+    margin-bottom: 0;
+    margin-top: 1em;
+    
+}
+.skill-bg{
+    margin: 0 0;
+    background-image: url("../images/programmer.png"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: rgba(255, 255, 255, 0.5); ;
+    background-blend-mode: lighten;
+    min-height: 649px;
+    
+}
+
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.skill-card {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    padding: 1.4em 0;
+    margin: 1.5em 3em;
+    border: 1px solid #22d3d3;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(34, 211, 211, 0.2);
+}
+
+.card-title {
+    font-size: 19px;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.skills-list {
+    list-style-type: none;
+}
+
+.skills-list li {
+    font-size: 16px;
+    margin-bottom: 0.8rem;
+    padding-left: 0.5rem;
+}
+
+#github-section {
+    text-align: center;
+}
+
+#github-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+#github-link:hover {
+    color: #22d3d3;
+}
+
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.set-box{
+    
+        display: flex;
+        flex-direction: column; 
+        align-items: center;     
+        justify-content: center; 
+        padding: 1em;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        background-color: rgb(140, 140, 140);
+        max-width: 200px; 
+        margin: 1em auto;
+    
+}
