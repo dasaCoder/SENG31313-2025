@@ -1,0 +1,34 @@
+.footer {
+    background-color: #42234b; /* Dark background for the footer */
+    color: #fff; /* White text color */
+    padding: 20px 0; /* Padding for spacing */
+    text-align: center; /* Center align text */
+}
+
+.footer-content {
+    max-width: 1200px; /* Limit the width of the content */
+    margin: 0 auto; /* Center the content horizontally */
+    padding: 0 15px; /* Add padding for smaller screens */
+}
+
+.footer-content p {
+    margin: 0; /* Remove default margin */
+    font-size: 14px; /* Set font size */
+    line-height: 1.5; /* Improve readability */
+}
+
+.social-links {
+    margin-top: 10px; /* Add spacing above social links */
+}
+
+.social-links a {
+    display: inline-block; /* Inline-block for spacing */
+    margin: 0 10px; /* Add spacing between icons */
+    color: #fff; /* White icon color */
+    font-size: 18px; /* Set icon size */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.social-links a:hover {
+    color: #007bff; /* Change color on hover */
+}
