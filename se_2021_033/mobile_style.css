@@ -1,0 +1,118 @@
+/* mobile.css */
+/* Mobile Responsive Styles */
+
+@media screen and (max-width: 768px) {
+    /* General adjustments for header and layout */
+    header {
+      padding: 10px 20px;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    /* Hamburger Menu Styles */
+    .hamburger {
+      display: flex;
+      cursor: pointer;
+      flex-direction: column;
+      gap: 5px;
+      margin-bottom: 10px;
+    }
+  
+    .hamburger span {
+      display: block;
+      width: 25px;
+      height: 3px;
+      background-color: var(--text-color);
+      transition: all 0.3s ease;
+    }
+  
+    /* Hide nav menu by default */
+    nav ul {
+      display: none;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 10px;
+    }
+  
+    /* When nav is active (e.g., after clicking hamburger), display nav menu */
+    nav.active ul {
+      display: flex;
+    }
+  
+    /* Hero Section: Stack content vertically */
+    .hero-section {
+      flex-direction: column;
+      padding: 50px 20px;
+      height: auto;
+    }
+  
+    .hero-content,
+    .hero-img {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .hero-img img {
+      width: 300px;
+      height: auto;
+    }
+  
+    /* Skill Section adjustments */
+    .skills-wrapper {
+      flex-direction: column;
+      gap: 30px;
+      padding: 0 20px;
+    }
+  
+    .skills-card-container {
+      min-width: 100%;
+    }
+  
+    /* Project Section: Single-column grid */
+    .project-section {
+      padding: 40px 10px;
+    }
+  
+    .project-grid {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  
+    /* Article Section: Single-column grid */
+    .article-section {
+      padding: 40px 10px;
+    }
+  
+    .article-grid {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  
+    /* Certification Section: Stack items vertically */
+    .certification-container {
+      flex-direction: column;
+      gap: 20px;
+      padding: 0 20px;
+    }
+  
+    .certification-img img {
+      max-width: 100%;
+    }
+  
+    /* Contact Section adjustments */
+    .contact-section {
+      padding: 40px 10px;
+    }
+  
+    .social-links a {
+      margin: 0 10px;
+      font-size: 1.2rem;
+    }
+  
+    /* Footer: Reduce padding and font size */
+    .footer {
+      padding: 10px;
+      font-size: 0.9rem;
+    }
+  }
+  

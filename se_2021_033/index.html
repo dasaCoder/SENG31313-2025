@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lakshithaMadushan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile_style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+</head>
+<body class="dark-mode">
+    <header>
+        <div class="logo">
+            <h1>Lakshitha</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skill</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#articles">Articls</a></li>
+                <li><a href="#certifications">Certification</a></li>
+                <li><a href="#contact">Contact me</a></li>
+            </ul>
+        </nav>
+        <button id="mode-toggle-button" class="mode-toggle">Switch Dark/Light Mode</button>
+    </header>
+    <section class="hero-section" id="home">
+        <div class="hero-content">
+            <div class="main-text">
+                <h1 id="hero-title"></h1>
+            </div>
+            <div class="description">
+                <p>
+                    Passionate software engineer dedicated to building scalable web applications and cloud solutions. 
+                    With expertise in full-stack development, I create seamless user experiences and optimize performance.
+                </p>
+            </div>
+        </div>
+        <div class="hero-img">
+            <img src="assert/lakshitha.png" alt="Lakshitha">
+        </div>
+    </section>
+    <section class="skill-section" id="skills">
+        <div class="section-header">
+            <h2>My Skills</h2>
+        </div>
+        <div class="skills-wrapper">
+            <div class="skills-card-container">
+                <div class="skills-container">
+                    <div class="skill-tab active" data-skill="languages">Languages</div>
+                    <div class="skill-tab" data-skill="frameworks">Frameworks</div>
+                    <div class="skill-tab" data-skill="tools">Tools</div>
+                    <div class="skill-tab" data-skill="technologies">Technologies</div>
+                </div>
+            </div>
+            <div class="skill-display-container fade-on-scroll" id="skill-display">
+                <!-- Cards render here -->
+            </div>
+        </div>
+        
+    </section>
+    
+
+    <section class="project-section" id="projects">
+        <div class="section-header">
+          <h2>My Projects</h2>
+        </div>
+        <div class="project-grid" id="projectGrid">
+          <!-- JS will insert project cards here -->
+        </div>
+      </section>
+      
+      
+
+      <section class="article-section" id="articles">
+        <div class="section-header">
+          <h2>Latest Articles</h2>
+        </div>
+        <div class="article-grid" id="articleGrid">
+          <!-- Articles injected here with JS -->
+        </div>
+      </section>
+      
+      <section class="certification-section" id="certifications">
+        <div class="section-header">
+          <h2>Certifications</h2>
+        </div>
+        <div class="certification-container">
+          <!-- Left side: Image -->
+          <div class="certification-img">
+            <img src="assert/cerification.jpg" alt="Certification">
+          </div>
+          <!-- Right side: List of Certificates -->
+          <div class="certification-list">
+            <ul>
+              <li><a href="#">Certified Full Stack Developer - Coursera</a></li>
+              <li><a href="#">JavaScript Mastery - Udemy</a></li>
+              <li><a href="#">Google Cloud Certification - Google</a></li>
+              <li><a href="#">AWS Certified Solutions Architect - Amazon</a></li>
+              <li><a href="#">Python for Data Science - edX</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      
+   <!-- Contact Section -->
+<section class="contact-section" id="contact">
+    <div class="section-header">
+      <h2>Contact Me</h2>
+    </div>
+    <div class="contact-container">
+      <div class="contact-info">
+        <p><strong>Email -</strong> <a href="mailto:youremail@example.com">lakshithalkmadushan@gmail.com</a></p>
+        <div class="social-links">
+          <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Lakshitha Madushan. All rights reserved.</p>
+  </footer>
+  
+      
+    
+    <script src="script.js"></script>
+</body>
+</html>
