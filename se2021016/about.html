@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="min-h-screen flex flex-col bg-gradient-to-r from-green-100 to-green-400">
+
+  <div id="header-container"></div>  
+
+  <main class="flex-grow flex justify-center items-center p-6" id="main-content">
+    <div class="mt-10 max-w-4xl w-full text-center bg-white p-8 rounded-lg shadow-xl border border-gray-200 hover:shadow-2xl transition duration-300 animate-fade">
+      <h1 class="text-4xl font-extrabold text-gray-800 mb-6 animate-slide">About Me</h1>
+      <div class="flex justify-center">
+        <img src="../assets/portfolio.jpg" alt="profile Image" class="w-3/4 h-80 object-cover rounded-md mb-4 animate-scale">
+      </div>
+      <p class="text-lg text-gray-700 mb-4 text-left animate-slide">
+          Hello, I'm <b>a passionate software engineer </b>with a strong background in web development and
+          a love for creating visually appealing and functional applications. My goal is to craft
+          seamless user experiences while building clean and maintainable code.
+        </p>
+
+      <p class="text-lg text-gray-700 mb-6 text-left animate-slide">
+        I enjoy solving complex problems and constantly learning new technologies to stay ahead in
+        the ever-evolving tech landscape.
+      </p>
+
+      <!-- Skills Section -->
+      <section class="mb-8 animate-fade">
+        <h2 class="text-2xl font-semibold text-gray-800 mb-4">Skills & Expertise</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <div class="bg-green-100 p-6 rounded-lg shadow-lg transition duration-300 hover:shadow-2xl hover:bg-green-200 animate-card">
+            <h3 class="text-xl font-semibold text-gray-800 mb-3">Frontend Development</h3>
+            <ul class="text-left list-disc pl-5 text-gray-600">
+              <li>React.js</li>
+              <li>HTML5 & CSS3</li>
+              <li>JavaScript</li>
+            </ul>
+          </div>
+
+          <div class="bg-green-100 p-6 rounded-lg shadow-lg transition duration-300 hover:shadow-2xl hover:bg-green-200 animate-card">
+            <h3 class="text-xl font-semibold text-gray-800 mb-3">Backend Development</h3>
+            <ul class="text-left list-disc pl-5 text-gray-600">
+              <li>Spring Boot</li>
+              <li>PHP</li>
+              <li>MySQL</li>
+            </ul>
+          </div>
+
+          <div class="bg-green-100 p-6 rounded-lg shadow-lg transition duration-300 hover:shadow-2xl hover:bg-green-200 animate-card">
+            <h3 class="text-xl font-semibold text-gray-800 mb-3">Tools & Technologies</h3>
+            <ul class="text-left list-disc pl-5 text-gray-600">
+              <li>Git & GitHub</li>
+              <li>VS Code</li>
+              <li>Figma (UI/UX Design)</li>
+              <li>IntelliJ IDEA</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="animate-fade">
+        <h2 class="text-2xl font-semibold text-gray-800 mb-4">Let's Connect</h2>
+        <p class="text-lg text-gray-700 mb-4">
+          Feel free to reach out if you'd like to collaborate or have any questions!
+        </p>
+        <p class="text-lg text-gray-700 mb-6">I'm always open to new opportunities and challenges!</p>
+        <div class="flex justify-center space-x-8">
+          <a href="https://github.com/Sahani-Mohottige" target="_blank" rel="noopener noreferrer" class="btn p-2 bg-gray-800 text-white hover:bg-gray-900">GitHub</a>
+          <a href="https://www.linkedin.com/in/sahani-mohottige-a7402823b/" target="_blank" rel="noopener noreferrer" class="btn p-2 bg-blue-600 text-white hover:bg-blue-700">LinkedIn</a>
+          <a href="https://x.com/MohottigeS18218" target="_blank" rel="noopener noreferrer" class="btn p-2 bg-blue-400 text-white hover:bg-blue-500">Twitter</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <div id="footer-container"></div> 
+
+  <script src="../js/loadComponents.js"></script>
+</body>
+</html>

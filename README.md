@@ -1,88 +1,56 @@
-### **Assignment: Personal Portfolio Web Page Development**  
+# 🌟 Personal Portfolio Website - SE/2021/016 
 
-#### **Objective:**  
-Develop a **personal portfolio web page** using **HTML, CSS, and JavaScript**. This project will assess your ability to design a creative, functional, and aesthetically pleasing website while ensuring proper use of version control through GitHub.  
+## 📌 Project Description
+This is a personal portfolio web page developed using **HTML**, **Tailwind CSS**, and **JavaScript**.  
+It features:
+- A **Home Page** with a short introduction  
+- An **About Me** section showcasing skills and interests  
+- A **Projects and Blogs** section to highlight completed works  
+- A **Contact Me** section with social media links and a contact form  
+
+The goal of this project is to demonstrate design creativity, responsiveness, and usability using core web technologies. It serves as a personal portfolio to showcase my skills, completed projects, and provide an easy way to connect with me.
+
+---
+### Summary
+
+-  **Fully responsive layout**: Adapts seamlessly to all device sizes, including web and mobile.
+- **Smooth animations**: Enhanced user experience with scroll and hover effects.
+- **Modern development practices**: Clean, efficient code using current best practices.
+- **Dynamic content**: Fast, interactive pages powered by JavaScript.
+- **Cloud deployment**: Hosted live on [Netlify](https://www.netlify.com).
+- **Clean file structure**: Organized project architecture for maintainability.
+- **Mobile-first design**: Optimized for smartphones, tablets, and desktop users.
+
+---
+## 📚 Libraries and Tools Used
+- [Tailwind CSS](https://tailwindcss.com/) – Utility-first CSS framework  
+- [Font Awesome](https://fontawesome.com/) – Icon library used via CDN  
+- [Netlify](https://netlify.com/) – Cloud hosting platform  
+- [GitHub](https://github.com/) – Version control and collaboration  
+---
+
+## 🌐 Live Hosted Link  
+🔗 [Visit My Portfolio](https://dazzling-sundae-966bcf.netlify.app/)
 
 ---
 
-### **Guidelines:**  
-✅ **Use only HTML, CSS, and JavaScript** (No frameworks like React (its a framework btw 🙃) , Angular, or Vue).  
-✅ **Third-party JS/CSS libraries are allowed** (e.g., Bootstrap, Tailwind CSS, jQuery, GSAP).  
-✅ The portfolio should be **creative, unique, and visually appealing**.  
-✅ Include at least the following sections:  
-   - **Home Page** (Introduction)  
-   - **About Me** (Skills & Interests)  
-   - **Projects** (Showcase your work)  
-   - **Contact Section** (Contact form or social links)  
-✅ **Host the website on a free platform** (GitHub Pages, Netlify, Vercel, etc.). **Extra marks will be awarded for hosting.**  
+## 💻 How to Run the Project Locally
 
+1. Clone or download this repository
+2. Open the folder in your code editor (e.g., VS Code)
+3. Right-click on `index.html` and select **"Open with Live Server"** (or simply open in a browser)
+- Alternatively, if you're using VS Code with the Live Server extension, click the "Go Live" button at the bottom right.
 ---
 
-### **GitHub Submission Instructions:**  
-1. **Clone the repository**:  
-   ```
-   git clone https://github.com/dasaCoder/SENG31313-2025.git
-   cd SENG31313-2025
-   ```
-2. **Create a new branch** with your student number:  
-   ```
-   git checkout -b feature/<student_no>
-   ```
-   **Example:** `feature/se204123`  
-3. **Inside the repository, create a folder named after your student number** inside the correct category:  
-   ```
-   se/20XX/YYY
-   ```
-   **Example:** `se/2025/001`  
-4. **Upload all your project files** (HTML, CSS, JS, assets) inside your folder.  
-5. **Host your website** on a free hosting platform:  
-   - **GitHub Pages:** [Guide](https://pages.github.com/)  
-   - **Netlify:** [Guide](https://www.netlify.com/)  
-   - **Vercel:** [Guide](https://vercel.com/)  
-6. **Create a `README.md` file** inside your folder with the following details:  
-   - **Project Description**  
-   - **Libraries Used** (if any)  
-   - **Live Hosted Link** (URL of the hosted site)  
-   - **How to Run the Project Locally**  
-7. **Commit and push your code**:  
-   ```
-   git add .
-   git commit -m "Added portfolio for <student_no>"
-   git push origin feature/<student_no>
-   ```
-8. **Create a pull request (PR)** to merge your branch into the main repository.  
 
-🚀 **Extra Marks for Proper GitHub Submission & Hosting the Site**  
+## 🙌 Acknowledgements
 
----
+Special thanks to:
+- [Tailwind CSS](https://tailwindcss.com/) team for their amazing framework  
+- [Netlify](https://netlify.com/) for seamless deployment experience  
+- [GitHub](https://github.com/) for version control infrastructure  
+- Online developer communities for continuous support  
+- Mentors who provided valuable feedback
 
-### **Evaluation Criteria:**  
-
-| Criteria                  | Marks (%) |
-|---------------------------|----------|
-| **Creativity & Uniqueness** | 25%      |
-| **Design & Appearance**    | 25%      |
-| **Functionality & Usability** | 20%      |
-| **Code Quality (HTML, CSS, JS)** | 10%      |
-| **Hosting the Site**       | 10%      |
-| **Proper GitHub Submission** | 10%      |
-
----
-
-### **Submission Deadline:**  
-📅 ** 8th of May **  
-
-### **Helpful Resources:**  
-- [GitHub Docs](https://docs.github.com/en/get-started)  
-- [Git Basics](https://git-scm.com/doc)  
-- [GitHub Pages](https://pages.github.com/)  
-- [Netlify](https://www.netlify.com/)  
-- [Vercel](https://vercel.com/)  
-- [W3Schools HTML, CSS, JS](https://www.w3schools.com/)  
-- [Bootstrap](https://getbootstrap.com/) (For styling)  
-- [Animate.css](https://animate.style/) (For animations)  
-
-### **Note:**  
-If you are unfamiliar with Git and GitHub, **learn the basics before starting**. Proper version control and **hosting the site** will be **rewarded with extra marks**. 🚀  
-
-Good luck! 💡
+  
+  
