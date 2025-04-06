@@ -86,3 +86,28 @@ Develop a **personal portfolio web page** using **HTML, CSS, and JavaScript**. T
 If you are unfamiliar with Git and GitHub, **learn the basics before starting**. Proper version control and **hosting the site** will be **rewarded with extra marks**. 🚀  
 
 Good luck! 💡
+
+
+ Portfolio Website - se2021013 jojeevan
+
+ Project Description
+This is a personal portfolio website built as part of the SENG31313 coursework. It highlights my education, experience, and soft skills. The site includes an interactive contact form and responsive design for better user experience.
+
+Libraries & Tools Used
+- **HTML5** & **CSS3**
+- **Bootstrap 5.3**
+- **Font Awesome (for icons)**
+- **Formspree** (for contact form submission)
+- **Google Fonts** (Poppins)
+
+ Live Hosted Link
+[Click to View the Live Site](https://joyjojeevan.github.io/SENG31313-2025/)
+
+ Netlify hosting page link :(https://stellar-pavlova-d8c8e2.netlify.app/)
+
+ How to Run the Project Locally
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/dasaCoder/SENG31313-2025.git
+
