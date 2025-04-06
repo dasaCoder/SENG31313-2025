@@ -1,0 +1,137 @@
+:root {
+    --primary-color: #e9bb46;
+    --dark-bg: #1a1a1a;
+    --text-color: #ffffff;
+    --gradient-bg: linear-gradient(135deg, #2d1b4e, #1a1a1a);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: var(--gradient-bg);
+    color: var(--text-color);
+}
+
+.portfolio {
+    padding: 4rem 5%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.main-text {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.main-text span {
+    color: var(--primary-color);
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.main-text h2 {
+    font-size: 2.5rem;
+    margin-top: 0.5rem;
+}
+
+
+
+.portfolio-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.port-box {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    background: #292e33;
+    border: 2px solid var(--primary-color);
+    box-shadow: 0 0 20px rgba(145, 132, 14, 0.53);
+    height: 300px;
+}
+
+.port-image {
+    width: 100%;
+    height: 100%;
+}
+
+.port-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.port-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(233, 187, 70, 0.2));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    transform: translateY(100%);
+    transition: 0.5s ease;
+}
+
+.port-box:hover .port-content {
+    transform: translateY(0);
+}
+
+.port-box:hover .port-image img {
+    transform: scale(1.1);
+}
+
+.port-content h3 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.port-content p {
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.port-content .btn {
+    padding: 0.8rem 1.5rem;
+    background: var(--primary-color);
+    color: var(--dark-bg);
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.port-content .btn:hover {
+    background: transparent;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
+
+@media (max-width: 768px) {
+    .filter-button {
+        flex-wrap: wrap;
+    }
+    
+    .portfolio-gallery {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+}

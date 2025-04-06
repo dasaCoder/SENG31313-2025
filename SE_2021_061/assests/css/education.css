@@ -1,0 +1,212 @@
+:root {
+    --primary-color: #e9bb46;
+    --dark-bg: #1a1a1a;
+    --text-color: #ffffff;
+    --gradient-bg: linear-gradient(135deg, #2d1b4e, #1a1a1a);
+    --card-bg: #2d1b4e;
+    --text-secondary: #b3b3b3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--gradient-bg);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.main-text {
+    text-align: center;
+    padding: 4rem 0 2rem; /* Reduced from 6rem 0 4rem */
+    position: relative;
+}
+
+.main-text::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 4px;
+    background: var(--primary-color);
+    border-radius: 2px;
+}
+
+.main-text span {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.main-text h2 {
+    font-size: 3.5rem;
+    margin-top: 0.8rem;
+    color: var(--text-color);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.education-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 2rem 0;
+}
+
+.timeline-item {
+    display: flex;
+    gap: 2.5rem;
+    position: relative;
+    padding: 1.5rem;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background: var(--primary-color);
+    border-radius: 2px;
+    box-shadow: 0 0 15px rgba(233, 187, 70, 0.5);
+}
+
+.timeline-content {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    background: rgba(17, 17, 17, 0.7);
+    border-radius: 20px;
+    padding: 2.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(233, 187, 70, 0.2);
+    backdrop-filter: blur(10px);
+    transition: all 0.4s ease;
+}
+
+.timeline-content:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(233, 187, 70, 0.2);
+    border: 1px solid rgba(233, 187, 70, 0.4);
+}
+
+.degree-details {
+    position: relative;
+}
+
+.timeline-content h3 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 1.2rem;
+    font-weight: 600;
+}
+
+.timeline-content h4 {
+    color: var(--text-color);
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+    font-weight: 500;
+}
+
+.timeline-content .period {
+    display: inline-block;
+    color: var(--primary-color);
+    font-size: 1rem;
+    padding: 0.6rem 1.2rem;
+    background: rgba(233, 187, 70, 0.1);
+    border-radius: 25px;
+    margin-bottom: 1.5rem;
+    border: 1px solid rgba(233, 187, 70, 0.3);
+}
+
+.achievements {
+    position: relative;
+    padding-left: 2.5rem;
+    border-left: 2px dashed rgba(233, 187, 70, 0.3);
+}
+
+.achievements h5 {
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    margin-bottom: 1.2rem;
+    font-weight: 500;
+}
+
+.achievements ul {
+    list-style: none;
+}
+
+.achievements li {
+    position: relative;
+    padding-left: 1.8rem;
+    margin-bottom: 1.2rem;
+    color: var(--text-secondary);
+    font-size: 1rem;
+}
+
+.achievements li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+}
+
+@media (max-width: 968px) {
+    .timeline-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .achievements {
+        padding-left: 0;
+        border-left: none;
+        padding-top: 2rem;
+        border-top: 2px dashed rgba(233, 187, 70, 0.3);
+    }
+
+    .main-text h2 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .timeline-item {
+        padding-left: 2rem;
+    }
+
+    .main-text {
+        padding: 4rem 0 3rem;
+    }
+
+    .main-text h2 {
+        font-size: 2.5rem;
+    }
+
+    .timeline-content h3 {
+        font-size: 1.6rem;
+    }
+
+    .timeline-content h4 {
+        font-size: 1.2rem;
+    }
+
+    .timeline-content {
+        padding: 1.8rem;
+    }
+} 
+
