@@ -15,3 +15,12 @@
     display: inline-block;
     background-size: 100% 100%;
 }
+
+#topic-line{
+    border: none;
+    height: 1.8px;
+    background: white;
+    width: 70px;
+    margin-left: 4px;
+    margin-bottom: -10px;
+  }

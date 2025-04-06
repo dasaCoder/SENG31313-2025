@@ -1,0 +1,122 @@
+.aboutMe-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 300;
+    font-size: 16px;
+    word-spacing: 0.1cm;
+}
+
+.aboutMe-column{
+    display: flex;
+    justify-content: space-between;
+    gap: 0em;
+}
+.content {
+    flex-basis: 60%;
+    padding-right: 10px;
+}
+
+.profile-image {
+    flex-basis:100%;
+    text-align: right;
+    margin-top: -9em;
+    margin-right: -2em;
+    max-width: 450px;      
+    height: auto;          
+    padding: 1em;     
+       
+}
+
+.section-title {    
+    display: inline-block;    
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;;
+    font-size: 30px;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: 0;
+    width: 70px;
+    height: 2.5px;
+    background-color: white;
+}
+
+.bio {
+    margin-bottom: 40px; 
+    
+}
+
+.contact-info {
+    margin-bottom: 30px;
+    flex: 1;
+    max-width: 250px;
+}
+
+.info-label {
+    color: #24BEC4;
+    margin-bottom: 5px;
+    font-weight: 400 ;
+}
+
+.info-value {
+    font-size: 16px;
+    margin-bottom: 20px;
+    margin-top: 0;
+    
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+    flex: 1;
+    min-width: 250px;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border: 1.7px solid #fff;
+    border-radius: 50%;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    background-color: white;
+}
+
+.social-icon:hover {    
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column-reverse;
+    }
+    .content, .profile-image {
+        flex-basis: 100%;
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+    .profile-image {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .profile-image img {
+        max-width: 300px;
+    }
+}
