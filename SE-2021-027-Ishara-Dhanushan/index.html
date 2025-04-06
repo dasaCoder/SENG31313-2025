@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Ishara Dhanushan</title>
     <link rel="stylesheet" href="./css/output.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
 </head>
 <body>
 <!-- Header component with elevated look -->
-<header class="bg-gradient-to-r from-blue-800 to-blue-500 text-white shadow-lg relative">
+<header class="sticky top-0 z-50 bg-gradient-to-r from-blue-800 to-blue-500 text-white shadow-lg">
     <div class="container mx-auto px-4 py-6">
         <div class="flex justify-between items-center">
             <!-- Logo/Name -->
@@ -69,12 +71,12 @@
 </script>
 
 <!-- Hero Section -->
-<section class="bg-gradient-to-r from-blue-200 to-blue-100 text-black relative py-16 md:py-24">
+<section id="home" class="bg-gradient-to-r from-blue-200 to-blue-100 text-black relative py-16 md:py-24">
     <div class="absolute inset-0 z-0 opacity-20">
-        <img src="/api/placeholder/1600/800" alt="Background Pattern" class="w-full h-full object-cover"/>
+        <!-- <img src="/api/placeholder/1600/800" alt="Background Pattern" class="w-full h-full object-cover"/> -->
     </div>
 
-    <div class="container mx-auto px-4 relative z-10">
+    <div class="container mx-auto px-10 relative z-10">
         <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-12">
             <!-- Text Content -->
             <div class="flex flex-col space-y-6">
@@ -86,11 +88,11 @@
                     I'm <span class="text-blue-400">Ishara Dhanushan</span>
                 </h1>
 
-                <p class="text-xl text-gray-300">
+                <p class="text-xl text-gray-500">
                     Turning ideas into digital reality
                 </p>
 
-                <p class="text-gray-400 max-w-md">
+                <p class="text-gray-600 max-w-md">
                     Experienced full-stack developer with a passion for creating elegant, user-centered web
                     applications. Specializing in modern frameworks and responsive design to deliver seamless digital
                     experiences.
@@ -113,8 +115,8 @@
             <!-- Profile Image -->
             <div class="flex justify-center md:justify-end">
                 <div class="relative">
-                    <div class="w-64 h-64 rounded-full overflow-hidden border-4 border-blue-400 shadow-lg">
-                        <img src="/api/placeholder/400/400" alt="Ishara Dhanushan" class="w-full h-full object-cover"/>
+                    <div class="w-96 h-96 rounded-full overflow-hidden border-4 border-blue-400 shadow-lg">
+                        <img src="./assets/WhatsApp%20Image%202025-03-27%20at%207.17.43%20PM.jpeg" alt="Profile Picture" class="w-full h-full object-cover"/>
                     </div>
                     <div class="absolute -bottom-4 -right-4 bg-blue-500 rounded-full p-4 shadow-lg">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
@@ -150,43 +152,85 @@
     </script>
 </section>
 
+<!-- Modern About Me Section -->
+<section id="about" class="py-16 bg-gradient-to-b from-gray-50 to-white">
+    <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-extrabold text-center text-gray-800 mb-12">About Me</h2>
+        <div class="max-w-7xl mx-auto grid gap-10 bg-white shadow-xl rounded-3xl p-10">
 
-<!-- About Me Section -->
-<section id="about-me" class="py-12 bg-gray-50">
-    <div class="container mx-auto px-4">
-        <h2 class="text-3xl font-bold mb-8 text-center">About Me</h2>
-        <div class="max-w-3xl mx-auto">
-            <div class="bg-white rounded-lg shadow-md p-6">
-                <h3 class="text-xl font-semibold mb-4">Professional Background</h3>
-                <p class="mb-6">
-                    I'm a passionate web developer with over 5 years of experience building responsive, user-friendly web applications. I've collaborated with cross-functional teams at both startups and established companies to deliver solutions that combine technical excellence with intuitive user experiences. My background spans front-end development, back-end architecture, and everything in between.
-                </p>
-
-                <h3 class="text-xl font-semibold mb-4">Education</h3>
-                <p class="mb-6">
-                    I hold a Bachelor's degree in Computer Science from [University Name], where I specialized in web technologies and software engineering. I've supplemented my formal education with continuous learning through professional certifications, online courses, and participation in tech communities.
-                </p>
-
-                <h3 class="text-xl font-semibold mb-4">Professional Journey</h3>
-                <p class="mb-6">
-                    My journey began as a junior developer at [Company Name], where I developed strong fundamentals in HTML, CSS, and JavaScript. As I progressed, I embraced modern frameworks and methodologies, eventually leading development teams and architecting complex applications. Each role has added new perspectives to my approach, teaching me to balance technical considerations with business objectives.
-                </p>
-
-                <h3 class="text-xl font-semibold mb-4">Goals</h3>
-                <p class="mb-6">
-                    I'm constantly working to expand my expertise in emerging technologies while deepening my understanding of software architecture principles. My goal is to create web applications that not only function flawlessly but also delight users with their design and usability. I'm particularly interested in contributing to projects that leverage technology to solve meaningful problems.
-                </p>
-
-                <h3 class="text-xl font-semibold mb-4">Personal Interests</h3>
-                <p>
-                    When I'm not coding, I enjoy attending tech meetups and hackathons to connect with like-minded professionals. I'm an avid follower of web development blogs and podcasts, and I occasionally contribute to open-source projects. I also enjoy exploring new programming languages and frameworks through personal projects, which helps me stay creative and current in this rapidly evolving field.
-                </p>
+            <!-- Professional Background -->
+            <div class="flex gap-4 items-start">
+                <div class="text-indigo-500 text-3xl">
+                    <i class="fas fa-briefcase"></i>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold mb-2 text-gray-700">Professional Background</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        I'm a passionate web developer with over 5 years of experience building responsive, user-friendly web applications. I've collaborated with cross-functional teams at both startups and established companies to deliver solutions that combine technical excellence with intuitive user experiences.
+                    </p>
+                </div>
             </div>
+
+            <!-- Education -->
+            <div class="flex gap-4 items-start">
+                <div class="text-indigo-500 text-3xl">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold mb-2 text-gray-700">Education</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        I am a Bachelor of Science (Hons) Undergraduate in Software Engineering from University of Kelaniya, I am currently specialized in Web Application Development and Mobile Application Development. I've supplemented my education with certifications, online courses, and community participation.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Professional Journey -->
+            <div class="flex gap-4 items-start">
+                <div class="text-indigo-500 text-3xl">
+                    <i class="fas fa-code-branch"></i>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold mb-2 text-gray-700">Professional Journey</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        I started as a junior developer at [Company Name], developing strong fundamentals in HTML, CSS, and JavaScript. Over time, I adopted modern frameworks and methodologies, leading development teams and architecting complex systems.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Goals -->
+            <div class="flex gap-4 items-start">
+                <div class="text-indigo-500 text-3xl">
+                    <i class="fas fa-bullseye"></i>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold mb-2 text-gray-700">Goals</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        I aim to deepen my expertise in emerging technologies and software architecture. My mission is to build applications that are not only functional but also delightful and impactful for users.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Personal Interests -->
+            <div class="flex gap-4 items-start">
+                <div class="text-indigo-500 text-3xl">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold mb-2 text-gray-700">Personal Interests</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Outside of work, I attend tech meetups, explore new frameworks, contribute to open source, and enjoy podcasts and blogs about web development. Personal projects help me stay creative and curious.
+                    </p>
+                </div>
+            </div>
+
         </div>
     </div>
 </section>
 
-<section id="about-me" class="py-20 bg-black text-white">
+
+
+<!-- Claude generated very advanced about me section -->
+<section id="about-me2" class="py-20 bg-black text-white">
     <div class="container mx-auto px-4">
         <!-- Animated heading with creative styling -->
         <div class="mb-16 relative">
