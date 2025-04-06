@@ -13,7 +13,7 @@ JavaScript
 box icons (for icons)
 
 🌍 Live Hosted Link:
-https://67f230d0d6f65106905b6e74--incredible-mermaid-fa4e49.netlify.app/
+https://67f234e9af44162ba4b200e1--chipper-tarsier-b14ec2.netlify.app/
 
 💻 How to Run the Project Locally:
 
