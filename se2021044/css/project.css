@@ -151,7 +151,31 @@
     object-fit: cover;
 }
 
-#cal{
+#cal{    
     width: 18em;
     height: auto;
 }
+
+@media screen and (max-width: 1520px) {
+    .project-content {
+        flex-direction: column; 
+        align-items: center;  
+    }
+
+    .projects-wrapper {
+        padding: 1em; 
+        text-align: center; 
+    }
+
+    .project-left,
+    .project-right {
+        width: 100%;  
+        text-align: center; 
+        margin-top: 1em; 
+    }
+
+    #cal {
+        max-width: 30%;         
+    }
+}
+
