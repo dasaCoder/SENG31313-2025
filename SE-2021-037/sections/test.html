@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minindu Abeywardena - Software Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3B82F6',
+                        secondary: '#10B981',
+                        dark: '#1F2937',
+                        light: '#F3F4F6',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Header / Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-sm">
+        <div class="px-4 py-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+            <nav class="flex items-center justify-between">
+                <div class="flex-shrink-0">
+                    <a href="#" class="text-2xl font-bold text-primary">MA</a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="flex items-center ml-10 space-x-8">
+                        <a href="#about" class="transition-colors text-dark hover:text-primary">About</a>
+                        <a href="#education" class="transition-colors text-dark hover:text-primary">Education</a>
+                        <a href="#skills" class="transition-colors text-dark hover:text-primary">Skills</a>
+                        <a href="#projects" class="transition-colors text-dark hover:text-primary">Projects</a>
+                        <a href="#certifications" class="transition-colors text-dark hover:text-primary">Certifications</a>
+                        <a href="#contact" class="px-4 py-2 text-white transition-colors rounded-md bg-primary hover:bg-blue-600">Contact</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-500 hover:text-primary">
+                        <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </nav>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden bg-white border-t md:hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#about" class="block px-3 py-2 text-dark hover:text-primary">About</a>
+                <a href="#education" class="block px-3 py-2 text-dark hover:text-primary">Education</a>
+                <a href="#skills" class="block px-3 py-2 text-dark hover:text-primary">Skills</a>
+                <a href="#projects" class="block px-3 py-2 text-dark hover:text-primary">Projects</a>
+                <a href="#certifications" class="block px-3 py-2 text-dark hover:text-primary">Certifications</a>
+                <a href="#contact" class="block px-3 py-2 text-dark hover:text-primary">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="about" class="py-20 text-white bg-gradient-to-r from-blue-500 to-blue-700">
+        <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+            <div class="flex flex-col items-center justify-between md:flex-row">
+                <div class="mb-10 md:w-1/2 md:mb-0">
+                    <h1 class="mb-4 text-4xl font-bold md:text-5xl">MININDU ABEYWARDENA</h1>
+                    <h2 class="mb-6 text-2xl font-semibold md:text-3xl">Software Engineering Undergraduate</h2>
+                    <p class="mb-8 text-lg">
+                        Highly Motivated third-year Software Engineering undergraduate with a keen passion for full-stack
+                        development. Proficient in creating dynamic web apps, e-commerce platforms, and UI/UX-focused
+                        projects. Interested in creating efficient, scalable solutions and constantly learning and growing as a full-stack
+                        developer.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#contact" class="px-6 py-3 font-medium text-blue-700 transition-colors bg-white rounded-md hover:bg-gray-100">Get in Touch</a>
+                        <a href="#projects" class="px-6 py-3 font-medium transition-colors border-2 border-white rounded-md hover:bg-white hover:text-blue-700">View Projects</a>
+                    </div>
+                </div>
+                <div class="md:w-1/3">
+                    <div class="p-1 bg-white rounded-full shadow-xl">
+                        <img src="/api/placeholder/400/400" alt="Minindu Abeywardena" class="rounded-full">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-16 bg-white">
+        <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+            <h2 class="mb-12 text-3xl font-bold text-center text-dark">Education</h2>
+            
+            <div class="space-y-8">
+                <div class="p-6 shadow-md bg-gray-50 rounded-xl">
+                    <div class="flex flex-col justify-between mb-2 md:flex-row">
+                        <h3 class="text-xl font-bold text-primary">Bachelor of Science Honors in Software Engineering</h3>
+                        <p class="text-gray-600">07/2023 - Present</p>
+                    </div>
+                    <p class="text-lg text-dark">University of Kelaniya</p>
+                    <p class="mt-2 text-gray-700">GPA: 3.78/4.0</p>
+                </div>
+                
+                <div class="p-6 shadow-md bg-gray-50 rounded-xl">
+                    <div class="flex flex-col justify-between mb-2 md:flex-row">
+                        <h3 class="text-xl font-bold text-primary">Pearson Diploma in Information Technology</h3>
+                        <p class="text-gray-600">04/2022 - 04/2023</p>
+                    </div>
+                    <p class="text-lg text-dark">ESOFT Metro Campus</p>
+                </div>
+                
+                <div class="p-6 shadow-md bg-gray-50 rounded-xl">
+                    <div class="flex flex-col justify-between mb-2 md:flex-row">
+                        <h3 class="text-xl font-bold text-primary">General Certificate of Education Advanced Level</h3>
+                        <p class="text-gray-600"></p>
+                    </div>
+                    <p class="text-lg text-dark">Trinity College Kandy</p>
+                    <p class="mt-2 text-gray-700">3B's</p>
+                </div>
+                
+                <div class="p-6 shadow-md bg-gray-50 rounded-xl">
+                    <div class="flex flex-col justify-between mb-2 md:flex-row">
+                        <h3 class="text-xl font-bold text-primary">General Certificate of Education Ordinary Level</h3>
+                        <p class="text-gray-600"></p>
+                    </div>
+                    <p class="text-lg text-dark">Trinity College Kandy</p>
+                    <p class="mt-2 text-gray-700">9A's</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 bg-gray-50">
+        <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+            <h2 class="mb-12 text-3xl font-bold text-center text-dark">Skills</h2>
+            
+            <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
+                <div class="p-6 bg-white shadow-md rounded-xl">
+                    <h3 class="mb-4 text-xl font-bold text-primary">Technical Skills</h3>
+                    
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">Web Development</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="w-full h-2 bg-gray-200 rounded-full">
+                                <div class="h-2 rounded-full bg-primary" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">Java</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="w-full h-2 bg-gray-200 rounded-full">
+                                <div class="h-2 rounded-full bg-primary" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">JavaScript</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="w-full h-2 bg-gray-200 rounded-full">
+                                <div class="h-2 rounded-full bg-primary" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">PHP</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="w-full h-2 bg-gray-200 rounded-full">
+                                <div class="h-2 rounded-full bg-primary" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">Python</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="w-full h-2 bg-gray-200 rounded-full">
+                                <div class="h-2 rounded-full bg-primary" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">React</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="w-full h-2 bg-gray-200 rounded-full">
+                                <div class="h-2 rounded-full bg-primary" style="width: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="p-6 bg-white shadow-md rounded-xl">
+                    <h3 class="mb-4 text-xl font-bold text-primary">Soft Skills</h3>
+                    
+                    <ul class="space-y-3">
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 mr-2 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Strong analytical and quantitative skills
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 mr-2 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Excellent communication and interpersonal abilities
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 mr-2 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Ability to work effectively both independently and as part of a team
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 mr-2 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Proficient in building full-stack web applications
+                        </li>
+                    </ul>
+                    
+                    <h3 class="mt-6 mb-4 text-xl font-bold text-primary">Languages</h3>
+                    
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">English</span>
+                                <span>9/10</span>
+                            </div>
+                            <div class="w-full h-2 bg-gray-200 rounded-full">
+                                <div class="h-2 rounded-full bg-primary" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium">Japanese</span>
+                                <span>2/10</span>
+                            </div>
+                            <div class="w-full h-2 bg-gray-200 rounded-full">
+                                <div class="h-2 rounded-full bg-primary" style="width: 20%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 bg-white">
+        <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+            <h2 class="mb-12 text-3xl font-bold text-center text-dark">Projects</h2>
+            
+            <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
+                <div class="overflow-hidden shadow-md bg-gray-50 rounded-xl">
+                    <div class="flex items-center justify-center h-48 bg-gray-200">
+                        <img src="/api/placeholder/400/200" alt="FuelWiseLK Project" class="object-cover w-full h-full">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="text-xl font-bold text-primary">FuelWiseLK</h3>
+                            <p class="text-sm text-gray-600">Dec 2024 - Feb 2025</p>
+                        </div>
+                        <p class="mb-4 text-gray-700">A fuel quota management system designed for Sri Lanka to streamline fuel distribution during crises.</p>
+                        <div class="mb-4">
+                            <span class="text-sm font-medium">Technologies:</span>
+                            <div class="flex flex-wrap gap-2 mt-2">
+                                <span class="px-2 py-1 text-xs text-blue-800 bg-blue-100 rounded">React</span>
+                                <span class="px-2 py-1 text-xs text-blue-800 bg-blue-100 rounded">Dart</span>
+                                <span class="px-2 py-1 text-xs text-blue-800 bg-blue-100 rounded">Java</span>
+                                <span class="px-2 py-1 text-xs text-blue-800 bg-blue-100 rounded">Spring Boot</span>
+                                <span class="px-2 py-1 text-xs text-blue-800 bg-blue-100 rounded">JPA</span>
+                                <span class="px-2 py-1 text-xs text-blue-800 bg-blue-100 rounded">MySQL</span>
+                            </div>
+                        </div>
+                        <a href="https://github.com/MininduBimsara/FuelWiseLK.git" target="_blank" class="flex items-center text-primary hover:underline">
+                            <i class="mr-2 fab fa-github"></i> View on GitHub
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="overflow-hidden shadow-md bg-gray-50 rounded-xl">
+                    <div class="flex items-center justify-center h-48 bg-gray-200">
+                        <img src="/api/placeholder/400/200" alt="FreshKit Project" class="object-cover w-full h-full">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="text-xl font-bold text-primary">FreshKit</h3>
+                            <p class="text-sm text-gray-600">May - Sep 2024</p>
+                        </div>
+                        <p class="mb-4 text-gray-700">A Sri Lankan e-commerce platform delivering farm-fresh groceries with PayPal payments and an efficient admin panel.</p>
+                        <div class="mb-4">
+                            <span class="text-sm font-medium">Technologies:</span>
+                            <div class="flex flex-wrap gap-2 mt-2">
+                                <span class="px-2 py-1 text-xs text-blue-800 bg-blue-100 rounded">HTML</span>
+                                <span class="px-2 py-1 text-xs text-blue-800 bg-blue-100 rounded">CSS</span>
+                                <span class="px-2 py-1 text-xs text-blue-800 bg-blue-100 rounded">JavaScript</span>
+                                <span class="px-2 py-1 text-xs text-blue-800 bg-blue-100 rounded">PHP with PDO</span>
+                                <span class="px-2 py-1 text-xs text-blue-800 bg-blue-100 rounded">MySQL</span>
+                                <span class="px-2 py-1 text-xs text-blue-800 bg-blue-100 rounded">Bootstrap</span>
+                            </div>
+                        </div>
+                        <a href="https://github.com/MininduBimsara/Freshkit.git" target="_blank" class="flex items-center text-primary hover:underline">
+                            <i class="mr-2 fab fa-github"></i> View on GitHub
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="overflow-hidden shadow-md bg-gray-50 rounded-xl">
+                    <div class="flex items-center justify-center h-48 bg-gray-200">
+                        <img src="/api/placeholder/400/200" alt="SwiftConnect Project" class="object-cover w-full h-full">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="text-xl font-bold text-primary">SwiftConnect</h3>
+                            <p class="text-sm text-gray-600">Oct - Nov 2024</p>
+                        </div>
+                        <p class="mb-4 text-gray-700">A dynamic logistics and courier service platform, offering fast, reliable, and seamless shipping solutions.</p>
+                        <div class="mb-4">
+                            <span class="text-sm font-medium">Technologies:</span>
+                            <div class="flex flex-wrap gap-2 mt-2">
+                                <span class="px-2 py-1 text-xs text-blue-800 bg-blue-100 rounded">HTML</span>
+                                <span class="px-2 py-1 text-xs text-blue-800 bg-blue-100 rounded">CSS</span>
+                                <span class="px-2 py-1 text-xs text-blue-800 bg-blue-100 rounded">JavaScript</span>
+                                <span class="px-2 py-1 text-xs text-blue-800 bg-blue-100 rounded">PHP</span>
+                                <span class="px-2 py-1 text-xs text-blue-800 bg-blue-100 rounded">MySQL</span>
+                            </div>
+                        </div>
+                        <a href="https://github.com/MininduBimsara/SwiftConnect.git" target="_blank" class="flex items-center text-primary hover:underline">
+                            <i class="mr-2 fab fa-github"></i> View on GitHub
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="overflow-hidden shadow-md bg-gray-50 rounded-xl">
+                    <div class="flex items-center justify-center h-48 bg-gray-200">
+                        <img src="/api/placeholder/400/200" alt="WiseVoice Project" class="object-cover w-full h-full">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="text-xl font-bold text-primary">WiseVoice</h3>
+                            <p class="text-sm text-gray-600">July 2024</p>
+                        </div>
+                        <p class="mb-4 text-gray-700">A UI for a voice-activated chat application just for senior citizens. Utilizes voice interaction to increase accessibility and usability.</p>
+                        <div class="mb-4">
+                            <span class="text-sm font-medium">Technologies:</span>
+                            <div class="flex flex-wrap gap-2 mt-2">
+                                <span class="px-2 py-1 text-xs text-blue-800 bg-blue-100 rounded">Figma</span>
+                                <span class="px-2 py-1 text-xs text-blue-800 bg-blue-100 rounded">UI/UX</span>
+                            </div>
+                        </div>
+                        <a href="#" target="_blank" class="flex items-center text-primary hover:underline">
+                            <i class="mr-2 fab fa-figma"></i> View on Figma
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="py-16 bg-gray-50">
+        <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+            <h2 class="mb-12 text-3xl font-bold text-center text-dark">Certifications</h2>
+            
+            <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+                <div class="p-6 bg-white shadow-md rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="p-3 mr-4 bg-blue-100 rounded-full">
+                            <i class="text-2xl text-yellow-500 fab fa-js"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-dark">JavaScript (Alison)</h3>
+                            <p class="text-gray-600">Completed: April 2024</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">Gained proficiency in JavaScript programming for web development, including DOM manipulation and event handling.</p>
+                </div>
+                
+                <div class="p-6 bg-white shadow-md rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="p-3 mr-4 bg-blue-100 rounded-full">
+                            <i class="text-2xl text-blue-500 fab fa-css3-alt"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-dark">CSS (Udemy)</h3>
+                            <p class="text-gray-600">Completed: April 2024</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">Learned advanced CSS techniques for responsive web design, including Flexbox and Grid.</p>
+                </div>
+                
+                <div class="p-6 bg-white shadow-md rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="p-3 mr-4 bg-blue-100 rounded-full">
+                            <i class="text-2xl text-red-500 fab fa-java"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-dark">Java (Udemy)</h3>
+                            <p class="text-gray-600">Completed: January 2024</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">Acquired skills in object-oriented programming and Java fundamentals for application development.</p>
+                </div>
+                
+                <div class="p-6 bg-white shadow-md rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="p-3 mr-4 bg-blue-100 rounded-full">
+                            <i class="text-2xl text-blue-700 fab fa-python"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-dark">Python (Udemy)</h3>
+                            <p class="text-gray-600">Completed: December 2023</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">Mastered Python basics, data structures, and libraries for data analysis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Volunteer Experience -->
+    <section class="py-16 bg-white">
+        <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+            <h2 class="mb-12 text-3xl font-bold text-center text-dark">Volunteer Experience</h2>
+            
+            <div class="space-y-6">
+                <div class="p-6 shadow-md bg-gray-50 rounded-xl">
+                    <div class="flex flex-col justify-between mb-2 md:flex-row">
+                        <h3 class="text-xl font-bold text-primary">Public Relations Officer</h3>
+                        <p class="text-gray-600">09/2024 - Present</p>
+                    </div>
+                    <p class="text-lg text-dark">ISACA Student Group</p>
+                </div>
+                
+                <div class="p-6 shadow-md bg-gray-50 rounded-xl">
+                    <div class="flex flex-col justify-between mb-2 md:flex-row">
+                        <h3 class="text-xl font-bold text-primary">Logistics Sub Com. Member</h3>
+                        <p class="text-gray-600">09/2023 - Present</p>
+                    </div>
+                    <p class="text-lg text-dark">IEEE Computer Society</p>
+                </div>
+                
+                <div class="p-6 shadow-md bg-gray-50 rounded-xl">
+                    <div class="flex flex-col justify-between mb-2 md:flex-row">
+                        <h3 class="text-xl font-bold text-primary">Web Development Team</h3>
+                        <p class="text-gray-600">06/2024 - Present</p>
+                    </div>
+                    <p class="text-lg text-dark">Zero Plastic Movement</p>
+                    <p class="mt-2 text-gray-700">Participated in the Zero Plastic Movement's Web development project at our university as the leader of the content creation group.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+            <h2 class="mb-12 text-3xl font-bold text-center text-dark">Achievements</h2>
+            
+            <div class="p-6 bg-white shadow-md rounded-xl">
+                <div class="flex items-start">
+                    <div class="p-3 mr-4 bg-yellow-100 rounded-full">
+                        <i class="text-2xl text-yellow-500 fas fa-trophy"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-primary">First Runners-up</h3>
+                        <p class="mt-2 text-gray-700">In the annual inter-faculty mathematics competition held by the Department of Mathematics at the University of Kelaniya on 11 March 2024.</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 text-white bg-gradient-to-r from-blue-600 to-blue-800">
+        <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center

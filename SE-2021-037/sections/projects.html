@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects Carousel</title>
+    <!-- Tailwind CSS CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .bg-custom-3498db {
+        background-color: #3498db;
+      }
+      .hover\:bg-custom-2980b9:hover {
+        background-color: #2980b9;
+      }
+      .text-custom-2c3e50 {
+        color: #2c3e50;
+      }
+      /* Carousel Styles */
+      .carousel {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+      }
+      .carousel-inner {
+        display: flex;
+        transition: transform 0.5s ease;
+      }
+      .carousel-item {
+        flex: 0 0 100%;
+        width: 100%;
+      }
+      /* Project Card Styles */
+      .project-card {
+        transition: all 0.3s ease;
+      }
+      .project-card:hover {
+        transform: translateY(-8px);
+      }
+      .project-title {
+        transition: transform 0.3s ease;
+      }
+      .project-header:hover .project-title {
+        transform: scale(1.1);
+      }
+      .project-header:hover .header-overlay {
+        opacity: 0.2;
+      }
+      .header-overlay {
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+      .technology-tag {
+        transition: all 0.3s ease;
+      }
+      .technology-tag:hover {
+        transform: scale(1.05);
+      }
+      .view-project-btn {
+        transition: all 0.3s ease;
+      }
+      .view-project-btn:hover {
+        transform: scale(1.05);
+      }
+      /* Carousel Controls */
+      .carousel-control {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 40px;
+        height: 40px;
+        background-color: #3498db;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        cursor: pointer;
+        opacity: 0.7;
+        transition: opacity 0.3s ease;
+        z-index: 10;
+      }
+      .carousel-control:hover {
+        opacity: 1;
+        background-color: #2980b9;
+      }
+      .carousel-control-prev {
+        left: 10px;
+      }
+      .carousel-control-next {
+        right: 10px;
+      }
+      /* Carousel Indicators */
+      .carousel-indicators {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+      }
+      .carousel-indicator {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: #ccc;
+        margin: 0 5px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+      .carousel-indicator.active {
+        background-color: #3498db;
+        width: 24px;
+        border-radius: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Projects Section -->
+    <section id="projects" class="py-12 bg-gray-50">
+      <div class="container max-w-6xl px-4 mx-auto">
+        <div class="mb-12 text-center">
+          <h2 class="mb-3 text-4xl font-bold text-custom-2c3e50">My Projects</h2>
+          <p class="text-lg text-gray-600">Some of my recent work</p>
+          <div class="w-24 h-1 mx-auto mt-4 rounded-full bg-custom-3498db"></div>
+        </div>
+
+        <!-- Carousel -->
+        <div class="carousel">
+          <div class="carousel-inner" id="carousel-inner">
+            <!-- FuelWiseLK Project -->
+            <div class="carousel-item">
+              <div class="max-w-xl mx-auto">
+                <div class="overflow-hidden bg-white border border-gray-100 shadow-lg rounded-xl project-card">
+                  <div class="relative h-52 bg-custom-3498db project-header">
+                    <img src="./Assets/Images/Home_Page.png" alt="FuelWiseLK Project Image" class="object-cover w-full h-full">
+                    <div class="absolute inset-0 flex items-center justify-center">
+                    </div>
+                    <div class="absolute inset-0 bg-[#2980B9] header-overlay"></div>
+                  </div>
+                  <div class="p-6">
+                      <h3 class="text-3xl font-bold text-gray-700 project-title">FuelWiseLK</h3>
+                    <p class="mb-4 text-gray-700">
+                      A fuel quota management system designed for Sri Lanka to streamline fuel distribution during crises.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                      <span class="px-3 py-1 text-xs font-medium text-white rounded-full bg-custom-3498db technology-tag">React</span>
+                      <span class="px-3 py-1 text-xs font-medium text-white rounded-full bg-custom-3498db technology-tag">Dart</span>
+                      <span class="px-3 py-1 text-xs font-medium text-white rounded-full bg-custom-3498db technology-tag">Java</span>
+                      <span class="px-3 py-1 text-xs font-medium text-white rounded-full bg-custom-3498db technology-tag">Spring Boot</span>
+                      <span class="px-3 py-1 text-xs font-medium text-white rounded-full bg-custom-3498db technology-tag">MySQL</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                      <span class="text-sm text-gray-500">Dec 2024 - Feb 2025</span>
+                      <span class="text-sm font-medium text-custom-3498db">Group Project</span>
+                    </div>
+                    <a
+                      href="https://github.com/MininduBimsara/FuelWiseLK.git"
+                      target="_blank"
+                      class="inline-flex items-center justify-center w-full px-4 py-3 mt-5 text-white transition-colors rounded-lg bg-custom-3498db hover:bg-custom-2980b9 view-project-btn"
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                      </svg>
+                      View Project
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- FreshKit Project -->
+            <div class="carousel-item">
+              <div class="max-w-xl mx-auto">
+                <div class="overflow-hidden bg-white border border-gray-100 shadow-lg rounded-xl project-card">
+                  <div class="relative h-52 bg-custom-3498db project-header">
+                    <img src="./Assets/Images/freshkit.png" alt="FuelWiseLK Project Image" class="object-cover w-full h-full">
+                    <div class="absolute inset-0 flex items-center justify-center">
+                    </div>
+                    <div class="absolute inset-0 bg-[#2980B9] header-overlay"></div>
+                  </div>
+                  <div class="p-6">
+                      <h3 class="text-3xl font-bold text-gray-700 project-title">FreshKit</h3>
+                    <p class="mb-4 text-gray-700">
+                      A Sri Lankan e-commerce platform delivering farm-fresh groceries with PayPal payments and an efficient admin panel.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                      <span class="px-3 py-1 text-xs font-medium text-white rounded-full bg-custom-3498db technology-tag">HTML</span>
+                      <span class="px-3 py-1 text-xs font-medium text-white rounded-full bg-custom-3498db technology-tag">CSS</span>
+                      <span class="px-3 py-1 text-xs font-medium text-white rounded-full bg-custom-3498db technology-tag">JavaScript</span>
+                      <span class="px-3 py-1 text-xs font-medium text-white rounded-full bg-custom-3498db technology-tag">PHP</span>
+                      <span class="px-3 py-1 text-xs font-medium text-white rounded-full bg-custom-3498db technology-tag">MySQL</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                      <span class="text-sm text-gray-500">May 2024 - Sep 2024</span>
+                      <span class="text-sm font-medium text-custom-3498db">Individual Project</span>
+                    </div>
+                    <a
+                      href="https://github.com/MininduBimsara/Freshkit.git"
+                      target="_blank"
+                      class="inline-flex items-center justify-center w-full px-4 py-3 mt-5 text-white transition-colors rounded-lg bg-custom-3498db hover:bg-custom-2980b9 view-project-btn"
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                      </svg>
+                      View Project
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- SwiftConnect Project -->
+            <div class="carousel-item">
+              <div class="max-w-xl mx-auto">
+                <div class="overflow-hidden bg-white border border-gray-100 shadow-lg rounded-xl project-card">
+                  <div class="relative h-52 bg-custom-3498db project-header">
+                    <img src="./Assets/Images/swiftconnect.png" alt="FuelWiseLK Project Image" class="object-cover w-full h-full">
+                    <div class="absolute inset-0 flex items-center justify-center">                    </div>
+                    <div class="absolute inset-0 bg-[#2980B9] header-overlay"></div>
+                  </div>
+                  <div class="p-6">
+                      <h3 class="text-3xl font-bold text-gray-700 project-title">SwiftConnect</h3>
+                    <p class="mb-4 text-gray-700">
+                      A dynamic logistics and courier service platform, offering fast, reliable, and seamless shipping solutions.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                      <span class="px-3 py-1 text-xs font-medium text-white rounded-full bg-custom-3498db technology-tag">HTML</span>
+                      <span class="px-3 py-1 text-xs font-medium text-white rounded-full bg-custom-3498db technology-tag">CSS</span>
+                      <span class="px-3 py-1 text-xs font-medium text-white rounded-full bg-custom-3498db technology-tag">JavaScript</span>
+                      <span class="px-3 py-1 text-xs font-medium text-white rounded-full bg-custom-3498db technology-tag">PHP</span>
+                      <span class="px-3 py-1 text-xs font-medium text-white rounded-full bg-custom-3498db technology-tag">MySQL</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                      <span class="text-sm text-gray-500">Oct 2024 - Nov 2024</span>
+                      <span class="text-sm font-medium text-custom-3498db">Group Project</span>
+                    </div>
+                    <a
+                      href="https://github.com/MininduBimsara/SwiftConnect.git"
+                      target="_blank"
+                      class="inline-flex items-center justify-center w-full px-4 py-3 mt-5 text-white transition-colors rounded-lg bg-custom-3498db hover:bg-custom-2980b9 view-project-btn"
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                      </svg>
+                      View Project
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- WiseVoice Project -->
+            <div class="carousel-item">
+              <div class="max-w-xl mx-auto">
+                <div class="overflow-hidden bg-white border border-gray-100 shadow-lg rounded-xl project-card">
+                  <div class="relative h-52 bg-custom-3498db project-header">
+                    <img src="./Assets/Images/WiseVoice.png" alt="FuelWiseLK Project Image" class="object-cover w-full h-full">
+                    <div class="absolute inset-0 flex items-center justify-center">
+                    </div>
+                    <div class="absolute inset-0 bg-[#2980B9] header-overlay"></div>
+                  </div>
+                  <div class="p-6">
+                      <h3 class="text-3xl font-bold text-gray-700 project-title">WiseVoice</h3>
+                    <p class="mb-4 text-gray-700">
+                      A UI for a voice-activated chat application designed for senior citizens, utilizing voice interaction to increase accessibility and usability.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                      <span class="px-3 py-1 text-xs font-medium text-white rounded-full bg-custom-3498db technology-tag">Figma</span>
+                      <span class="px-3 py-1 text-xs font-medium text-white rounded-full bg-custom-3498db technology-tag">UI/UX</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                      <span class="text-sm text-gray-500">Jul 2024</span>
+                      <span class="text-sm font-medium text-custom-3498db">UI/UX Group Project</span>
+                    </div>
+                    <a
+                      href="https://www.figma.com/design/08wSftQ6vaAhMbCm2WRy2j/Figma-Project?node-id=0-1&t=rPIAM6RmcyL1LjAW-1"
+                      target="_blank"
+                      class="inline-flex items-center justify-center w-full px-4 py-3 mt-5 text-white transition-colors rounded-lg bg-custom-3498db hover:bg-custom-2980b9 view-project-btn"
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                      </svg>
+                      View Project
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Navigation Controls -->
+          <button class="carousel-control carousel-control-prev" id="prev-btn" aria-label="Previous slide">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+            </svg>
+          </button>
+          <button class="carousel-control carousel-control-next" id="next-btn" aria-label="Next slide">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
+
+          <!-- Indicators -->
+          <div class="carousel-indicators" id="carousel-indicators"></div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

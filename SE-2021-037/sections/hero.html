@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hero Section</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Include TypedJS library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <!-- <style>
+      @keyframes custom-rotate {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      .custom-rotate {
+        animation: custom-rotate 20s linear infinite;
+      }
+      /* Cursor styling */
+      #typed-text::after {
+        content: "|";
+        display: inline;
+        animation: blink 0.7s infinite;
+      }
+      /* Modified styles for typed text container */
+      #typed-text-container {
+        display: inline-block;
+        min-width: 240px; /* Keep your fixed width */
+        white-space: nowrap;
+        overflow: hidden;
+        vertical-align: baseline; /* Ensures alignment with surrounding text */
+        position: relative; /* Ensures proper positioning */
+        line-height: inherit; /* Match the parent's line height */
+      }
+      /* Make sure the parent element has a consistent line height */
+      h1.mb-5 {
+        line-height: 1.2; /* Adjust as needed to match your design */
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+      }
+
+      /* If the above doesn't work fully, you can try forcing alignment with this */
+      #typed-text {
+        vertical-align: baseline;
+        position: relative;
+        top: 0; /* Adjust this value if needed (positive moves down, negative moves up) */
+      }
+      @keyframes blink {
+        0%,
+        100% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0;
+        }
+      }
+      /* Fix for layout stability */
+      .text-container {
+        min-height: 6rem; /* Ensure text container has stable height */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      /* Fix apostrophe in text */
+      .apostrophe-fix {
+        font-family: Arial, sans-serif;
+      }
+    </style> -->
+  </head>
+  <body>
+    <!-- Hero Section with Improved Mobile Responsiveness -->
+    <section id="home" class="flex items-center min-h-screen pt-24 pb-10">
+      <div class="px-5 mx-auto max-w-7xl">
+        <!-- Use flex-col-reverse for mobile and flex-row for desktop -->
+        <div
+          class="flex flex-col-reverse items-center md:flex-row md:items-center"
+        >
+          <!-- Left column - Text content -->
+          <div class="w-full mt-10 text-center md:w-3/5 md:text-left md:mt-0">
+            <p class="mb-2 text-lg font-medium text-primary apostrophe-fix">
+              Hello! I'm Minindu
+            </p>
+            <div class="text-container">
+              <h1
+                class="mb-5 text-4xl font-bold leading-tight md:text-5xl text-dark apostrophe-fix"
+              >
+                I'm a
+                <span
+                  id="typed-text-container"
+                  class="relative inline-block min-w-[240px]"
+                >
+                  <span id="typed-text"> </span>
+                </span>
+              </h1>
+            </div>
+            <p
+              class="max-w-xl mx-auto mb-8 leading-relaxed text-subtext md:mx-0"
+            >
+              "I'm a passionate software engineering undergraduate who loves
+              building full-stack web applications. Currently studying at the
+              University of Kelaniya, I'm eager to grow as a developer and take
+              on real-world challenges."
+            </p>
+            <div
+              class="flex flex-wrap justify-center gap-4 mb-10 md:justify-start"
+            >
+              <a
+                href="#contact"
+                class="flex items-center py-3 font-medium text-white transition-all transform rounded-full bg-primary px-7 hover:bg-secondary hover:-translate-y-1 hover:shadow-lg"
+              >
+                <i class="mr-2 fas fa-briefcase"></i>
+                Hire Me
+              </a>
+              <a
+                href="https://drive.google.com/uc?export=download&id=1Yn7VTbzr168gYnS6PCWfQ1nFFxzqEFhY"
+                class="flex items-center py-3 font-medium transition-all transform border rounded-full button border-primary text-text px-7 hover:bg-gray-100 hover:-translate-y-1 hover:shadow-md"
+              >
+                <i class="mr-2 fas fa-download"></i>
+                Download CV
+              </a>
+            </div>
+            <div class="flex justify-center mb-8 space-x-5 md:justify-start">
+              <!-- Social Icons Section -->
+              <div
+                class="flex justify-center space-x-5 delay-500 lg:justify-start fade-up"
+              >
+                <a
+                  href="https://www.linkedin.com/in/minindu-abeywardena"
+                  class="flex items-center justify-center w-10 h-10 transition-all bg-gray-100 rounded-full social-icon hover:-translate-y-1 hover:shadow-md"
+                  style="background-color: #0a66c2; color: white"
+                  aria-label="LinkedIn"
+                >
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a
+                  href="https://github.com/MininduBimsara"
+                  class="flex items-center justify-center w-10 h-10 text-gray-800 transition-all bg-gray-200 rounded-full social-icon hover:-translate-y-1 hover:shadow-md"
+                  aria-label="GitHub"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+                <a
+                  href="https://www.facebook.com/share/1AN798rrEy/"
+                  class="flex items-center justify-center w-10 h-10 transition-all rounded-full social-icon hover:-translate-y-1 hover:shadow-md"
+                  style="background-color: #1877f2; color: white"
+                  aria-label="Facebook"
+                >
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a
+                  href="https://www.instagram.com/bimxara_01?igsh=MW1lMzRtZXZtbjh3cQ=="
+                  class="flex items-center justify-center w-10 h-10 transition-all rounded-full social-icon hover:-translate-y-1 hover:shadow-md"
+                  style="background-color: #e4405f; color: white"
+                  aria-label="Instagram"
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Right column - Image -->
+          <div class="flex justify-center w-full md:w-2/5">
+            <div class="relative w-60 h-60 md:w-96 md:h-96">
+              <!-- Dotted Border -->
+              <div
+                class="absolute inset-0 border-2 border-dashed rounded-full border-[#3498DB] custom-rotate"
+              ></div>
+
+              <!-- Image Container -->
+              <div
+                class="absolute overflow-hidden bg-white border-8 border-white rounded-full shadow-xl inset-2"
+              >
+                <img
+                  src="./Assets/Images/hero_new.jpg"
+                  alt="Minindu"
+                  class="object-cover object-center w-full h-full"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
