@@ -26,7 +26,7 @@ Node.js & Express (if backend is included)
 
 Live Hosted Link
 
-https://guileless-marigold-86a6cc.netlify.app/
+https://67f27593aaa6d98d0796bf1a--guileless-marigold-86a6cc.netlify.app/
 
 
 
