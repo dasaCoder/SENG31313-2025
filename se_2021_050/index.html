@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenuja Sivakumar - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <script src="https://kit.fontawesome.com/983c44e164.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <!-- <button class="button1" data-text="Awesome">
+                <span class="actual-text">&nbsp;Kenuja&nbsp;</span>
+                <span aria-hidden="true" class="hover-text">&nbsp;Kenuja&nbsp;</span>
+            </button> -->
+            <div class="card">
+                <div class="loader">
+                  <p>Kenuja</p>
+                  <div class="words">
+                    <span class="word">About</span>
+                    <span class="word">Projects</span>
+                    <span class="word">Contact</span>
+                    <span class="word">Services</span>
+                  </div>
+                </div>
+              </div>
+
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#services">Services</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars"onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Software Developer</p>
+            <h1>Hi,I'm <span>Kenuja</span><br>Sivakumar From Srilanka</h1>
+        </div>
+        
+    </div>
+    <!-- --------about------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/backimg.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a passionate software developer with experience in designing, developing, and maintaining software solutions. Proficient in  C, Java, JavaScript, Html, CSS I have worked on [mention types of projects, web applications, mobile apps, backend systems and Frontend. I enjoy solving complex problems and continuously learning new technologies to improve efficiency and performance.
+
+                        I am skilled in  React, Springboot and have experience collaborating in team environments to deliver high-quality software. My goal is to create scalable and user-friendly applications that meet business and user needs.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <!-- <p class="tab-links"onclick="opentab('experience')">Experience</p> -->
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>App Development</span><br>Building Android/iOS app</li>
+                        </ul>
+                    </div>
+                    <!-- <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021-Current</span><br>UI/UX Design Training at ET Institute</li>
+                            <li><span>2019-2021</span><br>Team lead at starapp LLC</li>
+                            <li><span>2017-2019</span><br>UI/UX Design Executive at Coin Didital Ltd.</li>
+                            <li><span>2016-2017</span><br>Internship at ekart eCommerce</li>
+                                
+                        </ul>
+                    </div> -->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Ordinary Level</span><br>7A 2B</li>
+                            <li><span>Advance Level</span><br>A pass in Chemistry and B pass in Mathematics and Physics</li>
+                            <li><span>Degree</span><br>BCS Hons in Software Engineering</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- ------------services---------- -->
+     <div class="services" id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                 <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>I design and develop responsive, fast, and user-friendly websites tailored to your business needs. Using modern frameworks like  React and Springboot , I ensure a seamless and engaging user experience across all devices.</p>
+                    <a href="#">Learn more</a>
+                 </div>
+                 <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>I craft intuitive and visually appealing interfaces that enhance user interaction and satisfaction. With a user-centered design approach, I ensure your product is easy to use, aesthetically pleasing, and optimized for a great experience.</p>
+                    <a href="#">Learn more</a>
+                 </div>
+                 <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App Design</h2>
+                    <p>From concept to deployment, I create high-performance mobile and web applications with a focus on functionality and usability. Whether it's a native or cross-platform app, I build scalable solutions that enhance user engagement and business growth.</p>
+                    <a href="#">Learn more</a>
+                 </div>
+
+            </div>
+        </div>
+     </div>
+     <!-- ---------portfolio--------- -->
+      <div class="projects"id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="worklist">
+                <div class="work"><img src="images/gasoline-8719776.jpg" >
+                    <div class="layer">
+                        <h3>Fuel management System</h3>
+                        <p>A smart and efficient Fuel Management System designed to track fuel consumption, manage inventory, and optimize fuel distribution. The system ensures accurate monitoring, reduces wastage, and enhances operational efficiency. Built using tech React,SpringBoot and ReactNative. it features real-time reporting, user authentication, and an intuitive dashboard for easy management.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work"><img src="images/book-store-7643976.jpg" >
+                    <div class="layer">
+                        <h3>Archiology Book Sore</h3>
+                        <p>An online bookstore dedicated to archaeology enthusiasts, offering a vast collection of rare and modern archaeology books. This platform provides easy search, secure payments, and a seamless user experience for book lovers. Developed with PHP and JavaScript, it ensures smooth browsing, personalized recommendations, and efficient order management.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <!-- <div class="work"><img src="images/pexels-njeromin-16572492.jpg" >
+                    <div class="layer">
+                        <h3>Fuel management System</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quibusdam ea numquam fuga libero consequatur voluptates iusto, accusamus omnis ut sed mollitia inventore. Necessitatibus facilis, architecto a deserunt labore quaerat.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div> -->
+            </div>
+            <a href="#"class="btn">See more</a>
+        </div>
+      </div>
+
+      <!-- -------contact------ -->
+       <div class="contact"id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>kenujasivakumar@gmail.com</p>
+                    <p><i class="fa-solid fa-phone-volume"></i>0743159018</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100092314997070"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/kenujasivakumar05/?__pwa=1"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/kenuja-sivakumar-b71265281/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="CV/Kenuja Sivakumar.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="https://formspree.io/f/mjkyaqbr" method="POST">
+                        <input type="text" name="name" placeholder="Your Name" required><br>
+                        <input type="email" name="email" placeholder="Your Email" required><br>
+                        <textarea name="message" placeholder="Your Message" required></textarea><br>
+                        <button class="btn btn2"type="submit">Send</button>
+                      </form>
+                </div>
+            </div>
+        </div>
+        
+       </div>
+    
+
+
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+      for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+
+      } 
+      for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab")
+      } 
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+
+    }
+
+    
+</script>
+<script>
+    var sidemeu=document.getElementById("sidemenu");
+    function openmenu(){
+        sidemeu.style.right="0";
+    }
+    function closemenu(){
+        sidemeu.style.right="-200px";
+    }
+
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+<script>
+    (function(){
+        emailjs.init("your_user_id"); // Get this from Email.js dashboard
+    })();
+
+    document.getElementById("contact-form").addEventListener("submit", function(event) {
+        event.preventDefault();
+        
+        emailjs.sendForm("service_hg7k5ow", "your_template_id", this)
+            .then(response => {
+                alert("Message sent successfully!");
+            }, error => {
+                alert("Failed to send message. Try again later.");
+            });
+    });
+</script>
+
+
+</body>
+</html>   
