@@ -29,17 +29,12 @@
         display: inline;
         animation: blink 0.7s infinite;
       }
-      /* Add these new styles */
+      /* Modified styles for typed text container */
       #typed-text-container {
         display: inline-block;
         min-width: 240px; /* Adjust this width based on your longest text */
         white-space: nowrap;
-      }
-      /* You can keep your existing cursor styling or use TypedJS's built-in cursor */
-      .typing::after {
-        content: "|";
-        display: inline;
-        animation: blink 0.7s infinite;
+        position: relative; /* Ensure it doesn't affect the layout of other elements */
       }
       @keyframes blink {
         0%,
@@ -56,10 +51,11 @@
     <!-- Hero Section -->
     <section id="home" class="flex items-center min-h-screen pt-20">
       <div class="px-5 mx-auto max-w-7xl">
-        <!-- Added md:items-center for proper vertical alignment -->
+        <!-- Use flex-col-reverse for mobile and flex-row for desktop -->
         <div
           class="flex flex-col-reverse items-center md:flex-row md:items-center"
         >
+          <!-- Left column - Text content -->
           <div class="w-full mt-10 text-center md:w-3/5 md:text-left md:mt-0">
             <p class="mb-2 text-lg font-medium text-primary">
               Hello! I'am Minindu
@@ -81,9 +77,9 @@
             <p
               class="max-w-xl mx-auto mb-8 leading-relaxed text-subtext md:mx-0"
             >
-              "I’m a passionate software engineering undergraduate who loves
+              "I'm a passionate software engineering undergraduate who loves
               building full-stack web applications. Currently studying at the
-              University of Kelaniya, I’m eager to grow as a developer and take
+              University of Kelaniya, I'm eager to grow as a developer and take
               on real-world challenges."
             </p>
             <div
@@ -143,17 +139,18 @@
               </div>
             </div>
           </div>
+          <!-- Right column - Image -->
           <div class="flex justify-center w-full md:w-2/5">
-            <!-- Increased image container size in desktop mode -->
+            <!-- Removed the translate-x-20 class that was causing layout issues -->
             <div
-              class="relative w-64 h-64 transform translate-x-20 md:w-96 md:h-96"
+              class="relative w-64 h-64 md:w-96 md:h-96"
             >
               <!-- Dotted Border (Move with Image) -->
               <div
                 class="absolute inset-0 border-2 border-dashed rounded-full border-[#3498DB] custom-rotate"
               ></div>
 
-              <!-- Image Container (Also Moves) -->
+              <!-- Image Container -->
               <div
                 class="absolute overflow-hidden bg-white border-8 border-white rounded-full shadow-xl inset-2"
               >
