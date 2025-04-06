@@ -86,3 +86,66 @@ Develop a **personal portfolio web page** using **HTML, CSS, and JavaScript**. T
 If you are unfamiliar with Git and GitHub, **learn the basics before starting**. Proper version control and **hosting the site** will be **rewarded with extra marks**. 🚀  
 
 Good luck! 💡
+
+
+
+
+Portfolio SE/2021/020
+
+#  Keerthi Gopalavannan Portfolio Website
+
+ This project highlights my skills, work experience, and contact information in a clean, professional layout.
+
+---
+
+##  Project Description
+
+This website serves as my personal portfolio to showcase:
+- My background and introduction
+- Key technical and soft skills
+- Projects I’ve worked on
+- Contact form and social links
+
+The design is fully responsive, meaning it works smoothly on desktops, tablets, and mobile devices. 
+
+---
+
+##  Features
+
+-  Responsive design using Bootstrap 5
+-  Smooth scrolling and animations
+-  Contact form (can be integrated with services like EmailJS or Formspree)
+-  Social media integration
+-  Clean, minimal layout
+
+---
+
+##  Technologies & Libraries Used
+
+- [Bootstrap 5](https://getbootstrap.com/)
+- [Font Awesome](https://fontawesome.com/) (for icons)
+- [Google Fonts](https://fonts.google.com/)
+- [jQuery](https://jquery.com/) *(optional, depending on template)*
+- HTML5 & CSS3
+
+---
+
+##  Live Demo
+
+ [View Live Site](https://keerthigopalm.github.io/SENG31313-2025)
+
+ Actual deployed link  Netlify:https://lustrous-panda-1ace0e.netlify.app/
+
+---
+
+
+##  How to Run the Project Locally
+
+1. **Clone this repository**
+   ```bash
+   git clone https://github.com/keerthigopalm/SENG31313-2025.git
+   cd SENG31313-2025
+
+Open the project Simply open index.html in your browser, or use a VSCode extension like Live Server.
+
+
