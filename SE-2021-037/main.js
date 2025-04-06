@@ -739,7 +739,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     // Mobile Menu Toggle
     const mobileMenuBtn = document.getElementById("mobileMenuBtn");
-    const navLinks = document.getElementById("navLinks");
+    const navLinks = document.getElementById("mobileNav");
 
     if (mobileMenuBtn && navLinks) {
       // Make sure the hamburger icon is properly visible
