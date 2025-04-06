@@ -375,7 +375,7 @@ span{
     transition: 0.5s ease;
 }
 
-/* Breakpoints */
+
 @media (max-width: 1200px){
     html{
         font-size: 55%;
@@ -468,9 +468,7 @@ span{
         margin-bottom: 3rem;
     }
 
-    /* .portfolio-container{
-        grid-template-columns: repeat(2,1fr);
-    } */
+   
 }
 
     @media (max-width: 617px){
@@ -507,7 +505,7 @@ span{
         }
     }
 
-    /* From Uiverse.io by Pravins01 */ 
+    
 .card {
     position: relative;
     width: 190px;
@@ -572,9 +570,7 @@ span{
     transform: rotate(-180deg) scaleX(1.34) scaleY(0.77);
   }
   
-  /* --------------------------------------------- */
-    
- /* From Uiverse.io by MikeAndrewDesigner */ 
+  
  .skillFlex{
     display: flex;
     justify-content: center;
@@ -673,8 +669,7 @@ span{
   }
 
 
-  -------------------------------------------------
- /* From Uiverse.io by Juanes200122 */ 
+ 
 .skillLoad {
     position: relative;
     max-width: 500px;
@@ -717,31 +712,31 @@ span{
   }
   
   .skill-per.html {
-    /*progreso de las diferentes lenguajes*/
+    
     width: 90%;
     animation-delay: 0.1s;
   }
   
   .skill-per.css {
-    /*progreso de las diferentes lenguajes*/
+    
     width: 95%;
     animation-delay: 0.1s;
   }
   
   .skill-per.js {
-    /*progreso de las diferentes lenguajes*/
+    
     width: 70%;
     animation-delay: 0.2s;
   }
   
   .skill-per.c {
-    /*progreso de las diferentes lenguajes*/
+    
     width: 75%;
     animation-delay: 0.2s;
   }
   
   .skill-per.java{
-    /*progreso de las diferentes lenguajes*/
+   
     width: 70%;
     animation-delay: 0.2s;
   }
