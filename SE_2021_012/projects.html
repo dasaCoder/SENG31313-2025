@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects | Nadeesha Medagama</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="container">
+        <a href="index.html" class="logo">NM</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html" class="active">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</nav>
+
+<section id="projects" class="section projects">
+    <div class="container">
+        <h2 class="section-title">My Projects</h2>
+        <p class="section-subtitle">Here are Some of My Recent Works:</p>
+
+        <div class="project-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="web">Web</button>
+            <button class="filter-btn" data-filter="app">DevOps</button>
+            <button class="filter-btn" data-filter="design">Frameworks</button>
+        </div>
+
+        <div class="projects-grid">
+
+            <div class="project-item" data-category="web">
+                <div class="project-img">
+                    <img src="images/flowersales.png" alt="E-commerce Website">
+                    <div class="project-links">
+                        <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                        <a href="#" class="project-link"><i class="fas fa-search"></i></a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>E-Commerce Platform</h3>
+                    <p>Full-Featured Online Store with Payment Integration</p>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>PHP</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-item" data-category="app">
+                <div class="project-img">
+                    <img src="images/img.png" alt="Fitness App">
+                    <div class="project-links">
+                        <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                        <a href="#" class="project-link"><i class="fas fa-search"></i></a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>CI/CD with Jenkins</h3>
+                    <p>Integrated Jenkins with Version Control Systems to Streamline the Development.</p>
+                    <div class="project-tags">
+                        <span>Git/GitHub</span>
+                        <span>Docker</span>
+                        <span>Linux</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-item" data-category="design">
+                <div class="project-img">
+                    <img src="images/fuelProject.png" alt="UI/UX Design">
+                    <div class="project-links">
+                        <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                        <a href="#" class="project-link"><i class="fas fa-search"></i></a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Application Using Web Frameworks</h3>
+                    <p>Streamlined team collaboration and task management.</p>
+                    <div class="project-tags">
+                        <span>React</span>
+                        <span>Spring boot</span>
+                        <span>SQL</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<div id="project-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div class="modal-body">
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="social-links">
+            <a href="https://github.com/NadeeshaMedagama"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/nadeesha-medagama-5aa827287/"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://x.com/NadeeshaMe36209"><i class="fab fa-twitter"></i></a>
+            <a href="https://dribbble.com/NadeeshaMedagama"><i class="fab fa-dribbble"></i></a>
+        </div>
+        <p>&copy; <span id="year"></span> Nadeesha Medagama. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

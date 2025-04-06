@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Smith | Professional Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar">
+    <div class="container">
+        <a href="index.html" class="logo">NM</a>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</nav>
+
+<section id="home" class="hero">
+    <div id="particles-js"></div>
+    <div class="container">
+        <div class="hero-content">
+            <h4 class="subtitle animate__animated animate__fadeIn">Hello, I'm</h4>
+            <h1 class="title animate__animated animate__fadeIn animate__delay-1s">Nadeesha Medagama</h1>
+            <h2 class="profession animate__animated animate__fadeIn animate__delay-2s">Software Engineering Undergraduate & DevOps Enthusiast</h2>
+            <p class="description animate__animated animate__fadeIn animate__delay-3s">Passionate About Building Scalable Systems, Automating Deployments, And Optimizing Workflows While Pursuing My Degree In Software Engineering.</p>
+            <div class="cta-buttons animate__animated animate__fadeIn animate__delay-4s">
+                <a href="projects.html" class="btn btn-primary">View My Work</a>
+                <a href="contact.html" class="btn btn-secondary">Contact Me</a>
+            </div>
+        </div>
+        <div class="hero-image animate__animated animate__fadeInRight">
+            <img src="images/IMG_4407.jpeg" alt="Nadeesha Medagama">
+        </div>
+    </div>
+    <a href="#about" class="scroll-down">
+        <i class="fas fa-chevron-down"></i>
+    </a>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="section services">
+    <div class="container">
+        <h2 class="section-title">What I Do</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3>Infrastructure & Automation</h3>
+                <p>Automate CI/CD, cloud infra, and container orchestration with GitHub Actions, Terraform, Docker, and Kubernetes.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h3>Development & Collaboration</h3>
+                <p>Develop scalable web apps with React and Node.js, write clean code, and implement DevOps best practices.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-paint-brush"></i>
+                </div>
+                <h3>Learning & Growth</h3>
+                <p>Exploring cloud-native tech, SRE principles, and automation with a focus on reliability and monitoring.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="social-links">
+            <a href="https://github.com/NadeeshaMedagama"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/nadeesha-medagama-5aa827287/"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://x.com/NadeeshaMe36209"><i class="fab fa-twitter"></i></a>
+            <a href="https://dribbble.com/NadeeshaMedagama"><i class="fab fa-dribbble"></i></a>
+        </div>
+        <p>&copy; <span id="year"></span> Nadeesha Medagama. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="js/particles.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
