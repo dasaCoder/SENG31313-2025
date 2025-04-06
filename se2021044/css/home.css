@@ -18,9 +18,7 @@
 #rightContent {
     display: flex;
     flex-direction: column;
-    justify-content: center; 
-    
-    
+    justify-content: center;      
 }
 
 #name{
@@ -65,7 +63,7 @@
     max-width: 15em;
 }
 
-@media screen and (max-width: 1520px) {
+@media screen and (max-width: 1300px) {
     .home {
         flex-direction: column;
         align-items: center;
@@ -99,7 +97,7 @@
 
     .home p {
         font-size: 14px; 
-        max-width: 90%; 
+        max-width: 70%; 
         margin-bottom: 40px;
     }
 
