@@ -32,10 +32,26 @@
       /* Modified styles for typed text container */
       #typed-text-container {
         display: inline-block;
-        min-width: 240px; /* Fixed width container */
+        min-width: 240px; /* Keep your fixed width */
         white-space: nowrap;
-        overflow: hidden; /* Prevent overflow */
-        vertical-align: baseline; /* Ensure vertical alignment */
+        overflow: hidden;
+        vertical-align: baseline; /* Ensures alignment with surrounding text */
+        position: relative; /* Ensures proper positioning */
+        line-height: inherit; /* Match the parent's line height */
+      }
+      /* Make sure the parent element has a consistent line height */
+      h1.mb-5 {
+        line-height: 1.2; /* Adjust as needed to match your design */
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+      }
+
+      /* If the above doesn't work fully, you can try forcing alignment with this */
+      #typed-text {
+        vertical-align: baseline;
+        position: relative;
+        top: 0; /* Adjust this value if needed (positive moves down, negative moves up) */
       }
       @keyframes blink {
         0%,
@@ -170,6 +186,5 @@
         </div>
       </div>
     </section>
-
   </body>
 </html>
