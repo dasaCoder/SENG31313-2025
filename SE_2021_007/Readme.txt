@@ -13,8 +13,7 @@ JavaScript
 box icons (for icons)
 
 🌍 Live Hosted Link:
-https://67f234e9af44162ba4b200e1--chipper-tarsier-b14ec2.netlify.app/
-
+https://67f2679dea4a3e7ca461731d--tranquil-cendol-d38f8c.netlify.app/
 💻 How to Run the Project Locally:
 
 Clone or download the project folder.
