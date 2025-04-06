@@ -132,7 +132,7 @@ function initializeCarousel() {
 
 // Improved Typed text initialization function
 function initializeTypedText() {
-  const typedElement = document.getElementById("#typed-text");
+  const typedElement = document.getElementById("typed-text");
   if (!typedElement) return;
 
   if (typeof Typed !== "undefined") {
