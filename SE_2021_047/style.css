@@ -90,6 +90,10 @@ ul{
     min-height: calc(100vh-70px);
     border-radius: 30px;
     backdrop-filter: var(--backdrop-filter-blur);
+    display:none;
+ }
+ section.active{
+    display: block;
  }
 .main{
     max-width: 1200px;
@@ -172,8 +176,10 @@ button{
  /* home sectoion css */
 
 .home-section{
-    display: flex;
     padding: 120px 0;
+}
+.home-section.active{
+    display: flex;
 }
 
 .home-text p{
