@@ -804,11 +804,11 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 const contactForm = document.getElementById('contactForm');
 
 if (contactForm) {
-  contactForm2.addEventListener('submit', async function (e) {
+  contactForm.addEventListener('submit', async function (e) {
     e.preventDefault();
 
     let isValid = true;
-    const requiredFields = contactForm2.querySelectorAll('input, textarea');
+    const requiredFields = contactForm.querySelectorAll('input, textarea');
 
     requiredFields.forEach(field => {
       if (!field.value.trim()) {
@@ -832,10 +832,10 @@ if (contactForm) {
     });
 
     if (isValid) {
-      const formData = new FormData(contactForm2);
+      const formData = new FormData(contactForm);
 
       try {
-        const response = await fetch(contactForm2.action, {
+        const response = await fetch(contactForm.action, {
           method: 'POST',
           body: formData,
           headers: {
@@ -849,9 +849,9 @@ if (contactForm) {
           successMessage.innerHTML = '<strong>Success!</strong> Your message has been sent.';
 
           const wrapper = document.getElementById('form-wrapper');
-          contactForm2.appendChild(successMessage);
+          contactForm.appendChild(successMessage);
 
-          contactForm2.reset();
+          contactForm.reset();
 
           setTimeout(() => {
             successMessage.remove();
@@ -863,7 +863,7 @@ if (contactForm) {
     }
   });
 
-  contactForm2.querySelectorAll('input, textarea').forEach(field => {
+  contactForm.querySelectorAll('input, textarea').forEach(field => {
     field.addEventListener('input', function () {
       this.classList.remove('border-red-500');
 
