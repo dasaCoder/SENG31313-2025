@@ -61,7 +61,7 @@
                     <p><strong>Address:  </strong>No 55, Udugoda, Ruggahawila</p>
                     <p><strong>Phone:  </strong>+94 777397226</p>
                     <p><strong>Email Address:  </strong>hiruniramanayaka9@gmail.com</p>
-                    <button onClick="" >Contact Me</button>
+                    <button onClick="location.href='#contact'" >Contact Me</button>
                 </div>
             </div>
 
@@ -319,7 +319,13 @@
 
         <!-- Contact -->
         <section id="contact">
-            
+            <h1>Contact</h1>
+            <form class="contact-form" action="https://formspree.io/f/xqapgyaj" method="POST">
+                <input type="text" name="name" placeholder="Your Name*" required>
+                <input type="email" name="email" placeholder="Your Email*" required>
+                <textarea name="message" rows="5" placeholder="Your Message*" required></textarea>
+                <button type="submit">Send Message</button>
+              </form>              
         </section>
 
     </main>

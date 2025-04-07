@@ -124,7 +124,7 @@ button:hover {
   }
 
  
-  /*About me and Skills blogs*/
+  /*About me and Skills and blogs*/
   #about-section, #skills, #blogs {
     margin: auto;
     padding: 30px 150px;
@@ -363,11 +363,70 @@ button:hover {
 }
 
 
+/* Contact */
+#contact {
+  margin: auto;
+  padding: 30px 150px;
+}
 
+#contact h1{
+  font-size: 100px;
+  color: rgba(0, 0, 0 ,0.3);
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#contact .contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#contact .contact-form input,
+#contact .contact-form textarea {
+  padding: 14px 18px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #333;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#contact .contact-form input:focus,
+#contact .contact-form textarea:focus {
+  border-color: #00bfff;
+  box-shadow: 0 0 4px rgba(0, 191, 255, 0.4);
+  outline: none;
+}
+
+/* Submit Button */
+#contact .contact-form button {
+  width: 250px;
+  height: auto;
+  padding: 14px 20px;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  #contact h1 {
+    font-size: 28px;
+  }
+
+  #contact .contact-form {
+    padding: 0 10px;
+  }
+}
 
 
 /* Footer */
 #footer {
+  margin: 10px 0 0 0 ;
   background-color: #141623;
   color: #f0f0f0;
   padding: 32px 16px;

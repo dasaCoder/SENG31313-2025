@@ -59,3 +59,11 @@ skill_tabs.forEach(function(skill_tab){
 });
 
 
+//Contact
+const form = document.querySelector('.contact-form');
+
+  form.addEventListener('submit', function (e) {
+    setTimeout(() => {
+      form.reset(); // Clears all fields
+    }, 1000); // Give a tiny delay to let Formspree catch it
+  });
