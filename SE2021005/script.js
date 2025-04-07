@@ -67,7 +67,7 @@ function typeEffect() {
     if (index < text.length) {
         document.querySelector(".animated-text").innerHTML += text.charAt(index);
         index++;
-        setTimeout(typeEffect, 50);
+        setTimeout(typeEffect, 80);
     }
 }
 window.onload = typeEffect;
@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
             return;
         }
 
-        // Submit the form data using fetch
+        
         fetch(form.action, {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -106,7 +106,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    // Scroll animation effect
+   
     const fadeElements = document.querySelectorAll(".scroll-fade");
 
     function handleScroll() {
@@ -119,5 +119,5 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     window.addEventListener("scroll", handleScroll);
-    handleScroll(); // Trigger on load
+    handleScroll(); 
 });

@@ -12,16 +12,16 @@ body {
     overflow-y: auto;
 }
 .custom-navbar {
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #212529; /* Dark background */
+    background-color: #212529; 
     color: white;
     display: flex;
-    justify-content: space-between; /* Space between logo and navigation */
+    justify-content: space-between; 
     align-items: center;
-    padding: 15px 50px; /* Adjust spacing */
+    padding: 15px 50px; 
     z-index: 1000;
 }
 .logo {
@@ -69,6 +69,7 @@ body {
 .custom-nav-links {
     display: flex;
     gap: 15px; 
+    align-items: center;
 }
 
 .custom-nav-links a {
@@ -157,7 +158,7 @@ body {
         left: 0;
         width: 100%;
         background-color: #212529;
-        display: flex;
+        display: none;
         flex-direction: column;
         text-align: center;
         gap: 10px;
@@ -168,16 +169,68 @@ body {
 
     .custom-nav-links.show {
         transform: translateY(0);
+        display: flex;
     }
 
     .home-section {
         flex-direction: column;
         text-align: center;
     }
-
+    .menu-btn {
+        display: block;
+      }
+    
+      .close-btn {
+        display: block;
+        align-self: flex-end;
+      }
    
 }
 
 .main{
     margin-top: 300px;
+}
+
+.footer {
+    background-color: #0a1728;
+    color: #aaa;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 0.9rem;
+    margin-top: 50px;
+    border-top: 1px solid #1e2d3d;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .footer p {
+    margin: 0;
+    letter-spacing: 0.5px;
+  }
+  
+
+  .footer p:hover {
+    color: #00ffcc;
+    transition: color 0.3s ease;
+  }
+  
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .menu-btn,
+.close-btn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
 }

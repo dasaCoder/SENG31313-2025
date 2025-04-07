@@ -20,7 +20,7 @@ body {
     margin-top: 5px;
 }
 .custom-navbar {
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -70,6 +70,7 @@ body {
 .custom-nav-links {
     display: flex;
     gap: 15px;
+    align-items: center;
 }
 
 .custom-nav-links a {
@@ -139,7 +140,7 @@ h1, h2, h3 {
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
 .cv-btn:hover {
@@ -150,7 +151,7 @@ h1, h2, h3 {
 .fade-in {
     opacity: 0;
     transform: translateY(20px);
-    animation: fadeIn 1.5s ease-in-out forwards;
+    animation: fadeIn 2.5s ease-in-out forwards;
 }
 
 @keyframes fadeIn {
@@ -171,7 +172,7 @@ h1, h2, h3 {
         left: 0;
         width: 100%;
         background-color: #212529;
-        display: flex;
+        display: none;
         flex-direction: column;
         text-align: center;
         gap: 10px;
@@ -182,6 +183,7 @@ h1, h2, h3 {
 
     .custom-nav-links.show {
         transform: translateY(0);
+        display: flex;
     }
 
     .home-section {
@@ -195,11 +197,28 @@ h1, h2, h3 {
     .profile-photo {
         width: 250px;
     }
+    .menu-btn {
+        display: block;
+      }
+    
+      .close-btn {
+        display: block;
+        align-self: flex-end;
+      }
    
 }
 @keyframes glow {
     from { box-shadow: 0 0 10px #00ffcc; }
     to { box-shadow: 0 0 20px #007bff; }
+}
+.menu-btn,
+.close-btn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
 }
 
 .about {
@@ -492,3 +511,161 @@ html {
         transform: translateX(0);
     }
 }
+
+.section {
+    padding: 60px 20px;
+    background-color: #0c1b2a;
+    color: #fff;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    animation: fadeInUp 1s ease-in-out;
+  }
+  
+  .section h2 {
+    font-size: 2rem;
+    color: #00ffcc;
+    margin-bottom: 20px;
+  }
+  
+  .section h4 {
+    font-size: 1.2rem;
+    margin-top: 30px;
+    color: #00ccff;
+  }
+  
+ 
+  .section ul {
+    padding-left: 20px;
+  }
+  
+  .section ul li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+  }
+  
+  
+  .card {
+    background-color: #1a2d44;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .language {
+    margin-bottom: 20px;
+  }
+  
+  .language-name {
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+  
+  .language-level {
+    background-color: #2c3e50;
+    height: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  
+  .language-percent {
+    height: 100%;
+    background: linear-gradient(90deg, #00ffd0, #0099ff);
+    animation: slideIn 1s ease-in-out;
+  }
+  
+  .language-percent-number {
+    font-size: 0.9rem;
+    margin-top: 5px;
+    color: #aaa;
+  }
+  
+  
+  .skills, .soft-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .skill {
+    background-color: #1b2e47;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #fff;
+    transition: all 0.3s ease;
+    animation: popIn 0.6s ease-in-out;
+  }
+  
+  .skill:hover, .skil:hover {
+    background-color: #007bff;
+    transform: scale(1.05);
+  }
+  
+  
+  @keyframes slideIn {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes popIn {
+    0% {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  .footer {
+    background-color: #0a1728;
+    color: #aaa;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 0.9rem;
+    margin-top: 50px;
+    border-top: 1px solid #1e2d3d;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .footer p {
+    margin: 0;
+    letter-spacing: 0.5px;
+  }
+  
+
+  .footer p:hover {
+    color: #00ffcc;
+    transition: color 0.3s ease;
+  }
+  
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
