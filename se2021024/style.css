@@ -148,12 +148,12 @@ button:hover {
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  transition: transform 0.3s ease, border 0.3s ease; /* smooth effect */
+  transition: transform 0.3s ease, border 0.3s ease;
 }
 
 .side-bar a:hover {
   transform: scale(1.2); /* this pops the whole circle */
-  border: 2px solid black; /* makes the border thicker on hover (optional) */
+  border: 2px solid black; /* makes the border thicker on hover */
 }
  
   /*About me and Skills and blogs*/
