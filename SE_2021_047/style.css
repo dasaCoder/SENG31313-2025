@@ -17,6 +17,23 @@
     --white-alpha-25:rgba(255, 255, 255, 0.25);
     --backdrop-filter-blur:blur(5px);
 }
+/* animation keyframes define */
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes fadeOut{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
 
 /* global styles */
 *{
@@ -87,13 +104,17 @@ ul{
  section{
     background-color: var(--white-alpha-25);
     border: 1px solid var(--white-alpha-40);
-    min-height: calc(100vh-70px);
+    min-height: calc(100vh - 70px);
     border-radius: 30px;
     backdrop-filter: var(--backdrop-filter-blur);
     display:none;
  }
  section.active{
     display: block;
+    animation: fadeIn 0.5s ease-in-out forwards;
+ }
+ section.fade-out{
+    animation: fadeOut 0.5s ease-in-out forwards;
  }
 .main{
     max-width: 1200px;
@@ -571,7 +592,16 @@ button{
     z-index: 1;
     padding: 20px 0 0;
 }
+.header.active{
+    position: fixed;
+    top: 35px;
+    padding: 20px 15px;
+}
 
+.header.active .container{
+    max-width: 1200px;
+    margin: auto;
+}
 .header .nav{
     position: fixed;  
     left: 0;
@@ -582,6 +612,9 @@ button{
     overflow-y: auto;
     visibility: hidden;
     
+}
+.header.active .nav{
+    visibility: visible;
 }
 
 .header .nav-inner{
@@ -596,8 +629,11 @@ button{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 15px;
-    z-index: 1;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+.header.active .nav-inner{
+    opacity: 1;
 }
 
 .header .nav-inner ul li{
@@ -649,6 +685,7 @@ button{
     align-items: center;
     justify-content: center;
     margin: 0 15px;
+    z-index: 1;
 }
 
 .header .nav-toggler span{
@@ -656,6 +693,10 @@ button{
     width: 24px;
     background-color: var(--main-color);
     position: relative;
+    transition: background-color 0.3s ease;
+}
+.header.active .nav-toggler span{
+    background-color: transparent;
 }
 .header .nav-toggler span::before,
 .header .nav-toggler span::after{
@@ -671,12 +712,23 @@ button{
     left: 0;
     transform: translateY(-8px);
 }
+.header.active .nav-toggler span::before{
+    transform: rotate(45deg);
+}
+.header .nav-toggler span::after{
+    left: 0;
+    transform: translateY(8px);
+}
+.header.active .nav-toggler span::after{
+    transform: rotate(-45deg);
+}
+
 .header .nav-toggler span::after{
     right: 0;
     transform: translateY(8px);
 }
-.header .nav-toggler:hover span::before,
-.header .nav-toggler:hover span::after{
+.header:not(.active) .nav-toggler:hover span::before,
+.header:not(.active) .nav-toggler:hover span::after{
     width: 50%;
 }
 

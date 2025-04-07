@@ -1,6 +1,30 @@
-//  About Tabs scripts
+// toggle header menue(burger) scripts
+const navToggler = document.querySelector(".nav-toggler");
+navToggler.addEventListener("click",()=>{
+  hideSection();
+  toggleNavbar();
+  document.body.classList.toggle("hide-scrolling");
+});
+
+function hideSection(){
+  document.querySelector("section.active").classList.toggle("fade-out");
+}
+
+function toggleNavbar(){
+  document.querySelector(".header").classList.toggle("active");
+}
 
 
+// Active sections
+
+document.addEventListener("click",(e)=>{
+  if(e.target.classList.contains("link-item")&& e.target.hash !==""){
+    const hash =e.target.hash;
+    console.log(hash);
+  }
+})
+
+//  About Tabs script
 
 
 const tabsContainer = document.querySelector('.about-tabs');
