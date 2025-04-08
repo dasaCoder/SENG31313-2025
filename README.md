@@ -17,7 +17,7 @@ This is my personal portfolio website showcasing my skills, projects, and contac
 - [Google Fonts (Poppins)](https://fonts.google.com/) - For typography
 
 ## Live Hosted Link
-🔗 [View My Portfolio on Netlify]([https://your-netlify-url.netlify.app](https://portfolio-se-2021-008.netlify.app/)) 
+[View My Portfolio on Netlify](https://your-netlify-url.netlify.app)(https://portfolio-se-2021-008.netlify.app/)
 
 ## How to Run the Project Locally
 
