@@ -50,9 +50,9 @@ To make the contact form functional using FormSubmit:
 2. Submit once to receive an activation email from FormSubmit.
 
 ## 🌍 Live Demo
-🔗 [**View the Live Site Here**](https://rami2212.github.io/My-Portfolio/)
+🔗 [**View the Live Site Here**](https://rami2212.github.io/)
 ```
-https://rami2212.github.io/My-Portfolio/
+https://rami2212.github.io/
 ```
 
 ## 🛠️ How to Run the Project Locally
