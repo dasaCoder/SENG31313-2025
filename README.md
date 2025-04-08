@@ -28,7 +28,7 @@ This is my personal portfolio website showcasing my skills, projects, and contac
 ### Installation Steps
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-username/your-repo.git
+ [  git clone https://github.com/your-username/your-repo.git](https://github.com/KavinduAmalka/SENG31313-2025.git)
 
 ### Project Structure
 portfolio/
