@@ -1,0 +1,1856 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramitha Iddamalgoda</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- GSAP CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.1/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</head>
+
+<body class="bg-gray-100">
+
+
+
+
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="fixed top-0 left-0 w-full bg-white shadow-lg z-50 lg:hidden">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center mb-4">
+                <a href="#" class="text-2xl font-bold text-[#4C9EEB] font-poppins">Ramitha Iddamalgoda</a>
+                <button id="closeMenuBtn" class="text-gray-800">
+                    <i class="fas fa-times text-xl"></i>
+                </button>
+            </div>
+            <div class="flex flex-col space-y-4 pb-6">
+                <a href="#home"
+                    class="text-gray-800 text-lg hover:text-[#1C75D3] py-2 border-b border-gray-200">Home</a>
+                <a href="#about"
+                    class="text-gray-800 text-lg hover:text-[#1C75D3] py-2 border-b border-gray-200">About</a>
+                <a href="#what-i-do"
+                    class="text-gray-800 text-lg hover:text-[#1C75D3] py-2 border-b border-gray-200">What I Do</a>
+                <a href="#portfolio"
+                    class="text-gray-800 text-lg hover:text-[#1C75D3] py-2 border-b border-gray-200">Portfolio</a>
+                <a href="#contact"
+                    class="text-gray-800 text-lg hover:text-[#1C75D3] py-2 border-b border-gray-200">Contact</a>
+
+                <!-- Social Media Icons -->
+                <div class="flex space-x-4 pt-2">
+                    <a href="https://www.facebook.com/rami2212/" class="text-gray-400 hover:text-[#1C75D3]">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://twitter.com" class="text-gray-400 hover:text-[#1C75D3]">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/ramitha-iddamalgoda/"
+                        class="text-gray-400 hover:text-[#1C75D3]">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- Header -->
+    <header class="navbar fixed top-0 w-full bg-white shadow-lg transition-all duration-300 ease-in-out z-40"
+        id="navbar">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="#"
+                class="text-2xl font-bold text-[#4C9EEB] font-poppins hover:text-[#1C75D3] transition-all duration-300"
+                id="logo">
+                Ramitha Iddamalgoda
+            </a>
+
+            <!-- Menu -->
+            <div class="hidden lg:flex space-x-6 justify-center flex-grow">
+                <a href="#home"
+                    class="text-gray-800 dark-mode-text text-base hover:text-[#1C75D3] transition-all duration-300 nav-link">Home</a>
+                <a href="#about"
+                    class="text-gray-800 dark-mode-text text-base hover:text-[#1C75D3] transition-all duration-300 nav-link">About</a>
+                <a href="#what-i-do"
+                    class="text-gray-800 dark-mode-text text-base hover:text-[#1C75D3] transition-all duration-300 nav-link">What
+                    I Do</a>
+                <a href="#portfolio"
+                    class="text-gray-800 dark-mode-text text-base hover:text-[#1C75D3] transition-all duration-300 nav-link">Portfolio</a>
+                <a href="#contact"
+                    class="text-gray-800 dark-mode-text text-base hover:text-[#1C75D3] transition-all duration-300 nav-link">Contact</a>
+            </div>
+
+            <!-- Social Media Icons and contact button -->
+            <div class="hidden lg:flex items-center space-x-4 ml-auto">
+                <a href="https://github.com/Rami2212"
+                    class="text-gray-400 dark-mode-icon hover:text-[#1C75D3] transition-all duration-300">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/ramitha-iddamalgoda/"
+                    class="text-gray-400 dark-mode-icon hover:text-[#1C75D3] transition-all duration-300">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://www.facebook.com/rami2212/"
+                    class="text-gray-400 dark-mode-icon hover:text-[#1C75D3] transition-all duration-300">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <!-- Contact Button -->
+                <a href="#contact"
+                    class="text-white bg-[#4C9EEB] px-6 py-3 rounded-full hover:bg-[#1C75D3] transition-all duration-300 ease-in-out transform hover:scale-105">
+                    Contact Me
+                </a>
+            </div>
+
+            <!-- Hamburger Menu for Mobile -->
+            <div class="lg:hidden" id="hamburgerMenu">
+                <button class="text-gray-800 dark-mode-hamburger" id="hamburgerBtn">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+
+
+
+
+
+
+    <!-- Welcome Popup -->
+    <div id="welcomePopup" class="fixed inset-0 flex items-center justify-center z-50 opacity-0 invisible">
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div class="relative bg-white rounded-lg shadow-xl w-11/12 max-w-md mx-auto overflow-visible">
+            <!-- Profile Image -->
+            <div class="absolute -top-24 left-1/2 transform -translate-x-1/2">
+                <div class="w-48 h-48 rounded-full border-4 border-white overflow-hidden shadow-lg">
+                    <img src="./assets/profile-image.png" alt="Ramitha Iddamalgoda" class="w-full h-full object-cover">
+                </div>
+            </div>
+
+            <!-- Content -->
+            <div class="pt-24 px-6 pb-6 text-center">
+                <h2 class="text-2xl font-bold text-gray-800 mt-4">Hello there!</h2>
+                <h3 class="text-xl text-[#4C9EEB] font-semibold mt-2">I'm Ramitha Iddamalgoda</h3>
+                <p class="text-gray-600 mt-3">Welcome to my personal portfolio website</p>
+
+                <button id="viewPortfolioBtn"
+                    class="mt-6 px-8 py-3 bg-[#4C9EEB] text-white rounded-full hover:bg-[#1C75D3] transition-all duration-300 transform hover:scale-105">
+                    View My Portfolio
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <!-- Hero Section -->
+    <section id="home" class="py-20 bg-white overflow-hidden">
+        <div class="container mx-auto px-4 py-20">
+            <div class="flex flex-col lg:flex-row items-center justify-between">
+
+                <!-- Right Column -->
+                <div class="lg:w-6/12 text-center lg:text-left order-2 lg:order-1">
+
+                    <h5 class="text-xl md:text-xl lg:text-2xl font-semibold text-gray-600 mb-4 uppercase tracking-wide">
+                        I'm Ramitha Iddamalgoda
+                    </h5>
+
+                    <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 mb-2 text-reveal">
+                        <span style="animation-delay: 0.1s;">I'm Passionate About</span>
+                    </h2>
+
+                    <div class="text-reveal-div">
+                        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 profession-text text-[#4C9EEB]">
+                            Software Engineering
+                        </h1>
+                    </div>
+
+                    <p class="text-gray-600 mb-8 max-w-lg mx-auto lg:mx-0">
+                        A passionate developer specialized in building responsive websites and mobile applications using
+                        modern technologies like Flutter and the MERN stack. I focus on delivering elegant, efficient,
+                        and user-friendly digital experiences across both web and mobile platforms.
+                    </p>
+
+                    <!-- Buttons -->
+                    <div class="flex flex-wrap justify-center lg:justify-start gap-4 mb-8">
+                        <a href="#about"
+                            class="px-8 py-4 bg-[#4C9EEB] text-white rounded-full font-medium hover:bg-[#1C75D3] transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
+                            About Me
+                        </a>
+                        <a href="./assets/CV - Ramitha Pathmila.pdf" download="CV - Ramitha Pathmila.pdf"
+                            class="px-8 py-4 bg-white text-gray-800 rounded-full font-medium border-2 border-gray-300 hover:border-[#4C9EEB] hover:text-[#4C9EEB] transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
+                            <i class="fas fa-download mr-2"></i> Download CV
+                        </a>
+                    </div>
+
+                    <!-- Social Media Icons -->
+                    <div class="flex justify-center lg:justify-start space-x-5">
+                        <a href="https://www.facebook.com/rami2212/"
+                            class="text-gray-600 hover:text-[#4C9EEB] transition-all duration-300 text-xl">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/ramitha-iddamalgoda/"
+                            class="text-gray-600 hover:text-[#4C9EEB] transition-all duration-300 text-xl">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://www.facebook.com/rami2212/"
+                            class="text-gray-600 hover:text-[#4C9EEB] transition-all duration-300 text-xl">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </div>
+                </div>
+
+
+                <!-- Right Column -->
+                <div class="profile-image-column lg:w-6/12 h-full lg:flex lg:order-2 justify-center">
+                    <div class="profile-image mx-auto lg:mx-0 relative">
+                        <div class="glow-animation"></div>
+                        <div class="glow-animation-2"></div>
+                        <img src="./assets/profile-image.png" alt="Profile image"
+                            class="w-full rounded-full z-10 relative">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- About Me Section -->
+    <section id="about" class="py-20 bg-gray-100 pb-40">
+        <div class="container mx-auto px-4 ">
+            <h2 class="text-3xl lg:text-4xl font-bold text-center mb-12 relative inline-block">
+                About <span class="text-[#4C9EEB]">Me</span>
+
+            </h2>
+
+            <div class="flex flex-col lg:flex-row gap-8">
+
+                <!-- Column 1 -->
+                <div class="lg:w-1/3 opacity-0" id="about-col-1">
+                    <div class="rounded-lg overflow-hidden shadow-xl">
+                        <img src="./assets/About-image.jpg" alt="About image"
+                            class="about-image w-full h-full object-cover">
+                    </div>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="lg:w-1/3 opacity-0 pl-10" id="about-col-2">
+                    <h3 class="text-2xl font-bold mb-4">My Journey</h3>
+                    <p class="text-gray-700 mb-6">
+                        I'm Ramitha Iddamalgoda, a passionate Software Engineering undergraduate at the University of
+                        Kelaniya with over 3 years of experience in the field of development. As a Full Stack Developer,
+                        I specialize in building web and mobile applications that are efficient, scalable, and
+                        user-friendly.
+                    </p>
+                    <p class="text-gray-700">
+                        My expertise extends to WordPress development, where I craft custom themes and plugins to
+                        enhance online experiences. I stay up-to-date with the latest technologies to create modern,
+                        high-performance solutions that meet industry standards.
+                    </p>
+                </div>
+
+                <!-- Column 3 -->
+                <div class="lg:w-1/3 opacity-0" id="about-col-3">
+                    <h3 class="text-2xl font-bold mb-4">My Skills</h3>
+                    <p class="text-gray-700 mb-6">
+                        I specialize in full-stack development with expertise in:
+                    </p>
+                    <ul class="mb-6 space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-[#4C9EEB] mr-2"></i>
+                            <span>Frontend: React, Tailwind CSS</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-[#4C9EEB] mr-2"></i>
+                            <span>Backend: Node.js, SpringBoot, Express</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-[#4C9EEB] mr-2"></i>
+                            <span>Database: MongoDB, MySQL</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-[#4C9EEB] mr-2"></i>
+                            <span>Mobile: Flutter, Dart, Java</span>
+                        </li>
+                    </ul>
+
+                    <a href="#contact"
+                        class="inline-block px-8 py-3 bg-[#4C9EEB] text-white rounded-full font-medium hover:bg-[#1C75D3] transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 mt-4">
+                        Contact Me
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- What I Do Section -->
+    <section id="what-i-do" class="py-20 relative">
+        <div class="absolute inset-0 bg-cover bg-center"
+            style="background-image: url('./assets/what-i-do-background-image.jpg');">
+            <div class="absolute inset-0 bg-gradient-to-r from-black to-black opacity-60"></div>
+        </div>
+
+        <div class="container mx-auto px-4 relative z-10">
+            <h2 class="text-3xl lg:text-4xl font-bold text-center text-white mb-12 relative inline-block">
+                What <span class="text-[#4C9EEB]">I Do</span>
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Card 1 -->
+                <div
+                    class="bg-white rounded-lg p-8 shadow-lg transform transition-all duration-300 hover:-translate-y-3 border-b-4 border-transparent hover:border-[#4C9EEB] opacity-0 service-card">
+                    <div class="text-[#4C9EEB] text-4xl mb-4">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Web Development</h3>
+                    <p class="text-gray-700">
+                        Creating responsive, user-friendly websites that deliver exceptional user experiences across all
+                        devices and platforms.
+                    </p>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div
+                    class="bg-white rounded-lg p-8 shadow-lg transform transition-all duration-300 hover:-translate-y-3 border-b-4 border-transparent hover:border-[#4C9EEB] opacity-0 service-card">
+                    <div class="text-[#4C9EEB] text-4xl mb-4">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">App Development</h3>
+                    <p class="text-gray-700">
+                        Building native and cross-platform mobile applications that provide seamless functionality and
+                        intuitive interfaces.
+                    </p>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div
+                    class="bg-white rounded-lg p-8 shadow-lg transform transition-all duration-300 hover:-translate-y-3 border-b-4 border-transparent hover:border-[#4C9EEB] opacity-0 service-card">
+                    <div class="text-[#4C9EEB] text-4xl mb-4">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Backend Development</h3>
+                    <p class="text-gray-700">
+                        Creating robust server-side applications with secure APIs and efficient data processing
+                        capabilities.
+                    </p>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div
+                    class="bg-white rounded-lg p-8 shadow-lg transform transition-all duration-300 hover:-translate-y-3 border-b-4 border-transparent hover:border-[#4C9EEB] opacity-0 service-card">
+                    <div class="text-[#4C9EEB] text-4xl mb-4">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">WordPress Development</h3>
+                    <p class="text-gray-700">
+                        Building websites using WordPress themes and plugins, and enhancing website functionality.
+                    </p>
+                </div>
+
+                <!-- Service Card 5 -->
+                <div
+                    class="bg-white rounded-lg p-8 shadow-lg transform transition-all duration-300 hover:-translate-y-3 border-b-4 border-transparent hover:border-[#4C9EEB] opacity-0 service-card">
+                    <div class="text-[#4C9EEB] text-4xl mb-4">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">UI/UX Design</h3>
+                    <p class="text-gray-700">
+                        Crafting intuitive user interfaces and engaging user experiences that keep visitors coming back.
+                    </p>
+                </div>
+
+                <!-- Service Card 6 -->
+                <div
+                    class="bg-white rounded-lg p-8 shadow-lg transform transition-all duration-300 hover:-translate-y-3 border-b-4 border-transparent hover:border-[#4C9EEB] opacity-0 service-card">
+                    <div class="text-[#4C9EEB] text-4xl mb-4">
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Social Media Management</h3>
+                    <p class="text-gray-700">
+                        Managing social media presence, creating content, boost engagement and brand visibility.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl lg:text-4xl font-bold text-center mb-4 relative">
+                My <span class="text-[#4C9EEB]">Portfolio</span>
+            </h2>
+            <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+                Here are some of my recent projects that showcase my skills and expertise in various technologies and
+                domains.
+            </p>
+
+            <!-- Portfolio Filter Buttons -->
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+                <button
+                    class="filter-btn active px-6 py-2 rounded-full text-white bg-[#4C9EEB] hover:bg-[#1C75D3] transition-all duration-300 shadow-md"
+                    data-filter="all">
+                    All
+                </button>
+                <button
+                    class="filter-btn px-6 py-2 rounded-full text-gray-700 bg-gray-200 hover:bg-gray-300 transition-all duration-300 shadow-md"
+                    data-filter="html">
+                    HTML, CSS, JS & PHP
+                </button>
+                <button
+                    class="filter-btn px-6 py-2 rounded-full text-gray-700 bg-gray-200 hover:bg-gray-300 transition-all duration-300 shadow-md"
+                    data-filter="mern">
+                    MERN Stack, React
+                </button>
+                <button
+                    class="filter-btn px-6 py-2 rounded-full text-gray-700 bg-gray-200 hover:bg-gray-300 transition-all duration-300 shadow-md"
+                    data-filter="flutter">
+                    Flutter, Dart & Kotlin
+                </button>
+                <button
+                    class="filter-btn px-6 py-2 rounded-full text-gray-700 bg-gray-200 hover:bg-gray-300 transition-all duration-300 shadow-md"
+                    data-filter="wordpress">
+                    WordPress
+                </button>
+            </div>
+
+            <!-- Portfolio Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+
+                <!-- Portfolio Item 1 -->
+                <div class="portfolio-item rounded-lg overflow-hidden shadow-lg bg-white" data-category="html">
+                    <div class="relative">
+                        <img src="./assets/html-3.jpg" alt="SwiftConnect" class="w-full h-64 object-cover">
+                        <div
+                            class="portfolio-overlay absolute inset-0 flex flex-col justify-center items-center text-white p-6 bg-black bg-opacity-80 opacity-0 transition-opacity duration-300">
+                            <h3 class="text-xl font-bold mb-2">SwiftConnect Logistic Website</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-lg mb-2">SwiftConnect Logistic Website</h3>
+                        <p class="text-gray-700 mb-4">
+                            A package delivery platform built using PHP. This collaborative project, developed by a team
+                            of four,
+                            allows users to schedule, track, and manage deliveries efficiently with a user-friendly
+                            interface.
+                        </p>
+                        <div class="flex space-x-3 mb-4">
+                            <span class="px-3 py-1 bg-gray-200 rounded-full text-sm">HTML</span>
+                            <span class="px-3 py-1 bg-gray-200 rounded-full text-sm">CSS</span>
+                            <span class="px-3 py-1 bg-gray-200 rounded-full text-sm">PHP</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div class="flex space-x-2">
+                                <a href="./assets/html-3-pdf.pdf" target="_blank"
+                                    class="text-[#4C9EEB] hover:text-[#1C75D3] transition-all duration-300 flex items-center">
+                                    <i class="fas fa-eye mr-1"></i> View
+                                </a>
+                                <a href="https://github.com/Rami2212/SwiftConnect.git" target="_blank"
+                                    class="text-[#4C9EEB] hover:text-[#1C75D3] transition-all duration-300 flex items-center">
+                                    <i class="fab fa-github mr-1"></i> Code
+                                </a>
+                            </div>
+                            <span class="text-sm text-gray-500">2024</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Portfolio Item 2 -->
+                <div class="portfolio-item rounded-lg overflow-hidden shadow-lg bg-white" data-category="mern">
+                    <div class="relative">
+                        <img src="./assets/mern-1.jpg" alt="Fuel Quota Management System"
+                            class="w-full h-64 object-cover">
+                        <div
+                            class="portfolio-overlay absolute inset-0 flex flex-col justify-center items-center text-white p-6 bg-black bg-opacity-80 opacity-0 transition-opacity duration-300">
+                            <h3 class="text-xl font-bold mb-2">Fuel Quota Management System</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-lg mb-2">Fuel Quota Management System</h3>
+                        <p class="text-gray-700 mb-4">
+                            A fully responsive fuel quota management system developed using React, Spring Boot, and
+                            Flutter.
+                            The system enables fuel stations to allocate quotas, track fuel usage, and manage
+                            vehicle-based
+                            fuel distributions efficiently. Built by a team of five developers, it ensures seamless
+                            integration
+                            between web and mobile platforms for real-time monitoring.
+                        </p>
+                        <div class="flex space-x-3 mb-4">
+                            <span class="px-3 py-1 bg-gray-200 rounded-full text-sm">React</span>
+                            <span class="px-3 py-1 bg-gray-200 rounded-full text-sm">Spring Boot</span>
+                            <span class="px-3 py-1 bg-gray-200 rounded-full text-sm">Flutter</span>
+                            <span class="px-3 py-1 bg-gray-200 rounded-full text-sm">MySQL</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div class="flex space-x-2">
+                                <a href="./assets/mern-1-pdf.pdf" target="_blank"
+                                    class="text-[#4C9EEB] hover:text-[#1C75D3] transition-all duration-300 flex items-center">
+                                    <i class="fas fa-eye mr-1"></i> View
+                                </a>
+                                <a href="https://github.com/Rami2212/FuelWiseLK.git" target="_blank"
+                                    class="text-[#4C9EEB] hover:text-[#1C75D3] transition-all duration-300 flex items-center">
+                                    <i class="fab fa-github mr-1"></i> Code
+                                </a>
+                            </div>
+                            <span class="text-sm text-gray-500">2024</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Portfolio Item 3 -->
+                <div class="portfolio-item rounded-lg overflow-hidden shadow-lg bg-white" data-category="flutter">
+                    <div class="relative">
+                        <img src="./assets/flutter-4.jpg" alt="Object Detector App" class="w-full h-64 object-cover">
+                        <div
+                            class="portfolio-overlay absolute inset-0 flex flex-col justify-center items-center text-white p-6 bg-black bg-opacity-80 opacity-0 transition-opacity duration-300">
+                            <h3 class="text-xl font-bold mb-2">Object Detector App</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-lg mb-2">Object Detector App</h3>
+                        <p class="text-gray-700 mb-4">
+                            An Object Detector App using Flutter, Dart, and the TFLite model (TensorFlow Lite) allows to
+                            detect objects in real-time through mobilr phone’s camera. The app uses a pre-trained
+                            TensorFlow Lite model to identify various objects in the camera feed and display the results
+                            directly on the screen.
+                        </p>
+                        <div class="flex space-x-3 mb-4">
+                            <span class="px-3 py-1 bg-gray-200 rounded-full text-sm">Flutter</span>
+                            <span class="px-3 py-1 bg-gray-200 rounded-full text-sm">Dart</span>
+                            <span class="px-3 py-1 bg-gray-200 rounded-full text-sm">TFLite</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div class="flex space-x-2">
+                                <a href="./assets/flutter-4-pdf.pdf" target="_blank"
+                                    class="text-[#4C9EEB] hover:text-[#1C75D3] transition-all duration-300 flex items-center">
+                                    <i class="fas fa-eye mr-1"></i> View
+                                </a>
+                                <a href="https://github.com/Rami2212/flutter_object_detection_app.git" target="_blank"
+                                    class="text-[#4C9EEB] hover:text-[#1C75D3] transition-all duration-300 flex items-center">
+                                    <i class="fab fa-github mr-1"></i> Code
+                                </a>
+                            </div>
+                            <span class="text-sm text-gray-500">2024</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Portfolio Item 4 -->
+                <div class="portfolio-item rounded-lg overflow-hidden shadow-lg bg-white" data-category="html">
+                    <div class="relative">
+                        <img src="./assets/html-1.jpg" alt="E-commerce Website" class="w-full h-64 object-cover">
+                        <div
+                            class="portfolio-overlay absolute inset-0 flex flex-col justify-center items-center text-white p-6 bg-black bg-opacity-80 opacity-0 transition-opacity duration-300">
+                            <h3 class="text-xl font-bold mb-2">E-commerce Clothing Website</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-lg mb-2">E-commerce Clothing Website</h3>
+                        <p class="text-gray-700 mb-4">
+                            A fully responsive e-commerce platform for clothing, built with a clean UI and seamless
+                            shopping
+                            experience. Features include product browsing, user authentication, and a cart system.
+                        </p>
+                        <div class="flex space-x-3 mb-4">
+                            <span class="px-3 py-1 bg-gray-200 rounded-full text-sm">HTML</span>
+                            <span class="px-3 py-1 bg-gray-200 rounded-full text-sm">CSS</span>
+                            <span class="px-3 py-1 bg-gray-200 rounded-full text-sm">JavaScript</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div class="flex space-x-2">
+                                <a href="./assets/html-1-pdf.pdf" target="_blank"
+                                    class="text-[#4C9EEB] hover:text-[#1C75D3] transition-all duration-300 flex items-center">
+                                    <i class="fas fa-eye mr-1"></i> View
+                                </a>
+                                <a href="https://github.com/Rami2212/HTML-Ecommerce-website-frontend.git"
+                                    target="_blank"
+                                    class="text-[#4C9EEB] hover:text-[#1C75D3] transition-all duration-300 flex items-center">
+                                    <i class="fab fa-github mr-1"></i> Code
+                                </a>
+                            </div>
+                            <span class="text-sm text-gray-500">2024</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Portfolio Item 5 -->
+                <div class="portfolio-item rounded-lg overflow-hidden shadow-lg bg-white" data-category="html">
+                    <div class="relative">
+                        <img src="./assets/html-2.jpg" alt="E-commerce Website" class="w-full h-64 object-cover">
+                        <div
+                            class="portfolio-overlay absolute inset-0 flex flex-col justify-center items-center text-white p-6 bg-black bg-opacity-80 opacity-0 transition-opacity duration-300">
+                            <h3 class="text-xl font-bold mb-2">E-commerce Website</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-lg mb-2">E-commerce Website</h3>
+                        <p class="text-gray-700 mb-4">
+                            A fully responsive e-commerce platform for software, designed to provide a seamless user
+                            experience
+                            with product search, cart functionality, and secure checkout.
+                        </p>
+                        <div class="flex space-x-3 mb-4">
+                            <span class="px-3 py-1 bg-gray-200 rounded-full text-sm">HTML</span>
+                            <span class="px-3 py-1 bg-gray-200 rounded-full text-sm">CSS</span>
+                            <span class="px-3 py-1 bg-gray-200 rounded-full text-sm">PHP</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div class="flex space-x-2">
+                                <a href="./assets/html-2-pdf.pdf" target="_blank"
+                                    class="text-[#4C9EEB] hover:text-[#1C75D3] transition-all duration-300 flex items-center">
+                                    <i class="fas fa-eye mr-1"></i> View
+                                </a>
+                                <a href="https://github.com/Rami2212/HTML-Website.git" target="_blank"
+                                    class="text-[#4C9EEB] hover:text-[#1C75D3] transition-all duration-300 flex items-center">
+                                    <i class="fab fa-github mr-1"></i> Code
+                                </a>
+                            </div>
+                            <span class="text-sm text-gray-500">2024</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Portfolio Item 6 -->
+                <div class="portfolio-item rounded-lg overflow-hidden shadow-lg bg-white" data-category="html">
+                    <div class="relative">
+                        <img src="./assets/html-4.jpg" alt="PHP E-commerce Store" class="w-full h-64 object-cover">
+                        <div
+                            class="portfolio-overlay absolute inset-0 flex flex-col justify-center items-center text-white p-6 bg-black bg-opacity-80 opacity-0 transition-opacity duration-300">
+                            <h3 class="text-xl font-bold mb-2">PHP E-commerce Store</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-lg mb-2">PHP E-commerce Store</h3>
+                        <p class="text-gray-700 mb-4">
+                            A fully responsive E-commerce platform built with PHP, MySQL, and JavaScript, offering
+                            seamless shopping with secure authentication, product browsing, cart management, and
+                            multiple payment integrations. The admin panel enables efficient product, order, and user
+                            management.
+                        </p>
+                        <div class="flex space-x-3 mb-4">
+                            <span class="px-3 py-1 bg-gray-200 rounded-full text-sm">HTML</span>
+                            <span class="px-3 py-1 bg-gray-200 rounded-full text-sm">CSS</span>
+                            <span class="px-3 py-1 bg-gray-200 rounded-full text-sm">PHP</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div class="flex space-x-2">
+                                <a href="./assets/html-4-pdf.pdf" target="_blank"
+                                    class="text-[#4C9EEB] hover:text-[#1C75D3] transition-all duration-300 flex items-center">
+                                    <i class="fas fa-eye mr-1"></i> View
+                                </a>
+                                <a href="https://github.com/Rami2212/PHP-Ecommerce-Store.git" target="_blank"
+                                    class="text-[#4C9EEB] hover:text-[#1C75D3] transition-all duration-300 flex items-center">
+                                    <i class="fab fa-github mr-1"></i> Code
+                                </a>
+                            </div>
+                            <span class="text-sm text-gray-500">2024</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Portfolio Item 7 -->
+                <div class="portfolio-item rounded-lg overflow-hidden shadow-lg bg-white" data-category="mern">
+                    <div class="relative">
+                        <img src="./assets/mern-2.jpg" alt="PHP E-commerce Store" class="w-full h-64 object-cover">
+                        <div
+                            class="portfolio-overlay absolute inset-0 flex flex-col justify-center items-center text-white p-6 bg-black bg-opacity-80 opacity-0 transition-opacity duration-300">
+                            <h3 class="text-xl font-bold mb-2">MERN Bookstore</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-lg mb-2">MERN Bookstore</h3>
+                        <p class="text-gray-700 mb-4">
+                            A MERN-based Book Store with full CRUD functionality, allowing add, browse, and edit books.
+                            Built with MongoDB, Express.js, React, and Node.js.
+                        </p>
+                        <div class="flex space-x-3 mb-4">
+                            <span class="px-3 py-1 bg-gray-200 rounded-full text-sm">REACT</span>
+                            <span class="px-3 py-1 bg-gray-200 rounded-full text-sm">EXPRESS</span>
+                            <span class="px-3 py-1 bg-gray-200 rounded-full text-sm">NODE</span>
+                            <span class="px-3 py-1 bg-gray-200 rounded-full text-sm">MONGODB</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div class="flex space-x-2">
+                                <a href="./assets/mern-2-pdf.pdf" target="_blank"
+                                    class="text-[#4C9EEB] hover:text-[#1C75D3] transition-all duration-300 flex items-center">
+                                    <i class="fas fa-eye mr-1"></i> View
+                                </a>
+                                <a href="https://github.com/Rami2212/MERN-Stack---BookStore.git" target="_blank"
+                                    class="text-[#4C9EEB] hover:text-[#1C75D3] transition-all duration-300 flex items-center">
+                                    <i class="fab fa-github mr-1"></i> Code
+                                </a>
+                            </div>
+                            <span class="text-sm text-gray-500">2024</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 8 -->
+                <div class="portfolio-item rounded-lg overflow-hidden shadow-lg bg-white" data-category="mern">
+                    <div class="relative">
+                        <img src="./assets/mern-3.jpg" alt="PHP E-commerce Store" class="w-full h-64 object-cover">
+                        <div
+                            class="portfolio-overlay absolute inset-0 flex flex-col justify-center items-center text-white p-6 bg-black bg-opacity-80 opacity-0 transition-opacity duration-300">
+                            <h3 class="text-xl font-bold mb-2">React Website</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-lg mb-2">React Website</h3>
+                        <p class="text-gray-700 mb-4">
+                            A React-based Pizza Store Website featuring a menu and a user-friendly contact form.
+                        </p>
+                        <div class="flex space-x-3 mb-4">
+                            <span class="px-3 py-1 bg-gray-200 rounded-full text-sm">REACT</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div class="flex space-x-2">
+                                <a href="./assets/mern-3-pdf.pdf" target="_blank"
+                                    class="text-[#4C9EEB] hover:text-[#1C75D3] transition-all duration-300 flex items-center">
+                                    <i class="fas fa-eye mr-1"></i> View
+                                </a>
+                                <a href="https://github.com/Rami2212/React-Pizza-Store-Website.git" target="_blank"
+                                    class="text-[#4C9EEB] hover:text-[#1C75D3] transition-all duration-300 flex items-center">
+                                    <i class="fab fa-github mr-1"></i> Code
+                                </a>
+                            </div>
+                            <span class="text-sm text-gray-500">2024</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Portfolio Item 9 -->
+                <div class="portfolio-item rounded-lg overflow-hidden shadow-lg bg-white" data-category="flutter">
+                    <div class="relative">
+                        <img src="./assets/flutter-1.jpg" alt="Fuel Quota App" class="w-full h-64 object-cover">
+                        <div
+                            class="portfolio-overlay absolute inset-0 flex flex-col justify-center items-center text-white p-6 bg-black bg-opacity-80 opacity-0 transition-opacity duration-300">
+                            <h3 class="text-xl font-bold mb-2">Fuel Quota App</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-lg mb-2">Fuel Quota App</h3>
+                        <p class="text-gray-700 mb-4">
+                            The Fuel Quota app offers secure login and registration, allowing users to manage their
+                            profiles with ease. It features a dashboard for tracking fuel usage, a transaction history
+                            for past activities, and QR code scanning for quick access. Users can also update their fuel
+                            quotas seamlessly.
+                        </p>
+                        <div class="flex space-x-3 mb-4">
+                            <span class="px-3 py-1 bg-gray-200 rounded-full text-sm">Flutter</span>
+                            <span class="px-3 py-1 bg-gray-200 rounded-full text-sm">Dart</span>
+                            <span class="px-3 py-1 bg-gray-200 rounded-full text-sm">SpringBoot</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div class="flex space-x-2">
+                                <a href="./assets/flutter-1-pdf.pdf" target="_blank"
+                                    class="text-[#4C9EEB] hover:text-[#1C75D3] transition-all duration-300 flex items-center">
+                                    <i class="fas fa-eye mr-1"></i> View
+                                </a>
+                                <a href="https://github.com/Rami2212/FuelWiseLK.git" target="_blank"
+                                    class="text-[#4C9EEB] hover:text-[#1C75D3] transition-all duration-300 flex items-center">
+                                    <i class="fab fa-github mr-1"></i> Code
+                                </a>
+                            </div>
+                            <span class="text-sm text-gray-500">2024</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Portfolio Item 10 -->
+                <div class="portfolio-item rounded-lg overflow-hidden shadow-lg bg-white" data-category="flutter">
+                    <div class="relative">
+                        <img src="./assets/flutter-2.jpg" alt="BMI Calculator app" class="w-full h-64 object-cover">
+                        <div
+                            class="portfolio-overlay absolute inset-0 flex flex-col justify-center items-center text-white p-6 bg-black bg-opacity-80 opacity-0 transition-opacity duration-300">
+                            <h3 class="text-xl font-bold mb-2">BMI Calculator app</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-lg mb-2">BMI Calculator app</h3>
+                        <p class="text-gray-700 mb-4">
+                            A BMI Calculator app built using Kotlin allows users to calculate their Body Mass Index
+                            (BMI) by entering their weight and height. The app provides instant results and categorizes
+                            the BMI into different ranges (underweight, normal, overweight, and obese).
+                        </p>
+                        <div class="flex space-x-3 mb-4">
+                            <span class="px-3 py-1 bg-gray-200 rounded-full text-sm">Kotlin</span>
+                            <span class="px-3 py-1 bg-gray-200 rounded-full text-sm">Gradle</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div class="flex space-x-2">
+                                <a href="./assets/flutter-2-pdf.pdf" target="_blank"
+                                    class="text-[#4C9EEB] hover:text-[#1C75D3] transition-all duration-300 flex items-center">
+                                    <i class="fas fa-eye mr-1"></i> View
+                                </a>
+                                <a href="https://github.com/Rami2212/Kotlin-BMI-Calculator-Mobil-App.git"
+                                    target="_blank"
+                                    class="text-[#4C9EEB] hover:text-[#1C75D3] transition-all duration-300 flex items-center">
+                                    <i class="fab fa-github mr-1"></i> Code
+                                </a>
+                            </div>
+                            <span class="text-sm text-gray-500">2024</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Portfolio Item 11 -->
+                <div class="portfolio-item rounded-lg overflow-hidden shadow-lg bg-white" data-category="flutter">
+                    <div class="relative">
+                        <img src="./assets/flutter-3.jpg" alt="Fuel Quota App" class="w-full h-64 object-cover">
+                        <div
+                            class="portfolio-overlay absolute inset-0 flex flex-col justify-center items-center text-white p-6 bg-black bg-opacity-80 opacity-0 transition-opacity duration-300">
+                            <h3 class="text-xl font-bold mb-2">Clap App</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-lg mb-2">Clap App</h3>
+                        <p class="text-gray-700 mb-4">
+                            A simple Clap app in Kotlin that plays a clap sound when a button is pressed.
+                        </p>
+                        <div class="flex space-x-3 mb-4">
+                            <span class="px-3 py-1 bg-gray-200 rounded-full text-sm">Kotlin</span>
+                            <span class="px-3 py-1 bg-gray-200 rounded-full text-sm">Gradle</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div class="flex space-x-2">
+                                <a href="./assets/flutter-3-pdf.pdf" target="_blank"
+                                    class="text-[#4C9EEB] hover:text-[#1C75D3] transition-all duration-300 flex items-center">
+                                    <i class="fas fa-eye mr-1"></i> View
+                                </a>
+                                <a href="https://github.com/Rami2212/Kotlin-ClapApp.git" target="_blank"
+                                    class="text-[#4C9EEB] hover:text-[#1C75D3] transition-all duration-300 flex items-center">
+                                    <i class="fab fa-github mr-1"></i> Code
+                                </a>
+                            </div>
+                            <span class="text-sm text-gray-500">2024</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Portfolio Item 12 -->
+                <div class="portfolio-item rounded-lg overflow-hidden shadow-lg bg-white" data-category="wordpress">
+                    <div class="relative">
+                        <img src="./assets/wordpress-1.jpg" alt="Fuel Quota App" class="w-full h-64 object-cover">
+                        <div
+                            class="portfolio-overlay absolute inset-0 flex flex-col justify-center items-center text-white p-6 bg-black bg-opacity-80 opacity-0 transition-opacity duration-300">
+                            <h3 class="text-xl font-bold mb-2">Wordpress Website</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-lg mb-2">Wordpress Website</h3>
+                        <p class="text-gray-700 mb-4">
+                            A wordpress website created using elementor website builder for cleaning service.
+                        </p>
+                        <div class="flex space-x-3 mb-4">
+                            <span class="px-3 py-1 bg-gray-200 rounded-full text-sm">Wordpress</span>
+                            <span class="px-3 py-1 bg-gray-200 rounded-full text-sm">Elementor</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div class="flex space-x-2">
+                                <a href="./assets/wordpress-1-pdf.pdf" target="_blank"
+                                    class="text-[#4C9EEB] hover:text-[#1C75D3] transition-all duration-300 flex items-center">
+                                    <i class="fas fa-eye mr-1"></i> View
+                                </a>
+                                <!-- <a href="https://github.com/Rami2212/Kotlin-ClapApp.git" target="_blank"
+                                    class="text-[#4C9EEB] hover:text-[#1C75D3] transition-all duration-300 flex items-center">
+                                    <i class="fab fa-github mr-1"></i> Code
+                                </a> -->
+                            </div>
+                            <span class="text-sm text-gray-500">2022</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Portfolio Item 13 -->
+                <div class="portfolio-item rounded-lg overflow-hidden shadow-lg bg-white" data-category="wordpress">
+                    <div class="relative">
+                        <img src="./assets/wordpress-2.jpg" alt="Fuel Quota App" class="w-full h-64 object-cover">
+                        <div
+                            class="portfolio-overlay absolute inset-0 flex flex-col justify-center items-center text-white p-6 bg-black bg-opacity-80 opacity-0 transition-opacity duration-300">
+                            <h3 class="text-xl font-bold mb-2">Wordpress Website</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-lg mb-2">Wordpress Website</h3>
+                        <p class="text-gray-700 mb-4">
+                            A wordpress website created using elementor website builder for digital marketing agency.
+                        </p>
+                        <div class="flex space-x-3 mb-4">
+                            <span class="px-3 py-1 bg-gray-200 rounded-full text-sm">Wordpress</span>
+                            <span class="px-3 py-1 bg-gray-200 rounded-full text-sm">Elementor</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div class="flex space-x-2">
+                                <a href="./assets/wordpress-2-pdf.pdf" target="_blank"
+                                    class="text-[#4C9EEB] hover:text-[#1C75D3] transition-all duration-300 flex items-center">
+                                    <i class="fas fa-eye mr-1"></i> View
+                                </a>
+                                <!-- <a href="https://github.com/Rami2212/Kotlin-ClapApp.git" target="_blank"
+                                    class="text-[#4C9EEB] hover:text-[#1C75D3] transition-all duration-300 flex items-center">
+                                    <i class="fab fa-github mr-1"></i> Code
+                                </a> -->
+                            </div>
+                            <span class="text-sm text-gray-500">2022</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <!-- Skills Section with Progress Bars -->
+    <section id="skills" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl lg:text-4xl font-bold text-center mb-12">
+                My <span class="text-[#4C9EEB]">Skills</span>
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Frontend Skills -->
+                <div>
+                    <h3 class="text-2xl font-bold mb-6 section-title">Frontend Development</h3>
+
+                    <div class="mb-6">
+                        <div class="flex justify-between mb-2">
+                            <span class="font-medium">HTML5 & CSS3</span>
+                            <span class="text-[#4C9EEB]">95%</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" data-progress="95"></div>
+                        </div>
+                    </div>
+
+                    <div class="mb-6">
+                        <div class="flex justify-between mb-2">
+                            <span class="font-medium">JavaScript</span>
+                            <span class="text-[#4C9EEB]">90%</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" data-progress="90"></div>
+                        </div>
+                    </div>
+
+                    <div class="mb-6">
+                        <div class="flex justify-between mb-2">
+                            <span class="font-medium">React.js</span>
+                            <span class="text-[#4C9EEB]">85%</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" data-progress="85"></div>
+                        </div>
+                    </div>
+
+                    <div class="mb-6">
+                        <div class="flex justify-between mb-2">
+                            <span class="font-medium">Tailwind CSS</span>
+                            <span class="text-[#4C9EEB]">85%</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" data-progress="85"></div>
+                        </div>
+                    </div>
+
+                    <div class="mb-6">
+                        <div class="flex justify-between mb-2">
+                            <span class="font-medium">PHP</span>
+                            <span class="text-[#4C9EEB]">90%</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" data-progress="90"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend Skills -->
+                <div>
+                    <h3 class="text-2xl font-bold mb-6 section-title">Backend Development</h3>
+
+                    <div class="mb-6">
+                        <div class="flex justify-between mb-2">
+                            <span class="font-medium">Node.js</span>
+                            <span class="text-[#4C9EEB]">90%</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" data-progress="90"></div>
+                        </div>
+                    </div>
+
+                    <div class="mb-6">
+                        <div class="flex justify-between mb-2">
+                            <span class="font-medium">Express.js</span>
+                            <span class="text-[#4C9EEB]">80%</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" data-progress="80"></div>
+                        </div>
+                    </div>
+
+                    <div class="mb-6">
+                        <div class="flex justify-between mb-2">
+                            <span class="font-medium">MongoDB</span>
+                            <span class="text-[#4C9EEB]">85%</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" data-progress="85"></div>
+                        </div>
+                    </div>
+
+                    <div class="mb-6">
+                        <div class="flex justify-between mb-2">
+                            <span class="font-medium">Firebase</span>
+                            <span class="text-[#4C9EEB]">80%</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" data-progress="80"></div>
+                        </div>
+                    </div>
+
+                    <div class="mb-6">
+                        <div class="flex justify-between mb-2">
+                            <span class="font-medium">RESTful APIs</span>
+                            <span class="text-[#4C9EEB]">90%</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" data-progress="90"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile Development -->
+                <div>
+                    <h3 class="text-2xl font-bold mb-6 section-title">Mobile Development</h3>
+
+                    <div class="mb-6">
+                        <div class="flex justify-between mb-2">
+                            <span class="font-medium">Flutter</span>
+                            <span class="text-[#4C9EEB]">90%</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" data-progress="90"></div>
+                        </div>
+                    </div>
+
+                    <div class="mb-6">
+                        <div class="flex justify-between mb-2">
+                            <span class="font-medium">Dart</span>
+                            <span class="text-[#4C9EEB]">90%</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" data-progress="90"></div>
+                        </div>
+                    </div>
+
+                    <div class="mb-6">
+                        <div class="flex justify-between mb-2">
+                            <span class="font-medium">Kotlin</span>
+                            <span class="text-[#4C9EEB]">80%</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" data-progress="80"></div>
+                        </div>
+                    </div>
+
+                    <div class="mb-6">
+                        <div class="flex justify-between mb-2">
+                            <span class="font-medium">React Native</span>
+                            <span class="text-[#4C9EEB]">75%</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" data-progress="75"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Other Skills -->
+                <div>
+                    <h3 class="text-2xl font-bold mb-6 section-title">Other Skills</h3>
+
+                    <div class="mb-6">
+                        <div class="flex justify-between mb-2">
+                            <span class="font-medium">WordPress</span>
+                            <span class="text-[#4C9EEB]">95%</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" data-progress="95"></div>
+                        </div>
+                    </div>
+
+                    <div class="mb-6">
+                        <div class="flex justify-between mb-2">
+                            <span class="font-medium">Git & GitHub</span>
+                            <span class="text-[#4C9EEB]">90%</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" data-progress="90"></div>
+                        </div>
+                    </div>
+
+                    <div class="mb-6">
+                        <div class="flex justify-between mb-2">
+                            <span class="font-medium">UI/UX Design</span>
+                            <span class="text-[#4C9EEB]">80%</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" data-progress="80"></div>
+                        </div>
+                    </div>
+
+                    <div class="mb-6">
+                        <div class="flex justify-between mb-2">
+                            <span class="font-medium">PhotoShop</span>
+                            <span class="text-[#4C9EEB]">80%</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-progress-bar" data-progress="80"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl lg:text-4xl font-bold text-center mb-16 section-title mx-auto">
+                My <span class="text-[#4C9EEB]">Experience</span>
+            </h2>
+
+            <div class="max-w-3xl mx-auto">
+                <!-- Timeline Item 1 -->
+                <div class="relative pl-12 pb-12 timeline-item opacity-0">
+                    <div class="timeline-dot"></div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
+                            <h3 class="text-xl font-bold text-gray-800">Full Stack Developer</h3>
+                            <span class="text-[#4C9EEB] font-medium">2024 - Present</span>
+                        </div>
+                        <h4 class="text-lg text-gray-600 mb-4"></h4>
+                        <p class="text-gray-700">
+                            Building scalable web and mobile applications with modern technologies, integrating frontend
+                            and backend solutions, and ensuring seamless user experiences.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 2 -->
+                <div class="relative pl-12 pb-12 timeline-item opacity-0">
+                    <div class="timeline-dot"></div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
+                            <h3 class="text-xl font-bold text-gray-800">Mobile App Developer</h3>
+                            <span class="text-[#4C9EEB] font-medium">2023 - 2024</span>
+                        </div>
+                        <h4 class="text-lg text-gray-600 mb-4"></h4>
+                        <p class="text-gray-700">
+                            Developed cross-platform mobile applications using Flutter, enhancing user engagement and
+                            optimizing performance.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 3 -->
+                <div class="relative pl-12 pb-12 timeline-item opacity-0">
+                    <div class="timeline-dot"></div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
+                            <h3 class="text-xl font-bold text-gray-800">Web Developer</h3>
+                            <span class="text-[#4C9EEB] font-medium">2022 - 2023</span>
+                        </div>
+                        <h4 class="text-lg text-gray-600 mb-4"></h4>
+                        <p class="text-gray-700">
+                            Designed and developed responsive websites, focusing on UI/UX, performance optimization, and
+                            SEO best practices.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 4 -->
+                <div class="relative pl-12 timeline-item opacity-0">
+                    <div class="timeline-dot"></div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
+                            <h3 class="text-xl font-bold text-gray-800">WordPress Developer</h3>
+                            <span class="text-[#4C9EEB] font-medium">2021 - 2022</span>
+                        </div>
+                        <h4 class="text-lg text-gray-600 mb-4"></h4>
+                        <p class="text-gray-700">
+                            Created and customized WordPress websites, including themes, plugins, and e-commerce
+                            solutions for diverse clients.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl lg:text-4xl font-bold text-center mb-16 section-title mx-auto">
+                Client <span class="text-[#4C9EEB]">Testimonials</span>
+            </h2>
+
+            <!-- Testimonial Slider -->
+            <div class="swiper testimonial-slider opacity-0">
+                <div class="swiper-wrapper">
+                    <!-- Testimonial 1 -->
+                    <div class="swiper-slide">
+                        <div class="bg-gray-50 p-8 rounded-lg shadow-md">
+                            <div class="text-[#4C9EEB] text-4xl mb-4">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p class="text-gray-700 italic mb-6">
+                                "Great website, was very understanding around my lack of knowledge of all things to do
+                                with websites . Highly recommend"
+                            </p>
+                            <div class="flex items-center">
+                                <!-- <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                                    <img src="/api/placeholder/100/100" alt="Client 1"
+                                        class="w-full h-full object-cover">
+                                </div> -->
+                                <div>
+                                    <h4 class="font-bold">Helen Muslek</h4>
+                                    <p class="text-sm text-gray-600">Fiverr</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="swiper-slide">
+                        <div class="bg-gray-50 p-8 rounded-lg shadow-md">
+                            <div class="text-[#4C9EEB] text-4xl mb-4">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p class="text-gray-700 italic mb-6">
+                                "Ramitha did an EXCEPTIONAL job on my website! His professionalism and attention to
+                                detail FAR EXCEEDED my expectations. Working with him was a breeze due to his timely
+                                delivery, deep understanding, and great communications!"
+                            </p>
+                            <div class="flex items-center">
+                                <!-- <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                                    <img src="/api/placeholder/100/100" alt="Client 2"
+                                        class="w-full h-full object-cover">
+                                </div> -->
+                                <div>
+                                    <h4 class="font-bold">R Reiman</h4>
+                                    <p class="text-sm text-gray-600">Fiverr</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="swiper-slide">
+                        <div class="bg-gray-50 p-8 rounded-lg shadow-md">
+                            <div class="text-[#4C9EEB] text-4xl mb-4">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p class="text-gray-700 italic mb-6">
+                                "Ramitha is my go-to tech guy! He is reliable, fast and efficient. I would recommend him
+                                to anyone looking to accomplish a goal."
+                            </p>
+                            <div class="flex items-center">
+                                <!-- <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                                    <img src="/api/placeholder/100/100" alt="Client 3"
+                                        class="w-full h-full object-cover">
+                                </div> -->
+                                <div>
+                                    <h4 class="font-bold">Eunece</h4>
+                                    <p class="text-sm text-gray-600">Fiverr</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 4 -->
+                    <div class="swiper-slide">
+                        <div class="bg-gray-50 p-8 rounded-lg shadow-md">
+                            <div class="text-[#4C9EEB] text-4xl mb-4">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p class="text-gray-700 italic mb-6">
+                                "Working with Ramitha was smooth as silk I was under the gun for a few deadlines for a
+                                few clients needed website revisions and blog creations, Ramitha delivered the goods on
+                                time with no do overs, thanks Ram AI Digital Path"
+                            </p>
+                            <div class="flex items-center">
+                                <!-- <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                                    <img src="/api/placeholder/100/100" alt="Client 4"
+                                        class="w-full h-full object-cover">
+                                </div> -->
+                                <div>
+                                    <h4 class="font-bold">Gregary</h4>
+                                    <p class="text-sm text-gray-600">Fiverr</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slider Controls -->
+                <div class="swiper-pagination mt-8"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl lg:text-4xl font-bold text-center mb-16 section-title mx-auto">
+                Get In <span class="text-[#4C9EEB]">Touch</span>
+            </h2>
+
+            <div id="form-wrapper" class="flex flex-col lg:flex-row gap-12">
+                <!-- Contact Form -->
+                <div class="lg:w-1/2 opacity-0" id="contact-form">
+                    <div class="bg-white p-8 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-bold mb-6">Send Me a Message</h3>
+                        <form id="contactForm" action="https://formsubmit.co/ramithapathmilarp@gmail.com" method="POST">
+                            <div class="mb-6">
+                                <label for="name" class="block text-gray-700 mb-2">Your Name</label>
+                                <input type="text" id="name" name="name"
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#4C9EEB] focus:border-transparent"
+                                    placeholder="John Doe">
+                            </div>
+                            <div class="mb-6">
+                                <label for="email" class="block text-gray-700 mb-2">Your Email</label>
+                                <input type="email" id="email" name="email"
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#4C9EEB] focus:border-transparent"
+                                    placeholder="john@example.com">
+                            </div>
+                            <div class="mb-6">
+                                <label for="subject" class="block text-gray-700 mb-2">Subject</label>
+                                <input type="text" id="subject" name="subject"
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#4C9EEB] focus:border-transparent"
+                                    placeholder="Project Inquiry">
+                            </div>
+                            <div class="mb-6">
+                                <label for="message" class="block text-gray-700 mb-2">Your Message</label>
+                                <textarea id="message" rows="5" name="message"
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#4C9EEB] focus:border-transparent"
+                                    placeholder="Tell me about your project..."></textarea>
+                            </div>
+                            <button type="submit"
+                                class="w-full bg-[#4C9EEB] text-white py-3 px-6 rounded-lg font-medium hover:bg-[#1C75D3] transition-all duration-300 transform hover:scale-105">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Contact Information and Map -->
+                <div class="lg:w-1/2 opacity-0" id="contact-info">
+                    <div class="bg-white p-8 rounded-lg shadow-lg mb-8">
+                        <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="text-[#4C9EEB] text-xl mr-4 mt-1">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold">Location:</h4>
+                                    <p class="text-gray-700">Colombo, Sri Lanka</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="text-[#4C9EEB] text-xl mr-4 mt-1">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold">Email:</h4>
+                                    <p class="text-gray-700">ramithapathmilarp@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="text-[#4C9EEB] text-xl mr-4 mt-1">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold">Phone:</h4>
+                                    <p class="text-gray-700">+94 76 90 10 389</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="text-[#4C9EEB] text-xl mr-4 mt-1">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold">Working Hours:</h4>
+                                    <p class="text-gray-700">Monday - Sunday: 9AM - 5PM</p>
+                                </div>
+                            </div>
+
+                            <!-- Social Media Icons -->
+                            <div class="pt-4 mt-4 border-t border-gray-200">
+                                <h4 class="font-bold mb-4">Follow Me:</h4>
+                                <div class="flex space-x-2">
+                                    <a href="https://github.com/Rami2212"
+                                        class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-[#4C9EEB] hover:bg-[#4C9EEB] hover:text-white transition-all duration-300">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/ramitha-iddamalgoda/"
+                                        class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-[#4C9EEB] hover:bg-[#4C9EEB] hover:text-white transition-all duration-300">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                    <a href="https://www.facebook.com/rami2212/"
+                                        class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-[#4C9EEB] hover:bg-[#4C9EEB] hover:text-white transition-all duration-300">
+                                        <i class="fab fa-facebook"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Map -->
+                    <div class="rounded-lg overflow-hidden shadow-lg h-64 bg-gray-300">
+                        <div class="w-full h-full flex items-center justify-center bg-gray-200">
+                            <div class="text-center">
+                                <i class="fas fa-map-marked-alt text-4xl text-gray-400 mb-2">
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63371.803921948034!2d79.81500586319245!3d6.921922084817716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae253d10f7a7003%3A0x320b2e4d32d3838d!2sColombo!5e0!3m2!1sen!2slk!4v1743669482251!5m2!1sen!2slk"
+                                        width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </i>
+                                <p class="text-gray-500">Interactive Map Goes Here</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Floating Action Button -->
+    <div id="contactFAB"
+        class="fixed bottom-8 right-8 w-14 h-14 bg-[#4C9EEB] text-white rounded-full flex items-center justify-center shadow-lg cursor-pointer z-40 hover:bg-[#1C75D3]">
+        <i class="fas fa-comment-dots text-xl"></i>
+    </div>
+
+    <!-- Floating Action Button - WhatsApp -->
+    <a href="https://wa.me/+94769010389" target="_blank" rel="noopener noreferrer" id="contactFABWhatsapp"
+        class="fixed bottom-24 right-8 w-14 h-14 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-lg cursor-pointer z-40 hover:bg-[#1EBE57]">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+
+    <!-- Contact Popup -->
+    <div id="contactPopup" class="fixed bottom-24 right-8 z-50 pointer-events-none opacity-0">
+        <div class="relative bg-white rounded-lg shadow-xl w-80 max-h-[70vh] flex flex-col">
+            <!-- Close Button -->
+            <button id="closeContactBtn" class="absolute top-2 right-2 text-gray-500 hover:text-gray-700 z-10">
+                <i class="fas fa-times text-lg"></i>
+            </button>
+            <!-- Content -->
+            <div class="p-4 pt-10 overflow-y-auto">
+                <h2 class="text-xl font-bold text-[#4C9EEB] mb-4">Contact Me</h2>
+                <!-- Contact Details & Social Media Only -->
+                <div class="space-y-4">
+                    <div class="flex items-center">
+                        <div
+                            class="w-8 h-8 rounded-full bg-[#4C9EEB] bg-opacity-20 flex items-center justify-center mr-3">
+                            <i class="fas fa-envelope text-[#4C9EEB] text-sm"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-500">Email</p>
+                            <p class="text-sm text-gray-800">ramithapathmilarp@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <div
+                            class="w-8 h-8 rounded-full bg-[#4C9EEB] bg-opacity-20 flex items-center justify-center mr-3">
+                            <i class="fas fa-phone text-[#4C9EEB] text-sm"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-500">Phone</p>
+                            <p class="text-sm text-gray-800">+94 76 90 10 389</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <div
+                            class="w-8 h-8 rounded-full bg-[#4C9EEB] bg-opacity-20 flex items-center justify-center mr-3">
+                            <i class="fas fa-map-marker-alt text-[#4C9EEB] text-sm"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-500">Location</p>
+                            <p class="text-sm text-gray-800">Colombo, Sri Lanka</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Social Media Links -->
+                <div class="mt-6">
+                    <h3 class="text-sm font-semibold text-gray-800 mb-2">Connect With Me</h3>
+                    <div class="flex space-x-3">
+                        <a href="https://github.com/Rami2212"
+                            class="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center hover:bg-[#4C9EEB] hover:text-white transition-all duration-300">
+                            <i class="fab fa-github text-sm"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/ramitha-iddamalgoda/"
+                            class="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center hover:bg-[#4C9EEB] hover:text-white transition-all duration-300">
+                            <i class="fab fa-linkedin-in text-sm"></i>
+                        </a>
+                        <a href="https://www.facebook.com/rami2212/"
+                            class="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center hover:bg-[#4C9EEB] hover:text-white transition-all duration-300">
+                            <i class="fab fa-facebook-f text-sm"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer id="footer" class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <!-- Footer Content Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+
+                <!-- About Me Column -->
+                <div class="footer-col">
+                    <h3 class="text-xl font-bold mb-6 font-poppins relative inline-block">
+                        About Me
+                        <span
+                            class="absolute top-10 bottom-0 left-0 w-1/2 h-0.5 bg-[#4C9EEB] transform -translate-y-2"></span>
+                    </h3>
+                    <p class="text-gray-400 mb-6">
+                        A passionate full stack developer dedicated to creating innovative web solutions that solve
+                        real-world problems. With expertise in modern web technologies, I build responsive and
+                        user-friendly applications.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://github.com/Rami2212"
+                            class="social-icon text-gray-400 hover:text-[#4C9EEB] text-xl">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/ramitha-iddamalgoda/"
+                            class="social-icon text-gray-400 hover:text-[#4C9EEB] text-xl">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://www.facebook.com/rami2212/"
+                            class="social-icon text-gray-400 hover:text-[#4C9EEB] text-xl">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </div>
+                </div>
+
+
+                <!-- Quick Links Column -->
+                <div class="footer-col">
+                    <h3 class="text-xl font-bold mb-6 font-poppins relative inline-block">
+                        Quick Links
+                        <span
+                            class="absolute top-10 bottom-0 left-0 w-1/2 h-0.5 bg-[#4C9EEB] transform -translate-y-2"></span>
+                    </h3>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="#home" class="text-gray-400 hover:text-white footer-link">
+                                <i class="fas fa-chevron-right text-[#4C9EEB] mr-2 text-sm"></i>Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#about" class="text-gray-400 hover:text-white footer-link">
+                                <i class="fas fa-chevron-right text-[#4C9EEB] mr-2 text-sm"></i>About
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#what-i-do" class="text-gray-400 hover:text-white footer-link">
+                                <i class="fas fa-chevron-right text-[#4C9EEB] mr-2 text-sm"></i>Services
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#portfolio" class="text-gray-400 hover:text-white footer-link">
+                                <i class="fas fa-chevron-right text-[#4C9EEB] mr-2 text-sm"></i>Portfolio
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="text-gray-400 hover:text-white footer-link">
+                                <i class="fas fa-chevron-right text-[#4C9EEB] mr-2 text-sm"></i>Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Services Column -->
+                <div class="footer-col">
+                    <h3 class="text-xl font-bold mb-6 font-poppins relative inline-block">
+                        Services
+                        <span
+                            class="absolute top-10 bottom-0 left-0 w-1/2 h-0.5 bg-[#4C9EEB] transform -translate-y-2"></span>
+                    </h3>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="#what-i-do" class="text-gray-400 hover:text-white footer-link">
+                                <i class="fas fa-chevron-right text-[#4C9EEB] mr-2 text-sm"></i>HTML, CSS, JS
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#what-i-do" class="text-gray-400 hover:text-white footer-link">
+                                <i class="fas fa-chevron-right text-[#4C9EEB] mr-2 text-sm"></i>App Development
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#what-i-do" class="text-gray-400 hover:text-white footer-link">
+                                <i class="fas fa-chevron-right text-[#4C9EEB] mr-2 text-sm"></i>Web Development
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#what-i-do" class="text-gray-400 hover:text-white footer-link">
+                                <i class="fas fa-chevron-right text-[#4C9EEB] mr-2 text-sm"></i>WordPress Development
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#what-i-do" class="text-gray-400 hover:text-white footer-link">
+                                <i class="fas fa-chevron-right text-[#4C9EEB] mr-2 text-sm"></i>UI/UX Design
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Contact Column -->
+                <div class="footer-col">
+                    <h3 class="text-xl font-bold mb-6 font-poppins relative inline-block">
+                        Contact Info
+                        <span
+                            class="absolute top-10 bottom-0 left-0 w-1/2 h-0.5 bg-[#4C9EEB] transform -translate-y-2"></span>
+                    </h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-[#4C9EEB] mt-1 mr-3"></i>
+                            <a class="text-gray-400 hover:text-white footer-link">Colombo, Sri Lanka</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope text-[#4C9EEB] mr-3"></i>
+                            <a href="mailto:ramithapathmilarp@gmail.com"
+                                class="text-gray-400 hover:text-white footer-link">ramithapathmilarp@gmail.com</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone text-[#4C9EEB] mr-3"></i>
+                            <a href="tel:+94769010389" class="text-gray-400 hover:text-white footer-link">+94 76 90 10
+                                389</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-globe text-[#4C9EEB] mr-3"></i>
+                            <a href="https://www.ramitha.com"
+                                class="text-gray-400 hover:text-white footer-link">www.ramitha.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+
+
+            <!-- Divider -->
+            <div class="border-t border-gray-800 my-8"></div>
+
+            <!-- Copyright -->
+            <div class="text-center">
+                <p class="text-gray-400">
+                    &copy; <span id="current-year">2025</span> - All Rights Reserved | Designed by
+                    <a href="#" class="text-[#4C9EEB] hover:text-white transition duration-300">Ramitha Iddamalgoda</a>
+                </p>
+            </div>
+
+            <!-- Back to Top Button -->
+            <div class="fixed bottom-8 right-24 opacity-0 z-50" id="back-to-top">
+                <a href="#"
+                    class="bg-[#4C9EEB] text-white w-10 h-10 rounded-full flex items-center justify-center shadow-lg hover:bg-[#1C75D3] transition-all duration-300 transform hover:scale-110">
+                    <i class="fas fa-arrow-up"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get elements
+            const contactFAB = document.getElementById('contactFAB');
+            const contactPopup = document.getElementById('contactPopup');
+            const closeContactBtn = document.getElementById('closeContactBtn');
+            const contactForm = document.getElementById('contactForm');
+            const popupContent = contactPopup.querySelector('.relative');
+
+            // Open popup function
+            function openPopup() {
+                gsap.to(contactPopup, {
+                    opacity: 1,
+                    duration: 0.3,
+                    ease: "power2.inOut",
+                    onStart: function () {
+                        contactPopup.classList.remove('pointer-events-none');
+                        contactPopup.classList.add('pointer-events-auto');
+                    }
+                });
+                gsap.fromTo(popupContent,
+                    { y: 20 },
+                    { y: 0, duration: 0.4, ease: "back.out(1.7)", delay: 0.1 }
+                );
+            }
+
+            // Close popup function
+            function closePopup() {
+                gsap.to(popupContent, {
+                    y: 20,
+                    duration: 0.3,
+                    ease: "power2.in"
+                });
+                gsap.to(contactPopup, {
+                    opacity: 0,
+                    duration: 0.2,
+                    ease: "power2.in",
+                    onComplete: function () {
+                        contactPopup.classList.add('pointer-events-none');
+                        contactPopup.classList.remove('pointer-events-auto');
+                    }
+                });
+            }
+
+            // Add bounce animation to FAB
+            contactFAB.addEventListener('mouseenter', function () {
+                gsap.to(contactFAB, {
+                    scale: 1.1,
+                    duration: 0.3,
+                    ease: "back.out(1.7)"
+                });
+            });
+
+            contactFAB.addEventListener('mouseleave', function () {
+                gsap.to(contactFAB, {
+                    scale: 1,
+                    duration: 0.3,
+                    ease: "power2.out"
+                });
+            });
+
+            // Event listeners
+            contactFAB.addEventListener('click', function (e) {
+                e.preventDefault();
+                openPopup();
+            });
+
+            closeContactBtn.addEventListener('click', function (e) {
+                e.preventDefault();
+                closePopup();
+            });
+
+            contactPopup.addEventListener('click', function (e) {
+                if (e.target === contactPopup) {
+                    closePopup();
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
