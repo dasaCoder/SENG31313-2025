@@ -83,6 +83,7 @@ cd se-2021-038
 * ✅ **Downloadable CV section** with PDF
 * ✅ Live deployment with GitHub Pages
 * ✅ Contact form with real email integration via FormSubmit
+* ✅ Intergrated WhatsApp button
 * ✅ Social media icons linked to my social media
 * ✅ Back to top button
 
