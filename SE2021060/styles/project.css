@@ -1,0 +1,242 @@
+/* Projects Section Styles */
+.projects-section {
+  padding: 30px;
+  margin: 80px auto;
+  background-color: #f0f5ff;
+  border-radius: 30px; /* Matching the about section background */
+}
+
+.projects-inner {
+  max-width: 72rem;
+  margin: 0 auto;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Section Title */
+.projects-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 48px;
+  text-align: center;
+  color: #1e3a8a; /* Matching dark blue from about section */
+  position: relative;
+}
+
+.projects-heading:after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #1e3a8a, #3b82f6); /* Matching gradient */
+  margin: 12px auto 0;
+  border-radius: 2px;
+}
+
+.projects-intro {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.project-highlights {
+  list-style-type: disc;
+  margin: 10px 0;
+  padding-left: 20px;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.project-highlights li {
+  margin-bottom: 5px;
+}
+
+
+/* Project Grid */
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem; /* Increased gap between cards */
+}
+
+@media (min-width: 1024px) {
+  .project-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* Project Card */
+.project-card {
+  background-color: white;
+  border-radius: 16px; /* Matching the border-radius from the about section */
+  box-shadow: 0 10px 25px rgba(30, 64, 175, 0.1); /* Blue-tinted shadow */
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(30, 64, 175, 0.15); /* Enhanced shadow on hover */
+}
+
+/* Flex Container for Card Content */
+.project-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .project-flex {
+    flex-direction: row;
+  }
+}
+
+/* Video Section */
+.video-section {
+  width: 100%;
+  background-color: #dbeafe; /* Light blue background */
+}
+
+@media (min-width: 768px) {
+  .video-section {
+    width: 40%; /* Increased width for better visibility */
+  }
+}
+
+.project-video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 16px 0 0 16px;
+}
+
+/* Description Section */
+.project-desc {
+  padding: 2rem; /* Increased padding */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .project-desc {
+    width: 60%;
+  }
+}
+
+/* Badge (Category Label) */
+.badge {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  background: linear-gradient(90deg, #1e3a8a, #3b82f6); /* Blue gradient */
+  color: white;
+  padding: 0.35rem 0.9rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  box-shadow: 0 4px 6px rgba(30, 64, 175, 0.2);
+}
+
+/* Project Title */
+.project-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #1e3a8a; /* Dark blue title */
+  position: relative;
+  display: inline-block;
+}
+
+.project-title:after {
+  content: '';
+  display: block;
+  width: 50%;
+  height: 2px;
+  background: linear-gradient(90deg, #1e3a8a, #3b82f6);
+  margin-top: 4px;
+  border-radius: 2px;
+}
+
+/* Project Description */
+.project-description {
+  margin-bottom: 1.5rem;
+  color: #334155; /* Matching text color from about */
+  line-height: 1.6;
+}
+
+/* Tech Tags */
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.tag {
+  background-color: #dbeafe; /* Light blue background */
+  color: #1e3a8a; /* Dark blue text */
+  padding: 0.4rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.tag:hover {
+  background-color: #1e3a8a;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Project Footer (Link Section) */
+.project-footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+/* GitHub Link */
+.project-link {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  text-decoration: none;
+  color: #1e40af; /* Dark blue link */
+  transition: all 0.3s ease;
+  padding: 0.6rem 1.2rem;
+  border: 2px solid #1e40af;
+  border-radius: 8px;
+}
+
+.project-link:hover {
+  background-color: #1e40af;
+  color: white;
+}
+
+.link-icon {
+  margin-left: 0.5rem;
+  width: 1rem;
+  height: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.project-link:hover .link-icon {
+  transform: translateX(4px);
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from { 
+    opacity: 0; 
+    transform: translateY(20px);
+  }
+  to { 
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+

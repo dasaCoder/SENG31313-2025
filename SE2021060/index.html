@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="i am pubudu madhushan and this website is for my personal portfolio.">
+  <meta name="keywords" content="Software Engineering, DevOps, Cloud, Projects, Portfolio">
+  <meta name="author" content="Pubudu Madushan">
+
+  <title>Pubudu Madushan | Software Engineering UnderGratuate</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./styles/header.css">
+  <link rel="stylesheet" href="./styles/hero.css">
+  <link rel="stylesheet" href="./styles/intro.css">
+  <link rel="stylesheet" href="./styles/about.css">
+  <link rel="stylesheet" href="./styles/project.css">
+  <link rel="stylesheet" href="./styles/blog.css">
+  <link rel="stylesheet" href="./styles/contact.css">
+  <link rel="stylesheet" href="./styles/footer.css">
+  <link rel="icon" href="./assets/Leonardo_Phoenix_10_A_vibrant_modern_logo_for_a_personal_portf_1.jpg"
+    type="image/x-icon">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+</head>
+
+<body>
+
+  <!--Header-->
+  <header>
+    <div class="header-container">
+      <div class="header-content">
+
+        <div class="logo animate__animated animate__fadeInDown">
+          Pubudu Madushan
+        </div>
+
+        <nav>
+          <a href="#hero" title="Home">Home</a>
+          <a href="#intro" title="Intro - Welcome to my Digital Space">Intro</a>
+          <a href="#about" title="About - Learn my journey and skills">About</a>
+          <a href="#projects" title="Projects - Check out my work">Projects</a>
+          <a href="#blog" title="Blog - Read my latest tech insights">Blog</a>
+        </nav>
+
+        <a href="#contact" class="contact-btn" title="Contact - Let's connect">Contact</a>
+
+        <button id="menu-btn" class="menu-btn" title="Menu">
+          <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+
+      </div>
+    </div>
+
+    <div id="mobile-menu" class="mobile-menu">
+      <ul>
+        <li><a href="#hero" title="Home">Home</a></li>
+        <a href="#intro" title="Intro">Intro</a>
+        <li><a href="#about" title="About">About</a></li>
+        <li><a href="#projects" title="Projects">Projects</a></li>
+        <li><a href="#blog" title="Blog">Blog</a></li>
+        <li><a href="#contact" class="contact-mobile" title="Contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="heroContainer">
+      <div class="hero-content">
+
+        <div class="hero-text">
+          <h1>Hi, I'm Pubudu Madushan</h1>
+          <p>
+            I'm a passionate and creative software engineering student who loves learning about DevOps and cloud
+            technologies.
+            I enjoy building smart and scalable solutions, automating mundane tasks to boost productivity, and crafting
+            seamless digital experiences.
+          </p>
+
+          <p class="hero-subtitle">Coding the future, one innovative idea at a time.</p>
+
+          <p class="hero-cta">Discover how my work transforms challenges into cutting-edge digital solutions.</p>
+          <div class="hero-buttons">
+            <a href="#contact" class="btn-primary" title="Let's get in touch">Get In Touch</a>
+            <a href="#projects" class="btn-secondary" title="See my projects">View Projects</a>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <div class="image-container">
+            <div class="profile-image">
+              <img src="assets/WhatsApp Image 2025-04-02 at 18.57.22_f2dd64ce.jpg" alt="Pubudu Madushan">
+            </div>
+
+            <div class="glow-effect"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="background-pattern">
+      <svg xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern id="pattern" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+            <path d="M0 50 Q25 25, 50 50 T100 50" stroke="white" fill="none" stroke-width="1" />
+          </pattern>
+        </defs>
+        <rect x="0" y="0" width="100%" height="100%" fill="url(#pattern)" />
+      </svg>
+    </div>
+  </section>
+
+  <!-- Intro Section -->
+  <section id="intro" class="intro-section">
+    <div class="intro-content">
+
+      <h2>Welcome to my Digital Space</h2>
+      <p class="mission-statement">
+        My mission is to transform challenges into innovative, user-centric applications. I strive to blend technical
+        expertise with creative solutions that bring ideas to life.
+      </p>
+      <p>
+        I thrive on turning complexity into simplicity through cutting-edge technology and relentless curiosity. Here
+        you'll find a showcase of my skills, projects, and insights.
+      </p>
+
+      <div class="skills-grid">
+
+        <div class="skill-card" data-aos="zoom-in-up" fade-aos-duration="1000">
+          <svg class="skill-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+            </path>
+          </svg>
+          <h3>Web Development</h3>
+          <p>Building responsive and performant web applications with modern tech. I focus on clean code and seamless
+            design integration.</p>
+        </div>
+
+        <div class="skill-card" data-aos="zoom-in-up" fade-aos-duration="1000">
+          <svg class="skill-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z">
+            </path>
+          </svg>
+          <h3>Cloud Computing</h3>
+          <p>Using cloud platforms to build scalable and efficient solutions. I leverage virtual infrastructures to
+            enhance agility and performance.</p>
+        </div>
+
+        <div class="skill-card" data-aos="zoom-in-up" fade-aos-duration="1000">
+          <svg class="skill-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M17 14v6m-3-3h6M6 10h2a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v2a2 2 0 002 2zm10 0h2a2 2 0 002-2V6a2 2 0 00-2-2h-2a2 2 0 00-2 2v2a2 2 0 002 2zM6 20h2a2 2 0 002-2v-2a2 2 0 00-2-2H6a2 2 0 00-2 2v2a2 2 0 002 2z">
+            </path>
+          </svg>
+          <h3>Project Management</h3>
+          <p>Collaborating and delivering projects from idea to launch. I ensure effective communication and streamline
+            workflows to achieve success.</p>
+        </div>
+
+        <div class="skill-card" data-aos="zoom-in-up" fade-aos-duration="1000">
+          <svg class="skill-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M3 10h2l1-2h8l1 2h2M6 14h12M8 18h8M12 6V4m0 0a2 2 0 00-2 2h4a2 2 0 00-2-2z">
+            </path>
+          </svg>
+          <h3>DevOps Engineering</h3>
+          <p>Automating workflows and bridging dev and ops for smoother software delivery. I’m passionate about creating
+            reliable pipelines that reduce manual overhead.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="aboutContainer">
+    <div class="about-content">
+      <h2 class="about-heading">About Me</h2>
+
+      <p class="about-intro">
+        I’m a dedicated software engineering undergraduate fueled by passion for technology and innovation. Through
+        hands-on projects, continued learning, and real-world challenges, I strive to create practical solutions that
+        make a difference in the digital world.
+      </p>
+
+      <div class="tab-navigation">
+        <button id="languagesBtn" onclick="showTab('languages')" class="tab-button">Languages</button>
+        <button id="frameworksBtn" onclick="showTab('frameworks')" class="tab-button">Frameworks</button>
+        <button id="devopsBtn" onclick="showTab('devops')" class="tab-button">DevOps & cloud</button>
+        <button id="educationBtn" onclick="showTab('education')" class="tab-button">Education</button>
+      </div>
+
+      <div id="languages" class="tab-content active">
+        <div class="tab-card">
+          <h3 class="tab-title">Programming Languages</h3>
+          <p class="tab-description">
+            These languages form the foundation of my technical expertise, enabling me to solve a variety of complex
+            challenges.
+          </p>
+          <ul class="skill-list">
+            <li data-aos="zoom-in" data-aos-delay="100">
+              <img src="./assets/Java-Logo.png" alt="Java Logo" class="skill-icon">
+              <span class="skill-tag">Java</span>
+            </li>
+            <li data-aos="zoom-in" data-aos-delay="100">
+              <img src="./assets/JavaScript-logo.png" alt="JavaScript Logo" class="skill-icon">
+              <span class="skill-tag">JavaScript</span>
+            </li>
+            <li data-aos="zoom-in" data-aos-delay="100">
+              <img src="./assets/HTML5_Badge.svg" alt="HTML5 Logo" class="skill-icon">
+              <span class="skill-tag">HTML/CSS</span>
+            </li>
+            <li data-aos="zoom-in" data-aos-delay="100">
+              <img src="./assets/python-logo.png" alt="Python Logo" class="skill-icon">
+              <span class="skill-tag">Python</span>
+            </li>
+            <li data-aos="zoom-in" data-aos-delay="100">
+              <img src="./assets/php-logo.svg" alt="PHP Logo" class="skill-icon">
+              <span class="skill-tag">PHP</span>
+            </li>
+            <li data-aos="zoom-in" data-aos-delay="100">
+              <img src="./assets/C_Logo.png" alt="C Logo" class="skill-icon">
+              <span class="skill-tag">C</span>
+            </li>
+            <li data-aos="zoom-in" data-aos-delay="100">
+              <img src="./assets/sql.jpeg" alt="SQL Logo" class="skill-icon">
+              <span class="skill-tag">SQL</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="frameworks" class="tab-content">
+        <div class="tab-card">
+          <h3 class="tab-title">Frameworks & Libraries</h3>
+          <p class="tab-description">
+            I utilize robust frameworks and libraries to accelerate development and build responsive, modern
+            applications.
+          </p>
+          <ul class="skill-list">
+            <li data-aos="zoom-in" data-aos-delay="100">
+              <img src="./assets/Springboot.jpg" alt="Spring Boot Logo" class="skill-icon">
+              <span class="skill-tag">Spring Boot</span>
+            </li>
+            <li data-aos="zoom-in" data-aos-delay="100">
+              <img src="./assets/React-icon.svg" alt="React Logo" class="skill-icon">
+              <span class="skill-tag">React</span>
+            </li>
+            <li data-aos="zoom-in" data-aos-delay="100">
+              <img src="./assets/react-native.png" alt="React Native Logo" class="skill-icon">
+              <span class="skill-tag">React-native</span>
+            </li>
+            <li data-aos="zoom-in" data-aos-delay="100">
+              <img src="./assets/Tailwind_CSS_Logo.svg" alt="Tailwind CSS Logo" class="skill-icon">
+              <span class="skill-tag">Tailwind CSS</span>
+            </li>
+            <li data-aos="zoom-in" data-aos-delay="100">
+              <img src="./assets/Node.js_logo.svg" alt="Node.js Logo" class="skill-icon">
+              <span class="skill-tag">Node.js</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="devops" class="tab-content">
+        <div class="tab-card">
+          <h3 class="tab-title">Cloud & DevOps</h3>
+          <p class="tab-description">
+            Bridging development and operations, I leverage cloud platforms and automation tools to streamline
+            workflows.
+          </p>
+          <ul class="skill-list">
+            <li data-aos="zoom-in" data-aos-delay="100">
+              <img src="./assets/Amazon_Web_Services_Logo.svg" alt="AWS Logo" class="skill-icon">
+              <span class="skill-tag">AWS</span>
+            </li>
+            <li data-aos="zoom-in" data-aos-delay="100">
+              <img src="./assets/Docker_(container_engine)_logo.svg" alt="Docker Logo" class="skill-icon">
+              <span class="skill-tag">Docker</span>
+            </li>
+            <li data-aos="zoom-in" data-aos-delay="100">
+              <img src="./assets/Jenkins_logo.svg" alt="Jenkins Logo" class="skill-icon">
+              <span class="skill-tag">Jenkins</span>
+            </li>
+            <li data-aos="zoom-in" data-aos-delay="100">
+              <img src="./assets/github-actions.png" alt="GitHub Actions Logo" class="skill-icon">
+              <span class="skill-tag">GitHub Actions</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="education" class="tab-content">
+        <div class="tab-card education-card">
+          <h3 class="tab-title">Education</h3>
+          <p class="tab-description">
+            Grounded in both theory and hands-on practice, my education shapes my perspective and fuels my drive for
+            innovation.
+          </p>
+
+          <div class="education-item">
+            <h4 class="education-school">University of Kelaniya</h4>
+            <p class="education-degree">BSc(Hons) Software Engineering</p>
+            <p class="education-date">2022 - Present</p>
+          </div>
+
+
+          <div class="education-item">
+            <h4 class="education-school">B/Orubandiwewa S.S </h4>
+            <p class="education-degree">GCE(Al) - Combind Maths,Chemistry,Physics</p>
+            <p class="education-date">2019 - 2022</p>
+          </div>
+
+          <div class="education-item">
+            <h4 class="education-school">B/Tissapura S.S </h4>
+            <p class="education-degree">GCE(OL)</p>
+            <p class="education-date">2013 - 2018</p>
+          </div>
+
+          <div class="education-item coursework">
+            <h4 class="coursework-heading">Relevant Coursework</h4>
+            <ul class="coursework-list">
+              <li>
+                <a href="https://alison.com/certification/check/2y10GN1yYWW7JgpAuz9AgYv3cebz3p1PtiatYGpz410e0cItXf53YG#google_vignette"
+                  target="_blank">
+                  Diploma in Application Development Using PHP and MySQL - Alison
+                </a>
+              </li>
+              <li>
+                <a href="https://alison.com/certification/check/2y108zkG7Lq9sYRZWKSdTmAFOOYXdo4l81DlwBxjd2YhcNNCbWkIw9hC"
+                  target="_blank">
+                  Diploma in C Programming - Alison
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/learning/certificates/4037274072f5a561ca447a41d22e6e39357990f745266ad4b8850691676590c4"
+                  target="_blank">
+                  Learning Git and GitHub - LinkedIn
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/learning/certificates/dc15f3687c75d98fd93818c1cb6c16c4312cf7a1b2ddc01a7f315a9aac787a5e"
+                  target="_blank">
+                  Learning Cloud Computing - LinkedIn
+                </a>
+              </li>
+            </ul>
+
+            <button class="see-more-btn">
+              <a href="https://www.linkedin.com/in/pubudu-madhushan-0b0621292/details/certifications/" target="_blank">
+                See More
+                <svg class="see-more-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+              </a>
+            </button>
+
+
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!--Projects Section -->
+  <section id="projects" class="projects-section">
+    <div class="projects-inner">
+      <h2 class="projects-heading">My Projects</h2>
+
+      <p class="projects-intro">
+        Explore my portfolio of projects that showcase my ability to solve real-world challenges using creative and
+        innovative technologies. Each project is a testament to my commitment to quality and continuous improvement.
+      </p>
+
+
+      <div class="project-grid">
+
+        <div class="project-card" data-category="web" data-aos="flip-left" data-aos-duration="1000">
+          <div class="project-flex">
+
+            <div class="video-section">
+              <video src="./assets/LUXEAURA COSMETICS - Google Chrome 2025-04-06 12-56-57.mp4" autoplay muted loop
+                class="project-video"></video>
+            </div>
+
+            <div class="project-desc">
+
+              <div class="badge">Web Development</div>
+              <h3 class="project-title">Lexaura Website</h3>
+              <p class="project-description">
+                A modern, luxury-themed cosmetics website designed to deliver an elegant and immersive online shopping
+                experience.
+                This project challenged me to balance aesthetic design with performance, resulting in a solution that is
+                both visually appealing and highly responsive.
+              </p>
+
+              <ul class="project-highlights">
+                <li>Responsive design implementation</li>
+                <li>Performance optimization techniques</li>
+                <li>Enhanced user experience through intuitive navigation</li>
+              </ul>
+              <div class="tech-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">PHP</span>
+                <span class="tag">MySQL</span>
+              </div>
+              <div class="project-footer">
+                <a href="https://github.com/Rashmika119/cosmetic-web" target="_blank" class="project-link"
+                  title="View Lexaura Website on GitHub">
+                  View on GitHub
+                  <svg class="link-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3">
+                    </path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="project-card" data-category="fullstack" data-aos="flip-right" data-aos-duration="1000">
+          <div class="project-flex">
+
+            <div class="video-section">
+              <video src="./assets/Pass My Fuel Admin - Google Chrome 2025-04-06 13-09-02.mp4" autoplay muted loop
+                class="project-video"></video>
+            </div>
+
+            <div class="project-desc">
+
+              <div class="badge">Full Stack</div>
+              <h3 class="project-title">Fuelstation Management System</h3>
+              <p class="project-description">
+                A comprehensive fuel station management system that streamlines user and station operations and provides
+                an intuitive dashboard.
+                This project addresses the fuel distribution challenges by improving efficiency and data insights,
+                ultimately contributing to a sustainable approach in crisis management.
+              </p>
+
+              <ul class="project-highlights">
+                <li>End-to-end system integration</li>
+                <li>Real-time data monitoring</li>
+                <li>Robust full-stack architecture</li>
+              </ul>
+              <div class="tech-tags">
+                <span class="tag">Spring Boot</span>
+                <span class="tag">React</span>
+                <span class="tag">MySQL</span>
+              </div>
+              <div class="project-footer">
+                <a href="https://github.com/pubudu2003060/SENG-22212-Group-Project" target="_blank" class="project-link"
+                  title="View Fuelstation Management System on GitHub">
+                  View on GitHub
+                  <svg class="link-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3">
+                    </path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button style="margin-top: 10px;" class="see-more-btn">
+      <a href="https://github.com/pubudu2003060" target="_blank">
+        See More
+        <svg class="see-more-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+      </a>
+    </button>
+  </section>
+
+  <!-- Blog Section -->
+  <section id="blog" class="blog-section">
+    <div class="blog-inner">
+      <h2 class="blog-heading">Latest Insights</h2>
+
+      <p class="blog-intro">
+        Welcome to my blog – your go-to spot for in-depth explorations on technology, cloud computing, cybersecurity,
+        and modern digital strategies. Dive in to discover insights, practical tips, and thought-provoking analyses that
+        keep you ahead of the curve.
+      </p>
+      <div class="blog-grid">
+
+        <div class="blog-card" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="100">
+          <div class="blog-image-wrapper">
+            <img src="./assets/b1.webp" alt="From Virtual Machines to Containers" class="blog-image">
+            <div class="blog-badge">Cloud Computing</div>
+          </div>
+          <div class="blog-content">
+            <h3 class="blog-title">From Virtual Machines to Containers</h3>
+            <p class="blog-description">
+              Exploring the evolution of infrastructure from traditional virtual machines to modern containerized
+              environments. This post details the benefits of containerization and real-world use cases that enhance
+              scalability and performance.
+            </p>
+            <div class="blog-footer">
+              <div class="blog-meta">
+                <span class="blog-date">Mar 18, 2025</span>
+                <span class="blog-readtime">6 min read</span>
+              </div>
+              <a href="https://medium.com/@madushanp835/from-virtual-machines-to-containers-6d0bee648b93"
+                target="_blank" class="blog-link" title="Read the full post">
+                Read More
+                <svg class="link-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3">
+                  </path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="blog-card" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="200">
+          <div class="blog-image-wrapper">
+            <img src="./assets/b2.webp" alt="The Rise of Multi-Cloud Strategies" class="blog-image">
+            <div class="blog-badge">Cloud Strategy</div>
+          </div>
+          <div class="blog-content">
+            <h3 class="blog-title">The Rise of Multi-Cloud Strategies</h3>
+            <p class="blog-description">
+              A deep dive into how businesses are leveraging multiple cloud platforms for flexibility and enhanced
+              resilience. This post breaks down the strategic advantages and challenges of adopting a multi-cloud
+              approach.
+            </p>
+            <div class="blog-footer">
+              <div class="blog-meta">
+                <span class="blog-date">Nov 16, 2024</span>
+                <span class="blog-readtime">7 min read</span>
+              </div>
+              <a href="https://medium.com/@madushanp835/the-rise-of-multi-cloud-strategies-a4f815d17e81" target="_blank"
+                class="blog-link" title="Read the full post">
+                Read More
+                <svg class="link-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3">
+                  </path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="blog-card" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="300">
+          <div class="blog-image-wrapper">
+            <img src="./assets/b3.webp" alt="Why Businesses Are Shifting to the Cloud" class="blog-image">
+            <div class="blog-badge">Cloud Adoption</div>
+          </div>
+          <div class="blog-content">
+            <h3 class="blog-title">Why Businesses Are Shifting to the Cloud</h3>
+            <p class="blog-description">
+              Discussing the key benefits of cloud computing and why businesses are increasingly moving away from
+              traditional IT infrastructures. Learn about cost efficiency, scalability, and the competitive edge offered
+              by cloud solutions.
+            </p>
+            <div class="blog-footer">
+              <div class="blog-meta">
+                <span class="blog-date">Nov 16, 2024</span>
+                <span class="blog-readtime">5 min read</span>
+              </div>
+              <a href="https://medium.com/@madushanp835/why-businesses-are-shifting-to-the-cloud-d09f515ef280"
+                target="_blank" class="blog-link" title="Read the full post">
+                Read More
+                <svg class="link-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3">
+                  </path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="blog-card" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="400">
+          <div class="blog-image-wrapper">
+            <img src="./assets/b4.webp" alt="CIA Triad in Cyber Security" class="blog-image">
+            <div class="blog-badge">Cyber Security</div>
+          </div>
+          <div class="blog-content">
+            <h3 class="blog-title">CIA Triad in Cyber Security</h3>
+            <p class="blog-description">
+              Understanding the fundamental principles of Confidentiality, Integrity, and Availability in cybersecurity.
+              Explore practical applications of the CIA triad and how organizations can safeguard their digital assets
+              effectively.
+            </p>
+            <div class="blog-footer">
+              <div class="blog-meta">
+                <span class="blog-date">Sep 29, 2023</span>
+                <span class="blog-readtime">2 min read</span>
+              </div>
+              <a href="https://medium.com/@madushanp835/cia-triad-in-cyber-security-ee606a2eabb" target="_blank"
+                class="blog-link" title="Read the full post">
+                Read More
+                <svg class="link-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3">
+                  </path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <button style="margin-top: 10px;" class="see-more-btn">
+      <a href="https://medium.com/@madushanp835" target="_blank">
+        See More
+        <svg class="see-more-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+      </a>
+    </button>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="contact-container">
+      <div class="contact-header">
+        <h2 class="contact-title">Get In Touch</h2>
+        <p class="contact-subtitle">
+          I'm always open to new opportunities, collaborations, and engaging tech discussions. Whether you have a
+          question, a project idea, or just want to say hi, I'd love to hear from you.
+        </p>
+      </div>
+      <div class="contact-content">
+
+        <div class="contact-card">
+          <h3 class="contact-card-title">Contact Information</h3>
+          <div class="contact-info-items">
+            <div class="contact-info-item">
+              <div class="contact-icon-wrapper">
+                <svg class="contact-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                  </path>
+                </svg>
+              </div>
+              <div class="contact-info-text">
+                <p class="contact-label">Email</p>
+                <p class="contact-value">madushanp835@gmail.com</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-icon-wrapper">
+                <svg class="contact-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
+                  </path>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z">
+                  </path>
+                </svg>
+              </div>
+              <div class="contact-info-text">
+                <p class="contact-label">Current Location</p>
+                <p class="contact-value">No 11/13 Hunupitiya, Kelaniya, Sri Lanka</p>
+              </div>
+            </div>
+          </div>
+          <div class="contact-social">
+            <h4 class="social-title">Connect With Me</h4>
+            <div class="social-links">
+              <a href="https://www.linkedin.com/in/pubudu-madhushan-0b0621292" target="_blank" class="social-link"
+                title="Visit my LinkedIn">
+                <svg class="social-icon" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                </svg>
+              </a>
+              <a href="https://github.com/pubudu2003060" target="_blank" class="social-link" title="Visit my GitHub">
+                <svg class="social-icon" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                </svg>
+              </a>
+              <a href="https://medium.com/@madushanp835" target="_blank" class="social-link" title="Visit my Medium">
+                <svg class="social-icon" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M7.5 5.25h9v1.5h-9v-1.5zm-1.5 3h12v1.5H6v-1.5zm3 3h6v1.5H9v-1.5zm-3 3h12v1.5H6v-1.5zm3 3h6v1.5H9v-1.5z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-card">
+          <h3 class="contact-card-title accent-color">Send Me a Message</h3>
+
+          <p class="form-note">
+            Feel free to leave your name, email, and a brief message so I can better understand your needs. I look
+            forward to connecting with you!
+          </p>
+          <form id="contact-form" class="contact-form">
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" id="name" name="name" required placeholder="Your Name" class="form-input">
+              </div>
+              <div class="form-group">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" id="email" name="email" required placeholder="Your Email" class="form-input">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject" class="form-label">Subject</label>
+              <input type="text" id="subject" name="subject" required placeholder="Subject Line" class="form-input">
+            </div>
+            <div class="form-group">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" name="message" rows="5" required placeholder="Your Message"
+                class="form-textarea"></textarea>
+            </div>
+            <button type="submit" class="submit-btn" title="Send your message">
+              <svg class="submit-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                </path>
+              </svg>
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+
+        <div class="footer-col">
+          <h3 class="footer-heading">Pubudu Madushan</h3>
+          <p class="footer-text">
+            Software Engineering Student passionate about creating innovative solutions and exploring cutting-edge
+            technologies.
+          </p>
+          <div class="footer-social">
+            <a href="https://www.linkedin.com/in/pubudu-madhushan-0b0621292" target="_blank" class="footer-social-link">
+              <svg class="footer-icon" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+              </svg>
+            </a>
+            <a href="https://github.com/pubudu2003060" target="_blank" class="footer-social-link">
+              <svg class="footer-icon" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+              </svg>
+            </a>
+            <a href="https://medium.com/@madushanp835" target="_blank" class="footer-social-link">
+              <svg class="footer-icon" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M7.5 5.25h9v1.5h-9v-1.5zm-1.5 3h12v1.5H6v-1.5zm3 3h6v1.5H9v-1.5zm-3 3h12v1.5H6v-1.5zm3 3h6v1.5H9v-1.5z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+
+        <div class="footer-col">
+          <h3 class="footer-heading">Quick Links</h3>
+          <ul class="footer-links">
+            <li>
+              <a href="#hero" class="footer-link">
+                <svg class="footer-link-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="#intro" class="footer-link">
+                <svg class="footer-link-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+                Intro
+              </a>
+            </li>
+            <li>
+              <a href="#about" class="footer-link">
+                <svg class="footer-link-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+                About
+              </a>
+            </li>
+            <li>
+              <a href="#projects" class="footer-link">
+                <svg class="footer-link-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+                Projects
+              </a>
+            </li>
+            <li>
+              <a href="#blog" class="footer-link">
+                <svg class="footer-link-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+                Blog
+              </a>
+            </li>
+          </ul>
+        </div>
+
+
+        <div class="footer-col">
+          <h3 class="footer-heading">Contact Information</h3>
+          <ul class="footer-contact">
+            <li class="footer-contact-item">
+              <svg class="footer-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                </path>
+              </svg>
+              <span>madushanp835@gmail.com</span>
+            </li>
+            <li class="footer-contact-item">
+              <svg class="footer-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+              </svg>
+              <span>No 11/13 Hunupitiya, Kelaniya, Sri Lanka</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2025 Pubudu Madushan. All rights reserved.</p>
+        <p class="footer-design">Designed by Pubudu Madushan</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="index.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

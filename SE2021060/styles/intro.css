@@ -1,0 +1,192 @@
+.intro-section {
+    padding: 80px 0;
+
+}
+
+.intro-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: #f0f5ff;
+}
+
+.intro-content h2:after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #1e3a8a, #3b82f6);
+    margin: 12px auto 0;
+    border-radius: 2px;
+}
+
+.intro-content h2 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+    color: #1e3a8a;
+}
+
+.intro-content p {
+    font-size: 1.125rem;
+    color: #334155;
+    line-height: 1.7;
+    margin-bottom: 40px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+}
+
+.mission-statement {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.skill-card {
+    background-color: white;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(30, 64, 175, 0.1);
+    transition: all 0.3s ease;
+    border-top: 3px solid #1e40af;
+}
+
+.skill-card h3:after {
+    content: '';
+    display: block;
+    width: 200px;
+    height: 2px;
+    background: linear-gradient(90deg, #1e3a8a, #3b82f6);
+    margin: 1px auto;
+    border-radius: 2px;
+}
+
+
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(30, 64, 175, 0.15);
+}
+
+.skill-icon {
+    width: 48px;
+    height: 48px;
+    color: #1e40af;
+    margin: 0 auto 16px;
+}
+
+.skill-card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #1e3a8a;
+}
+
+.skill-card p {
+    color: #4b5563;
+    margin-bottom: 0;
+    font-size: 1rem;
+}
+
+@media (min-width: 1024px) {
+    .skills-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 768px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.intro-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: #f0f5ff;
+
+}
+
+.intro-content h2 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+    color: #1e3a8a;
+}
+
+.intro-content p {
+    font-size: 1.125rem;
+    color: #334155;
+    line-height: 1.7;
+    margin-bottom: 40px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+}
+
+.mission-statement {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+
+.skill-card {
+    background-color: white;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(30, 64, 175, 0.1);
+    transition: all 0.3s ease;
+    border-top: 3px solid #1e40af;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(30, 64, 175, 0.15);
+}
+
+.skill-icon {
+    width: 48px;
+    height: 48px;
+    color: #1e40af;
+    margin: 0 auto 16px;
+}
+
+.skill-card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #1e3a8a;
+}
+
+.skill-card p {
+    color: #4b5563;
+    margin-bottom: 0;
+    font-size: 1rem;
+}
+
+@media (min-width: 1024px) {
+    .skills-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 768px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
