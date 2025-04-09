@@ -17,6 +17,11 @@ html{
     gap:100px;
     background-color:#001f7c38;
 }
+a,i{
+ text-decoration: none;
+ color: lightgray;
+}
+
 .back-vid{
     position: fixed;
     right: 0;
@@ -27,7 +32,7 @@ html{
 }
 header{
     display:flex;
-    position: absolute;
+    position: fixed;
     top:0;
     right:0;
     left:0;
@@ -177,9 +182,11 @@ header ul a{
     right: 3%;
 
 }
-.hero-vid-box video{
-    height:900px;
-    mix-blend-mode: lighten;
+.hero-vid-box img{
+    height:500px;
+    width:auto;
+    border-radius: 50%;
+    mix-blend-mode:lighten;
 }
 
 .scroll-down{
@@ -590,11 +597,13 @@ header ul a{
     gap:10%;
     align-items:center;
     position:relative;
+    margin: 0 auto;
 }
 
 .contact-section h1{
     position:absolute;
-    top:10%;
+    
+    top:1%;
     left:40%;
 }
 .social-box a{
@@ -606,12 +615,17 @@ header ul a{
 .social-box{
     display:flex;
     flex-direction: column;
+    
     gap:25px;
 }
 .social-box i{
     color:#727fde;
     font-size:30px;
     margin-right: 10px;
+}
+.social-icons{
+    display: flex;
+    flex-direction: column;
 }
 .social-icons a i{
     color:white;
@@ -620,14 +634,30 @@ header ul a{
 .contact-box p{
     max-width:400px;
     margin-top: 30px;
-    margin-bottom: 5px;
+    
 }
 
 .contact-box input{
     padding:7.5px 30px;
+    align-items: right;
     background-color: lightgray;
+    margin-top: 10px;
+    margin-bottom: 10px;
     width: 80%;
     height:25px;
+    border:none;
+    outline: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.contact-box textarea{
+
+    padding:7.5px 30px;
+    background-color: lightgray;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 80%;
+    height:100px;
     border:none;
     outline: none;
     border-top-right-radius: 10px;
@@ -827,10 +857,12 @@ footer h1{
     .hero-info p{
         max-width: 300px;
     }
-    .hero-vid-box{
-        right: 0;
+    .hero{
+        display:flex;
+        flex-direction: column;
     }
-    .hero-vid-box video{
+   
+    .hero-vid-box img{
         height:500px;
     }
     .section-title{
@@ -855,6 +887,7 @@ footer h1{
     }
     .my-projects{
         margin-bottom: 300px;
+        margin-top: 300px;
     }
     .project-vidbox video{
         width:250px;
@@ -875,6 +908,7 @@ footer h1{
         max-width:200px;
         min-width: 0;
     }
+
     footer h1{
         font-size:20px;
 
@@ -923,52 +957,120 @@ footer h1{
         width:100%;
     }
     .my-projects{
-        margin-bottom:600px;
+        margin-bottom:800px;
     }
     .project-card{
         flex-direction:column;
         margin-left:30%;
         margin-right: 25%;
-        gap:30px;
+        align-items: center;
+        gap:10px;
     }
+    
     .project-info{
         width:85%;
+        margin-bottom: 30px;;
     }
     .project-info h1{
-        text-wrap: nowrap;
+      
+        font-size: 18px;
         
     }
+
     .project-info p{
        max-width: 300px;
+       font-size: 13px;
+       margin: 10px;
+        
+    }
+    .project-info button {
+        width: 60%;
+        max-width: 100px;
+        margin: 15px 0;
+      }
+
+
+    .skills-box{
+       display: flex;
+       height: 100vh;
+       gap:100px;
+       margin-bottom: 90px;
+    }
+   
+
+    .skills-image{
+        flex-direction: column;
+        margin-left: 20px;
+        max-width: 90%;
         
     }
     .designer{
-        top:15%;
+        top:10%;
+        margin:0 auto;
         left:18%;
+        margin-bottom: 10px;
+        margin-right: 80px;
     }
     .coder{
+        display: block;
+        margin: 0 auto;
         top:50%;
-        right:18%;
+        left:18%;
+        margin-right: 80px;
+       }
+
+    .designer h1,
+    .coder h1 {
+      font-size: 20px;
+      text-align: right;
     }
+
+    .designer p,
+    .coder p {
+      font-size: 14px;
+      line-height: 1.5;
+      text-align: center;
+    }
+
     .skills-box h1{
         margin-bottom: 0;
         margin-top: 70px;
     }
-    .slider{
-        bottom: 0;
-    }
+   
+    .slider .item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .slider{
+        top:90%;
+      }
+ 
     .slider img{
-        width: 60%;
+        width: 80px;  /* adjust based on your layout */
+        height: 80px;
+        object-fit: contain;
     }
     .contact-section{
         flex-direction: column;
         margin-top: 100px;
         margin-bottom: 50px;
+        padding: 50px;
     }
     .contact-section .section-title{
         top: -40px;
         left:25%;
+        
     }
+   
+    .social-icons{
+        display: flex;
+        flex-direction: column;
+    }
+  
+   
+   
     footer h1{
         font-size:17px;
     }
