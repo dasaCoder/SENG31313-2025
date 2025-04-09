@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3a9bf29575.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  
+    <header id="home">
+        <nav id="nav"> 
+            <a href="#">Portfolio</a>           
+            <ul id="sidemenu">
+                <li><a href="#home">Home</a></li> <!--add ids-->
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#blogs">Blogs</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            
+        </nav>
+
+        <div class="header-text">
+            <p>Software Engineering UG</p>
+            <h1>Hi, I'm <span>Sachini Weerakkody</span> <br>from University of Kelaniya</h1>
+            <div id="title-container">
+                <p><span id="title"></span></p>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/sachini-weerakkody-843b392a3" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/SachiniUresha"><i class="fa-brands fa-github" target="_blank" rel="noopener noreferrer"></i></a>
+                <a href="https://medium.com/@sachiniweerakkody"><i class="fa-brands fa-medium" target="_blank" rel="noopener noreferrer"></i></a>
+                <a href="https://www.instagram.com/.sachx.?igsh=YjdlOHc3M2ZsZHB4" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+       
+
+        <div class="right-container">
+
+        </div>
+        <div class="design">
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+
+    </header>
+
+<!-- -----------------About-------------- -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/about.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a self-motivated and enthusiastic individual with a strong sense of responsibility and a passion for continuous learning. I thrive on challenges, am driven by goals, and take pride in delivering high-quality results. With a hardworking nature and a growth mindset, I am always eager to explore new opportunities and contribute meaningfully to every project I undertake.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('certification')">Certification</p>
+                        <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="education">
+                        <dl>
+                            <dt>Reading for BSc (Hons) in Software Engineering degree </dt>
+                                <dd>at University of Kelaniya | July 2023 – Present</dd>
+                            <dt>Diploma in IT</dt>
+                                <dd>Esoft Metro College, Piliyandala | March 2022 - March 2023</dd>
+                            <dt>Diploma in English Language and Literature</dt>
+                                <dd>Aquinas College of Higher Studies, Colombo. | March 2022 - January 2023</dd>
+                            <dt>G.C.E. Advanced Level</dt>
+                                <dd>Anula Vidyalaya, Nugegoda | 2021</dd>
+                                <dd>Physical science | 1.5969 | Chemistry A | Physics B | Combined Maths C</dd>
+                                <dd>2020 | General English A | General Knowledge 64</dd>
+                            <dt>G.C.E. Ordinary Level</dt>
+                                <dd>Anula Vidyalaya, Nugegoda</dd>
+                                <dd>2017 | 9A</dd>
+                                <dd>2018 | Tamil A</dd>
+                           
+                        </dl>
+                    </div>
+                    <div class="tab-contents" id="certification">
+                        <dl>
+                            <dt>POSTMAN API Foundermentals Student Expert</dt>
+                                <dd>March 2025</dd>
+                            <dt>Diploma in C programming </dt>
+                                <dd>Alison | December 2023</dd>
+                            <dt>Fundamentals of HTML </dt>
+                                <dd>Alison | May 2024</dd>
+                            <dt>Introduction to Java</dt>
+                                <dd>Sololearn | May 2024</dd>
+                            <dt>Introduction to CSS </dt>
+                                <dd>Sololearn | May 2024</dd>
+                            <dt>Introduction to HTML</dt>
+                                <dd>Sololearn | May 2024</dd>
+                            
+                           
+                        </dl>
+                    </div>
+                    <div class="tab-contents" id="skills">
+                        <dl>
+                            <dt>Programming Languages</dt>
+                            <dd>Java | JavaScript | PHP | Python | C# | C | Kotlin </dd>
+                            <dt>Web development</dt>
+                            <dd>HTML | CSS | JavaScript | MERN | Tailwind CSS | Spring Boot | PHP</dd>
+                            <dt>Database Management</dt>
+                            <dd>MySQL | MongoDB | SQL Server</dd>
+                            <dt>Development Tools</dt>
+                            <dd>VS Code | IntelliJ IDEA | Android Studio | Visual Studio | PyCharm</dd>
+                            <dt>Version Control</dt>
+                            <dd>GitHub</dd>
+                            <dt>Cloud Technology</dt>
+                            <dd>AWS</dd>
+                            <dt>Other Tools</dt>
+                            <dd>Postman | Figma</dd>
+
+
+                           
+                        </dl>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                       
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+   
+
+        <!-- ------------------Projects------------------------ -->
+
+        <div id="projects">
+            <div class="container">
+                <h1 class="sub-title">Projects</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images\audio.jpeg" alt="">
+                        <div class="layer">
+                            <h3>Kisal Audio - frontend</h3>
+                            <p>Kisal Audio is an audio equipment rental platform that offers both frontend and backend services to provide users with easy access to a variety of audio equipment for rent. The platform allows individuals and businesses to browse, select, and rent equipment like microphones, speakers, sound systems, and other audio-related gear.</p>
+                            <a href="https://github.com/SachiniUresha/kisal-audio-frontend.git"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images\audio.jpeg" alt="">
+                        <div class="layer">
+                            <h3>Kisal Audio - backend</h3>
+                            <p>Kisal Audio is an audio equipment rental platform that offers both frontend and backend services to provide users with easy access to a variety of audio equipment for rent. The platform allows individuals and businesses to browse, select, and rent equipment like microphones, speakers, sound systems, and other audio-related gear.</p>
+                            <a href="https://github.com/SachiniUresha/kisal-audio-backend.git"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images\fuel.jpeg" alt="">
+                        <div class="layer">
+                            <h3>FuelIQ</h3>
+                            <p>FuelIQ is a software solution designed to manage and optimize fuel consumption. It consists of a web interface, backend service, and mobile application, all working together to provide a seamless experience for users. The platform allows users to efficiently track, analyze, and manage fuel-related processes, ensuring smooth operations across different devices. FuelIQ is built to cater to both web and mobile users, providing a comprehensive solution for fuel management.</p>
+                            <a href="https://github.com/SachiniUresha/fuel-project.git"><i class="fa-solid fa-up-right-from-square"></i></a>
+
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images\rent.jpeg" alt="">
+                        <div class="layer">
+                            <h3>StayFinder</h3>
+                            <p>StayFinder is a accommodation renting platform designed to help university students to find available accommodations, including rooms, boarding houses, and full houses. It allows seekers to search for rental properties, while renters can list their properties for others to discover.</p>
+                            <a href="https://github.com/SachiniUresha/StayFinder.git"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images\house.jpeg" alt="">
+                        <div class="layer">
+                            <h3>Live Link</h3>
+                            <p>This is a user interface design for a smart home mobile application, created using Figma. It provides intuitive controls and separate screens for managing smart devices like locks, TVs, and refrigerators. The design includes features for device registration, activity history, and real-time status displays, ensuring a smooth and user-friendly smart home experience.</p>
+                            <a href="https://www.figma.com/design/lxyNZXuDqDmsLl0qGI5uGH/Smart-home-app---Live-link-Final?node-id=0-1&t=IoEiHjn0UU9bX3xr-1"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images\pharmacy.jpeg" alt="">
+                        <div class="layer">
+                            <h3>PMS - Pharmacy Management System</h3>
+                            <p>A Simple Pharmacy Management System which helps pharmacies manage inventory, suppliers, and customer transactions. It allows easy management of medicine stock, supplier information, and customer details. The system ensuring smooth and efficient day-to-day operations.</p>
+                            <a href="https://github.com/SachiniUresha/PMS.git"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images\clock.png" alt="">
+                        <div class="layer">
+                            <h3>Digital Clock</h3>
+                            <p>The Digital Clock is a simple, real-time clock application that displays the current time in HH:MM:SS format. It is fully responsive, ensuring it works seamlessly across desktops, tablets, and mobile devices. With its clear, accessible design, the clock provides users with an easy way to check the time, and it can be customized for different themes, formats, and additional features like alarms or timers.</p>
+                            <a href="https://github.com/SachiniUresha/Digital_Clock.git"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <a href="https://github.com/SachiniUresha" class="btn">See more</a>
+
+            </div>
+        </div>
+
+         <!-- ------------------Blogs------------------------ -->
+
+    <div id="blogs">
+        <div class="container">
+            <h1 class="sub-title">Blogs</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-shield"></i>
+                    <h2>Exploring Software Licenses: Essential Insights</h2>
+                    <p>This article provides a clear and concise overview of different types of software licenses, their importance, and how they impact software usage, distribution, and development. Perfect for developers, students, or anyone curious about legal aspects of software.</p>
+                    <a href="https://medium.com/@sachiniweerakkody/exploring-software-licenses-essential-insights-1e27f20288e3">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>A Guide to Database Careers</h2>
+                    <p>This article explores various career paths in the field of databases, highlighting key roles, required skills, and growth opportunities. It’s a helpful guide for students and tech enthusiasts interested in building a future in database management and development.</p>
+                    <a href="https://medium.com/@sachiniweerakkody/a-guide-to-database-careers-51045e053981">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-user-secret"></i>
+                    <h2>CIA Triad in Cyber Security</h2>
+                    <p>This article introduces the CIA Triad—Confidentiality, Integrity, and Availability—as the foundational model in cybersecurity. It explains each principle and its role in protecting digital assets, offering clear insights for beginners and security enthusiasts.</p>
+                    <a href="https://medium.com/@sachiniweerakkody/cia-triad-in-cyber-security-31aed6faab48">Learn more</a>
+                </div>
+            </div>
+            <a href="https://medium.com/@sachiniweerakkody" class="btn">See more</a>
+
+
+        </div>
+    </div>
+
+                <!-- ------------------contact------------------------ -->
+
+        <div id="contact">
+            <div class="container">  
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i>dsuweerakkody19@gmail.com</p>
+                        <p><i class="fa-solid fa-phone-volume"></i>0702838323</p>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/sachini-weerakkody-843b392a3" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/SachiniUresha"><i class="fa-brands fa-github" target="_blank" rel="noopener noreferrer"></i></a>
+                            <a href="https://medium.com/@sachiniweerakkody"><i class="fa-brands fa-medium" target="_blank" rel="noopener noreferrer"></i></a>
+                            <a href="https://www.instagram.com/.sachx.?igsh=YjdlOHc3M2ZsZHB4" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                        <a href="images/SE_2021_018 Weerakkody D.S.U..pdf" download class="btn btn2">Download CV</a>
+
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>  <!--name goes to the spreadsheet-->
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>           
+        </div>
+
+        <footer>
+            <div class="copyright">
+                <p>Thank you for scrolling all the way down. You're awesome! <i class="fa-solid fa-heart"></i></p>
+            </div>
+        </footer>
+
+
+        
+
+    
+
+
+<script src="scripts.js"></script>
+
+   
+</body>
+</html>
