@@ -115,3 +115,16 @@ const animateSkills = () => {
 if (skillItems.length > 0) {
     animateSkills();
 }
+
+document.addEventListener('scroll', () => {
+    const scrollableHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const scrollProgress = (window.scrollY / scrollableHeight) * 100;
+    document.getElementById('scroll-down-btn').style.setProperty('--progress', `${scrollProgress}%`);
+});
+
+document.querySelector('.scroll-down').addEventListener('click', function(e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+    });
+});
