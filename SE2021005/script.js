@@ -53,25 +53,6 @@ document.getElementById("projectFilter").addEventListener("change", function () 
 
     updateShowMoreButton();
 });
-
-document.getElementById("menu-toggle").addEventListener("click", function() {
-    let navLinks = document.getElementById("nav-links");
-    navLinks.style.display = (navLinks.style.display === "flex") ? "none" : "flex";
-});
-
-
-const text = "I am Thanoogithan, a Full Stack Developer & ML Enthusiast.";
-let index = 0;
-
-function typeEffect() {
-    if (index < text.length) {
-        document.querySelector(".animated-text").innerHTML += text.charAt(index);
-        index++;
-        setTimeout(typeEffect, 80);
-    }
-}
-window.onload = typeEffect;
-
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById("contactForm");
     const successMessage = document.getElementById("successMessage");
@@ -88,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
             return;
         }
 
-        
+      
         fetch(form.action, {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -122,8 +103,26 @@ document.addEventListener("DOMContentLoaded", function () {
     handleScroll(); 
 });
 
+document.getElementById("menu-toggle").addEventListener("click", function() {
+    let navLinks = document.getElementById("nav-links");
+    navLinks.style.display = (navLinks.style.display === "flex") ? "none" : "flex";
+});
 
-  function toggleMenu() {
-    const navLinks = document.getElementById("navLinks");
+
+const text = "I am Thanoogithan, a Full Stack Developer & ML Enthusiast.";
+let index = 0;
+
+function typeEffect() {
+    if (index < text.length) {
+        document.querySelector(".animated-text").innerHTML += text.charAt(index);
+        index++;
+        setTimeout(typeEffect, 80);
+    }
+}
+window.onload = typeEffect;
+
+  
+function toggleMenu() {
+    const navLinks = document.getElementById("nav-links");
     navLinks.classList.toggle("show");
   }
