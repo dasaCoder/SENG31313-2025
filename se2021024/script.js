@@ -67,3 +67,27 @@ const form = document.querySelector('.contact-form');
       form.reset(); // Clears all fields
     }, 1000); // Give a tiny delay to let Formspree catch it
   });
+
+
+
+  function showTab(tabId, event) {
+    // Remove "active" from all tab buttons
+    var project_tabs = document.querySelectorAll(".tab-btn");
+    project_tabs.forEach(function(tab){
+        tab.classList.remove("active");
+    });
+    
+    // Hide all tab contents
+    var project_contents = document.querySelectorAll(".tab-content");
+    project_contents.forEach(function(content){
+        content.classList.remove("active");
+    });
+
+    // Activate selected tab and button
+    var selected_tab = document.getElementById(tabId);
+    selected_tab.classList.add("active");
+
+    // Highlight the clicked button
+    event.currentTarget.classList.add('active');
+}
+
