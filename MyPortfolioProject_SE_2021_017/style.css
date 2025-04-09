@@ -31,6 +31,7 @@ a,i{
   
 }
 header{
+    
     display:flex;
     position: fixed;
     top:0;
@@ -44,6 +45,7 @@ header{
     padding: 0 30px;
     box-shadow:0 0 15px #72a1de68;
     z-index:999;
+    
 
 }
 .left{
@@ -58,12 +60,13 @@ header{
 header ul{
     display:flex;
     justify-content:space-between;
-    width: 30%;
+    width: 50%;
     padding: 15px 15px;
     border-radius:50px;
     background-color: rgba(0, 0, 0, 0.30);
     backdrop-filter: blur(10);
     box-shadow: 0 0 10px #727fde65;
+    margin-right: 10px;
 }
 
 header ul li{
@@ -161,6 +164,22 @@ header ul a{
 .hero-info button:hover{
     box-shadow: 0 0 15px #727fde86;
 }
+.hero-vid-box {
+    position: absolute;
+    right: 3%;
+    height: 700px; 
+    overflow: hidden; 
+    mix-blend-mode: lighten; 
+  }
+  
+  .hero-vid-box img {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+    transform: translateY(10%); 
+    filter: brightness(1.2); 
+    opacity: 0.90; 
+  }
 
 .gradient{
     background: linear-gradient(to right,#008baa,#7e42a7,#6600c5,#6070fd,#2a46ff,#0099ff,#008ead);
@@ -177,17 +196,8 @@ header ul a{
     }
 }
 
-.hero-vid-box{
-    position: absolute;
-    right: 3%;
 
-}
-.hero-vid-box img{
-    height:500px;
-    width:auto;
-    border-radius: 50%;
-    mix-blend-mode:lighten;
-}
+
 
 .scroll-down{
     height:50px;
@@ -239,7 +249,7 @@ header ul a{
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin-top: 100px;
+    margin-top: 200px;
     margin-bottom: 10px;
 
 }
@@ -357,7 +367,7 @@ header ul a{
     width: 100%;
     height: 100vh;
     margin-top: 200px;
-    margin-bottom: 700px;
+    margin-bottom: 1200px;
 }
 
 .project-card{
@@ -365,8 +375,9 @@ header ul a{
     width: 80%;
     height: 50%;
     align-items: center;
-    gap: 10%;
-    margin-bottom: 10px;
+    gap:5%;
+    margin-bottom: 120px;
+    margin-top: 40px;
     border-radius: 10px;
     justify-content: center;
   
@@ -385,7 +396,7 @@ header ul a{
 }
 .project-vidbox video{
     object-fit:cover;
-    width:100%;
+    width:90%;
     box-shadow: 0 0 10px lightgray;
     border-radius: 20px;
     transition:0.5s;
@@ -403,8 +414,10 @@ header ul a{
     flex-direction:column;
     align-items: start;
     justify-content: center;
-    width: 50%;
-    padding-left:10%;
+    width: 40%;
+    padding-left:8%;
+    padding-right: 8%;
+    
 
 }
 .project-info h1{
@@ -422,9 +435,9 @@ header ul a{
 .project-info p{
     width:90%;
     max-width:400px;
-    min-width:300px;
-    margin-bottom:40px;
-    margin-top:0;
+    min-width:200px;
+    margin-bottom:100px;
+    margin-top:10px;
 }
 .project-info button{
     color:white;
@@ -499,6 +512,7 @@ header ul a{
     width: 70%;
     mix-blend-mode: lighten;
     opacity: 0.7;
+    margin-bottom: 50px;
 }
 
 .designer,
@@ -636,6 +650,11 @@ header ul a{
     margin-top: 30px;
     
 }
+.contact-box form label {
+    display: block;
+    margin-top: 10px;   
+    margin-bottom: 5px;  
+    font-weight: bold;  }
 
 .contact-box input{
     padding:7.5px 30px;
@@ -723,7 +742,7 @@ footer h1{
     cursor: pointer;
 }
 .sidebar ul{
-    padding-left: 20px;
+    padding-left: 50px;
 }
 .sidebar ul li{
     list-style:none;
@@ -737,10 +756,13 @@ footer h1{
     text-shadow: 0 0 15px rgba(128,128,128,0.256);
 }
 .sidebar .social-icons a{
-    font-size: 35px;
+    font-size: 35px; 
     padding: 5px 5px;
     cursor: pointer;
 
+}
+.sidebar .social-icons{
+    margin-left: 50px;
 }
 .sidebar.open-sidebar{
     animation:openSidebarAnimation 1.5s forwards;
@@ -862,9 +884,7 @@ footer h1{
         flex-direction: column;
     }
    
-    .hero-vid-box img{
-        height:500px;
-    }
+   
     .section-title{
         font-size: 30px;
     }
@@ -885,29 +905,35 @@ footer h1{
         height:65%;
         margin-top: 5%;
     }
-    .my-projects{
-        margin-bottom: 300px;
-        margin-top: 300px;
-    }
-    .project-vidbox video{
-        width:250px;
-        margin-left:-100px;
-    }
-    .project-info{
-        padding-left:0;
-        margin-left:-50px;
-    }
-    .project-info h1{
-        font-size: 20px;
-        max-width: 200px;
-        text-wrap: wrap;
-    }
-    .project-info p{
-        font-size:10px;
-        text-wrap:wrap;
-        max-width:200px;
-        min-width: 0;
-    }
+    .my-projects {
+        margin-top: 100px;
+        margin-bottom: 100px;
+      }
+    
+      .project-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 0 20px;
+      }
+    
+      .project-info h1 {
+        font-size: 18px;
+        max-width: 100%;
+      }
+    
+      .project-info p {
+        font-size: 13px;
+        max-width: 100%;
+      }
+    
+      .project-info button {
+        margin-top: 10px;
+      }
+    
+      .project-vidbox video {
+        width: 100%;
+        max-width: 100%;
+      }
 
     footer h1{
         font-size:20px;
@@ -948,13 +974,28 @@ footer h1{
     .hero-info h1{
         line-height:50px;
     }
-    .hero-vid-box{
-        height: 200px;
-        top:5%;
-        right:5%;
-    }
+    .hero-vid-box {
+        position: absolute;
+        right: 3%;
+        height: 650px; 
+        overflow: hidden; 
+        mix-blend-mode: lighten;
+      }
+      
+      .hero-vid-box img {
+        height: 100%;
+        width: auto;
+        object-fit: cover;  
+        transform: translateY(10%); 
+        filter: brightness(1.2); 
+        opacity: 0.50; 
+      }
+
     .card video{
-        width:100%;
+        margin-top: 0;
+        width:60%;
+        margin-bottom: 10px;
+        
     }
     .my-projects{
         margin-bottom:800px;
@@ -964,8 +1005,30 @@ footer h1{
         margin-left:30%;
         margin-right: 25%;
         align-items: center;
-        gap:10px;
+        gap:70px;
+        
     }
+    .card button{
+        color:white;
+        padding:10px 15px;
+        border-radius:10px;
+        border:1px solid #727fdeb4;
+        background-color: #2200493d;
+        box-shadow: 0 0 5px #727fde86;
+        cursor:pointer;
+        transition:0.3s;
+        position:absolute;
+        bottom:5%;
+        left:5%;
+    }
+    .card button:hover{
+        box-shadow: 0 0 15px #727fde86;
+        opacity:0.7;
+    }
+    .card:hover{
+        box-shadow: 0 0 15px rgba(211, 211, 211, 0.764);
+    }
+    
     
     .project-info{
         width:85%;
@@ -988,7 +1051,9 @@ footer h1{
         max-width: 100px;
         margin: 15px 0;
       }
-
+      .skills-section{
+        margin-top: 1200px;
+      }
 
     .skills-box{
        display: flex;
@@ -999,6 +1064,7 @@ footer h1{
    
 
     .skills-image{
+      
         flex-direction: column;
         margin-left: 20px;
         max-width: 90%;
@@ -1006,14 +1072,15 @@ footer h1{
     }
     .designer{
         top:10%;
-        margin:0 auto;
+        margin:0 10%;
         left:18%;
         margin-bottom: 10px;
         margin-right: 80px;
     }
     .coder{
-        display: block;
-        margin: 0 auto;
+      flex-direction: column;
+
+        margin: 0 10%;
         top:50%;
         left:18%;
         margin-right: 80px;
@@ -1048,7 +1115,7 @@ footer h1{
       }
  
     .slider img{
-        width: 80px;  /* adjust based on your layout */
+        width: 80px; 
         height: 80px;
         object-fit: contain;
     }
@@ -1056,20 +1123,56 @@ footer h1{
         flex-direction: column;
         margin-top: 100px;
         margin-bottom: 50px;
-        padding: 50px;
+        margin-right: 90px;
+        padding: 100px;
     }
     .contact-section .section-title{
-        top: -40px;
+        top: -130px;
         left:25%;
         
+        
     }
+    
    
     .social-icons{
+        margin-bottom: 0;
         display: flex;
         flex-direction: column;
+       
+    }
+    .contact-box textarea{
+
+        padding:5px 10px;
+        background-color: lightgray;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        width: 80%;
+        height:50px;
+        border:none;
+        outline: none;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    .contact-box input{
+        padding:5px 10px;
+        align-items: right;
+        background-color: lightgray;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        width: 80%;
+        height:25px;
+        border:none;
+        outline: none;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
     }
   
-   
+   .contact-box p{
+     margin-top:0;
+     font-size: 18px;
+     
+     
+   }
    
     footer h1{
         font-size:17px;
