@@ -10,7 +10,7 @@ This is a fully responsive personal portfolio website built using **HTML**, **CS
 
 ## 🌐 Live Preview
 
-> 💻 **Hosted on:** [Your Hosting Link Here]  
+> 💻 **Hosted on:** [Hosting Link Here](https://hiruniramanayaka.github.io/SENG31313-2025/se2021024)
 > 📄 **Resume:** Available for direct download  
 > 💌 **Contact Form:** Connected via Formspree
 
