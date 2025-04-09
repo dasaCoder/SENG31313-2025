@@ -10,7 +10,7 @@ This is a responsive personal portfolio website built using **HTML**, **CSS**, a
 - [**Google Fonts (Nunito)**](https://fonts.google.com/specimen/Nunito) – For clean and modern typography
 
 ## 🔗 Live Hosted Link
-[🌍 Visit the Live Site]("https://remarkable-wisp-213a31.netlify.app/")  
+[🌍 Visit the Live Site](https://remarkable-wisp-213a31.netlify.app/)  
 
 
 ## 💻 How to Run the Project Locally
