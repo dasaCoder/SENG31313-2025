@@ -1,3 +1,17 @@
+// page loader scripts
+
+window.addEventListener("load",()=>{
+  document.querySelector(".main").classList.remove("hidden");
+  document.querySelector(".home-section").classList.add("active");
+  //  page loader
+
+  document.querySelector(".page-loader").classList.add("fade-out");
+  setTimeout(()=>{
+    document.querySelector(".page-loader").style.display = "none";
+  },2000);
+});
+
+
 // toggle header menue(burger) scripts
 const navToggler = document.querySelector(".nav-toggler");
 navToggler.addEventListener("click",()=>{
