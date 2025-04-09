@@ -1,0 +1,47 @@
+/*Home*/
+
+#Home{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 150px;
+    margin: auto;
+    /*need to add a pattern*/
+}
+
+#left-home {
+    max-width: 50%;
+}
+
+#left-home h1{
+    font-size: 200px;
+    color: rgba(0, 0, 0 ,0.3);
+}
+
+#left-home .content{
+    margin: 10px;
+}
+
+#left-home h2 {
+    font-size: 38px;
+    margin: 10px 0;
+}
+
+#left-home #first-word{
+    font-weight: 500;
+}
+
+#left-home p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+#right-home img {
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #2b3069;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  }

@@ -69,7 +69,7 @@ const form = document.querySelector('.contact-form');
   });
 
 
-
+//Projects
   function showTab(tabId, event) {
     // Remove "active" from all tab buttons
     var project_tabs = document.querySelectorAll(".tab-btn");
