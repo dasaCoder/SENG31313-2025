@@ -5,13 +5,13 @@
 
 /* Varialbles */
 :root{
-    --main-color:red;
+    --main-color:rgb(4, 78, 138);
     --blue:blue;
     --blue-dark:rgb(2, 2, 56);
     --orange:rgb(248, 116, 8);
     --green-yellow:rgb(0, 255, 0);
     --pink-light:rgb(252, 175, 252);
-    --cyan-light:rgb(95, 235, 235);
+    --cyan-light:rgb(92, 95, 95);
     --white:rgb(255, 255, 255);
     --white-alpha-40:rgba(255, 255, 255, 0.4);
     --white-alpha-25:rgba(255, 255, 255, 0.25);
@@ -674,7 +674,7 @@ button{
     transition: all 0.3s ease;
 }
 .contact-info-item .social-links a:hover{
-    background-color: var(--main-color);
+    background-color: rgb(92, 167, 236);
     color: var(--white);
 }
 
