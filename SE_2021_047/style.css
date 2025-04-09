@@ -27,7 +27,6 @@
     width: calc(100% - 30px);
     left: 50%;
     transform: translateX(-50%);
-    z-index: 1;
     
 }
 .bg-circles div{
@@ -45,7 +44,32 @@
     animation: zoomInOut 8s linear infinite;
 }
 
+.bg-circles .circle-2{
+    height: 80px;
+    width: 80px;
+    background-color: var(--main-color);
+    left: 30%;
+    top: 50%;
+    opacity: 0.4;
+     animation:bounceTop 5s ease-in-out infinite;    
+}
+.bg-circles .circle-3{
+    height: 120px;
+    width: 120px;
+    background-color: var(--white);
+    top: 40%;
+    opacity: 0.6;
+    right: -60px;
+}
+.bg-circles .circle-4{
+    height: 50px;
+    width: 50px;
+    background-color: var(--orange);
+    top: 80%;
+    left: -30px;
+    opacity: 0.6;
 
+}
 
 
 /* animation keyframes define */
@@ -72,6 +96,16 @@
     }
     50%{
         transform: scale(1);
+    }
+}
+
+@keyframes bounceTop{
+    0%,100%{
+        transform: translateY(-50px);
+    }
+    50%{
+        transform: translateY(0px);
+
     }
 }
 /* overlay */
