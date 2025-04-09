@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== FAVICON ===============-->
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.png"
+      type="image/x-icon"
+    />
+
+    <!--=============== REMIXICONS ===============-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!--=============== SWIPER CSS ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/about_me.css" />
+    <link rel="stylesheet" href="assets/css/qualification.css" />
+    <link rel="stylesheet" href="assets/css/services.css" />
+    <link rel="stylesheet" href="assets/css/contact.css" />
+    <link rel="stylesheet" href="assets/css/education.css" />
+
+    <title>Responsive portfolio website Tasheen</title>
+  </head>
+  <body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav_logo"> Tasheen </a>
+
+        <div class="nav_menu" id="nav-menu">
+          <ul class="nav_list grid">
+            <li class="nav_item">
+              <a href="#home" class="nav_link active-link">
+                <i class="ri-home-4-line"></i>Home
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="#about_me" class="nav_link">
+                <i class="ri-trophy-line"></i>About Me
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="#education" class="nav_link">
+                <i class="ri-book-open-line"></i>Education
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="#services" class="nav_link">
+                <i class="ri-briefcase-line"></i>Services
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="#projects" class="nav_link">
+                <i class="ri-image-line"></i>Projects
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="#contact" class="nav_link">
+                <i class="ri-chat-3-line"></i>Contact
+              </a>
+            </li>
+          </ul>
+          <!-- Close button -->
+          <div class="nav_close" id="nav-close">
+            <i class="ri-close-line"></i>
+          </div>
+        </div>
+        <div class="nav_buttons">
+          <!-- Theme change button -->
+          <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+          <!-- Toggle button -->
+          <div class="nav_toggle" id="nav-toggle">
+            <i class="ri-menu-4-line"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+        <div class="home_container container grid section_border">
+          <div class="home_data grid">
+            <h1 class="home_title">
+              Hi I'm Tasheen <br />
+              <span class="typing-effect" id="typing-effect"></span>
+            </h1>
+            <div class="home_blob grid">
+              <div class="home_perfil">
+                <img src="assets/img/me-removebg.png" alt="home_perfil" />
+              </div>
+              <img
+                src="assets/img/shape-waves.svg"
+                alt="home_shape-waves"
+                class="home_shape-waves"
+              />
+              <img
+                src="assets/img/shape-circle.svg"
+                alt="home_shape-circle"
+                class="home_shape-circle"
+              />
+            </div>
+
+            <ul class="home_social">
+              <a
+                href="https://www.linkedin.com/in/darsika-tasheen-6bb7ba250/"
+                target="_blank"
+                class="home_social-link"
+                ><i class="ri-linkedin-box-fill"></i
+              ></a>
+              <a
+                href="https://github.com/Tasheen2002/"
+                target="_blank"
+                class="home_social-link"
+              >
+                <i class="ri-github-line"></i>
+              </a>
+              <a
+                href="https://medium.com/@darshikatasheen99"
+                target="_blank"
+                class="home_social-link"
+              >
+                <i class="ri-medium-line"></i>
+              </a>
+            </ul>
+          </div>
+
+          <!--==================== HOME Info 1====================-->
+          <div class="home_info">
+            <div>
+              <h3 class="home_info-title">Biography</h3>
+              <p class="home_info-description">
+                Hi, I'm Tasheen, Fullstack Developer. Passionate about designing
+                beautiful web sites. Based in Sri Lanka.
+              </p>
+            </div>
+            <div>
+              <h3 class="home_info-title">Contact</h3>
+              <p class="home_info-description">
+                Tasheen, Ambalangoda,Sri Lanka <br />
+                darshikatasheen99@gmail.com <br />
+                +94 766940529 <br />
+              </p>
+            </div>
+            <div>
+              <h3 class="home_info-title">Services</h3>
+              <p class="home_info-description">
+                Frontend Develop <br />
+                Backend Develop <br />
+                Fullstack Develop <br />
+              </p>
+            </div>
+          </div>
+
+          <!--==================== HOME Info 2====================-->
+          <div class="home_info home_info-center">
+            <div>
+              <h3 class="home_info-title">Years of Experience</h3>
+              <p class="home_info-number">01+</p>
+            </div>
+
+            <div>
+              <h3 class="home_info-title">Completed Projects</h3>
+              <p class="home_info-number">04</p>
+            </div>
+            <a href="/Tasheen_CV.jpg" download="Tasheen_CV" class="button">
+              Download CV <i class="ri-download-line"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== ABOUT ME ====================-->
+      <section class="about section" id="about_me">
+        <h2 class="section_title">About Me</h2>
+        <span class="section_subtitle">Who I am</span>
+
+        <div class="about_container container grid section_border">
+          <!-- Personal Info -->
+          <div class="about_content">
+            <h3 class="about_title">
+              <i class="ri-user-line"></i>Personal Info
+            </h3>
+            <p class="about_description">
+              Hi, I'm Tasheen, a passionate Full Stack Developer based in Sri
+              Lanka. I specialize in creating beautiful, functional, and
+              user-friendly websites. With a strong background in both frontend
+              and backend development, I aim to deliver high-quality solutions
+              tailored to client needs.
+            </p>
+          </div>
+
+          <!-- Achievements -->
+          <div class="about_content">
+            <h3 class="about_title">
+              <i class="ri-award-line"></i>Achievements
+            </h3>
+            <ul class="about_list">
+              <li>01+ Years of Experience</li>
+              <li>04 Completed Projects</li>
+            </ul>
+          </div>
+
+          <!-- Interests -->
+          <div class="about_content">
+            <h3 class="about_title"><i class="ri-heart-line"></i>Interests</h3>
+            <ul class="about_list">
+              <li>Exploring New Technologies</li>
+              <li>Photography</li>
+              <li>Traveling</li>
+              <li>Gaming</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Skills Section -->
+        <h2 class="section_title">Skills</h2>
+        <span class="section_subtitle">My favourite skills</span>
+        <div class="skills_container container grid section_border">
+          <!-- Frontend Skills -->
+          <div class="skills_content">
+            <h3 class="skills_title">
+              <i class="ri-braces-line"></i>Frontend Developer
+            </h3>
+            <div class="skills_info">
+              <div class="skills_data">
+                <div class="skills_blob">
+                  <img src="assets/img/html-1.svg" alt="skills image" />
+                </div>
+                <h3 class="skills_name">HTML</h3>
+                <span class="skills_subtitle">Intermediate</span>
+              </div>
+
+              <div class="skills_data">
+                <div class="skills_blob">
+                  <img src="assets/img/css-3.svg" alt="skills image" />
+                </div>
+                <h3 class="skills_name">CSS</h3>
+                <span class="skills_subtitle">Advanced</span>
+              </div>
+
+              <div class="skills_data">
+                <div class="skills_blob">
+                  <img
+                    src="assets/img/logo-javascript.svg"
+                    alt="skills image"
+                  />
+                </div>
+                <h3 class="skills_name">Javascript</h3>
+                <span class="skills_subtitle">Intermediate</span>
+              </div>
+
+              <div class="skills_data">
+                <div class="skills_blob">
+                  <img src="assets/img/react-2.svg" alt="skills image" />
+                </div>
+                <h3 class="skills_name">React</h3>
+                <span class="skills_subtitle">Basic</span>
+              </div>
+
+              <div class="skills_data">
+                <div class="skills_blob">
+                  <img src="assets/img/git-icon.svg" alt="skills image" />
+                </div>
+                <h3 class="skills_name">Git</h3>
+                <span class="skills_subtitle">Intermediate</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Backend Skills -->
+          <div class="skills_content">
+            <h3 class="skills_title">
+              <i class="ri-braces-line"></i>Backend Developer
+            </h3>
+            <div class="skills_info">
+              <div class="skills_data">
+                <div class="skills_blob">
+                  <img src="assets/img/nodejs-icon.svg" alt="skills image" />
+                </div>
+                <h3 class="skills_name">Node JS</h3>
+                <span class="skills_subtitle">Basic</span>
+              </div>
+
+              <div class="skills_data">
+                <div class="skills_blob">
+                  <img
+                    src="assets/img/icons8-express-js (1).svg"
+                    alt="skills image"
+                  />
+                </div>
+                <h3 class="skills_name">Express JS</h3>
+                <span class="skills_subtitle">Basic</span>
+              </div>
+
+              <div class="skills_data">
+                <div class="skills_blob">
+                  <img src="assets/img/spring-boot-1.svg" alt="skills image" />
+                </div>
+                <h3 class="skills_name">SpringBoot</h3>
+                <span class="skills_subtitle">Intermediate</span>
+              </div>
+
+              <div class="skills_data">
+                <div class="skills_blob">
+                  <img src="assets/img/mongodb-icon-1.svg" alt="skills image" />
+                </div>
+                <h3 class="skills_name">MongoDB</h3>
+                <span class="skills_subtitle">Basic</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== EDUCATION ====================-->
+      <section class="education section" id="education">
+        <h2 class="section_title">Education</h2>
+        <span class="section_subtitle">Education</span>
+        <div class="education_container container grid section_border">
+          <!--==================== EDUCATION 1 ====================-->
+          <div class="education_content">
+            <h3 class="education_title">
+              <i class="ri-pencil-ruler-2-line"></i>Degree Program
+            </h3>
+            <div class="education_info">
+              <div>
+                <h3 class="education_name">Software Engineering</h3>
+                <span class="education_country">University of Kelaniya</span>
+                <span class="education_year">Undergraduate</span>
+                <span class="education_gpa">GPA: 3.1</span>
+              </div>
+            </div>
+          </div>
+
+          <!--==================== EDUCATION 2 ====================-->
+          <div class="education_content">
+            <h3 class="education_title">
+              <i class="ri-building-line"></i>A/L Result
+            </h3>
+            <div class="education_info">
+              <div>
+                <h3 class="education_name">Physics: A</h3>
+                <h3 class="education_name">Chemistry: B</h3>
+                <h3 class="education_name">Combined Math: B</h3>
+                <span class="education_zscore">Z Score: 1.7361</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          src="assets/img/shape-circle.svg"
+          alt="education_image"
+          class="education_img"
+        />
+      </section>
+
+      <!--==================== SERVICES ====================-->
+      <section class="services section" id="services">
+        <h2 class="section_title">Services</h2>
+        <span class="section_subtitle">What I offer</span>
+
+        <div class="services_container container grid section_border">
+          <!-- Frontend Development -->
+          <div class="services_card">
+            <i class="ri-braces-line"></i>
+            <h2 class="services_title">
+              Frontend <br />
+              Development
+            </h2>
+            <p class="services_description">
+              I design responsive and user-friendly interfaces using HTML, CSS,
+              JavaScript, and React.
+            </p>
+            <div class="services_border"></div>
+          </div>
+
+          <!-- Backend Development -->
+          <div class="services_card">
+            <i class="ri-server-line"></i>
+            <h2 class="services_title">
+              Backend <br />
+              Development
+            </h2>
+            <p class="services_description">
+              I build scalable server-side applications with Node.js,
+              Express.js, and databases.
+            </p>
+            <div class="services_border"></div>
+          </div>
+
+          <!-- Fullstack Development -->
+          <div class="services_card">
+            <i class="ri-code-s-slash-line"></i>
+            <h2 class="services_title">
+              Fullstack <br />
+              Development
+            </h2>
+            <p class="services_description">
+              I deliver complete web solutions by combining frontend and backend
+              expertise.
+            </p>
+            <div class="services_border"></div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== PROJECTS ====================-->
+      <section class="projects section" id="projects">
+        <h2 class="section_title">Projects</h2>
+        <span class="section_subtitle">Most recent work</span>
+
+        <div class="container section_border">
+          <div class="projects_container swiper">
+            <div class="swiper-wrapper">
+              <!--==================== PROJECTS 1====================-->
+              <div class="projects_content swiper-slide">
+                <img
+                  src="assets/img/project1.jpg"
+                  alt="projects image"
+                  class="projects_img"
+                />
+                <div>
+                  <span class="projects_subtitle">Web</span>
+                  <h1 class="projects_title">Game Land</h1>
+
+                  <!-- View Demo Button -->
+                  <div class="projects_demo-container">
+                    <a
+                      href="https://github.com/Tasheen2002/SE21-WEB-P01"
+                      target="_blank"
+                      class="projects_button"
+                    >
+                      View Demo<i class="ri-arrow-right-line"></i>
+                    </a>
+                    <!-- Hidden Description Card -->
+                    <div class="projects_card">
+                      <p class="projects_card-description">
+                        A gaming platform to explore and purchase games. Built
+                        with PHP.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--==================== PROJECTS 2====================-->
+              <div class="projects_content swiper-slide">
+                <img
+                  src="assets/img/project2.jpg"
+                  alt="projects image"
+                  class="projects_img"
+                />
+                <div>
+                  <span class="projects_subtitle">Web</span>
+                  <h1 class="projects_title">Fuel Master</h1>
+
+                  <!-- View Demo Button -->
+                  <div class="projects_demo-container">
+                    <a
+                      href="https://github.com/Tasheen2002/fuel-master"
+                      target="_blank"
+                      class="projects_button"
+                    >
+                      View Demo<i class="ri-arrow-right-line"></i>
+                    </a>
+                    <!-- Hidden Description Card -->
+                    <div class="projects_card">
+                      <p class="projects_card-description">
+                        A fuel management system for tracking fuel usage. Built
+                        with React and SpringBoot.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--==================== PROJECTS 3====================-->
+              <div class="projects_content swiper-slide">
+                <img
+                  src="assets/img/project3.jpg"
+                  alt="projects image"
+                  class="projects_img"
+                />
+                <div>
+                  <span class="projects_subtitle">Web</span>
+                  <h1 class="projects_title">Portfolio</h1>
+
+                  <!-- View Demo Button -->
+                  <div class="projects_demo-container">
+                    <a
+                      href="https://github.com/Tasheen2002/Portfolio"
+                      target="_blank"
+                      class="projects_button"
+                    >
+                      View Demo<i class="ri-arrow-right-line"></i>
+                    </a>
+                    <!-- Hidden Description Card -->
+                    <div class="projects_card">
+                      <p class="projects_card-description">
+                        A personal portfolio website showcasing my skills and
+                        projects. Built with HTML, CSS, and JavaScript.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--==================== PROJECTS 4====================-->
+              <div class="projects_content swiper-slide">
+                <img
+                  src="assets/img/project4.jpg"
+                  alt="projects image"
+                  class="projects_img"
+                />
+                <div>
+                  <span class="projects_subtitle">Web</span>
+                  <h1 class="projects_title">E-Commerce</h1>
+
+                  <!-- View Demo Button -->
+                  <div class="projects_demo-container">
+                    <a
+                      href="https://github.com/Tasheen2002/E-Commerce"
+                      target="_blank"
+                      class="projects_button"
+                    >
+                      View Demo<i class="ri-arrow-right-line"></i>
+                    </a>
+                    <!-- Hidden Description Card -->
+                    <div class="projects_card">
+                      <p class="projects_card-description">
+                        An online shopping platform with secure payments and
+                        product management
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- swipper arro -->
+            <div class="swiper-button-next">
+              <i class="ri-arrow-right-s-line"></i>
+            </div>
+
+            <div class="swiper-button-prev">
+              <i class="ri-arrow-left-s-line"></i>
+            </div>
+
+            <!-- swiper pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== Blogs ====================-->
+      <section class="projects section" id="projects">
+        <h2 class="section_title">Blogs</h2>
+        <span class="section_subtitle">Most recent blogs</span>
+
+        <div class="container section_border">
+          <div class="projects_container swiper">
+            <div class="swiper-wrapper">
+              <!--==================== Blog 1====================-->
+              <div class="projects_content swiper-slide">
+                <img
+                  src="assets/img/blog1.jpg"
+                  alt="projects image"
+                  class="projects_img_blog"
+                />
+                <div>
+                  <h1 class="projects_title">Software Licensing</h1>
+
+                  <!-- View Demo Button -->
+                  <div class="projects_demo-container">
+                    <a
+                      href="https://medium.com/@darshikatasheen99/a-deep-dive-into-software-licensing-understanding-the-essentials-f9e01c9b549a"
+                      target="_blank"
+                      class="projects_button"
+                    >
+                      View Demo<i class="ri-arrow-right-line"></i>
+                    </a>
+                    <!-- Hidden Description Card -->
+                    <div class="projects_card">
+                      <p class="projects_card-description">
+                        Software licensing means giving permission to use
+                        software under specific rules.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--==================== Blog 2====================-->
+              <div class="projects_content swiper-slide">
+                <img
+                  src="assets/img/blog2.jpg"
+                  alt="projects image"
+                  class="projects_img_blog"
+                />
+                <div>
+                  <h1 class="projects_title">Jobs in Data Management</h1>
+
+                  <!-- View Demo Button -->
+                  <div class="projects_demo-container">
+                    <a
+                      href="https://medium.com/@darshikatasheen99/job-roles-in-data-management-44f13f234f65"
+                      target="_blank"
+                      class="projects_button"
+                    >
+                      View Demo<i class="ri-arrow-right-line"></i>
+                    </a>
+                    <!-- Hidden Description Card -->
+                    <div class="projects_card">
+                      <p class="projects_card-description">
+                        Data management is the process of organizing and
+                        handling data.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--==================== Blog 3====================-->
+              <div class="projects_content swiper-slide">
+                <img
+                  src="assets/img/blog3.png"
+                  alt="projects image"
+                  class="projects_img_blog"
+                />
+                <div>
+                  <h1 class="projects_title">CIA Triad</h1>
+
+                  <!-- View Demo Button -->
+                  <div class="projects_demo-container">
+                    <a
+                      href="https://medium.com/@darshikatasheen99/cia-triad-in-cyber-security-0c8699007fba"
+                      target="_blank"
+                      class="projects_button"
+                    >
+                      View Demo<i class="ri-arrow-right-line"></i>
+                    </a>
+                    <!-- Hidden Description Card -->
+                    <div class="projects_card">
+                      <p class="projects_card-description">
+                        CIA Triad ensures data is private, accurate, and
+                        available.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--==================== Blog 4====================-->
+              <div class="projects_content swiper-slide">
+                <img
+                  src="assets/img/blog4.png"
+                  alt="projects image"
+                  class="projects_img_blog"
+                />
+                <div>
+                  <h1 class="projects_title">MySQL</h1>
+
+                  <!-- View Demo Button -->
+                  <div class="projects_demo-container">
+                    <a
+                      href="https://medium.com/@darshikatasheen99/stored-procedures-in-mysql-bfa4bcac6fb4"
+                      target="_blank"
+                      class="projects_button"
+                    >
+                      View Demo<i class="ri-arrow-right-line"></i>
+                    </a>
+                    <!-- Hidden Description Card -->
+                    <div class="projects_card">
+                      <p class="projects_card-description">
+                        A MySQL stored procedure is a set of SQL statements
+                        saved in the database that you can run later by calling
+                        its name.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- swipper arro -->
+            <div class="swiper-button-next">
+              <i class="ri-arrow-right-s-line"></i>
+            </div>
+
+            <div class="swiper-button-prev">
+              <i class="ri-arrow-left-s-line"></i>
+            </div>
+
+            <!-- swiper pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== CONTACT ====================-->
+      <section class="contact section" id="contact">
+        <h2 class="section_title">Contact Me</h2>
+        <span class="section_subtitle">Get in touch</span>
+
+        <div class="contact_container container grid section_border">
+          <div class="contact_content">
+            <h3 class="contact_title">
+              <i class="ri-chat-3-line"></i>Talk to me
+            </h3>
+
+            <div class="contact_info">
+              <div class="contact_data">
+                <span class="contact_data-title">Email</span>
+                <a href="https://mail.google.com/mail/" class="contact_button">
+                  Write Me<i class="ri-arrow-right-line"></i>
+                </a>
+              </div>
+
+              <div class="contact_data">
+                <span class="contact_data-title">Whatsapp</span>
+                <!-- <span class="contact_data-info">+94766940529</span> -->
+
+                <a
+                  href="https://api.whatsapp.com/send?phone=+94766940529&text=Hello, more information"
+                  class="contact_button"
+                >
+                  Write Me<i class="ri-arrow-right-line"></i>
+                </a>
+              </div>
+
+              <div class="contact_data">
+                <span class="contact_data-title">Messenger</span>
+                <!-- <span class="contact_data-info"
+                  >https://www.facebook.com/messages/t/100058894384882/</span
+                > -->
+                <a
+                  href="https://www.facebook.com/darshika.tasheen"
+                  class="contact_button"
+                >
+                  Write Me<i class="ri-arrow-right-line"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact_content">
+            <h3 class="contact_title">
+              <i class="ri-send-plane-line"></i>Write me your project
+            </h3>
+
+            <form action="" class="contact_form" id="contact-form">
+              <div class="contact_form-div">
+                <label class="contact_form-tag">Names</label>
+                <input
+                  required
+                  placeholder="Write your name"
+                  type="text"
+                  name="user_name"
+                  class="contact_form-input"
+                  id="contactName"
+                />
+              </div>
+
+              <div class="contact_form-div">
+                <label class="contact_form-tag">Mails</label>
+                <input
+                  required
+                  placeholder="Write your email"
+                  type="email"
+                  name="user_email"
+                  class="contact_form-input"
+                  id="contactEmail"
+                />
+              </div>
+
+              <div class="contact_form-div contact_form-area">
+                <label class="contact_form-tag">Project</label>
+                <textarea
+                  name="user_project"
+                  placeholder="Write your project"
+                  id="contactProject"
+                  class="contact_form-input"
+                ></textarea>
+              </div>
+
+              <p class="contact_message" id="contactMessage"></p>
+
+              <button type="submit" class="contact_button">
+                Submit<i class="ri-arrow-right-up-line"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+      <div class="footer_container container">
+        <h1 class="footer_title">Tasheen</h1>
+        <p>Frontend Developer</p>
+
+        <ul class="footer_social">
+          <a
+            href="https://www.linkedin.com/"
+            target="_blank"
+            class="footer_social-link"
+          >
+            <i class="ri-linkedin-box-fill"></i>
+          </a>
+          <a
+            href="https://github.com/"
+            target="_blank"
+            class="footer_social-link"
+          >
+            <i class="ri-github-line"></i>
+          </a>
+          <a
+            href="https://www.facebook.com/"
+            target="_blank"
+            class="footer_social-link"
+          >
+            <i class="ri-facebook-fill"></i>
+          </a>
+        </ul>
+
+        <!-- Corrected Download CV Button -->
+
+        <span class="footer_copy">
+          &#169; Copyright Tasheen. All rights reserved
+        </span>
+      </div>
+    </footer>
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Email JS -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

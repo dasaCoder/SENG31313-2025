@@ -1,0 +1,163 @@
+.about_content {
+  background-color: var(--container-color);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.about_list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.about_list li {
+  font-size: var(--normal-font-size);
+  color: var(--text-color-light);
+  margin-bottom: 0.5rem;
+}
+
+
+/*=============== SKILLS ===============*/
+.skills_container {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(300px, 1fr)
+  ); /* Adjust column size */
+  column-gap: 10 rem !important;
+  row-gap: 3rem; /* Add spacing between rows */
+}
+
+.skills_title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.5rem;
+  font-size: var(--small-font-size);
+  font-weight: var(--font-semi-bold);
+  margin-bottom: 2.5rem;
+}
+
+.skills_title i {
+  font-size: 1rem;
+  font-weight: initial;
+}
+
+.skills_info,
+.skills_data,
+.skills_blob {
+  display: grid;
+}
+
+.skills_info {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem 2rem;
+}
+
+.skills_data {
+  justify-content: center;
+  align-items: center;
+}
+
+.skills_blob {
+  width: 80px;
+  height: 100px;
+  background-color: var(--container-color);
+  border-radius: 3rem;
+  place-items: center;
+  margin-bottom: 1rem;
+  transition: background 0.4s;
+}
+
+.skills_blob img {
+  width: 40px;
+}
+
+.skills_name {
+  font-size: var(--small-font-size);
+  margin-bottom: 0.25rem;
+}
+
+.skills_subtitle {
+  font-size: var(--tiny-font-size);
+  color: var(--text-color-light);
+}
+/* Animation skills */
+.skills_blob:hover img {
+  animation: bounce-skills 0.6s;
+}
+
+@keyframes bounce-skills {
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-6px);
+  }
+  40% {
+    transform: translateY(0);
+  }
+  60% {
+    transform: translateY(-3px);
+  }
+  80% {
+    transform: translateY(0);
+  }
+}
+
+.skills_content {
+  display: grid;
+  justify-items: center; /* Center-align content */
+  text-align: center;
+}
+
+/*=============== SKILLS HOVER ANIMATIONS ===============*/
+
+/* Hover effect for skills_blob */
+.skills_blob {
+  width: 80px;
+  height: 100px;
+  background-color: var(--container-color);
+  border-radius: 3rem;
+  display: grid;
+  place-items: center;
+  margin-bottom: 1rem;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.skills_blob:hover {
+  transform: translateY(-0.5rem);
+  background-color: var(--container-color);
+}
+
+.skills_blob img {
+  width: 40px;
+  transition: transform 0.3s;
+}
+
+.skills_blob:hover img {
+  transform: scale(1.1);
+}
+
+/* Hover effect for skills_name */
+.skills_name {
+  font-size: var(--small-font-size);
+  margin-bottom: 0.25rem;
+  transition: color 0.3s;
+}
+
+.skills_name:hover {
+  color: var(--first-color);
+}
+
+/* Hover effect for skills_subtitle */
+.skills_subtitle {
+  font-size: var(--tiny-font-size);
+  color: var(--text-color-light);
+  transition: color 0.3s;
+}
+
+.skills_subtitle:hover {
+  color: var(--title-color);
+}
