@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="Styles/style.css">
+    <link rel="stylesheet" href="Styles/home.css">
+    <link rel="stylesheet" href="Styles/navbar.css">
+    <link rel="stylesheet" href="Styles/sidebar.css">
+    <link rel="stylesheet" href="Styles/about.css">
+    <link rel="stylesheet" href="Styles/skills.css">
+    <link rel="stylesheet" href="Styles/projects.css">
+    <link rel="stylesheet" href="Styles/blogs.css">
+    <link rel="stylesheet" href="Styles/contact.css">
+    <link rel="stylesheet" href="Styles/footer.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <main>
+
+        <!-- nav bar -->
+        <div class="nav-bar">
+            <div class="logo">
+                <img src="./assests/logo.png">
+            </div>
+            <nav>
+                <a href="#Home">Home</a>
+                <a href="#about-section">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#blogs">Blog</a>              <!-- blog articles -->
+                <a href="#contact" id="contact-btn">Contact</a>
+            </nav>
+        </div>
+
+        <!-- Side bar-->
+        <nav class="side-bar">
+            <a href="https://www.linkedin.com/in/hiruni-ramanayaka" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/HiruniRamanayaka" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://medium.com/@hiruniramanayaka9" target="_blank">
+                <i class="fab fa-medium"></i>
+            </a>
+            <a href="https://web.facebook.com/people/Hiruni-Ramanayaka/pfbid02RoWWKWxc7qqzzCGPv4iMigyr3VRj3cQXKbKCHUeQNLwV19jXPikqB2ghLPAYK4QBl/" target="_blank">
+                <i class="fab fa-facebook"></i>
+            </a>
+        </nav>
+
+        <section>
+            <!-- Home -->
+            <div id="Home">
+                <div id="left-home">
+                    <h1>HELLO</h1>
+                    <div class="content">
+                        <h2 id="first-word">I'm</h2>
+                        <h2 id="second-word">Hiruni Ramanayaka</h2>
+                        <p>Software Engineering Undergraduate</p>
+                        <a href="assests/CV.pdf" download="Hiruni_Ramanayaka_CV.pdf">
+                            <button>Download CV</button>
+                        </a>                                                 
+                    </div>
+                </div>
+                <div id="right-home">
+                    <img src="assests/profile.jpeg" alt="profile picture">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me-->
+        <section id="about-section">
+            <h1>ABOUT</h1>
+            <div class="tabs">
+                <button class="tab active" data-tab="bio">Bio</button>
+                <button class="tab" data-tab="education">Education</button>
+                <button class="tab" data-tab="experience">Experience</button>  <!--The  attribute is a custom data attribute in HTML. It's part of the data- attributes* family, which allows developers to store custom data directly in HTML elements. 
+                The data-tab attribute stores the unique identifier for each tab to manage content dynamically -->
+            </div>
+
+            <div id="bio" class="tab-content active">
+                <div class="bio-content">
+                    <p>I am Hiruni Ramanayaka, a dedicated undergraduate pursuing a Bachelor of Science (Honours) in Software Engineering at the University of Kelaniya. With a strong interest in full-stack development, I am passionate about creating user-centric, modern web applications that deliver seamless experiences.</p>
+                    <p>I have experience working on both individual and team-based projects that demonstrate my skills. I am constantly exploring new tools and frameworks to enhance my knowledge and improve the quality of my work.</p>
+                    <p>In addition to academics, I actively contribute to volunteer organizations and leadership initiatives, where I continue to grow as a professional and a team player. My goal is to become a versatile software engineer capable of solving real-world problems through innovative solutions.</p>
+                </div>
+                <div class="bio-details">
+                    <p><strong>Full name:  </strong>R.K.Hiruni Kavindhya Ramanayaka</p>
+                    <p><strong>Address:  </strong>No 55, Udugoda, Ruggahawila</p>
+                    <p><strong>Phone:  </strong>+94 777397226</p>
+                    <p><strong>Email Address:  </strong>hiruniramanayaka9@gmail.com</p>
+                    <button onClick="location.href='#contact'" >Contact Me</button>
+                </div>
+            </div>
+
+            <div id="education" class="tab-content">
+                <div class="education-type">
+                    <p><strong>Bachelor of Science (Hons) in Software Engineering</strong></p>
+                    <p>University of Kelaniya – Faculty of Science</p>
+                    <p>2023 – Present</p>
+                </div>
+                <div class="education-type">
+                    <p><strong>GCE A/L (Advanced Level)</strong></p>
+                    <p>Bandaranayake Central Collage Veyangoda</p>
+                    <p>2021</p>
+                </div>
+                <div class="education-type">
+                    <p><strong>GCE O/L (Ordinary Level)</strong></p>
+                    <p>Bandaranayake Central Collage Veyangoda</p>
+                    <p>2017</p>
+                </div>           
+            </div>
+                    
+            <div id="experience" class="tab-content">
+                <div class="experience-type">
+                    <h3>Assistant Secretary - IEEE Student Branch, University of Kelaniya</h3>
+                    <p>Helped organize projects, managed communication and documentation.</p>
+                    <p>2024 - Present</p>
+                </div>
+            </div>     
+        </section>
+
+        <!-- Skills-->
+        <section id="skills">
+            <h1>SKILLS</h1>
+            <div class="skill-tabs">
+                <button class="skill-tab" skill-data-tab="UI/UX">UI/UX</button>
+                <button class="skill-tab active" skill-data-tab="languages">Languages</button>
+                <button class="skill-tab" skill-data-tab="graphic-design">Graphic Design</button>
+            </div>
+            
+            <!-- UI/UX -->
+            <div id="UI/UX" class="skill-tab-content">
+                <div class="components">
+                    <div class="image">
+                        <img src="./assests/Icons/figma.svg" alt="Figma icon">
+                    </div>
+                    <p>Figma</p>
+                </div>
+            </div>
+
+            <!-- Programming Languages -->
+            <div id="languages" class="skill-tab-content active">
+                <div id="using-now">
+                    <h2>Using Now</h2>
+                    <div class="using-now-components">
+                        <!-- HTML5 -->
+                            <div class="components">
+                                <div class="image">
+                                    <img src="./assests/Icons/html-5.svg" alt="HTML Icon">
+                                </div>
+                                <p>HTML5</p>
+                            </div>
+                        <!-- CSS -->
+                            <div class="components">
+                                <div class="image">
+                                    <img src="./assests/Icons/css3.svg" alt="CSS Icon">
+                                </div>
+                                <p>CSS</p>
+                            </div>
+                        <!-- JavaScript -->
+                            <div class="components">
+                                <div class="image">
+                                    <img src="./assests/Icons/javascript.svg" alt="JavaScript Icon">
+                                </div>
+                                <p>JavaScript</p>
+                            </div>
+                        <!-- React -->
+                            <div class="components">
+                                <div class="image">
+                                    <img src="./assests/Icons/react.svg" alt="React Icon">
+                                </div>
+                                <p>React</p>
+                            </div>
+                        <!-- MySQL -->
+                            <div class="components">
+                                <div class="image">
+                                    <img src="./assests/Icons/sql.svg" alt="MySQL Icon">
+                                </div>
+                                <p>MySQL</p>
+                            </div>
+                        <!-- Git -->
+                            <div class="components">
+                                <div class="image">
+                                    <img src="./assests/Icons/git.svg" alt="git Icon">
+                                </div>
+                                <p>Git</p>
+                            </div>
+                    </div>
+                </div>
+    
+                <div id="learning">
+                    <h2>Learning:</h2>
+                    <div class="learning-components">
+                        <!-- Springboot -->
+                            <div class="components">
+                                <div class="image">
+                                    <img src="./assests/Icons/springboot.svg" alt="Spring Boot Icon">
+                                </div>
+                                <p>Spring Boot</p>
+                            </div>
+                        <!-- React Native -->
+                            <div class="components">
+                                <div class="image">
+                                    <img src="./assests/Icons/react-native.svg" alt=" React Native Icon">
+                                </div>
+                                <p>React Native</p>
+                            </div>
+                        <!-- TypeScript -->
+                            <div class="components">
+                                <div class="image">
+                                    <img src="./assests/Icons/typescript.svg" alt="TypeScript Icon">
+                                </div>
+                                <p>TypeScript</p>
+                            </div>
+                        <!-- Kotlin -->
+                            <div class="components">
+                                <div class="image">
+                                    <img src="./assests/Icons/kotlin.svg" alt="Kotlin Icon    ">
+                                </div>
+                                <p>Kotlin</p>
+                            </div>
+                        <!-- Flutter -->
+                            <div class="components">
+                                <div class="image">
+                                    <img src="./assests/Icons/flutter.svg" alt="Flutter Icon">
+                                </div>
+                                <p>Flutter</p>
+                            </div>
+                    </div>
+                </div>
+    
+                <div id="other-skills">
+                    <h2>Other Skills:</h2>
+                    <div class="other-skills-components">
+                        <!-- C -->
+                        <div class="components">
+                            <div class="image">
+                                <img src="./assests/Icons/c.svg" alt="C Icon">
+                            </div>
+                            <p>C</p>
+                        </div>
+                        <!-- Java -->
+                            <div class="components">
+                                <div class="image">
+                                    <img src="./assests/Icons/java.svg" alt="Java Icon">
+                                </div>
+                                <p>Java</p>
+                            </div>
+                        <!-- Python -->
+                            <div class="components">
+                                <div class="image">
+                                    <img src="./assests/Icons/python.svg" alt="Python Icon">
+                                </div>
+                                <p>Python</p>
+                            </div>
+                        <!-- PHP -->
+                        <div class="components">
+                            <div class="image">
+                                <img src="./assests/Icons/php.svg" alt="PHP Icon">
+                            </div>
+                            <p>PHP</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Graphic Design -->
+            <div id="graphic-design" class="skill-tab-content">
+                <div class="graphic-design-skills">
+                    <!-- photoshop -->
+                    <div class="components">
+                        <div class="image">
+                            <img src="./assests/Icons/photoshop.svg" alt="photoshop icon">
+                        </div>
+                        <p>Adobe <br> Photoshop</p>
+                    </div>
+                    <!-- Canva -->
+                    <div class="components">
+                        <div class="image">
+                            <img src="./assests/Icons/canva.svg" alt="Canva icon">
+                        </div>
+                        <p>Canva</p>
+                    </div>
+                </div>
+            </div>    
+        </section>
+
+        <section id="projects">
+            <h1>My Projects</h1>
+          
+            <!-- Tabs -->
+            <div class="tabs">
+              <button class="tab-btn active" onclick="showTab('academic', event)">Academic Projects</button>
+              <button class="tab-btn" onclick="showTab('individual', event)">Individual Projects</button>
+            </div>
+          
+            <!-- Academic Projects -->
+            <div id="academic" class="tab-content active">
+                <div class="project-grid">
+                  <div class="project-card">
+                    <img src="./assests/Project Images/figma_.jpg" alt="Project Preview">
+                    <div class="project-title"><h3>UI/UX Design for Library Management System</h3></div>
+                    <div class="project-details">
+                        <p class="project-info">Tech: Figma</p>
+                        <p class="project-description">
+                            A modern and user-friendly interface designs for a Library Management System, focusing on enhancing user experience for users and administrators.
+                        </p>
+                        <ul class="features-list">
+                            <li>Clean and organized dashboard layout</li>
+                            <li>User-friendly navigation for book search and borrowing</li>
+                            <li>Responsive design mockups for web and mobile views</li>
+                        </ul>
+                        <div class="links">
+                            <a href="https://youtu.be/8rCoxMbMgt4">Demo</a>
+                            <a href="https://www.figma.com/proto/AL9NglUXMEOxTPeL9Si6tb/Library-Management-System--User-Interfaces-?node-id=607-9&t=qbRjgytPqJPhMwTO-1">(User interfaces)<br>Figma</a>
+                            <a href="https://www.figma.com/proto/PKAPucSpb4Tly5Q8rPiVKu/Admin-interfaces?node-id=0-1&t=Ro1oooU6VRY6fI0Q-1">(Admin interfaces)<br>Figma</a>
+                            <a href="https://www.figma.com/proto/z2yrl3HaBU8jh89xGXetvA/Alternative?node-id=0-1&t=Y31SRMixw2BbnC1W-1">(Mobile interfaces)<br>Figma</a>
+                        </div>
+                    </div>
+                  </div>
+
+                  <div class="project-card">
+                    <img src="./assests/Project Images/pethug.jpg" alt="Project Preview">
+                    <div class="project-title"><h3>Veterinary Hospital System</h3></div>
+                    <div class="project-details">
+                        <p class="project-info">Tech: HTML, CSS, JS, PHP, MySQL</p>
+                        <p class="project-description">
+                            A web-based system designed to manage pet-related services including appointments, reports, and virtual consultations, with separate modules for users, doctors, and administrators.
+                        </p>
+                        <ul class="features-list">
+                            <li>User, admin, doctors seperate registration and login systems</li>
+                            <li>Manage pet profiles and medical reports</li>
+                            <li>Online appointment scheduling and consultations</li>
+                            <li>Doctor and admin dashboards for managing services</li>
+                        </ul>
+                        <div class="links">
+                            <a href="https://youtu.be/_PuSGUWo7u0">Demo</a>
+                            <a href="https://github.com/HiruniRamanayaka/PetHug-Project">GitHub</a>
+                        </div>
+                    </div>
+                  </div>
+                 
+                  <div class="project-card">
+                    <img src="./assests/Project Images/fuelquota.jpg" alt="Project Preview">
+                    <div class="project-title"><h3>Fuel Management System</h3></div>
+                    <div class="project-details">
+                        <p class="project-info">Tech: HTML, CSS, JS, React, Flutter, Spring Boot, MySQL</p>
+                        <p class="project-description">
+                            A comprehensive platform designed to manage fuel quotas for vehicles, fuel station operations, and efficient fuel distribution during a crisis. It includes vehicle registration, QR code generation, fuel station monitoring, and an Android mobile app for scanning and tracking fuel usage.
+                        </p>
+                        <ul class="features-list">
+                            <li>Vehicle registration with unique QR code generation</li>
+                            <li>Fuel station registration and management</li>
+                            <li>Fuel quota management and tracking</li>
+                            <li>QR code scanning for fuel usage at fuel stations</li>
+                            <li>Notifications sent to vehicle owners after fuel pumping (via SMS using Twilio)</li>
+                        </ul>
+                        <div class="links">
+                            <a href="https://youtu.be/lHFW4luemp8">Demo</a>
+                            <a href="https://github.com/pubudu2003060/SENG-22212-Group-Project">GitHub</a>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Individual Projects -->
+            <div id="individual" class="tab-content">
+                <div class="project-grid">
+                    <div class="project-card">
+                        <img src="./assests/Project Images/Todo-list.jpg" alt="Project Preview">
+                        <div class="project-title"><h3>Todo App</h3></div>
+                        <div class="project-details">
+                            <p class="project-info">Tech: HTML, CSS, JavaScript</p>
+                            <p class="project-description">
+                                A simple web application to create, update, and delete daily tasks.
+                            </p>
+                            <ul class="features-list">
+                                <li>Add, edit, and delete tasks</li>
+                                <li>Mark tasks as completed</li>
+                                <li>Persistent storage using localStorage</li>
+                            </ul>
+                            <div class="links">
+                                <a href="https://youtu.be/EyD6oyYgqLk">Demo</a>
+                                <a href="https://github.com/HiruniRamanayaka/Todo-List">GitHub</a>
+                            </div>
+                        </div>
+                      </div>
+    
+                      <div class="project-card">
+                        <img src="./assests/Project Images/weather-app.jpg" alt="Project Preview">
+                        <div class="project-title"><h3>Weather App</h3></div>
+                        <div class="project-details">
+                            <p class="project-info">Tech: HTML, CSS, JavaScript, OpenWeather API</p>
+                            <p class="project-description">
+                                An application that shows real-time weather data for any city using an external API.
+                            </p>
+                            <ul class="features-list">
+                                <li>Search weather by city name</li>
+                                <li>Displays temperature, humidity, and weather status</li>
+                                <li>Responsive design</li>
+                            </ul>
+                            <div class="links">
+                                <a href="https://youtu.be/7Y2iiJSJ1XA">Demo</a>
+                                <a href="https://github.com/HiruniRamanayaka/Weather-App">GitHub</a>
+                            </div>
+                        </div>
+                      </div>
+                     
+                      <div class="project-card">
+                        <img src="./assests/Project Images/recipe-book.jpg" alt="Project Preview">
+                        <div class="project-title"><h3>Recipe Book</h3></div>
+                        <div class="project-details">
+                            <p class="project-info">Tech: HTML, CSS, JavaScript</p>
+                            <p class="project-description">
+                                A digital recipe book where users can browse and save their favorite recipes.
+                            </p>
+                            <ul class="features-list">
+                                <li>List of recipes with images</li>
+                                <li>Search and filter by category</li>
+                            </ul>
+                            <div class="links">
+                                <a href="https://youtu.be/yN6cW6KFQxY">Demo</a>
+                                <a href="https://github.com/HiruniRamanayaka/Recipe-Book">GitHub</a>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class="project-card">
+                        <img src="./assests/Project Images/tic-tac-toe_.jpg" alt="Project Preview">
+                        <div class="project-title"><h3>Tic-Tac-Toe</h3></div>
+                        <div class="project-details">
+                            <p class="project-info">Tech: HTML, CSS, JavaScript</p>
+                            <p class="project-description">
+                                A simple two-player Tic-Tac-Toe game played in the browser.
+                            </p>
+                            <ul class="features-list">
+                                <li>Interactive game board</li>
+                                <li>Win and draw detection</li>
+                                <li>Restart game option</li>
+                            </ul>
+                            <div class="links">
+                                <a href="https://youtu.be/796pCTaKeL4">Demo</a>
+                                <a href="https://github.com/HiruniRamanayaka/Tic-Tac-Toe">GitHub</a>
+                            </div>
+                        </div>
+                      </div>
+                     
+                      <div class="project-card">
+                        <img src="./assests/Project Images/Calendar_.jpg" alt="Project Preview">
+                        <div class="project-title"><h3>Calendar Tool</h3></div>
+                        <div class="project-details">
+                            <p class="project-info">Tech: Java</p>
+                            <p class="project-description">
+                                A simple Java-based Calendar Tool to view months, navigate between months, and check leap years.
+                            </p>
+                            <ul class="features-list">
+                                <li>View current month and year</li>
+                                <lI>view the calendar for relevant months</li>
+                                <li>Check if a given year is a leap year</li>
+                            </ul>
+                            <div class="links">
+                                <a href="https://youtu.be/ouXeChaPEVE">Demo</a>
+                                <a href="https://github.com/HiruniRamanayaka/Calendar">GitHub</a>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class="project-card">
+                        <img src="./assests/Project Images/EmployeeManagement_.jpg" alt="Project Preview">
+                        <div class="project-title"><h3>Employee Management System</h3></div>
+                        <div class="project-details">
+                            <p class="project-info">Tech: Java, Maven, MySQ</p>
+                            <p class="project-description">
+                                A CRUD-based system that manages employee records with a connection to a MySQL database.
+                            </p>
+                            <ul class="features-list">
+                                <li>Create: Add new employee records</li>
+                                <li>Read: View employee data</li>
+                                <li>Update: Edit existing employee information</li>
+                                <li>Delete: Remove employee records</li>
+                            </ul>
+                            <div class="links">
+                                <a href="https://youtu.be/O9wXSm7Rffs">Demo</a>
+                                <a href="https://github.com/HiruniRamanayaka/Employee-Management-System">GitHub</a>
+                            </div>
+                        </div>
+                      </div>
+                </div>
+              </div>
+
+            </section>
+          
+
+        <!-- Blog -->
+        <section id="blogs">
+            <h1>BLOG</h1>
+            <div class="cards">
+                <div class="card">
+                    <a href="https://medium.com/@hiruniramanayaka9/cia-triad-in-cyber-security-ce424030c303" target="_blank" rel="noopener noreferrer">
+                        <div class="image">
+                            <img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*Lq0N8kcyg1aUKl0YQnab4w.jpeg" alt="CIA Triad">
+                        </div>
+                        <p>Explore the CIA Triad: Confidentiality, Integrity, and Availability, the core principles of cybersecurity. Learn their importance, real-world examples, and how they help protect data in today’s digital world.</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="https://medium.com/@hiruniramanayaka9/a-deep-dive-into-essential-job-roles-in-database-management-5983a5827b0a" target="_blank" rel="noopener noreferrer">
+                        <div class="image">
+                            <img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*_igPPW2rFqtY4N_Ase3p1w.jpeg" alt="Essential job roles in Database Management">
+                        </div>
+                        <p>Explore the essential job roles in database management, from administrators to developers. Understand key responsibilities, required skills, and qualifications for each role in today’s data-driven world.</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="https://medium.com/@hiruniramanayaka9/exploring-the-fundamentals-of-mysql-stored-procedures-07674f5f59fc" target="_blank" rel="noopener noreferrer">
+                        <div class="image">
+                            <img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*4IGoYdIOkp-oPfLXZ5FS2w.jpeg" alt="Fundamentals of MySQL Stored Procedures">
+                        </div>
+                        <p>Learn how MySQL stored procedures can simplify complex tasks, improve performance, and boost security in your database applications. This beginner-friendly guide covers the basics, advantages, disadvantages, syntax, and real-world examples</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="https://medium.com/@hiruniramanayaka9/currently-available-software-licenses-f3b9905536e7" target="_blank" rel="noopener noreferrer">
+                        <div class="image">
+                            <img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*AuaUvAfKn8DbDY3ZBU_XLw.jpeg" alt="Currently Available Software Licenses">
+                        </div>
+                        <p>A beginner-friendly guide to understanding different types of software licenses, including proprietary, open-source, public domain, copyleft, and more. This article also clarifies the difference between ownership and licensing in software.</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="https://medium.com/@hiruniramanayaka9/how-to-use-github-through-vs-code-without-using-command-prompt-a-beginners-guide-f635865175da" target="_blank" rel="noopener noreferrer">
+                        <div class="image">
+                            <img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*D8hoCPLKjlZIVOHUxYPX2Q.png" alt="GitHub Through VS Code Without Using Command Prompt">
+                        </div>
+                        <p>A step-by-step tutorial for beginners on how to manage GitHub repositories directly in Visual Studio Code, no terminal needed!</p>
+                    </a>
+                </div>
+            </div>
+            <p class="scroll-hint">← Scroll to explore →</p>
+            <!-- 
+                rel="noopener noreferrer" improves security and privacy:
+                - "noopener" prevents the new tab from accessing this page via window.opener (protects against tab-nabbing attacks).
+                - "noreferrer" hides the referrer (this site's URL) from the new page and also includes "noopener" behavior.
+            -->
+            <a href="https://medium.com/@hiruniramanayaka9" class="view-more" target="_blank" rel="noopener noreferrer">View More</a>
+        </section>
+
+
+        <!-- Contact -->
+        <section id="contact">
+            <h1>Contact</h1>
+            <form class="contact-form" action="https://formspree.io/f/xqapgyaj" method="POST">
+                <input type="text" name="name" placeholder="Your Name*" required>
+                <input type="email" name="email" placeholder="Your Email*" required>
+                <textarea name="message" rows="5" placeholder="Your Message*" required></textarea>
+                <button type="submit">Send Message</button>
+              </form>              
+        </section>
+
+    </main>
+
+
+    <footer id="footer">
+        <div class="footer-content">
+            <div class="social-media-icons">
+                <p>Follow me on:</p>
+                <a href="https://www.linkedin.com/in/hiruni-ramanayaka" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/HiruniRamanayaka" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://medium.com/@hiruniramanayaka9" target="_blank">
+                    <i class="fab fa-medium"></i>
+                </a>
+                <a href="https://web.facebook.com/people/Hiruni-Ramanayaka/pfbid02RoWWKWxc7qqzzCGPv4iMigyr3VRj3cQXKbKCHUeQNLwV19jXPikqB2ghLPAYK4QBl/" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
+            </div>
+            <p>&copy; 2025 Hiruni Ramanayaka. All rights reserved.</p>
+        </div>
+    </footer>
+    
+
+    <script src="Scripts/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+/* side bar */
+.side-bar {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+    align-items: flex-start;
+    z-index: 1000;
+}
+  
+.side-bar a {
+    font-size: 24px;
+    border: 1px solid rgb(32, 32, 95);
+    border-radius: 50%;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: transform 0.3s ease, border 0.3s ease;
+}
+  
+.side-bar a:hover {
+    transform: scale(1.2); /* this pops the whole circle */
+    border: 2px solid black; /* makes the border thicker on hover */
+}
