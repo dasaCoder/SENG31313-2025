@@ -75,6 +75,32 @@ This is a fully responsive personal portfolio website built using **HTML**, **CS
 
 ---
 
+## 🛠️ How to Run the Project Locally
+To run this portfolio website on your local machine, follow these steps:
+
+  ## *Prerequisites:*
+  -Ensure you have a modern web browser (e.g., Chrome, Firefox, Safari) installed.
+  -Basic understanding of HTML, CSS, and JavaScript.
+  -(Optional) Text editor (e.g., Visual Studio Code) for editing the files.
+
+  ## *Steps:*
+  - Clone the Repository
+      If you have Git installed, clone the repository using the following command:
+        git clone https://github.com/yourusername/SENG31313-2025.git
+
+  - Navigate to the Project Folder
+      Open a terminal and change to the project directory:
+        cd SENG31313-2025
+        
+  - Open the Website Locally
+      You can open the project directly in your web browser by opening the index.html file:
+        open index.html
+        Or simply double-click on the index.html file to open it.
+        
+    - (Optional) Running a Local Server
+      If you prefer running a local server to view the project (useful for more advanced features), you can use a simple HTTP server like Live Server (VS Code extension) or any other local server setup.
+
+
 ## 🙌 Final Notes
 
 Thank you for taking the time to explore my portfolio!  
