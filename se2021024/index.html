@@ -51,23 +51,36 @@
         </nav>
 
         <section>
-            <!-- Home -->
-            <div id="Home">
-                <div id="left-home">
-                    <h1>HELLO</h1>
-                    <div class="content">
-                        <h2 id="first-word">I'm</h2>
-                        <h2 id="second-word">Hiruni Ramanayaka</h2>
-                        <p>Software Engineering Undergraduate</p>
-                        <a href="assests/CV.pdf" download="Hiruni_Ramanayaka_CV.pdf">
-                            <button>Download CV</button>
-                        </a>                                                 
+            <div class="relative bg-[#fdfdfd] min-h-screen overflow-hidden">
+                <!-- Background lines -->
+                <img src="line1.svg" class="absolute top-10 left-10 w-[400px] opacity-10 rotate-[10deg]" />
+                <img src="line2.svg" class="absolute top-[30%] right-10 w-[450px] opacity-5 rotate-[-8deg]" />
+                <img src="line3.svg" class="absolute bottom-0 left-[25%] w-[400px] opacity-5" />
+                <img src="line4.svg" class="absolute bottom-[10%] right-[15%] w-[350px] opacity-10 rotate-[5deg]" />
+              
+                <!-- Content -->
+                <div class="relative z-10 p-10 text-gray-800">
+                  <!-- Home -->
+                    <div id="Home">
+                        <div id="left-home">
+                            <h1>HELLO</h1>
+                            <div class="content">
+                                <h2 id="first-word">I'm</h2>
+                                <h2 id="second-word">Hiruni Ramanayaka</h2>
+                                <p>Software Engineering Undergraduate</p>
+                                <a href="assests/CV.pdf" download="Hiruni_Ramanayaka_CV.pdf">
+                                    <button>Download CV</button>
+                                </a>                                                 
+                            </div>
+                        </div>
+                        <div id="right-home">
+                            <img src="assests/profile.jpeg" alt="profile picture">
+                        </div>
                     </div>
                 </div>
-                <div id="right-home">
-                    <img src="assests/profile.jpeg" alt="profile picture">
-                </div>
-            </div>
+              </div>
+              
+            
         </section>
 
         <!-- About Me-->
