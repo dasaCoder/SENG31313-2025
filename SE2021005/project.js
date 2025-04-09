@@ -47,3 +47,7 @@ showMoreBtn.addEventListener("click", function () {
 document.getElementById("projectFilter").dispatchEvent(new Event("change"));
 
   
+function toggleMenu() {
+    const navLinks = document.getElementById("navLinks");
+    navLinks.classList.toggle("show");
+  }
