@@ -380,10 +380,6 @@ header.sticky .nav-bar{
     border-radius: 5px;
 }
 
-.education-all{
-    margin-bottom: 80px;
-}
-
 .edu-list .item{
     background: var(--card-bg-color);
     box-shadow: var(--box-shadow);
@@ -469,27 +465,33 @@ j
 /*projects section*/
 .projects .container .content{
     width: 100%;
+    max-width: 100px;
+    margin: 0 auto;
 }
 
 .projects-list{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     max-width: 100%;
-    gap: 30px;
+    gap: 20px;
     margin: 0 auto;
 }
 
 .projects-list .img-card{
     position: relative;
     max-width: 100%;
-    height: 360px;
+    height: 250px;
     border-radius: 10px;
     box-shadow: var(--box-shadow);
     overflow: hidden;
     cursor: pointer;
 }
 
-.projects-list .img-card:hover .layover{
+.projects-list .img-card .overlay{
+    transition: 1s ease;
+}
+
+.projects-list .img-card:hover .overlay{
     z-index: 777;
     position: absolute;
     width: 100%;
@@ -526,5 +528,58 @@ j
 .projects-list .img-card img{
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
+}
+
+.projects-model{
+    z-index: 999999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: var(--transparent-color-01);
+    backdrop-filter: blur(20px);
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s ease;
+}
+
+.projects-model.active{
+    visibility: visible;
+    opacity: 1;
+}
+
+.projects-model-body{
+    position: relative;
+    background: var(--model-bg-color);
+    max-width: 600px;
+    margin: 20px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    transform: translateY(-50px);
+    transition: .5s ease;
+}
+
+.projects-model.active .projects-model-body{
+    transform: translateY(0);
+}
+
+.projects-close-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.projects-model-body h3{
+    font-size: 1.5rem;
+}
+
+.projects-model-body img{
+    width: 100%;
+    margin: 20px 0;
+    border-radius: 10px;
 }
