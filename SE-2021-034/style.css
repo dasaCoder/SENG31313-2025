@@ -215,7 +215,7 @@ header{
     width: 1150px;
     margin-left: auto;
     margin-right: auto;
-    padding: 6rem 2rem 2rem;
+    padding: 2rem 4rem 2rem 3rem;
 }
 
 .sub-section{
@@ -258,18 +258,32 @@ header{
 }
 
 .about .container .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
     column-gap: 40px;
     width: 100%;
 }
 
+.about-img {
+    flex: 1 1 40%;
+    display: flex;
+    justify-content: center;
+}
+
 .about-img img{
     max-width: 100%;
-    min-width: 500px;
+    min-width: 350px;
     border-radius: 10px;
 }
 
+.about-info {
+    flex: 1 1 55%;
+}
+
 .about-info .description{
-    max-width: 600px;
+    max-width: 100%;
 }
 
 .about-info .description h3{
@@ -298,7 +312,7 @@ header{
 
 .about-info .professional-list{
     display: flex;
-    column-gap: 30px;
+    column-gap: 100px;
 }
 
 .about-info .professional-list .list-item h3{
