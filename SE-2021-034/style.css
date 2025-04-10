@@ -55,7 +55,7 @@ li{
     list-style: none;
 }
 
-.flex-content{
+.flex-center{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -281,10 +281,6 @@ header.sticky .nav-bar{
 }
 
 .about .container .content{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
     column-gap: 40px;
     width: 100%;
 }
@@ -346,4 +342,189 @@ header.sticky .nav-bar{
 .about-info .professional-list .list-item h3 span{
     color: var(--third-color);
     font-size: var(--small-font-size);
+}
+
+/*skills section*/
+.skills .container .content{
+    width: 100%;
+}
+
+.skills-description{
+    max-width: 1250px;
+    margin-bottom: 50px;
+}
+
+.skills-description h3{
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+
+.skills-info{
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 0 auto;
+}
+
+.skills-info h4{
+    margin-bottom: 20px;
+}
+
+.skills-info h4 label{
+    background: var(--second-color);
+    color: #fff;
+    font-size: var(--normal-font-size);
+    font-weight: 400;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+.education-all{
+    margin-bottom: 80px;
+}
+
+.edu-list .item{
+    background: var(--card-bg-color);
+    box-shadow: var(--box-shadow);
+    border-bottom: 3px solid var(--second-color);
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 6px;
+    transition: .5s ease;
+}
+
+.edu-list .item .year{
+    font-size: var(--small-font-size);
+    margin-bottom: 5px;
+}
+
+.edu-list .item p{
+    color: var(--third-color);
+    font-size: var(--small-font-size);
+}
+
+.edu-list .item p span{
+    color: var(--first-color);
+    font-size: var(--normal-font-size);
+    font-weight: 500;
+}
+
+.bar{
+    background: var(--card-bg-color);
+    box-shadow: var(--box-shadow);
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 6px;
+    transition: .3s ease;
+}
+
+.bar .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+    font-size: var(--small-font-size);
+}
+
+.bar .info span{
+    font-weight: 500;
+}
+
+.bar .line{
+    position: relative;
+    width: 100%;
+    height: 7px;
+    background: var(--line-color);
+    border-radius: 2px;
+}
+
+.bar .line::before{
+    content: '';
+    position: absolute;
+    width: 95%;
+    height: 100%;
+    background: var(--second-color);
+    border-radius: 2px;
+    top: 0;
+    left: 0;
+}
+
+.bar .html::before{
+    width: 95%;
+}
+
+.bar .css::before{
+    width: 85%;
+}
+
+.bar .javascript::before{
+    width: 85%;
+}
+
+.bar .php::before{
+    width: 80%;
+}
+j
+/*projects section*/
+.projects .container .content{
+    width: 100%;
+}
+
+.projects-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    max-width: 100%;
+    gap: 30px;
+    margin: 0 auto;
+}
+
+.projects-list .img-card{
+    position: relative;
+    max-width: 100%;
+    height: 360px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.projects-list .img-card:hover .layover{
+    z-index: 777;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.projects-list .img-card .info{
+    z-index: 777;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 20px;
+    color: #fff;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: .5s ease;
+}
+
+
+.projects-list .img-card:hover .info{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.projects-list .img-card .info h3{
+    font-size: 1.5rem;
+}
+
+.projects-list .img-card .info span{
+    font-size: 1.2rem;
+}
+
+.projects-list .img-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
