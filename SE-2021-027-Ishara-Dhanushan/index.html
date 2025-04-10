@@ -48,27 +48,7 @@
     </div>
 </header>
 
-<!-- JavaScript for smooth mobile menu toggle -->
-<script>
-    // Ensure the script runs after the DOM is fully loaded
-    document.addEventListener('DOMContentLoaded', function () {
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-
-        if (mobileMenuButton && mobileMenu) {
-            mobileMenuButton.addEventListener('click', function () {
-                // Toggle the menu visibility classes
-                mobileMenu.classList.toggle('opacity-0');
-                mobileMenu.classList.toggle('-translate-y-4');
-                mobileMenu.classList.toggle('pointer-events-none');
-                mobileMenu.classList.toggle('translate-y-0');
-                mobileMenu.classList.toggle('opacity-100');
-            });
-        } else {
-            console.error('Mobile menu elements not found');
-        }
-    });
-</script>
+<script src="./scripts/header.js"></script>
 
 <!-- Hero Section -->
 <section id="home" class="bg-gradient-to-r from-blue-200 to-blue-100 text-black relative py-16 md:py-24">
@@ -124,24 +104,7 @@
         </div>
     </div>
 
-    <script>
-        // Smooth scroll for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-
-                const targetId = this.getAttribute('href');
-                const targetElement = document.querySelector(targetId);
-
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-    </script>
+    <script src="./scripts/hero_section.js"></script>
 </section>
 
 <!-- Modern About Me Section -->
@@ -455,44 +418,8 @@
     </div>
 </section>
 
-<script>
-    const mediumUsername = 'isharadh2002';
-    const feedUrl = `https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@${mediumUsername}`;
-
-    fetch(feedUrl)
-        .then(response => response.json())
-        .then(data => {
-            const blogContainer = document.getElementById('blog-posts');
-            const items = data.items.slice(0, 6); // Get latest 6 posts
-
-            items.forEach(post => {
-                const imageMatch = post.description.match(/<img.*?src="(.*?)"/);
-                const thumbnail = imageMatch ? imageMatch[1] : 'https://via.placeholder.com/600x300.png?text=Medium+Post';
-
-                const card = document.createElement('div');
-                card.className = "bg-blue-50 shadow-md rounded-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:bg-blue-100 flex flex-col";
-
-                card.innerHTML = `
-          <img src="${thumbnail}" alt="${post.title}" class="w-full h-48 object-cover">
-          <div class="p-4 flex flex-col flex-grow">
-            <h3 class="text-xl font-semibold mb-1">${post.title}</h3>
-            <p class="text-gray-600 text-sm mb-2">${post.pubDate.split(' ')[0]}</p>
-            <p class="text-gray-700 text-sm mb-4 flex-grow">${post.description.replace(/<[^>]*>?/gm, '').substring(0, 100)}...</p>
-            <a href="${post.link}" target="_blank" class="text-blue-600 hover:underline font-medium mt-auto">
-              Read more →
-            </a>
-          </div>
-        `;
-
-                blogContainer.appendChild(card);
-            });
-        })
-        .catch(err => {
-            console.error('Failed to fetch Medium posts:', err);
-            document.getElementById('blog-posts').innerHTML =
-                '<p class="text-red-600 text-center">Failed to load blog posts.</p>';
-        });
-</script>
+<!-- Sript to fetch blog posts and inject cards -->
+<script src="./scripts/medium_fetch.js"></script>
 
 <!-- Contact Section -->
 <section id="contact" class="relative py-16 bg-gradient-to-b from-blue-50 to-blue-100 overflow-hidden">
@@ -632,43 +559,7 @@
 
     <!-- EmailJS -->
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script>
-        // Initialize EmailJS with your user ID
-        emailjs.init("06DEggSSJib73FOQM");
-
-        document.getElementById('contactForm').addEventListener('submit', function (e) {
-            e.preventDefault();
-            const btnText = document.getElementById('buttonText');
-            const loading = document.getElementById('loadingIcon');
-            const status = document.getElementById('formStatus');
-            const btn = this.querySelector('button');
-
-            btnText.textContent = 'Sending…';
-            loading.classList.remove('hidden');
-            btn.disabled = true;
-            status.classList.add('hidden');
-
-            console.log("Submitting form...");
-
-            emailjs.sendForm('service_wosr5qd', 'template_2keggsm', this)
-                .then((res) => {
-                    console.log('SUCCESS!', res.status, res.text);
-                    status.textContent = 'Your message has been sent!';
-                    status.className = 'text-center text-sm mt-2 text-green-600';
-                    this.reset();
-                }, (err) => {
-                    console.error('EmailJS error:', err);
-                    status.textContent = 'Oops! Something went wrong. Please try again.';
-                    status.className = 'text-center text-sm mt-2 text-red-600';
-                })
-                .finally(() => {
-                    btnText.textContent = 'Send Message';
-                    loading.classList.add('hidden');
-                    btn.disabled = false;
-                    status.classList.remove('hidden');
-                });
-        });
-    </script>
+    <script src="./scripts/contact_form.js"></script>
 </section>
 
 
