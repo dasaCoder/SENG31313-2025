@@ -61,6 +61,20 @@ li{
     justify-content: center;
 }
 
+::-webkit-scrollbar{
+    width: 10px;
+    background: var(--scroll-bar-color);
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--scroll-thumb-color);
+    border-radius: 2em;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: var(--scroll-thumb-hover-color);
+}
+
 /* navigation bar */
 header{
     position: fixed;
@@ -70,6 +84,11 @@ header{
     width: 100%;
     backdrop-filter: blur(20px);
     transition: .6s ease;
+}
+
+header.sticky{
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: var(--box-shadow);
 }
 
 .nav-bar{
@@ -83,6 +102,10 @@ header{
     margin-right: auto;
     padding: 0 2rem;
     transition: .6s ease;
+}
+
+header.sticky .nav-bar{
+    height: calc(2.5rem + 1rem);
 }
 
 .nav-bar .logo{
