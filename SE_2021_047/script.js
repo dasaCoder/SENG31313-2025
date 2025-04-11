@@ -42,7 +42,7 @@ document.addEventListener("click",(e)=>{
     }
     else{
           hideSection();
-          document.body.classList.add("hide-scrolling")
+          document.body.classList.add("hide-scrolling");
     }
     setTimeout(()=>{
       document.querySelector("section.active").classList.remove("active","fade-out");
