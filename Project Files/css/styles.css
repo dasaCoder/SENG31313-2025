@@ -49,6 +49,23 @@
     text-align: center;
 }
 
+.volunteer{
+    background-color: rgb(255, 245, 112);
+    text-align: center;
+}
+
+.volunteer-works{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.volunteer-activity{
+    background-color: rgb(197, 197, 93);
+    
+    border: 1px solid;
+    margin: 1rem;
+    padding: 1rem;
+}
 
 /* .scroller{
     outline: 3px solid blue;
