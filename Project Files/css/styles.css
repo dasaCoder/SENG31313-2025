@@ -1,89 +1,81 @@
-.hero{
-    background-color: aquamarine;
+*{
+    font-family: "Delius", cursive;
+}
+
+.hero,
+.techstack,
+.projects,
+.volunteer,
+.contact-section {
+  border: 2px solid black;
+  border-radius: 1rem;
+}
+
+.hero {
     text-align: center;
-    
+  }
+
+.hero .description {
+  margin: 0;
 }
 
-.techstack{
-    background-color: rgb(189, 189, 240);
-    text-align: center;
-    padding: 10px;
+.techstack {
+  /* background-color: rgb(189, 189, 240); */
+  text-align: center;
+  padding: 10px;
 }
 
-.scroller{
-    max-width: 2000px; 
+.scroller {
+  max-width: 2000px;
 }
 
-.scroller-inner{
-    padding-block: 1rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 3rem;
+.scroller-inner {
+  padding-block: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
 }
 
-.scroller[data-animated="true"]{
-    overflow: hidden;
-    mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+.scroller[data-animated="true"] {
+  overflow: hidden;
+  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
 }
 
-.scroller[data-animated="true"] .scroller-inner{
-    width: max-content;
-    flex-wrap: nowrap;
-    animation: scroll 20s linear infinite;
+.scroller[data-animated="true"] .scroller-inner {
+  width: max-content;
+  flex-wrap: nowrap;
+  animation: scroll 20s linear infinite;
 }
 
 @keyframes scroll {
-    to{
-        transform: translate(-100% );
-    }
-    
+  to {
+    transform: translate(-100%);
+  }
 }
 
-.contact-section{
-    background-color: rgb(255, 173, 173);
-    text-align: center;
+.contact-section {
+  /* background-color: rgb(255, 173, 173); */
+  text-align: center;
 }
 
-.projects{
-    background-color: rgb(94, 118, 255);
-    text-align: center;
+.projects {
+  /* background-color: rgb(94, 118, 255); */
+  text-align: center;
 }
 
-.volunteer{
-    background-color: rgb(255, 245, 112);
-    text-align: center;
+.volunteer {
+  /* background-color: rgb(255, 245, 112); */
+  text-align: center;
 }
 
-.volunteer-works{
-    display: flex;
-    justify-content: space-evenly;
+.volunteer-works {
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.volunteer-activity{
-    background-color: rgb(197, 197, 93);
-    
-    border: 1px solid;
-    margin: 1rem;
-    padding: 1rem;
+.volunteer-activity {
+  /* background-color: rgb(197, 197, 93); */
+  border: 1px solid;
+  margin: 1rem;
+  padding: 1rem;
 }
-
-/* .scroller{
-    outline: 3px solid blue;
-    position: relative;
-}
-
-@keyframes scroll {
-    to{
- 
-    }
-}
-
-.logo{
-    margin: 15px;
-    position: absolute;
-    right: 100%;
-    animation-name: scroll;
-    animation-duration: 3s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-} */
