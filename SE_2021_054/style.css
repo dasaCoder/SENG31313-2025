@@ -488,6 +488,7 @@ span{
 @media (max-width: 1200px) {
     html {
       font-size: 55%;
+      margin-right: 0;
     }
   }
   @media (max-width: 991px) {
@@ -498,11 +499,21 @@ span{
     section {
       padding: 10rem 3%;
     } 
+    .home{
+        margin-right: 0;
+    }
+    .about{
+        margin-left: 1rem;
+    }
+    .about img{
+        margin-left: 0;
+    }
     .skills {
         padding-bottom: 7rem;    
             }  
     .project {
-padding-bottom: 7rem;    
+padding-bottom: 7rem;   
+margin-left:1rem; 
     } 
     .contact {
         min-height: auto;   
@@ -534,6 +545,9 @@ padding-bottom: 7rem;
         font-size: 2rem;
         margin: 3rem 0;
     }
+    section {
+    margin:0;
+    } 
 
     .home{
         flex-direction: column;
@@ -573,6 +587,9 @@ padding-bottom: 7rem;
     .project-container{
         grid-template-columns: 1fr;
     }
+    section {
+        margin:0;
+        } 
     .home-img img{
         width: 80vw;
         margin-top: 8rem;
@@ -586,6 +603,9 @@ padding-bottom: 7rem;
     html {
       font-size: 50%;
     }
+    section {
+        margin:0;
+        } 
     .contact form .input-box input{
         width: 100%;
     }
