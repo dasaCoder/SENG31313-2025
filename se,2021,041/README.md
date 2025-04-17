@@ -8,11 +8,11 @@ This project was created as part of a web development assignment to demonstrate 
 
 ---
 
-## 🔧 Tech Stack
+##  Tech Stack
 
 - **HTML5** – For structuring the web content.
 - **CSS3** – For designing and styling the interface.
-- **JavaScript ** – For adding interactive functionality.
+- **JavaScript** – For adding interactive functionality.
 
 
 ---
@@ -26,7 +26,7 @@ This project was created as part of a web development assignment to demonstrate 
 →  Personal background.
 
   **Skills**
-  ->Highlights my technical skills.
+ ->Highlights my technical skills.
 
  **Projects**  
 → A dynamic gallery showcasing some of my favorite works with links and descriptions.
