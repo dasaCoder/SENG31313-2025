@@ -1,10 +1,8 @@
-
-
 // page loader scripts
 
 window.addEventListener("load",()=>{
   document.querySelector(".main").classList.remove("hidden");
-  const initialHash = window.location.hash || "#home";
+  const initialHash = window.location.hash ;
   document.querySelector(initialHash).classList.add("active");
     //  page loader
 
@@ -47,17 +45,22 @@ document.addEventListener("click",(e)=>{
           hideSection();
           document.body.classList.add("hide-scrolling");
     }
+    const targetHash = e.target.hash;
+
     setTimeout(()=>{
-      document.querySelector("section.active").classList.remove("active","fade-out");
-      document.querySelector(e.target.hash).classList.add("active");
-      history.pushState({ section: e.target.hash }, "", e.target.hash);
-
-      window.scrollTo(0,0);
+      
+      document.querySelector("section.active").classList.remove("active", "fade-out");
+      document.querySelector(targetHash).classList.add("active");
+      
+      // Push to browser history
+      history.pushState({ section: targetHash }, "", targetHash);
+    
+      window.scrollTo(0, 0);
       document.body.classList.remove("hide-scrolling");
-      navToggler.classList.remove("hide")
+      navToggler.classList.remove("hide");
       document.querySelector(".overlay").classList.remove("active");
-
     },500);
+    
   }
 })
 
@@ -123,25 +126,23 @@ function portfolioItemDetails(portfolioItem){
 document.querySelector('.pp-close').addEventListener('click', togglePortfolioPopup);
 
 
+//navigation functionality for browser ///////////////////////////////////////////////
 
-
-/////////////////////////////////////////
-
-window.addEventListener("popstate", (event) => {
+window.addEventListener("popstate", () => {
   const sectionId = window.location.hash || "#home";
-
   const current = document.querySelector("section.active");
-  if (current.id === sectionId.replace("#", "")) return;
+  const next = document.querySelector(sectionId);
+
+  if (!next || current === next) return;
 
   document.querySelector(".overlay").classList.add("active");
   document.body.classList.add("hide-scrolling");
-
+  
   current.classList.add("fade-out");
 
   setTimeout(() => {
     current.classList.remove("active", "fade-out");
-    const newSection = document.querySelector(sectionId);
-    newSection.classList.add("active");
+    next.classList.add("active");
 
     window.scrollTo(0, 0);
     document.body.classList.remove("hide-scrolling");
