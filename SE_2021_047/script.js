@@ -1,9 +1,12 @@
+
+
 // page loader scripts
 
 window.addEventListener("load",()=>{
   document.querySelector(".main").classList.remove("hidden");
-  document.querySelector(".home-section").classList.add("active");
-  //  page loader
+  const initialHash = window.location.hash || "#home";
+  document.querySelector(initialHash).classList.add("active");
+    //  page loader
 
   document.querySelector(".page-loader").classList.add("fade-out");
   setTimeout(()=>{
@@ -47,6 +50,8 @@ document.addEventListener("click",(e)=>{
     setTimeout(()=>{
       document.querySelector("section.active").classList.remove("active","fade-out");
       document.querySelector(e.target.hash).classList.add("active");
+      history.pushState({ section: e.target.hash }, "", e.target.hash);
+
       window.scrollTo(0,0);
       document.body.classList.remove("hide-scrolling");
       navToggler.classList.remove("hide")
@@ -116,3 +121,30 @@ function portfolioItemDetails(portfolioItem){
 }
 
 document.querySelector('.pp-close').addEventListener('click', togglePortfolioPopup);
+
+
+
+
+/////////////////////////////////////////
+
+window.addEventListener("popstate", (event) => {
+  const sectionId = window.location.hash || "#home";
+
+  const current = document.querySelector("section.active");
+  if (current.id === sectionId.replace("#", "")) return;
+
+  document.querySelector(".overlay").classList.add("active");
+  document.body.classList.add("hide-scrolling");
+
+  current.classList.add("fade-out");
+
+  setTimeout(() => {
+    current.classList.remove("active", "fade-out");
+    const newSection = document.querySelector(sectionId);
+    newSection.classList.add("active");
+
+    window.scrollTo(0, 0);
+    document.body.classList.remove("hide-scrolling");
+    document.querySelector(".overlay").classList.remove("active");
+  }, 500);
+});
