@@ -121,6 +121,34 @@ header h1 {
     box-shadow: 0px 8px 20px rgba(255, 215, 0, 0.5); /* Gold glow */
 }
 
+.profile-pic.animate {
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 0.8s ease-out;
+}
+
+/* When visible */
+.profile-pic.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+@keyframes fadeZoomIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.profile-pic {
+    animation: fadeZoomIn 1s ease forwards;
+    opacity: 0; /* Ensures hidden initially */
+}
+
 
 .about-text {
     flex: 2; /* Allows the text area to take more space */
@@ -329,19 +357,25 @@ header h1 {
     margin-bottom: 30px;
 }
 
-/* Categories */
+/* Skills Category - Animation Base */
 .skills-category {
     margin-bottom: 30px;
-    opacity: 0; /* Hidden by default for animation */
+    opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
+/* When Visible */
+.skills-category.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Category Title */
 .skills-category h3 {
     color: white;
     background: black;
-    padding: 20px 20px;
-    text-decoration: none;
+    padding: 20px;
     font-weight: bold;
     border-radius: 5px;
     transition: color 0.3s ease;
@@ -351,15 +385,22 @@ header h1 {
     color: gold;
 }
 
-/* Skills List */
+/* Skills List - Animated Expand + Fade */
 .skills-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
     max-height: 0;
+    opacity: 0;
     overflow: hidden;
-    transition: max-height 0.5s ease-out;
+    transition: max-height 0.8s ease-out, opacity 0.8s ease-out;
+}
+
+/* Reveal animation when parent is visible */
+.skills-category.visible .skills-list {
+    max-height: 1000px;
+    opacity: 1;
 }
 
 /* Individual Skill Box */
@@ -391,12 +432,6 @@ header h1 {
 .skills-list span:hover {
     transform: scale(1.1);
     box-shadow: 0px 0px 10px gold;
-}
-
-/* Animation for appearing on scroll */
-.skills-category.visible {
-    opacity: 1;
-    transform: translateY(0);
 }
 
 /* Responsive */
@@ -504,7 +539,6 @@ header h1 {
 
 
 .contact-container {
-    width: 100%;
     text-align: center;
     padding: 30px;
     background: black; /* Matches the footer style */
@@ -624,3 +658,4 @@ body {
 .skills-list span:hover img {
     transform: rotate(10deg); /* Rotate the icon for a fun effect */
 }
+
