@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="custom-navbar">
+        <div class="logo">
+            <div class="profile-frame">
+                <img class="profile" src="./WhatsApp Image 2024-12-12 at 14.24.24_989350a8.jpg" alt="myphoto">
+            </div>
+            <div class="social-links">
+                <a class="linkedin" href="https://www.linkedin.com/in/sanmugarasa-thanoogithan-923a70280/" target="_blank">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+                <a class="github" href="https://github.com/" target="_blank">
+                    <i class="bi bi-github"></i>
+                </a>
+            </div>
+        </div>
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="bi bi-list"></i>
+        </div>
+        <div class="custom-nav-links" id="nav-links">
+            <a href="./index.html " class="custom-nav-links active">Home</a>
+            <a href="./about.html">About Me</a>
+            <a href="./projects.html">Projects</a>
+            <a href="./contact.html">Contact</a>
+            <button class="close-btn" onclick="toggleMenu()"><i class="bi bi-x-lg"></i> </button>
+        </div>
+        <button class="menu-btn" id="menuBtn" onclick="toggleMenu()"> <i class="bi bi-list"></i></button>
+    </nav>
+
+    <section id="home" class="home-section">
+        <div class="content-box">
+            <h1 class="fade-in">Hello, It's Me</h1>
+            <h2 class="fade-in">Thanoogithan.</h2>
+            <h3 class="fade-in">And I'm a <span class="typing"></span></h3>
+            <p class="fade-in">
+                 passionate Full Stack Developer, Mobile Developer, and ML Enthusiast. 
+                I love solving real-world problems through technology.
+            </p>
+           
+            <a href="./ThanooCV.pdf" class="cv-btn" target="_blank">Download CV</a>
+        </div>
+        
+        <div class="image-box fade-in">
+            <img src="./IMG-20250402-WA0037[1].jpg" alt="my photo2">
+        </div>
+        
+    </section>
+    <section class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 about-content">
+                    <h1 class="animated-text"></h1><br>
+                    <p>
+                      I am Thanoogithan, a passionate Full Stack Developer & ML Enthusiast.
+                      Now i am following my Software Engineering Degree at the University of Kelaniya. 
+                      I specialize in Java, Spring Boot, React, JavaScript, and Mobile App Development.
+                      I am a good problem solver and i always like to do error fixing.Error fixing is one of the interesting thing and it helps me to grow my knowledge.
+                      I like to learn new things and use them in my acctivities.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <div class="profile-container">
+                        <img class="profile-photo" src="./WhatsApp Image 2025-04-06 at 18.50.19_a3cf671c.jpg" alt="Profile">
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="section">
+                <h2>Education</h2>
+                <ul>
+                    <li><strong>J/Vayavilan Central College</strong> (2007-2020)</li>
+                    <li><strong>University of Kelaniya</strong> - B.Sc (Hons) Software Engineering (2023-2027)</li>
+                </ul>
+            </div>
+            <div class="section">
+                <h2>Language</h2>
+                     
+               <div class="card">
+                 <div class="language">
+              <div class="language-name">Tamil</div>
+             <div class="language-level">
+            <div class="language-percent" style="width: 100%"></div>
+            </div>
+            <div class="language-percent-number">100%</div>
+           </div>
+            <div class="language">
+            <div class="language-name">English</div>
+            <div class="language-level">
+               <div class="language-percent" style="width: 90%"></div>
+               </div>
+             <div class="language-percent-number">90%</div>
+           </div>
+             <div class="language">
+            <div class="language-name">Sinhala</div>
+            <div class="language-level">
+            <div class="language-percent" style="width: 50%"></div>
+               </div>
+               <div class="language-percent-number">50%</div>
+      </div>
+    </div>
+  </div>
+   
+            <div class="section">
+                <br>
+                <h2>Skills</h2>
+                <h4>Programing Skills</h4><br>
+                <div class="skills">
+                    <div class="skill">Java</div>
+                    <div class="skill">Spring Boot</div>
+                    <div class="skill">React</div>
+                    <div class="skill">JavaScript</div>
+                    <div class="skill">HTML</div>
+                    <div class="skill">php</div>
+                    <div class="skill">C</div>
+                    <div class="skill">C++</div>
+                    <div class="skill">CSS</div>
+                    <div class="skill">Bootstrap</div>
+                    <div class="skill">Flutter</div>
+                    <div class="skill">Mongodb</div>
+                    <div class="skill">React Native</div>
+                    <div class="skill">Python</div>
+                </div>
+                <br>
+                <h4>Soft Skills</h4>
+                <div class="soft-skills">
+                    <div class="skill">Good Communication skill</div>
+                    <div class="skill">Time management</div>
+                    <div class="skill">Team work</div>
+                    <div class="skill">Leadership</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="projects">
+    <div class="main">
+        <div class="container mt-4">
+            <h2 class="mb-4 text-center">Project List</h2>
+        
+        
+            <select id="projectFilter" class="form-select w-50 mx-auto">
+                <option value="all">All Projects</option>
+                <option value="spring-boot">Spring Boot</option>
+                <option value="php">PHP</option>
+                <option value="React">React</option>
+            </select>
+        
+            
+            <div id="projectContainer" class="mt-4">
+                <div class="project spring-boot">
+                    <a href="https://github.com/NadeeshaMedagama/fuel-quota-management-system" target="_blank">fuel-quota-management-system</a>
+                </div>
+                <div class="project spring-boot">
+                    <a href="https://github.com/thanoo120/firstSpringbootdemoproject" target="_blank">Spring Boot demo project</a>
+                </div>
+                <div class="project spring-boot">
+                    <a href="https://github.com/thanoo120/traficManagement" target="_blank">Traffic-management-System</a>
+                </div>
+                <div class="project php">
+                    <a href="https://github.com/kavindupbsr/Library-website" target="_blank">Library-management-System</a>
+                </div>
+                <div class="project spring-boot">
+                    <a href="https://github.com/thanoo120/Fullstack1" target="_blank">Blocking-Application</a>
+                </div>
+                <div class="project React">
+                    <a href="https://github.com/thanoo120/my-react-app" target="_blank">My-React-App</a>
+                </div>
+            </div>
+        </div>
+    </div> 
+</section>
+<section class="contact">
+    <div id="contact">
+        <div class="container">
+            <div class="row contact-wrapper">
+                <div class="col-md-6 contact-box contact1">
+                 <h1 class="heading">Contact me</h1>
+                 <p><i class="bi bi-envelope"></i>thanoo@gmail.com</p>
+                 <p><i class="bi bi-phone"></i>0768946042</p>
+                 <p><i class="bi bi-house"></i>NO.20,Urelu west,<br>Chunnakam,Jaffna.</p>
+                 <div class="social-media">
+                    <a class="linkedin" href="https://www.linkedin.com/in/sanmugarasa-thanoogithan-923a70280/" target="_blank">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    <a class="github" href="https://github.com/" target="_blank">
+                        <i class="bi bi-github"></i>
+                    </a>
+                    <a class="instagram" href="https://www.instagram.com/" target="_blank">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a class="facebook" href="https://www.facebook.com/?ref=homescreenpwa" target="_blank">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                
+                    <a class="email" href="mailto:sanmugarasathaoogithan@gmail.com" target="_blank">
+                        <i class="bi bi-envelope-fill"></i>
+                    </a>
+                 </div>
+                </div>
+                <div class="col-md-6 contact-box contact2">
+                   <form id="contactForm"   action="https://formspree.io/f/xjkyalog" method="POST">
+                    <input type="text" name="Name" id="name" placeholder="Enter your name" required>
+                    <input type="email" name="email" id="email" placeholder="your Email" required>
+                    <textarea name="Message" rows="6" id="message" placeholder="Enter your message here"></textarea>
+                    <button type="submit">Submit</button>
+                    <div class="success-message" id="successMessage">Thanks! Your message has been sent.</div>
+                   </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</section>
+<footer class="footer">
+    <p>&copy; 2025 created by Thanoogithan. All rights reserved.</p>
+  </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
