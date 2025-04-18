@@ -1,0 +1,661 @@
+/* Header Styling */
+header {
+    background: black;
+    padding: 10px 40px;
+    display: flex;
+    justify-content: space-between; /* Pushes items to both ends */
+    align-items: center;
+}
+
+/* Logo (SaNdu) Styling */
+header h1 {
+    color: gold;
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    letter-spacing: 2px;
+    margin: 0; /* Removes default margin */
+}
+
+/* Navigation Styling */
+.navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Aligns items horizontally */
+}
+
+.navigation ul li {
+    margin-left: 50px; /* Adds space between links */
+}
+
+.navigation ul li a {
+    color: gold;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+.navigation ul li a:hover {
+    color: white;
+    text-shadow: 0px 0px 10px gold;
+}
+
+
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers vertically */
+    align-items: center; /* Centers horizontally */
+    text-align: center; /* Ensures text is centered */
+    height: 35vh; /* Full screen height */
+    color: rgb(26, 25, 21); /* Matches your elegant theme */
+}
+
+.hero h2 {
+    font-size: 40px;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.button {
+    color: gold;
+    background: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.button:hover {
+    background-color: gold;
+    color: black;
+    transform: scale(1.05);
+}
+
+/* About Section */
+/* About Section */
+#about {
+    display: flex;
+    justify-content: space-between; /* Places image on the left and text on the right */
+    align-items: center; /* Vertically aligns both the image and text */
+    gap: 20px; /* Adds space between the image and the text */
+    padding: 20px;
+}
+
+.about-container {
+    display: flex;
+    align-items: center; /* Ensures the content is vertically centered */
+    gap: 20px; /* Space between the image and text */
+}
+
+.about-image {
+    flex: 1; /* Ensures image takes up equal space */
+}
+
+.profile-pic {
+    margin-left: 20px;
+    width: 250px;
+    height: 350px; /* Adjust as needed */
+    border-radius: 50%; /* Rounded corners */
+    
+    /* Soft Shadow for a professional look */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+
+    /* Optional: Add a border with a gold accent */
+    border: 3px solid rgba(214, 183, 8, 0.7); /* Gold border */
+
+    /* Smooth transition for hover effects */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+.profile-pic:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0px 8px 20px rgba(255, 215, 0, 0.5); /* Gold glow */
+}
+
+.profile-pic.animate {
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 0.8s ease-out;
+}
+
+/* When visible */
+.profile-pic.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+@keyframes fadeZoomIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.profile-pic {
+    animation: fadeZoomIn 1s ease forwards;
+    opacity: 0; /* Ensures hidden initially */
+}
+
+
+.about-text {
+    flex: 2; /* Allows the text area to take more space */
+    max-width: 600px; /* Optional: limits the width of the text */
+}
+
+.about-text h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+    #about {
+        flex-direction: column; /* Stacks the image and text vertically on smaller screens */
+        text-align: center; /* Centers the text */
+    }
+
+    .about-container {
+        flex-direction: column; /* Ensures the image and text are stacked */
+        align-items: center; /* Centers everything */
+    }
+
+    .profile-pic {
+        max-width: 200px; /* Adjust image size for smaller screens */
+        margin-bottom: 20px; /* Adds space between image and text */
+    }
+}
+
+
+/* Education Section */
+#education {
+    padding: 50px 20px;
+    background-color: rgba(255, 215, 0, 0.1); /* Light gold background */
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(255, 215, 0, 0.5);
+}
+
+/* Education Title */
+#education h2 {
+    font-size: 32px;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 30px;
+}
+
+/* Education List */
+.Education-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Individual Education Entry */
+.Education-list span {
+    display: flex;
+    align-items: center; /* Align image and text side by side */
+    color: black;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    text-align: left;
+    max-width: 600px; /* Ensure it's not too wide */
+    width: 100%;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Image Styling */
+.Education-list span img {
+    width: 80px; /* Adjust the size of logos */
+    height: 80px;
+    border-radius: 10px; /* Optional rounded corners */
+    margin-right: 15px; /* Space between image and text */
+}
+
+/* Hover Effect */
+.Education-list span:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px gold;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .Education-list span {
+        flex-direction: column; /* Stack image and text in smaller screens */
+        text-align: center;
+        align-items: center;
+    }
+
+    .Education-list span img {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+
+
+
+/* Expirience Section */
+#expirience {
+    padding: 50px 20px;
+    background-color: rgba(255, 215, 0, 0.1); /* Light gold background */
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(255, 215, 0, 0.5);
+}
+
+/* Education Title */
+#expirience h2 {
+    font-size: 32px;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 30px;
+}
+
+/* Education List */
+.Expirinnce-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Individual Education Entry */
+.Expirinnce-list span {
+    display: flex;
+    align-items: center; /* Align image and text side by side */
+    color: black;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    text-align: left;
+    max-width: 600px; /* Ensure it's not too wide */
+    width: 100%;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Image Styling */
+.Expirinnce-list span img {
+    width: 80px; /* Adjust the size of logos */
+    height: 80px;
+    border-radius: 10px; /* Optional rounded corners */
+    margin-right: 15px; /* Space between image and text */
+}
+
+/* Hover Effect */
+.Expirinnce-list span:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px gold;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .Expirinnce-list span {
+        flex-direction: column; /* Stack image and text in smaller screens */
+        text-align: center;
+        align-items: center;
+    }
+
+    .Expirinnce-list span img {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+
+
+
+
+/* Centered Box Style for Skills, Interests, Blog */
+.section {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px;
+    background: rgba(255, 215, 0, 0.1); /* Light gold background */
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(255, 215, 0, 0.5);
+    text-align: center;
+}
+
+/* Skills Section */
+/* General Styles */
+#skills {
+    padding: 50px 20px;
+    background-color: rgba(255, 215, 0, 0.1);
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(255, 215, 0, 0.5);
+}
+
+/* Heading */
+#skills h2 {
+    font-size: 32px;
+    font-family: 'Playfair Display', serif;
+    color: gold;
+    margin-bottom: 30px;
+}
+
+/* Skills Category - Animation Base */
+.skills-category {
+    margin-bottom: 30px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* When Visible */
+.skills-category.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Category Title */
+.skills-category h3 {
+    color: white;
+    background: black;
+    padding: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: color 0.3s ease;
+}
+
+.skills-category h3:hover {
+    color: gold;
+}
+
+/* Skills List - Animated Expand + Fade */
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.8s ease-out, opacity 0.8s ease-out;
+}
+
+/* Reveal animation when parent is visible */
+.skills-category.visible .skills-list {
+    max-height: 1000px;
+    opacity: 1;
+}
+
+/* Individual Skill Box */
+.skills-list span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(214, 208, 181);
+    color: black;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+    min-width: 150px;
+    height: 80px;
+    border: 1px solid black;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Skill Images */
+.skills-list span img {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* Hover Effect */
+.skills-list span:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px gold;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .skills-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+.blog-container ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    align-items: center; /* Center the boxes */
+    gap: 15px; /* Space between each box */
+}
+
+.blog-container li {
+    width: 80%; /* Adjust width of the boxes */
+    max-width: 400px; /* Limit max width */
+    text-align: center;
+    background: black; /* Dark background */
+    padding: 5px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.blog-container a {
+    display: block; /* Full width inside the box */
+    color: gold;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.blog-container li:hover {
+    background: gold;
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+.blog-container li:hover a {
+    color: black;
+}
+
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    justify-content: center; /* Centers the items */
+    gap: 20px; /* Space between projects */
+}
+
+.project-card {
+    background: rgb(209, 201, 164); /* Dark background for an elegant look */
+    color: black;
+    border: 1px solid black ;
+    border-radius: 10px;
+    padding: 20px;
+    width: 150px; /* Fixed width for each card */
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    height: 400px;
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.project-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.project-card .button {
+    display: inline-block;
+    background: black;
+    color: gold;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.project-card:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.project-card .button:hover {
+    background: gold;
+    color: black;
+    border: 2px solid gold;
+}
+
+
+.contact-container {
+    text-align: center;
+    padding: 30px;
+    background: black; /* Matches the footer style */
+    color: white;
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.contact-list li {
+    display: inline-block;
+}
+
+.contact-link {
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.contact-icon {
+    width: 50px; /* Set size for icons */
+    height: 50px;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.contact-link:hover .contact-icon {
+    transform: scale(1.1); /* Slight zoom effect */
+    box-shadow: 0px 0px 15px gold; /* Glow effect */
+}
+
+
+body {
+    cursor: none; /* Hide default cursor */
+}
+.custom-cursor {
+    position: fixed;
+    width: 15px;
+    height: 15px;
+    background: yellow;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 10px yellow;
+}
+
+#about p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+/* Skills Section */
+#skills {
+    padding: 20px;
+    background-color: rgba(255, 215, 0, 0.1); /* Light background */
+    text-align: center;
+}
+
+/* Container for the skills section */
+.skills-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Skills Title */
+#skills h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Skills list style */
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    list-style: none;
+}
+
+/* Individual skill item */
+.skills-list span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #333;
+    border-radius: 10px;
+    padding: 10px 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 150px;
+    height: 100px;
+    text-align: center;
+    border:1px solid black;
+}
+
+/* Skill icons */
+.skills-list span img {
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effects */
+.skills-list span:hover {
+    transform: scale(1.1); /* Slight zoom */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.skills-list span:hover img {
+    transform: rotate(10deg); /* Rotate the icon for a fun effect */
+}
+
