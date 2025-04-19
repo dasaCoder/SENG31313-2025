@@ -25,6 +25,7 @@ i {
     text-decoration: none;
     color: lightgray;
 }
+/*background video css style*/
 
 .back-vid {
     position: fixed;
@@ -36,6 +37,7 @@ i {
     object-fit: cover;
 
 }
+/*header section css style*/
 
 header {
 
@@ -61,11 +63,7 @@ header {
     align-items: center;
 }
 
-.left img {
-    width: 40px;
-    margin: 0 15px;
-}
-
+/*header section style*/
 header ul {
     display: flex;
     justify-content: space-between;
@@ -120,6 +118,8 @@ header ul a {
     cursor: pointer;
     font-size: 24px;
 }
+
+/*home section style*/
 
 .blackhole-box {
     z-index: -1;
@@ -219,7 +219,7 @@ header ul a {
     filter: brightness(1.2);
     opacity: 0.90;
 }
-
+/*neon effect gradient style used for most of the texts*/
 .gradient {
     background: linear-gradient(to right, #008baa, #7e42a7, #6600c5, #6070fd, #2a46ff, #0099ff, #008ead);
     background-size: 200%;
@@ -238,8 +238,6 @@ header ul a {
         background-position: 200%;
     }
 }
-
-
 
 
 .scroll-down {
@@ -293,6 +291,7 @@ header ul a {
     }
 }
 
+/*about me section style*/
 .info-section {
     display: flex;
     flex-direction: column;
@@ -414,6 +413,7 @@ header ul a {
     bottom: 35%;
 }
 
+/*in project and blogs section style*/
 .my-projects {
     display: flex;
     flex-direction: column;
@@ -580,6 +580,7 @@ header ul a {
 .hover-sign-active {
     display: none;
 }
+/*skills section stle*/
 
 .skills-section {
     margin-top: 80px;
@@ -589,6 +590,7 @@ header ul a {
     align-items: center;
     position: relative;
 }
+
 
 .skills-box {
     width: 100%;
@@ -606,7 +608,7 @@ header ul a {
     opacity: 0.7;
     margin-bottom: 50px;
 }
-
+/*coder and designer parts styles*/
 .designer,
 .coder {
 
@@ -641,7 +643,7 @@ header ul a {
 
 
 
-/* Slide */
+/* Slider style */
 .slider {
     position: absolute;
 
@@ -697,6 +699,8 @@ header ul a {
 .slider .item:hover {
     filter: grayscale(0);
 }
+
+/*contact section style*/
 
 .contact-section {
     width: 80%;
@@ -804,6 +808,7 @@ header ul a {
     opacity: 0.7;
 }
 
+/*footer section style*/
 footer {
     display: flex;
     position: absolute;
@@ -828,7 +833,7 @@ footer h1 {
     cursor: pointer;
     display: none;
 }
-
+/*sidebar styles*/
 .sidebar {
     position: fixed;
     right: 0;
@@ -1152,6 +1157,7 @@ footer h1 {
 
 }
 
+/*smart phone responsive*/
 @media screen and (max-width:700px) {
 
     html {
