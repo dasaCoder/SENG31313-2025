@@ -1,30 +1,48 @@
-  **Project Description** 
-This is a personal portfolio website built using HTML, CSS, and JavaScript. It showcases my skills, projects, and contact details in a visually appealing and professional manner. The website is designed with an elegant theme featuring gold and black colors, smooth animations, and interactive elements to enhance user experience.  
+# Personal Portfolio Website
 
-Key features of the portfolio include:  
-  Home Page - A welcoming introduction.  
-  About Me  – Information about my background, skills, and interests.  
-  Projects – A showcase of my work with images and descriptions. 
-  Education & Experience - my education qualifications and my work expirience. 
-  Skills  – A section highlighting my technical expertise.  
-  Contact Section – Links to my email, social media, and phone number for easy communication.  
+##  Project Description  
+This is a personal portfolio website built using **HTML**, **CSS**, and **JavaScript**. It showcases my skills, projects, education, experience, and contact details in a visually appealing and professional manner.  
 
-The website is fully responsive, ensuring a seamless experience across all devices. It is hosted on a free platform for easy access.
-  
-  **Libraries Used**
-  Google Fonts
-  Custom CSS & JavaScript
-  Font Awesome or Similar Icons (Potentially for Social Media and Contact Icons)
-  Vanilla JavaScript – You are using pure JavaScript without any external JS libraries.
-  CSS Class Manipulation – Adding/removing classes for animations (.show, .visible, .loaded).
-  Event Listeners – Handling DOMContentLoaded, scroll, mousemove, and click events.
-  Custom Cursor – Tracks mouse movement and updates the position of .custom-cursor.
-  Smooth Section Reveal on Scroll – Elements fade in as they enter the viewport.
-  Hover & Click Effects on Skills – Displays tooltips and alerts when interacting with skills.
-  Collapsible Skill Categories – Expands and collapses skill sections on click.
+The website features an **elegant gold and black theme**, smooth animations, and interactive elements that enhance the user experience.
 
-**Live Hosted Link** 
-  https://kaleidoscopic-starlight-efab11.netlify.app/
-  
-  **How to Run the Project Locally**  
-  go tothe project folder and double click on the index file.
+###  Key Features
+- **Home Page** – A welcoming introduction.
+- **About Me** – Background information, skills, and interests.
+- **Projects** – A gallery of projects with images and descriptions.
+- **Education & Experience** – My academic qualifications and work experience.
+- **Skills** – A showcase of my technical proficiencies.
+- **Contact Section** – Email, phone, and social media links for easy communication.
+
+The website is fully **responsive** and ensures a smooth experience across all devices. It is hosted on a free platform for easy public access.
+
+---
+
+##  Libraries & Technologies Used
+- [Google Fonts](https://fonts.google.com/)
+- **Custom CSS & JavaScript**
+- [Font Awesome](https://fontawesome.com/) (or similar icon library)
+- **Vanilla JavaScript** – No external JS frameworks or libraries
+- **CSS Class Manipulation** – For triggering animations (`.show`, `.visible`, `.loaded`)
+- **Event Listeners** – Used for `DOMContentLoaded`, scroll, mousemove, and click events
+- **Custom Cursor** – Follows mouse movement and updates `.custom-cursor` position
+- **Smooth Section Reveal on Scroll** – Elements fade in as they appear on screen
+- **Hover & Click Effects on Skills** – Tooltips and alerts when interacting with skill elements
+- **Collapsible Skill Categories** – Expand/collapse functionality for skill sections
+
+---
+
+##  Live Demo
+ [Click here to view the live website](https://soft-crepe-d2ca02.netlify.app/)
+
+---
+
+##  How to Run the Project Locally
+1. **Clone or download** the project repository.
+2. Open the project folder on your computer.
+3. **Double-click** on the `index.html` file to open the website in your browser.
+
+---
+
+##  Contact
+For feedback or collaboration, feel free to reach out via the **Contact Section** on the website!
+
