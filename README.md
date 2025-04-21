@@ -3,7 +3,8 @@
 A modern, responsive personal portfolio website showcasing my skills, projects, education, and professional experience.
 
 ## 🌟 Live Demo
-https://67f277c5901b4b2ab838b3ed--cozy-kitsune-0ef19a.netlify.app/
+https://navon-sanju-portfolio.netlify.app/
+
 ## ✨ Features
 
 ### 📱 Responsive Design
