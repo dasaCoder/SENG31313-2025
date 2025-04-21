@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Home</title>
+    <link rel="stylesheet" href="./assests/css/home.css">
+    <script src="./assests/js/script.js" defer></script>
+    <link rel="stylesheet" href="./assests/css/about.css">
+    <link rel="stylesheet" href="./assests/css/project.css">
+    <link rel="stylesheet" href="./assests/css/education.css">
+    <link rel="stylesheet" href="./assests/css/blogs.css">
+    <link rel="stylesheet" href="./assests/css/contact.css">
+    <link rel="stylesheet" href="./assests/css/footer.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <image src="./assests/images/Sanjuni__2_-removebg.png" alt="Profile Image" class="logo">
+        <ul class="nav-links">
+            <li><a href="#" >Home</a></li>
+            <li><a href="#about-section">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#blogs">Blogs</a></li>
+            <li><a href="#projects-section">Projects</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="animate-text">Hi! I'm Navon Sanjuni</h1>
+            <h2 class="animate-text">
+                And I'm <span id="position" class="highlight"></span>
+            </h2>
+            <p id="description" class="animate-text"></p>
+            
+            <div class="contact-info animate-text">
+                <div class="info-item">
+                    <span>Email:</span>
+                    <a href="mailto:navonsanjuni178@gmail.com">navonsanjuni178@gmail.com</a>
+                </div>
+
+                <div class="social-links_container">
+                    <a href="https://www.facebook.com/profile.php?id=100092224849214" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://medium.com/@navonsanjuni178" class="social-icon"><i class="fab fa-medium"></i></a>
+                    <a href="https://www.linkedin.com/in/navon-sanjuni-a796502b0/" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/navonsanjuni" class="social-icon"><i class="fab fa-github"></i></a>
+                </div>
+                
+            </div>
+
+            <div class="cta-buttons animate-text">
+                <a href="./assests/images/SE-2021-061 Sanjuni cv.pdf" class="btn btn-primary">Download CV</a>
+                <a href="#contact" class="btn btn-secondary">Hire Me Now!</a>
+            </div>
+
+           
+        </div>
+        
+        <div class="hero-image">
+            <img src="./assests/images/My_pic11.jpg" alt="Profile Image">
+        </div>
+    </section>
+
+    <section id="about-section">
+        <div class="about-container">
+            <!-- Left Side: Image -->
+            <div class="about-image-container">
+                <img src="./assests/images/aboutMe.jpg" alt="Profile Image">
+                <div class="experience-badges">
+                    <div class="badge">
+                        <span class="number">1+</span>
+                        <span class="label">Years of Experience</span>
+                    </div>
+                    <div class="badge">
+                        <span class="number">5+</span>
+                        <span class="label">Projects Complete</span>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Right Side: Content -->
+            <div class="about-content">
+                <h2>LET ME INTRODUCE MYSELF</h2>
+                <h1>About Me</h1>
+                <p class="intro">
+                    A passionate Full Stack Developer with expertise in both frontend and backend technologies, dedicated to creating efficient and scalable web solutions.
+                </p>
+            </div>
+            </div>
+                <div class="skills-section">
+                    <h2>Technical Skills</h2>
+                    <div class="skills-container">
+                        <!-- Filters on the Left -->
+                        <div class="filter-buttons">
+                            <button class="btn" data-filter="all">All</button>
+                            <button class="btn" data-filter="frontend">Frontend</button>
+                            <button class="btn" data-filter="backend">Backend</button>
+                            <button class="btn" data-filter="tools">Database & Tools</button>
+                        </div>
+                
+                        <!-- Skills Content on the Right -->
+                        <div class="skills-grid">
+                            <!-- Frontend Skills -->
+                            <div class="skill-category frontend" data-category="frontend">
+                                <i class="fab fa-html5"></i> HTML5
+                            </div>
+                            <div class="skill-category frontend" data-category="frontend">
+                                <i class="fab fa-css3-alt"></i> CSS3
+                            </div>
+                            <div class="skill-category frontend" data-category="frontend">
+                                <i class="fab fa-js"></i> JavaScript (ES6+)
+                            </div>
+                            <div class="skill-category frontend" data-category="frontend">
+                                <i class="fab fa-react"></i> React.js
+                            </div>
+                            <div class="skill-category frontend" data-category="frontend">
+                                <i class="fas fa-mobile-alt"></i> Responsive Web Design
+                            </div>
+                
+                            <!-- Backend Skills -->
+                            <div class="skill-category backend" data-category="backend">
+                                <i class="fab fa-node-js"></i> Node.js
+                            </div>
+                            <div class="skill-category backend" data-category="backend">
+                                <i class="fas fa-code"></i> Spring Boot
+                            </div>
+                            <div class="skill-category backend" data-category="backend">
+                                <i class="fas fa-network-wired"></i> RESTful APIs
+                            </div>
+                            <div class="skill-category backend" data-category="backend">
+                                <i class="fas fa-database"></i> Database Management
+                            </div>
+                
+                            <!-- Database & Tools -->
+                            <div class="skill-category tools" data-category="tools">
+                                <i class="fas fa-database"></i> MySQL
+                            </div>
+                            <div class="skill-category tools" data-category="tools">
+                                <i class="fab fa-git-alt"></i> Git
+                            </div>
+                            <div class="skill-category tools" data-category="tools">
+                                <i class="fab fa-github"></i> GitHub
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="interests-section">
+                    <h2>Interests & Achievements</h2>
+                    <ul class="interests-list">
+                        <li><i class="fas fa-laptop-code"></i> Open Source Contributing</li>
+                        <li><i class="fas fa-brain"></i> Problem Solving</li>
+                        <li><i class="fas fa-users"></i> Tech Community Building</li>
+                        <li><i class="fas fa-book-reader"></i> Continuous Learning</li>
+                    </ul>
+                </div>
+
+            
+            </div>
+        </div>
+    </section>
+
+  
+
+
+    <section class="education" id="education">
+        <div class="main-text">
+            <span>My Journey</span>
+            <h2>My Education</h2>
+        </div>
+
+        <div class="education-container">
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Bachelor of Science in Software Engineering</h3>
+                        <h4>University of Kelaniya</h4>
+                        <p class="period">2023 - Present</p>
+                        <div class="achievements">
+                            <p>Current GPA: 3.1</p>
+                            <ul>
+                                <li>Core subjects: Data Structures, Algorithms, Database Systems</li>
+                                <li>Specialized in Full Stack Development</li>
+                                <li>Active member of IEEE Student Branch</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Advanced Level Education</h3>
+                        
+                        <h4>Physical Science Stream - Taxila Central College </h4>
+
+                        
+                        <p class="period">2017 - 2020</p>
+                        <div class="achievements">
+                            <p>Results: 3B's</p>
+                            <ul>
+                                <li>Combined Mathematics: B</li>
+                                <li>Physics: B</li>
+                                <li>Chemistry: B</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            
+            </div>
+        </div>
+    </section>
+
+
+    
+
+    <section class="blogs" id="blogs">
+        <div class="main-text">
+            <span>My Articles</span>
+            <h2>Software Engineering Blogs</h2>
+        </div>
+    
+        <div class="blog-container">
+            <!-- Blog Card 1 -->
+            <article class="blog-card">
+                <div class="blog-image">
+                    <img src="./assests/images/Software_License.jpg" alt="Software Licensing">
+                    <div class="blog-category">Software Law</div>
+                </div>
+                <div class="blog-content">
+                    <div class="blog-info">
+                        <span class="date">Jun 22, 2024</span>
+                    </div>
+                    <h3 class="blog-title">Navigating the Landscape of Software Licensing and Intellectual Property Rights</h3>
+                    <p class="blog-excerpt">
+                        Software licensing is a fundamental aspect of the software industry, governing how software can be used, modified, and...
+                    </p>
+                    <a href="https://medium.com/@navonsanjuni178/navigating-the-landscape-of-software-licensing-and-intellectual-property-rights-6b659f0b6774" class="read-more1">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+    
+            <!-- Blog Card 2 -->
+            <article class="blog-card">
+                <div class="blog-image">
+                    <img src="./assests/images/MySql.png" alt="MySQL Stored Procedures">
+                    <div class="blog-category">Database</div>
+                </div>
+                <div class="blog-content">
+                    <div class="blog-info">
+                        <span class="date">Feb 23, 2024</span>
+                    </div>
+                    <h3 class="blog-title">Stored Procedures in MySQL</h3>
+                    <p class="blog-excerpt">
+                        MySQL procedures are a pivotal aspect of database management, offering a robust mechanism for encapsulating and...
+                    </p>
+                    <a href="https://medium.com/@navonsanjuni178/stored-procedures-in-mysql-bc8325da21f4" class="read-more1">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+    
+            <!-- Blog Card 3 -->
+            <article class="blog-card">
+                <div class="blog-image">
+                    <img src="./assests/images/DataMgt.jpg" alt="Data Management Roles">
+                    <div class="blog-category">Career</div>
+                </div>
+                <div class="blog-content">
+                    <div class="blog-info">
+                        <span class="date">Dec 31, 2023</span>
+                    </div>
+                    <h3 class="blog-title">Job Roles in Data Management</h3>
+                    <p class="blog-excerpt">
+                        1.Database Administrator - Exploring the essential roles and responsibilities in modern data management...
+                    </p>
+                    <a href="https://medium.com/@navonsanjuni178/job-roles-in-data-management-f99c1841cf59" class="read-more1">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+    
+            <!-- Blog Card 4 -->
+            <article class="blog-card">
+                <div class="blog-image">
+                    <img src="./assests/images/CIA.jpg" alt="CIA Triad">
+                    <div class="blog-category">Cyber Security</div>
+                </div>
+                <div class="blog-content">
+                    <div class="blog-info">
+                        <span class="date">Oct 2, 2023</span>
+                    </div>
+                    <h3 class="blog-title">CIA Triad in Cyber Security</h3>
+                    <p class="blog-excerpt">
+                        Understanding the fundamental principles of Confidentiality, Integrity, and Availability in cyber security...
+                    </p>
+                    <a href="https://medium.com/@navonsanjuni178/title-cia-triad-in-cyber-security-41933be6a48f" class="read-more1">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section id="projects-section" class="portfolio">
+        <div class="main-text">
+            <span>What I will do for you</span>
+            <h2>Latest Projects</h2>
+        </div>
+
+        <div class="container">
+           
+
+           <div class="portfolio-gallery">
+            <div class="port-box">
+                <div class="port-image">
+                    <img src="./assests/images/Project.jpg" alt="Project 1">
+                </div>
+                <div class="port-content">
+                    <h3>Restaurant Web Design Project</h3>
+                    <p>A visually appealing and responsive website designed for a restaurant, featuring an interactive menu and online reservation system.</p>
+                    <a href="https://github.com/navonsanjuni/flavorhubresturant.git" class="btn">View Project</a>
+                </div>
+            </div>
+
+        
+
+            <div class="port-box">
+                <div class="port-image">
+                    <img src="./assests/images/Project3.jpg" alt="Project 1">
+                </div>
+                <div class="port-content">
+                    <h3>Fuel Management Project</h3>
+                    <p>A system designed to monitor and manage fuel consumption efficiently for businesses and individuals.</p>
+                    <a href="https://github.com/HasinthakaPiyumal/fuel-master.git" class="btn">View Project</a>
+                </div>
+            </div>
+
+            <div class="port-box">
+                <div class="port-image">
+                    <img src="./assests/images/Project4.jpg" alt="Project 1">
+                </div>
+                <div class="port-content">
+                    <h3>Portfolio Project</h3>
+                    <p>A personal portfolio website showcasing skills, projects, and achievements in a professional layout.</p>
+                    <a href="https://github.com/navonsanjuni/Portfolio_Project-html-css-js.git" class="btn">View Project</a>
+                </div>
+            </div>
+
+            <div class="port-box">
+                <div class="port-image">
+                    <img src="./assests/images/Project2.jpg" alt="Project 1">
+                </div>
+                <div class="port-content">
+                    <h3>E-Commerce Web Design Project</h3>
+                    <p>An e-commerce platform with a user-friendly interface for browsing and purchasing products online.</p>
+                    <a href="https://github.com/navonsanjuni/E-commerce_project.git" class="btn">View Project</a>
+                </div>
+            </div>
+
+            <div class="port-box">
+                <div class="port-image">
+                    <img src="./assests/images/Project1.jpg" alt="Project 1">
+                </div>
+                <div class="port-content">
+                    <h3>Todo Project</h3>
+                    <p>A task management application to help users organize and prioritize their daily activities effectively.</p>
+                    <a href="https://github.com/navonsanjuni/todo-app.git" class="btn">View Project</a>
+                </div>
+            </div>
+
+           
+
+           </div>
+
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="main-text">
+            <span>Get in Touch</span>
+            <h2>Contact Me</h2>
+        </div>
+    
+        <div class="contact-container">
+            <!-- Contact Information -->
+            <div class="contact-info">
+                <div class="info-item1">
+                    <i class="fas fa-envelope"></i>
+                    <div class="info-content">
+                        <h3>Email</h3>
+                        <p>navonsanjuni178@gmail.com</p>
+                    </div>
+                </div>
+                <div class="info-item1">
+                    <i class="fas fa-phone"></i>
+                    <div class="info-content">
+                        <h3>Phone</h3>
+                        <p>+94 71 6675291</p>
+                    </div>
+                </div>
+                <div class="info-item1">
+                    <i class="fas fa-location-dot"></i>
+                    <div class="info-content">
+                        <h3>Location</h3>
+                        <p>Kelaniya, Sri Lanka</p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="input-group">
+                        <input type="text" name="name" required>
+                        <label>Your Name</label>
+                    </div>
+                    
+                    <div class="input-group">
+                        <input type="email" name="email" required>
+                        <label>Your Email</label>
+                    </div>
+    
+                    <div class="input-group">
+                        <input type="text" name="subject" required>
+                        <label>Subject</label>
+                    </div>
+    
+                    <div class="input-group">
+                        <textarea name="message" required></textarea>
+                        <label>Your Message</label>
+                    </div>
+    
+                    <button type="submit" class="btn1">
+                        Send Message
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div id="scroll-to-top" class="scroll-arrow">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+</body>
+<footer class="footer">
+    <div class="footer-content">
+        <p>&copy; 2025 Navon Sanjuni. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://www.facebook.com/profile.php?id=100092224849214" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://medium.com/@navonsanjuni178" class="social-icon"><i class="fab fa-medium"></i></a>
+            <a href="https://www.linkedin.com/in/navon-sanjuni-a796502b0/" class="social-icon"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/navonsanjuni" class="social-icon"><i class="fab fa-github"></i></a>
+        </div>
+    </div>
+</footer>
+</html>
