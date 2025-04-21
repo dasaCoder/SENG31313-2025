@@ -96,7 +96,7 @@
     position: absolute;
     bottom: 15px;
     left: 15px;
-    background: var(--primary-color);
+    background: linear-gradient(135deg, #f4c95d, #e9bb46); /* Softer gradient matching the theme */
     color: var(--dark-bg);
     padding: 0.5rem 1.2rem;
     border-radius: 20px;
@@ -138,41 +138,31 @@
 .read-more1 {
     display: inline-flex;
     align-items: center;
-    gap: 0.5rem; /* Add spacing between text and icon */
+    gap: 0.5rem;
     padding: 0.8rem 1.5rem;
-    background: var(--primary-color);
+    background: linear-gradient(45deg, #e9bb46, #f4c95d);
     color: var(--dark-bg);
     text-decoration: none;
     border-radius: 5px;
-    font-size: 1rem;
-    font-weight: bold;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.read-more1:hover {
-    background: var(--primary-color);
-    color: var(--dark-bg);
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(233, 187, 70, 0.3);
-}
-
-.read-more1 i {
-    color: var(--primary-color);
-    text-decoration: none;
     font-weight: 500;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
     transition: all 0.3s ease;
-}
-
-.read-more1:hover i {
-    gap: 1rem;
-    opacity: 0.9;
+    margin-top: 1rem;
+    box-shadow: 0 4px 15px rgba(233, 187, 70, 0.2);
 }
 
 .read-more1 i {
     font-size: 0.9rem;
+    transition: transform 0.3s ease;
+}
+
+.read-more1:hover {
+    background: linear-gradient(45deg, #f4c95d, #e9bb46);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(233, 187, 70, 0.3);
+}
+
+.read-more1:hover i {
+    transform: translateX(5px);
 }
 
 /* Animation Keyframes */

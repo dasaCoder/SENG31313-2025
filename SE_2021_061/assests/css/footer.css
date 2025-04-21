@@ -1,5 +1,5 @@
 .footer {
-    background-color: #42234b; /* Dark background for the footer */
+    background: linear-gradient(90deg, #2d1b4e, #c99f34);
     color: #fff; /* White text color */
     padding: 20px 0; /* Padding for spacing */
     text-align: center; /* Center align text */
@@ -30,5 +30,5 @@
 }
 
 .social-links a:hover {
-    color: #007bff; /* Change color on hover */
+    color: #0e0e0e; /* Change color on hover */
 }
