@@ -15,8 +15,38 @@
     text-align: center;
   }
 
-.hero .description {
-  margin: 0;
+.hero h1 {
+  font-size: 4rem;
+  font-weight: bolder;
+  color: var(--light);
+}
+
+.social-icons {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 3rem;
+}
+
+.social-icon-link {
+  display: inline-block;
+}
+
+.social-icon {
+  height: 2rem;
+  width: auto;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 1.5px rgba(127, 127, 127, 0.458));
+}
+
+/* About section */
+
+.about-me {
+  text-align: center;
 }
 
 .techstack {
