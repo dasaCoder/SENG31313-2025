@@ -18,3 +18,13 @@ function addAnimation() {
         })
     });
 }
+
+function sendMail() {
+    let params = {
+        email: document.getElementById("email"),
+        name: document.getElementById("name").value,
+        message : document.getElementById("message").value
+    }
+
+    emailjs.send("service_b328igf", "template_5hd2vsc", params).then(alert("Email Sent!"))
+}
