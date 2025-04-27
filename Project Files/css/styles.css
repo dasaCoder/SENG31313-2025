@@ -1,5 +1,14 @@
 *{
     font-family: "Delius", cursive;
+
+.underline {
+  display: inline-flex;
+  margin-bottom: 1.5rem;
+  margin: auto;
+  width: 10rem;
+  background-color: black;
+  height: 4px;
+  border-radius: 10px;
 }
 
 .page-top{
