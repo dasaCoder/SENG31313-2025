@@ -447,7 +447,7 @@ border-radius: 50%;
     transform: translateX(-50%) scale(1);
     top: -1.8rem;
 }
-/* From Uiverse.io by ahmed150up */ 
+
 .card {
     width: 300px;
     background-color: #fff;
@@ -601,7 +601,7 @@ border-radius: 50%;
     border-top: 1px solid var(--card-color);
     opacity: .5;
   }
-  /* From Uiverse.io by akshat-patel28 */ 
+   
 .card2 {
     display: flex;
     flex-direction: column;
@@ -666,6 +666,239 @@ border-radius: 50%;
     justify-content: center;
     align-items: center;
 color:black;
+  }@media (max-width: 992px) {
+    .cover {
+        display: none;
+    }
+    
+    .book {
+        flex-direction: column;
+        height: auto;
+        transform: none !important;
+    }
+    
+    .book-page {
+        position: relative !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: 100vh;
+        transform: none !important;
+        margin-bottom: 2rem;
+        border-radius: 0.6rem !important;
+        box-shadow: var(--box-shadow);
+    }
+    
+    .page-left, .page-right {
+        left: auto !important;
+        right: auto !important;
+        transform-origin: center !important;
+    }
+    
+    .page-front, .page-back {
+        position: relative !important;
+        transform: none !important;
+        backface-visibility: visible;
+    }
+    
+    .profile-page img {
+        max-width: 150px;
+    }
+    
+    .title {
+        font-size: 1.6rem;
+    }
+    
+    .skills-content {
+        flex: 1 1 100%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .wrapper {
+        padding: 1rem;
+    }
+    
+    .profile-page img {
+        max-width: 120px;
+    }
+    
+    .profile-page h1 {
+        font-size: 1.5rem;
+    }
+    
+    .profile-page h3 {
+        font-size: 1.2rem;
+    }
+    
+    .btn {
+        min-width: 8rem;
+        height: 2.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .skills-content .content span {
+        width: 5rem;
+        height: 4rem;
+    }
+    
+    .skills-content .content span i {
+        font-size: 2rem;
+    }
+    
+    .portfolio-box .img-box {
+        height: 12rem;
+    }
+    
+    .card, .card1, .card2 {
+        width: 100%;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .profile-page .social-media a {
+        width: 2rem;
+        height: 2rem;
+        font-size: 1.1rem;
+    }
+    
+    .skills-content .content span {
+        width: 4.5rem;
+        font-size: 0.8rem;
+    }
+    
+    .portfolio-box .btn-box {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .portfolio-box .btn {
+        width: 100%;
+        max-width: 200px;
+        margin-bottom: 0.5rem;
+    }
+    
+    .skill {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .skill-level {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 0.5rem;
+    }
+    
+    .skill-percent-number {
+        margin-left: 0;
+        margin-top: 0.5rem;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .profile-page img {
+        max-width: 100px;
+    }
+    
+    .portfolio-box .img-box {
+        height: 10rem;
+    }
+    
+    .card1 div {
+        width: 100%;
+        height: auto;
+        min-height: 200px;
+    }
+    
+    .nextprev-btn {
+        width: 1.8rem;
+        height: 1.8rem;
+        font-size: 1.8rem;
+    }
+  }  
+  
+  
+  @media (max-width: 992px) {
+    
+    .book {
+        display: block;
+        overflow-y: auto;
+        height: 100vh;
+        transform: none !important;
+    }
+    
+    .book-page {
+        display: block !important;
+        opacity: 1 !important;
+        position: relative;
+        transform: none !important;
+        margin-bottom: 2rem;
+        height: auto;
+        min-height: 100vh;
+    }
+    
+    .page-front, .page-back {
+        position: relative;
+        transform: none !important;
+        height: auto;
+    }
+    
+    .page-back {
+        display: block !important;
+        margin-top: 2rem;
+    }
+    
+    .nextprev-btn {
+        position: fixed;
+        bottom: 20px;
+        background: var(--main-color);
+        color: white;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 100;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    }
+    
+    .nextprev-btn.back {
+        left: 20px;
+    }
+    
+    .nextprev-btn:not(.back) {
+        right: 20px;
+    }
+    
+    
+    .back-profile {
+        position: fixed;
+        bottom: 80px;
+        right: 20px;
+        z-index: 100;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    
+    .nextprev-btn {
+        width: 40px;
+        height: 40px;
+        bottom: 15px;
+    }
+    
+    .back-profile {
+        bottom: 70px;
+        right: 15px;
+    }
+    
+    .book-page {
+        padding: 1rem;
+    }
+    
+    .profile-page img {
+        max-width: 120px;
+    }
   }
 
   .card-des {

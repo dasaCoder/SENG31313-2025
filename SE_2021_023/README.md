@@ -13,7 +13,17 @@ Boxicons for vector icons
 Custom 3D transforms & transitions
 Deployment:
 Hosted on Netlify
-Live Hosted Link (URL of the hosted site):https://aswini2001.netlify.app/
+Live Hosted Link (URL of the hosted site):https://680f63006527a263f6b75cf2--fanciful-pothos-d14ef5.netlify.app/
+
+
 Form submissions handled via Formspree
 
-How to Run the Project Locally:http://127.0.0.1:5500/SE_2021_023/
+
+
+💻 How to Run the Project Locally:
+
+Clone or download the project folder.
+
+Open the folder in any code editor (e.g., VS Code).
+
+Open index.html in your browser directly or use a local server like Live Server (VS Code extension).
