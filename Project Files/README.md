@@ -31,7 +31,7 @@ A responsive personal portfolio website built with HTML, CSS, JavaScript, and Bo
 🌐 Live Demo
 
 
-📬 Contact
+## 📬 Contact
 Feel free to reach out through the Contact Form on the website or directly via the social media links.
    
 
