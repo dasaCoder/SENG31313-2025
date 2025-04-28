@@ -321,21 +321,22 @@
         </div>
       </section>
 
-      <section class="contact-section row m-0 mb-3 p-5">
-        <form class="contact-form">
-          <div class="mb-3">
-            <label for="email" class="form-label">E-mail Address</label>
-            <input type="email" class="form-control" id="email" required />
-          </div>
-
+      <section class="contact-section row p-3" id="contact">
+<h2 class="heading-underline">Contact Me</h2>
+        <div class="underline"></div>
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+<input type="hidden" name="access_key" value="564af5b3-f036-4370-a530-656f1f17ef00">
           <div class="mb-3">
             <label for="name" class="form-label">Name</label>
-            <input type="text" class="form-control" id="name" required />
+            <input type="text" class="form-control" id="name" required name="Name" placeholder="Your Name"/>
           </div>
-
           <div class="mb-3">
-            <label for="message" class="form-label">Message</label>
-            <textarea
+            <label for="email" class="form-label">E-mail Address</label>
+            <input type="email" class="form-control" id="email" required name="email" placeholder="Your Email"/>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label" >Message</label>
+            <textarea name="message"
               class="form-control"
               id="message"
               rows="4"
@@ -344,7 +345,7 @@
             ></textarea>
           </div>
 
-          <button type="submit" class="btn btn-primary mt-3">
+          <button type="submit" class="submit-email btn btn-primary mt-3">
             Send Message
           </button>
         </form>
