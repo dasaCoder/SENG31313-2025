@@ -1,18 +1,28 @@
-# Portfolio
+# Hasinthaka Piyumal - Portfolio
 
-Welcome to my portfolio repository! This project showcases my work, skills, and achievements as part of my academic and professional journey.
+Welcome to my portfolio repository! This project showcases my work, skills, and achievements as part of my academic and professional journey as a software engineering student.
 
 ## Table of Contents
 
-- [About](#about)
+- [Project Description](#project-description)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
+- [Libraries/Tools Used](#libraries/tools-used)
 - [Setup](#setup)
 - [Contact](#contact)
+- [Live Hosted Link](#live-hosted-link)
 
-## About
+## Project Description
 
-This portfolio is designed to highlight my projects, experiences, and technical expertise. It serves as a platform to demonstrate my growth and accomplishments in software engineering.
+This portfolio is a modern, responsive website designed to highlight my technical skills, projects, and experience. It features:
+
+- A clean, dark-themed UI with gradient accents
+- Scroll animations for enhanced user experience
+- Interactive project filtering (Mobile, Web, Research)
+- Responsive design that works on all device sizes
+- Animated timeline for showcasing professional experience
+
+The portfolio is built using only HTML, CSS, and JavaScript (without any frameworks like React, Angular, or Vue), as required by the assignment specifications.
 
 ## Features
 
@@ -26,24 +36,39 @@ This portfolio is designed to highlight my projects, experiences, and technical 
 - HTML, CSS, JavaScript
 - Tools: [Git, VS Code]
 
+## Libraries/Tools Used
+
+- **Tailwind CSS** - For utility-first styling
+- **Font Awesome** - For icons
+- **Intersection Observer API** - For scroll animations
+- **Custom CSS Animations** - For typewriter effect and other animations
+
 ## Setup
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/portfolio.git
+   git clone https://github.com/HasinthakaPiyumal/SENG31313-2025.git
    ```
 2. Navigate to the project directory:
    ```bash
-   cd portfolio
+   cd SENG31313-2025
    ```
-3. Open the project in your preferred code editor or deploy it to a web server.
+3. Navigate to the my portfolio directory:
+   ```bash
+   cd se-2021-036
+   ```
+4. Open the project in your preferred code editor or deploy it to a web server.
 
 ## Contact
 
 Feel free to reach out to me for collaboration or inquiries:
 
-- **Email:** [your-email@example.com](mailto:your-email@example.com)
-- **LinkedIn:** [Your LinkedIn Profile](https://linkedin.com/in/your-profile)
-- **GitHub:** [Your GitHub Profile](https://github.com/your-username)
+- **Email:** [your-email@example.com](mailto:hasinthakapiyumal@gmail.com)
+- **LinkedIn:** [Your LinkedIn Profile](https://www.linkedin.com/in/hasinthaka-piyumal/)
+- **GitHub:** [Your GitHub Profile](https://github.com/HasinthakaPiyumal/)
+
+## Live Hosted Link
+
+[Visit My Portfolio](https://hasinthaka-portfolio-html.vercel.app/)
 
 Thank you for visiting my portfolio!
