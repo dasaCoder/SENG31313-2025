@@ -1,0 +1,144 @@
+:root {
+    --typewriter-width: 8.8em;
+}
+
+.text-gradient {
+    background: linear-gradient(to right, #22d3ee, #8b5cf6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.container {
+    width: 100%;
+    max-width: 1280px !important;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.line-1 {
+    width: var(--typewriter-width);
+    margin: 0 0;
+    border-right: 2px solid rgba(255, 255, 255, .75);
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* Animation */
+.anim-typewriter {
+    animation: typewriter 1s steps(20) 1s 1 normal both,
+        blinkTextCursor 500ms steps(20) infinite normal;
+}
+
+.animate-spin-slow {
+    animation: spin-slow 8s linear infinite;
+}
+
+.animate-gradient {
+    background-size: 200% 200%;
+    animation: gradient-move 6s ease infinite;
+}
+
+/* Only animate on hover */
+.group .group-hover-animate-gradient {
+    background-size: 200% 200%;
+    animation: gradient-move 6s ease infinite;
+    transform: scale(1.1);
+}
+
+@keyframes gradient-move {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: var(--typewriter-width);
+    }
+}
+
+@keyframes blinkTextCursor {
+    from {
+        border-right-color: #8b5cf6
+    }
+
+    to {
+        border-right-color: transparent;
+    }
+}
+
+@keyframes spin-slow {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Scroll Animation Classes */
+.scroll-animate {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.animate-on-scroll {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Different animation directions */
+.scroll-animate-left {
+    transform: translateX(-40px);
+}
+
+.scroll-animate-right {
+    transform: translateX(40px);
+}
+
+.animate-on-scroll.scroll-animate-left,
+.animate-on-scroll.scroll-animate-right {
+    transform: translateX(0);
+}
+
+/* Animation delays for cascading effect */
+.delay-100 {
+    transition-delay: 0.1s;
+}
+
+.delay-200 {
+    transition-delay: 0.2s;
+}
+
+.delay-300 {
+    transition-delay: 0.3s;
+}
+
+.delay-400 {
+    transition-delay: 0.4s;
+}
+
+.delay-500 {
+    transition-delay: 0.5s;
+}
+
+.delay-600 {
+    transition-delay: 0.6s;
+}

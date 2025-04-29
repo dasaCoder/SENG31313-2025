@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for icons (replacing Lucide) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom styles for gradients and other effects -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+<body class="min-h-screen bg-gray-950 text-gray-100">
+    <div class="min-h-screen bg-gray-950 text-gray-100">
+        <!-- Navbar -->
+        <header class="fixed top-0 left-0 right-0 z-50 bg-gray-950/80 backdrop-blur-sm border-b border-gray-800">
+            <div class="container mx-auto px-4 py-4">
+                <nav class="flex justify-between items-center">
+                    <div class="text-xl font-bold text-violet-400">HP Dev</div>
+                    <div class="hidden md:flex space-x-6">
+                        <a href="#home" class="text-gray-300 hover:text-violet-400 transition-colors">Home</a>
+                        <a href="#about" class="text-gray-300 hover:text-violet-400 transition-colors">About</a>
+                        <a href="#skills" class="text-gray-300 hover:text-violet-400 transition-colors">Skills</a>
+                        <a href="#projects" class="text-gray-300 hover:text-violet-400 transition-colors">Projects</a>
+                        <a href="#experience"
+                            class="text-gray-300 hover:text-violet-400 transition-colors">Experience</a>
+                        <!-- <a href="#blog" class="text-gray-300 hover:text-violet-400 transition-colors">Blog</a>
+                        <a href="#contact" class="text-gray-300 hover:text-violet-400 transition-colors">Contact</a> -->
+                    </div>
+                    <button onclick="window.open('./assets/documents/s.m.h.p.senanayaka.pdf', '_blank')"
+                        class="border border-violet-500 text-violet-400 hover:bg-violet-500/10 px-4 py-2 rounded-md">
+                        <i class="fas fa-download mr-2"></i> Download CV
+                    </button>
+                </nav>
+            </div>
+        </header>
+
+        <main class="container mx-auto px-4 pt-24">
+            <!-- Hero Section -->
+            <section id="home" class="py-20 md:py-32 flex flex-col md:flex-row items-center justify-between">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-4 relative line-1 anim-typewriter ">
+                        <span class="text-white">Hi, I'm </span>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-violet-500">
+                            Hasinthaka
+                        </span>
+                    </h1>
+                    <h2 class="text-xl md:text-2xl font-medium text-gray-400 mb-6">
+                        Software Engineering Student | Flutter & Web Developer
+                    </h2>
+                    <p class="text-gray-300 text-lg mb-8 max-w-lg">
+                        I'm a passionate software engineering student with a love for building modern mobile and web
+                        apps. I
+                        specialize in Flutter, React, and NestJS with a keen interest in exploring the latest tech.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="mailto:hasinthakapiyumal@gmail.com" target="_blank"
+                            class="bg-violet-600 hover:bg-violet-700 text-white px-4 py-2 rounded-md flex items-center">
+                            <i class="fas fa-envelope mr-2"></i> Contact Me
+                        </a>
+                        <a href="https://github.com/HasinthakaPiyumal" target="_blank"
+                            class="border border-cyan-500 text-cyan-400 hover:bg-cyan-500/10 px-4 py-2 rounded-md flex items-center">
+                            <i class="fab fa-github mr-2"></i> GitHub
+                        </a>
+                        <a href="https://www.linkedin.com/in/hasinthaka-piyumal/" target="_blank"
+                            class="border border-blue-500 text-blue-400 hover:bg-blue-500/10 px-4 py-2 rounded-md flex items-center">
+                            <i class="fab fa-linkedin mr-2"></i> LinkedIn
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-2/5 flex justify-center">
+                    <div
+                        class="group relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-violet-500/30 shadow-lg shadow-violet-500/20 transition-transform duration-500">
+                        <!-- Black and white image -->
+                        <img src="./assets/images/hasinthaka.jpg" alt="Profile"
+                            class="object-cover w-full h-full filter grayscale" />
+
+                        <!-- Animated gradient overlay -->
+                        <div class="absolute inset-0">
+                            <div
+                                class="w-full h-full bg-gradient-to-r from-purple-500 via-pink-500 to-purple-500 opacity-30 rounded-full transition-transform duration-500 group-hover-animate-gradient">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- About Me Section with scroll animations -->
+            <section id="about" class="py-20 border-t border-gray-800">
+                <h2 class="text-3xl font-bold mb-12 text-center scroll-animate">
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-violet-500">About
+                        Me</span>
+                </h2>
+                <div class="flex flex-col md:flex-row items-center gap-10">
+                    <div class="md:w-1/2 scroll-animate scroll-animate-left">
+                        <p class="text-gray-300 text-lg leading-relaxed mb-6">
+                            I'm a self-driven developer from Sri Lanka who loves learning new technologies and bringing
+                            creative
+                            ideas to life. With hands-on experience in both frontend and backend development, I enjoy
+                            crafting
+                            seamless digital experiences.
+                        </p>
+                        <p class="text-gray-300 text-lg leading-relaxed">
+                            When I'm not coding, you can find me exploring new technologies, contributing to open-source
+                            projects,
+                            or participating in hackathons to challenge myself and collaborate with other passionate
+                            developers.
+                        </p>
+                    </div>
+                    <div class="md:w-1/2 flex justify-center scroll-animate scroll-animate-right delay-200">
+                        <div class="w-full max-w-md bg-gray-900 border border-gray-800 rounded-lg overflow-hidden">
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold text-violet-400 mb-4">Quick Facts</h3>
+                            </div>
+                            <div class="px-6 pb-6 space-y-4">
+                                <div class="flex items-start">
+                                    <div class="w-32 text-gray-400">Location:</div>
+                                    <div>Sri Lanka</div>
+                                </div>
+                                <div class="flex items-start">
+                                    <div class="w-32 text-gray-400">Education:</div>
+                                    <div>Software Engineering Student</div>
+                                </div>
+                                <div class="flex items-start">
+                                    <div class="w-32 text-gray-400">Interests:</div>
+                                    <div>Mobile, Web, AI, DevOps</div>
+                                </div>
+                                <div class="flex items-start">
+                                    <div class="w-32 text-gray-400">Languages:</div>
+                                    <div>English, Sinhala</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills Section with animations -->
+            <section id="skills" class="py-20 border-t border-gray-800">
+                <h2 class="text-3xl font-bold mb-12 text-center scroll-animate">
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-violet-500">
+                        Skills & Expertise
+                    </span>
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div
+                        class="bg-gray-900 border border-gray-800 hover:border-violet-500/50 transition-all duration-300 rounded-lg overflow-hidden scroll-animate scroll-animate-left">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-cyan-400 mb-4">Languages & Frameworks</h3>
+                        </div>
+                        <div class="px-6 pb-6">
+                            <div class="flex flex-wrap gap-2">
+                                <span
+                                    class="bg-gray-800 hover:bg-violet-500/20 text-gray-200 px-2 py-1 rounded-full text-sm">Dart</span>
+                                <span
+                                    class="bg-gray-800 hover:bg-violet-500/20 text-gray-200 px-2 py-1 rounded-full text-sm">Flutter</span>
+                                <span
+                                    class="bg-gray-800 hover:bg-violet-500/20 text-gray-200 px-2 py-1 rounded-full text-sm">JavaScript</span>
+                                <span
+                                    class="bg-gray-800 hover:bg-violet-500/20 text-gray-200 px-2 py-1 rounded-full text-sm">TypeScript</span>
+                                <span
+                                    class="bg-gray-800 hover:bg-violet-500/20 text-gray-200 px-2 py-1 rounded-full text-sm">Node.js</span>
+                                <span
+                                    class="bg-gray-800 hover:bg-violet-500/20 text-gray-200 px-2 py-1 rounded-full text-sm">NestJS</span>
+                                <span
+                                    class="bg-gray-800 hover:bg-violet-500/20 text-gray-200 px-2 py-1 rounded-full text-sm">React</span>
+                                <span
+                                    class="bg-gray-800 hover:bg-violet-500/20 text-gray-200 px-2 py-1 rounded-full text-sm">Spring
+                                    Boot</span>
+                                <span
+                                    class="bg-gray-800 hover:bg-violet-500/20 text-gray-200 px-2 py-1 rounded-full text-sm">HTML</span>
+                                <span
+                                    class="bg-gray-800 hover:bg-violet-500/20 text-gray-200 px-2 py-1 rounded-full text-sm">CSS</span>
+                                <span
+                                    class="bg-gray-800 hover:bg-violet-500/20 text-gray-200 px-2 py-1 rounded-full text-sm">Tailwind</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Add animation to any other skill cards you have -->
+                </div>
+            </section>
+
+            <!-- Projects Section with animations -->
+            <section id="projects" class="py-20 border-t border-gray-800">
+                <h2 class="text-3xl font-bold mb-12 text-center scroll-animate">
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-violet-500">
+                        Featured Projects
+                    </span>
+                </h2>
+
+                <!-- Tabs Implementation -->
+                <div class="w-full mb-8 scroll-animate">
+                    <div class="grid w-full grid-cols-4 max-w-md mx-auto bg-gray-900 rounded-lg overflow-hidden">
+                        <button class="tab-button active py-3 px-4 bg-violet-500 text-white" data-tab="all">All</button>
+                        <button class="tab-button py-3 px-4 bg-gray-800 text-gray-300" data-tab="mobile">Mobile</button>
+                        <button class="tab-button py-3 px-4 bg-gray-800 text-gray-300" data-tab="web">Web</button>
+                        <button class="tab-button py-3 px-4 bg-gray-800 text-gray-300"
+                            data-tab="research">Research</button>
+                    </div>
+
+                    <div class="tab-content mt-8 active" id="all-tab">
+                        <!-- All projects content -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            <!-- NORTHSTAR - Add scroll-animate to each project card -->
+                            <div
+                                class="bg-gray-900 border border-gray-800 hover:border-violet-500/50 transition-all duration-300 overflow-hidden rounded-lg scroll-animate delay-100">
+                                <div class="relative h-48 w-full">
+                                    <img src="./assets/images/projects/northstar.png" alt="Northstar Gym Application"
+                                        class="object-cover w-full h-full">
+                                </div>
+                                <div class="p-6">
+                                    <div class="flex flex-wrap gap-2 mb-2">
+                                        <span
+                                            class="bg-violet-500/20 text-violet-300 text-xs px-2 py-1 rounded-full">Flutter</span>
+                                        <span
+                                            class="bg-violet-500/20 text-violet-300 text-xs px-2 py-1 rounded-full">Firebase</span>
+                                        <span
+                                            class="bg-violet-500/20 text-violet-300 text-xs px-2 py-1 rounded-full">Mobile</span>
+                                    </div>
+                                    <h3 class="text-xl font-bold">Northstar Gym Application</h3>
+                                </div>
+                                <div class="px-6 pb-4">
+                                    <p class="text-gray-300 mb-4">A comprehensive gym management application built with
+                                        Flutter for both members and trainers.</p>
+                                </div>
+                                <div class="px-6 pb-6 flex justify-between">
+                                    <a
+                                        class="border border-cyan-500 text-cyan-400 hover:bg-cyan-500/10 px-3 py-1 rounded-md text-sm flex items-center opacity-70 cursor-not-allowed">
+                                        <i class="fab fa-github mr-2"></i> Code
+                                    </a>
+                                    <a href="https://play.google.com/store/apps/details?id=mv.northstar.fitness&pcampaignid=web_share"
+                                        class="border border-violet-500 text-violet-400 hover:bg-violet-500/10 px-3 py-1 rounded-md text-sm flex items-center">
+                                        <i class="fas fa-external-link-alt mr-2"></i> Demo
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Fuel Master -->
+                            <div
+                                class="bg-gray-900 border border-gray-800 hover:border-violet-500/50 transition-all duration-300 overflow-hidden rounded-lg scroll-animate delay-200">
+                                <div class="relative h-48 w-full">
+                                    <img src="./assets/images/projects/fuelmaster.png" alt="Fuel Master Application"
+                                        class="object-cover w-full h-full">
+                                </div>
+                                <div class="p-6">
+                                    <div class="flex flex-wrap gap-2 mb-2">
+                                        <span
+                                            class="bg-violet-500/20 text-violet-300 text-xs px-2 py-1 rounded-full">React</span>
+                                        <span
+                                            class="bg-violet-500/20 text-violet-300 text-xs px-2 py-1 rounded-full">Spring
+                                            Boot</span>
+                                        <span
+                                            class="bg-violet-500/20 text-violet-300 text-xs px-2 py-1 rounded-full">Web
+                                            App</span>
+                                    </div>
+                                    <h3 class="text-xl font-bold">Fuel Master Application</h3>
+                                </div>
+                                <div class="px-6 pb-4">
+                                    <p class="text-gray-300 mb-4">A robust fuel quota management system built with React
+                                        and Spring Boot for efficient fuel allocation and monitoring.</p>
+                                </div>
+                                <div class="px-6 pb-6 flex justify-between">
+                                    <a href="https://github.com/HasinthakaPiyumal/fuel-master"
+                                        class="border border-cyan-500 text-cyan-400 hover:bg-cyan-500/10 px-3 py-1 rounded-md text-sm flex items-center">
+                                        <i class="fab fa-github mr-2"></i> Code
+                                    </a>
+                                    <a href="https://fuel-master.vercel.app/"
+                                        class="border border-violet-500 text-violet-400 hover:bg-violet-500/10 px-3 py-1 rounded-md text-sm flex items-center">
+                                        <i class="fas fa-external-link-alt mr-2"></i> Demo
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- 3D Avatar with Lip Sync -->
+                            <div
+                                class="bg-gray-900 border border-gray-800 hover:border-violet-500/50 transition-all duration-300 overflow-hidden rounded-lg scroll-animate delay-300">
+                                <div class="relative h-48 w-full">
+                                    <img src="./assets/images/projects/3davatar-lipsync.png"
+                                        alt="3D Avatar with Lip Sync" class="object-cover w-full h-full">
+                                </div>
+                                <div class="p-6">
+                                    <div class="flex flex-wrap gap-2 mb-2">
+                                        <span
+                                            class="bg-violet-500/20 text-violet-300 text-xs px-2 py-1 rounded-full">React</span>
+                                        <span
+                                            class="bg-violet-500/20 text-violet-300 text-xs px-2 py-1 rounded-full">Three.js</span>
+                                        <span
+                                            class="bg-violet-500/20 text-violet-300 text-xs px-2 py-1 rounded-full">Research</span>
+                                    </div>
+                                    <h3 class="text-xl font-bold">3D Avatar with Lip Sync</h3>
+                                </div>
+                                <div class="px-6 pb-4">
+                                    <p class="text-gray-300 mb-4">Research project exploring real-time 3D avatar
+                                        animations with lip-sync capabilities using React Three Fiber and WebGL.</p>
+                                </div>
+                                <div class="px-6 pb-6 flex justify-between">
+                                    <a
+                                        class="border border-cyan-500 text-cyan-400 hover:bg-cyan-500/10 px-3 py-1 rounded-md text-sm flex items-center opacity-70 cursor-not-allowed">
+                                        <i class="fab fa-github mr-2"></i> Code
+                                    </a>
+                                    <a
+                                        class="border border-violet-500 text-violet-400 hover:bg-violet-500/10 px-3 py-1 rounded-md text-sm flex items-center opacity-70 cursor-not-allowed">
+                                        <i class="fas fa-external-link-alt mr-2"></i> Demo
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-content mt-8 hidden" id="mobile-tab">
+                        <!-- Mobile projects content -->
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            <div
+                                class="bg-gray-900 border border-gray-800 hover:border-violet-500/50 transition-all duration-300 overflow-hidden rounded-lg">
+                                <div class="relative h-48 w-full">
+                                    <img src="./assets/images/projects/northstar.png" alt="Northstar Gym Application"
+                                        class="object-cover w-full h-full">
+                                </div>
+                                <div class="p-6">
+                                    <div class="flex flex-wrap gap-2 mb-2">
+                                        <span
+                                            class="bg-violet-500/20 text-violet-300 text-xs px-2 py-1 rounded-full">Flutter</span>
+                                        <span
+                                            class="bg-violet-500/20 text-violet-300 text-xs px-2 py-1 rounded-full">Firebase</span>
+                                        <span
+                                            class="bg-violet-500/20 text-violet-300 text-xs px-2 py-1 rounded-full">Mobile</span>
+                                    </div>
+                                    <h3 class="text-xl font-bold">Northstar Gym Application</h3>
+                                </div>
+                                <div class="px-6 pb-4">
+                                    <p class="text-gray-300 mb-4">A comprehensive gym management application built with
+                                        Flutter for both members and trainers.</p>
+                                </div>
+                                <div class="px-6 pb-6 flex justify-between">
+                                    <a
+                                        class="border border-cyan-500 text-cyan-400 hover:bg-cyan-500/10 px-3 py-1 rounded-md text-sm flex items-center opacity-70 cursor-not-allowed">
+                                        <i class="fab fa-github mr-2"></i> Code
+                                    </a>
+                                    <a href="https://play.google.com/store/apps/details?id=mv.northstar.fitness&pcampaignid=web_share"
+                                        class="border border-violet-500 text-violet-400 hover:bg-violet-500/10 px-3 py-1 rounded-md text-sm flex items-center">
+                                        <i class="fas fa-external-link-alt mr-2"></i> Demo
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="tab-content mt-8 hidden" id="web-tab">
+                        <!-- React projects content -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            <!-- Fuel Master -->
+                            <div
+                                class="bg-gray-900 border border-gray-800 hover:border-violet-500/50 transition-all duration-300 overflow-hidden rounded-lg">
+                                <div class="relative h-48 w-full">
+                                    <img src="./assets/images/projects/fuelmaster.png" alt="Fuel Master Application"
+                                        class="object-cover w-full h-full">
+                                </div>
+                                <div class="p-6">
+                                    <div class="flex flex-wrap gap-2 mb-2">
+                                        <span
+                                            class="bg-violet-500/20 text-violet-300 text-xs px-2 py-1 rounded-full">React</span>
+                                        <span
+                                            class="bg-violet-500/20 text-violet-300 text-xs px-2 py-1 rounded-full">Spring
+                                            Boot</span>
+                                        <span
+                                            class="bg-violet-500/20 text-violet-300 text-xs px-2 py-1 rounded-full">Web
+                                            App</span>
+                                    </div>
+                                    <h3 class="text-xl font-bold">Fuel Master Application</h3>
+                                </div>
+                                <div class="px-6 pb-4">
+                                    <p class="text-gray-300 mb-4">A robust fuel quota management system built with React
+                                        and Spring Boot for efficient fuel allocation and monitoring.</p>
+                                </div>
+                                <div class="px-6 pb-6 flex justify-between">
+                                    <a href="https://github.com/HasinthakaPiyumal/fuel-master"
+                                        class="border border-cyan-500 text-cyan-400 hover:bg-cyan-500/10 px-3 py-1 rounded-md text-sm flex items-center">
+                                        <i class="fab fa-github mr-2"></i> Code
+                                    </a>
+                                    <a href="https://fuel-master.vercel.app/"
+                                        class="border border-violet-500 text-violet-400 hover:bg-violet-500/10 px-3 py-1 rounded-md text-sm flex items-center">
+                                        <i class="fas fa-external-link-alt mr-2"></i> Demo
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-content mt-8 hidden" id="research-tab">
+                        <!-- Backend projects content -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            <div
+                                class="bg-gray-900 border border-gray-800 hover:border-violet-500/50 transition-all duration-300 overflow-hidden rounded-lg">
+                                <div class="relative h-48 w-full">
+                                    <img src="./assets/images/projects/3davatar-lipsync.png"
+                                        alt="3D Avatar with Lip Sync" class="object-cover w-full h-full">
+                                </div>
+                                <div class="p-6">
+                                    <div class="flex flex-wrap gap-2 mb-2">
+                                        <span
+                                            class="bg-violet-500/20 text-violet-300 text-xs px-2 py-1 rounded-full">React</span>
+                                        <span
+                                            class="bg-violet-500/20 text-violet-300 text-xs px-2 py-1 rounded-full">Three.js</span>
+                                        <span
+                                            class="bg-violet-500/20 text-violet-300 text-xs px-2 py-1 rounded-full">Research</span>
+                                    </div>
+                                    <h3 class="text-xl font-bold">3D Avatar with Lip Sync</h3>
+                                </div>
+                                <div class="px-6 pb-4">
+                                    <p class="text-gray-300 mb-4">Research project exploring real-time 3D avatar
+                                        animations with lip-sync capabilities using React Three Fiber and WebGL.</p>
+                                </div>
+                                <div class="px-6 pb-6 flex justify-between">
+                                    <a
+                                        class="border border-cyan-500 text-cyan-400 hover:bg-cyan-500/10 px-3 py-1 rounded-md text-sm flex items-center opacity-70 cursor-not-allowed">
+                                        <i class="fab fa-github mr-2"></i> Code
+                                    </a>
+                                    <a
+                                        class="border border-violet-500 text-violet-400 hover:bg-violet-500/10 px-3 py-1 rounded-md text-sm flex items-center opacity-70 cursor-not-allowed">
+                                        <i class="fas fa-external-link-alt mr-2"></i> Demo
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Experience Section with animations -->
+            <section id="experience" class="py-20 border-t border-gray-800">
+                <h2 class="text-3xl font-bold mb-12 text-center scroll-animate">
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-violet-500">
+                        Experience
+                    </span>
+                </h2>
+
+                <div
+                    class="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-violet-500 before:to-transparent">
+                    <!-- First experience item -->
+                    <div
+                        class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                        <div
+                            class="flex items-center justify-center w-10 h-10 rounded-full border border-violet-500 bg-gray-900 group-odd:md:translate-x-0.5 group-even:md:-translate-x-0.5 shrink-0 z-10">
+                            <span class="w-3 h-3 bg-violet-500 rounded-full"></span>
+                        </div>
+
+                        <div
+                            class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-gray-900 p-6 rounded-lg border border-gray-800 shadow-md hover:border-violet-500/50 transition-all duration-300 scroll-animate scroll-animate-left">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="font-semibold text-violet-400">Tech Lead</span>
+                                <Badge class="bg-gray-800">2024 - Present</Badge>
+                            </div>
+                            <h3 class="text-lg font-bold mb-2">Helascript</h3>
+                            <p class="text-gray-300 mb-3">Led a team of developers in creating innovative solutions for
+                                various Projects.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span
+                                    class="border border-cyan-500/50 text-cyan-400 px-2 py-1 rounded-2xl text-sm">React</span>
+                                <span
+                                    class="border border-cyan-500/50 text-cyan-400 px-2 py-1 rounded-2xl text-sm">Flutter</span>
+                                <span
+                                    class="border border-cyan-500/50 text-cyan-400 px-2 py-1 rounded-2xl text-sm">Node.js</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Second experience item -->
+                    <div
+                        class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                        <div
+                            class="flex items-center justify-center w-10 h-10 rounded-full border border-violet-500 bg-gray-900 group-odd:md:translate-x-0.5 group-even:md:-translate-x-0.5 shrink-0 z-10">
+                            <span class="w-3 h-3 bg-violet-500 rounded-full"></span>
+                        </div>
+
+                        <div
+                            class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-gray-900 p-6 rounded-lg border border-gray-800 shadow-md hover:border-violet-500/50 transition-all duration-300 scroll-animate scroll-animate-right">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="font-semibold text-violet-400">Freelance Developer</span>
+                                <span class="bg-gray-800 text-xs px-2 py-1 rounded-full">2022 - Present</span>
+                            </div>
+                            <h3 class="text-lg font-bold mb-2">Self-Employed</h3>
+                            <p class="text-gray-300 mb-3">Developed custom web and mobile applications for various
+                                clients, specializing in responsive designs and scalable architecture.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span
+                                    class="border border-cyan-500/50 text-cyan-400 px-2 py-1 rounded-2xl text-sm">React</span>
+                                <span
+                                    class="border border-cyan-500/50 text-cyan-400 px-2 py-1 rounded-2xl text-sm">Flutter</span>
+                                <span
+                                    class="border border-cyan-500/50 text-cyan-400 px-2 py-1 rounded-2xl text-sm">Node.js</span>
+                                <span
+                                    class="border border-cyan-500/50 text-cyan-400 px-2 py-1 rounded-2xl text-sm">Firebase</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-gray-900 border-t border-gray-800 py-8 mt-20">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="mb-4 md:mb-0">
+                        <p class="text-gray-400">© 2025 Hasinthaka Piyumal. All rights reserved.</p>
+                    </div>
+                    <div class="flex space-x-4 delay-200">
+                        <a href="https://github.com/HasinthakaPiyumal" target="_blank"
+                            class="text-gray-400 hover:text-violet-400 transition-colors">
+                            <i class="fab fa-github h-5 w-5"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/hasinthaka-piyumal/" target="_blank"
+                            class="text-gray-400 hover:text-violet-400 transition-colors">
+                            <i class="fab fa-linkedin h-5 w-5"></i>
+                        </a>
+                        <a href="mailto:hasinthakapiyumal@gmail.com" target="_blank"
+                            class="text-gray-400 hover:text-violet-400 transition-colors">
+                            <i class="fas fa-envelope h-5 w-5"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Custom JavaScript -->
+    <script src="./assets/js/main.js"></script>
+
+</body>
+
+</html>
