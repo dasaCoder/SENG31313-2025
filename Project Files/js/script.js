@@ -18,3 +18,12 @@ function addAnimation() {
         })
     });
 }
+
+
+const hamMenu = document.querySelector('.hamburger-menu')
+const offScreenNav = document.querySelector('#navbar')
+
+hamMenu.addEventListener('click', () => {
+    hamMenu.classList.toggle('active');
+    offScreenNav.classList.toggle('active')
+})
