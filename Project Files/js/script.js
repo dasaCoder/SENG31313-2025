@@ -19,11 +19,43 @@ function addAnimation() {
     });
 }
 
+document.addEventListener("DOMContentLoaded", () => {
+    const hamMenu = document.querySelector('.hamburger-menu')
+    const offScreenNav = document.querySelector('#navbar')
+    const navLinks = document.querySelectorAll("#navbar .nav-link");
 
-const hamMenu = document.querySelector('.hamburger-menu')
-const offScreenNav = document.querySelector('#navbar')
+    hamMenu.addEventListener("click", () => {
+        hamMenu.classList.toggle("active");
+        offScreenNav.classList.toggle("active");
+    });
 
-hamMenu.addEventListener('click', () => {
-    hamMenu.classList.toggle('active');
-    offScreenNav.classList.toggle('active')
-})
+    // When any nav link is clicked, close menu and reset hamburger
+    navLinks.forEach(link => {
+        link.addEventListener("click", () => {
+            offScreenNav.classList.remove("active");
+            hamMenu.classList.remove("active");
+        });
+    });
+
+    window.addEventListener("scroll", () => {
+        if (offScreenNav.classList.contains("active")) {
+          hamMenu.classList.remove("active");
+          offScreenNav.classList.remove("active");
+        }
+      });
+});
+
+
+const backToTop = document.getElementById("back-to-top");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 200) {
+    backToTop.style.display = "flex";
+  } else {
+    backToTop.style.display = "none";
+  }
+});
+
+backToTop.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
