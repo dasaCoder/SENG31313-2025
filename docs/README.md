@@ -4,7 +4,7 @@
 This is my personal portfolio website created for the **SENG31313-2025** course. It showcases my skills, projects, and allows visitors to contact me.
 
 ## 🚀 Live Hosted Link
-🔗 [Click here to view the site]()
+🔗 [Click here to view the site](https://gobi0516.github.io/SENG31313-2025/)
 
 ## 🛠️ Libraries Used
 
