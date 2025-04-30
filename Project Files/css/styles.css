@@ -645,6 +645,9 @@ section h2 {
 
 @media screen and (max-width: 500px) {
 
+  .hero{
+    animation:none !important;}
+
   .svg-icon-techstack {
     width: 60px;
     height: 60px;
