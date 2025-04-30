@@ -319,7 +319,7 @@ section h2{
   .project-content {
     width: 100%;
     max-width: 90%;
-    margin: 2rem 2.5rem;
+    margin: 2rem auto;
   }
 
   .card-text {
@@ -327,7 +327,28 @@ section h2{
   }
 }
 
+@media screen and (max-width: 400px) {
+  .projects-display {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
 
+  .project-content {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .card-text {
+    height: auto;
+  }
+
+  .tech-badges {
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 
 /* Volunteer */
 
@@ -394,7 +415,7 @@ section h2{
   .volunteer-activity {
     width: calc(50% - 1rem);
     height: 250px; 
-    margin-bottom: 2rem;
+    margin: 2rem auto;
   }
 }
 
@@ -421,6 +442,24 @@ section h2{
   }
 }
 
+@media screen and (max-width: 400px) {
+  .volunteer-works {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .volunteer-activity {
+    width: 90%;
+    height: auto;
+  }
+
+  .volunteer-overlay {
+    padding: 1rem;
+  }
+}
+
+
 /* Contact Section */
 
 .contact-section {
@@ -434,5 +473,10 @@ section h2{
   border-radius: 30px;
 }
 
+@media screen and (max-width: 400px) {
+  .contact-section {
+    margin: auto;
+  }
+}
 
 
