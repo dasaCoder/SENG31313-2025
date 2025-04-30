@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #1f242d;
+  color: white;
+}
+
+/* Navbar Styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px 9%;
+  background: #1f1f1f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  animation: fade-in 1s ease-in-out forwards;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.navbar .logo {
+  font-size: 28px;
+  font-weight: 700;
+  color: #7cf03d;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 35px;
+}
+
+.navbar ul li {
+  list-style: none;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  transition: 0.3s;
+}
+
+.navbar ul li a:hover,
+.navbar ul li.active a {
+  color: #7cf03d;
+}
+
+/* About Section */
+.about {
+  padding: 140px 9% 60px; /* Added top padding because of fixed navbar */
+}
+
+.about h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #7cf03d;
+}
+
+.about p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  line-height: 1.8;
+}
+
+.skills, .experience {
+  margin-bottom: 40px;
+}
+
+.skills h2, .experience h2 {
+  color: #7cf03d;
+  margin-bottom: 10px;
+}
+
+.skills ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.skills ul li {
+  margin-bottom: 8px;
+  padding: 10px;
+  background: #323946;
+  border-radius: 5px;
+}

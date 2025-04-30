@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <nav class="navbar">
+    <a href="#" class="logo">Portfolio.</a>
+    <ul>
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="services.html">Service</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="bars-animation">
+    <div class="bar" style="--i:6;"></div>
+    <div class="bar" style="--i:5;"></div>
+    <div class="bar" style="--i:4;"></div>
+    <div class="bar" style="--i:3;"></div>
+    <div class="bar" style="--i:2;"></div>
+    <div class="bar" style="--i:1;"></div>
+  </div>
+
+  <section class="home">
+    <div class="home-info">
+      <h1>Kunesan Nirojan</h1>
+      <h2>I'am a 
+        <span style="--i:4;" data-text="Web Developer">Web Developer</span>
+        <span style="--i:3;" data-text="Youtuber">Youtuber</span>
+        <span style="--i:2;" data-text="Blogger">Blogger</span>
+        <span style="--i:1;" data-text="Designer">Designer</span>
+      </h2>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit, autem impedit adipisci praesentium tempora inventore!</p>
+      <div class="btn-sci">
+        <a href="#" class="btn">Download CV</a>
+        <div class="sci">
+          <a href="#"><i class='bx bxl-github'></i></a>
+          <a href="#"><i class='bx bxl-linkedin'></i></a>
+          <a href="#"><i class='bx bxl-facebook'></i></a>
+          <a href="#"><i class='bx bxl-instagram'></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="home-img">
+      <div class="img-box">
+        <div class="img-item">
+          <img src="WhatsApp Image 2025-04-28 at 20.04.25_442d6e93-fotor-bg-remover-20250429232031.png" alt=""/>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="about">
+    <div class="about-content">
+      <h1>About Me</h1>
+      <p>Hello! I'm a passionate Web Developer with experience in frontend technologies like HTML, CSS, JavaScript and React. I love creating smooth user experiences and responsive designs.</p>
+      
+      <div class="skills">
+        <h2>Skills</h2>
+        <ul>
+          <li>HTML / CSS / JavaScript</li>
+          <li>React / Next.js</li>
+          <li>Responsive Design</li>
+          <li>Git & GitHub</li>
+          <li>UI/UX Basics</li>
+        </ul>
+      </div>
+
+      <div class="experience">
+        <h2>Experience</h2>
+        <p>I’ve worked on several freelance projects and personal websites, constantly improving my craft and learning new technologies.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="services">
+    <h1>My Services</h1>
+    <div class="service-cards">
+      <div class="card">
+        <h3>Web Design</h3>
+        <p>Creative and modern UI/UX designs tailored for your brand.</p>
+      </div>
+      <div class="card">
+        <h3>Frontend Development</h3>
+        <p>Responsive and fast websites using HTML, CSS, JS, and React.</p>
+      </div>
+      <div class="card">
+        <h3>Responsive Design</h3>
+        <p>Fully mobile-friendly layouts that look great on any device.</p>
+      </div>
+    </div>
+  </section>
+
+  </section>
+  <section class="portfolio">
+    <h1>My Projects</h1>
+    <div class="projects">
+      <div class="card">
+        <h3>Project 1</h3>
+        <p>A cool project using HTML, CSS, and JS.</p>
+      </div>
+      <div class="card">
+        <h3>Project 2</h3>
+        <p>React Native mobile app with modern UI.</p>
+      </div>
+      <div class="card">
+        <h3>Project 3</h3>
+        <p>Responsive portfolio website with animations.</p>
+      </div>
+    </div>
+  </section>
+  <section class="contact">
+    <h1>Contact Me</h1>
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+</body>
+</html>
