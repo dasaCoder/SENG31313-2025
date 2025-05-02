@@ -69,6 +69,6 @@ Feel free to reach out to me for collaboration or inquiries:
 
 ## Live Hosted Link
 
-[Visit My Portfolio](https://hasinthaka-portfolio-html.vercel.app/)
+[Visit My Portfolio](https://hasinthaka-portfolio-html.netlify.app/)
 
 Thank you for visiting my portfolio!
