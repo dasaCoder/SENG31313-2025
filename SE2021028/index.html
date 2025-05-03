@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ravindu Laksara</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- Header Section -->
+
+    <header class="header">
+      <a href="#home" class="logo"> Ravindu<span>Laksara</span> </a>
+      <nav class="navbar" id="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skils</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+      </nav>
+      <button class="gradiant-btn" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });">Contact Me</button>
+
+      <!-- Menu icon -->
+      <div class="menu-icon" id="menu-icon">
+        <i class="bx bx-menu"></i>
+      </div>
+    </header>
+
+    <!-- Home Section -->
+
+    <section class="home" id="home">
+      <div class="home-content" data-aos="fade-right">
+        <h1>Hi, It's <span>Laksara</span></h1>
+        <h3>I'm a <span class="name"></span></h3>
+
+        <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            var typed = new Typed(".name", {
+              strings: [
+                "Web Developer",
+                "Mobile Developer",
+                "Backend Developer",
+              ],
+              typeSpeed: 100,
+              backSpeed: 50,
+              backDelay: 1000,
+              loop: true,
+            });
+          });
+        </script>
+        <p>
+          I'm Ravindu Laksara, a Software Engineering undergraduate at the
+          University of Kelaniya. I specialize in Mobile App Development,
+          Backend Development, and Web Development.
+        </p>
+
+        <div class="social-icons">
+          <a href="https://github.com/RavinduLaksara" target="_blank"
+            ><i class="bx bxl-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/ravindu-laksara-6bb355307"
+            target="_blank"
+            ><i class="bx bxl-linkedin-square"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/laksararavindu/?utm_source=qr"
+            target="_blank"
+            ><i class="bx bxl-instagram-alt"></i
+          ></a>
+        </div>
+        <div class="btn-group">
+          <a href="https://drive.google.com/file/d/1KTXzWwO-oh_EaHkLNiWB9qFwyfQOK_YV/view?usp=sharing" class="btn" target="_blank">Download CV</a>
+            <a href="#contact" class="btn" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });">Contact Me</a>
+        </div>
+      </div>
+      <div class="home-img" data-aos="fade-left">
+        <img src="./assets/ravindu.png" alt="Hero-img" />
+      </div>
+    </section>
+
+    <!-- About Section -->
+
+    <section class="about" id="about">
+      <div class="about-img" data-aos="fade-right">
+        <img src="./assets/ravindu.png" alt="About-img" />
+      </div>
+
+      <div class="about-content" data-aos="fade-left">
+        <h2>About <span>Me</span></h2>
+        <p>
+          Hi, I’m Ravindu Laksara - a Software Engineering undergraduate at the
+          University of Kelaniya. I specialize in mobile app development,
+          backend engineering, and web development. <br />I’m passionate about
+          building robust digital solutions that deliver seamless user
+          experiences, from intuitive mobile apps to scalable server-side
+          architectures and dynamic websites. Explore my portfolio to see how I
+          turn ideas into impactful, real-world applications.
+        </p>
+        <a href="https://www.linkedin.com/in/ravindu-laksara-6bb355307" class="btn" target="_blank">Read More</a>
+      </div>
+    </section>
+
+    <!-- Skils Section -->
+
+    <section class="skills-section" id="skills">
+      <h1 class="main-heading" data-aos="fade-down">My <span>Skills</span></h1>
+      <div class="skills-container">
+        <!-- Technical Skills -->
+        <div class="skills-column" data-aos="fade-right">
+          <h2 class="sub-heading">Technical Skills</h2>
+          <div class="technical-bars">
+            <div class="bar">
+              <i class="bx bxl-html5"></i>
+              <span class="label html">HTML</span>
+              <div class="progress-line">
+                <span class="line" style="width: 90%"></span>
+                <span class="percent">90%</span>
+              </div>
+            </div>
+            <div class="bar">
+              <i class="bx bxl-css3"></i>
+              <span class="label css">CSS</span>
+              <div class="progress-line">
+                <span class="line" style="width: 60%"></span>
+                <span class="percent">60%</span>
+              </div>
+            </div>
+            <div class="bar">
+              <i class="bx bxl-javascript"></i>
+              <span class="label js">Javascript</span>
+              <div class="progress-line">
+                <span class="line" style="width: 85%"></span>
+                <span class="percent">85%</span>
+              </div>
+            </div>
+            <div class="bar">
+              <i class="bx bxl-java"></i>
+              <span class="label js">Java</span>
+              <div class="progress-line">
+                <span class="line" style="width: 80%"></span>
+                <span class="percent">80%</span>
+              </div>
+            </div>
+            <div class="bar">
+              <i class="bx bxl-python"></i>
+              <span class="label python">Python</span>
+              <div class="progress-line">
+                <span class="line" style="width: 50%"></span>
+                <span class="percent">50%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Professional Skills -->
+        <div class="skills-column" data-aos="fade-left">
+          <h2 class="sub-heading">Professional Skills</h2>
+          <div class="radial-bars">
+            <div class="radial-bar">
+              <div class="radial-graph">
+                <svg viewBox="0 0 100 100">
+                  <circle class="track" cx="50" cy="50" r="45" />
+                  <circle
+                    class="progress"
+                    cx="50"
+                    cy="50"
+                    r="45"
+                    style="stroke-dashoffset: 28.3"
+                  />
+                </svg>
+                <div class="radial-percent">90%</div>
+              </div>
+              <div class="radial-label">Creativity</div>
+            </div>
+            <div class="radial-bar">
+              <div class="radial-graph">
+                <svg viewBox="0 0 100 100">
+                  <circle class="track" cx="50" cy="50" r="45" />
+                  <circle
+                    class="progress"
+                    cx="50"
+                    cy="50"
+                    r="45"
+                    style="stroke-dashoffset: 98.2"
+                  />
+                </svg>
+                <div class="radial-percent">65%</div>
+              </div>
+              <div class="radial-label">Communication</div>
+            </div>
+            <div class="radial-bar">
+              <div class="radial-graph">
+                <svg viewBox="0 0 100 100">
+                  <circle class="track" cx="50" cy="50" r="45" />
+                  <circle
+                    class="progress"
+                    cx="50"
+                    cy="50"
+                    r="45"
+                    style="stroke-dashoffset: 70.7"
+                  />
+                </svg>
+                <div class="radial-percent">75%</div>
+              </div>
+              <div class="radial-label">Problem Solving</div>
+            </div>
+            <div class="radial-bar">
+              <div class="radial-graph">
+                <svg viewBox="0 0 100 100">
+                  <circle class="track" cx="50" cy="50" r="45" />
+                  <circle
+                    class="progress"
+                    cx="50"
+                    cy="50"
+                    r="45"
+                    style="stroke-dashoffset: 42.4"
+                  />
+                </svg>
+                <div class="radial-percent">85%</div>
+              </div>
+              <div class="radial-label">Teamwork</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Services Section -->
+
+    <section class="services" id="services">
+      <h2 class="heading" data-aos="fade-down">Services</h2>
+      <div class="services-container">
+        <div class="service-box" data-aos="zoom-in" data-aos-delay="0">
+          <div class="service-info">
+            <i class="bx bxl-android"></i>
+            <h4>Mobile App Development</h4>
+            <p>
+              I specialize in Android native and hybrid app development using
+              Kotlin, Java, React Native, and Flutter. I create
+              high-performance, user-friendly mobile applications tailored to
+              meet diverse client needs.
+            </p>
+          </div>
+        </div>
+
+        <div class="service-box" data-aos="zoom-in" data-aos-delay="200">
+          <div class="service-info">
+            <i class="bx bx-code"></i>
+            <h4>Frontend Development</h4>
+            <p>
+              I specialize in creating responsive and dynamic frontends using
+              React.js and Next.js. I focus on delivering seamless user
+              experiences with modern, scalable, and efficient web applications
+              tailored to meet client requirements.
+            </p>
+          </div>
+        </div>
+
+        <div class="service-box" data-aos="zoom-in" data-aos-delay="400">
+          <div class="service-info">
+            <i class="bx bx-code-curly"></i>
+            <h4>Backend Development</h4>
+            <p>
+              I specialize in backend development using Node.js and Spring Boot.
+              I build scalable, secure, and efficient server-side applications,
+              ensuring seamless integration with databases and APIs to deliver
+              robust solutions tailored to client needs.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+      <h2 class="heading" data-aos="fade-down">Projects</h2>
+
+      <div class="projects-box">
+        <div class="project-card" data-aos="flip-left" data-aos-delay="0">
+          <img src="./assets/spiritStore.png" alt="Project 1" />
+            <h3>Spirit Store</h3>
+            <p>
+            Spirit Store is a dynamic e-commerce platform for liquor stores,
+            developed as part of our Software Engineering studies. It features
+            multi-store management, role-based dashboards, and real-world
+            functionalities like cart management and order tracking. Built with
+            HTML, CSS, JavaScript, PHP, and MySQL, it ensures a seamless
+            experience for customers, suppliers, and admins.
+            </p>
+            <a href="https://github.com/RavinduLaksara/SpiritStore" class="btn" target="_blank">Review Projects</a>
+        </div>
+
+        <div class="project-card" data-aos="flip-left" data-aos-delay="200">
+            <img src="./assets/fuel.jpg" alt="Project 1" />
+            <h3>Fuel Management System</h3>
+            <p>
+              A system for efficient fuel distribution. Citizens register, track limits, and manage accounts. Fuel stations scan QR codes and update usage. Admins monitor patterns and reset limits weekly. Built with React, React Native, Spring Boot, MySQL, and Firebase Auth.
+            </p>
+            </p>
+            <a href="https://github.com/RavinduLaksara/fuel_managment_system" class="btn" target="_blank">Review Projects</a>
+        </div>
+
+        <div class="project-card" data-aos="flip-left" data-aos-delay="400">
+          <img src="./assets/web.png" alt="Project 1" />
+            <h3>Portfolio</h3>
+            <p>This website serves as a comprehensive portfolio, highlighting my journey as a software engineer. It showcases my skills, projects, and services in web development, mobile app development, and backend engineering, providing insights into my expertise and professional accomplishments.</p>
+            <a href="https://github.com/RavinduLaksara/Portfolio" class="btn" target="_blank">Review Projects</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+
+    <section class="contact" id="contact">
+      <h1 class="main-heading" data-aos="fade-down">Contact <span>Me</span></h1>
+      <div class="contact-container" data-aos="zoom-in">
+        <form class="contact-form" action="">
+          <div class="form-group">
+            <label for="fullname">Full Name</label>
+            <input
+              type="text"
+              id="fullname"
+              placeholder="Enter your full name..."
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter your email address..."
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="Subject">Subject</label>
+            <input
+              type="tel"
+              id="phone"
+              placeholder="Enter Subject..."
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              rows="4"
+              maxlength="300"
+              placeholder="Enter your main text here..."
+              required
+            ></textarea>
+            <div class="char-count"><span id="charCount">0</span>/300</div>
+          </div>
+         
+            <button type="submit" class="contact-btn">Submit Form &rarr;</button>
+            <script>
+            document.querySelector('.contact-form').addEventListener('submit', function (e) {
+              e.preventDefault(); // Prevent default form submission
+
+              const fullname = document.getElementById('fullname').value;
+              const email = document.getElementById('email').value;
+              const subject = document.getElementById('phone').value;
+              const message = document.getElementById('message').value;
+
+              const mailtoLink = `mailto:laksararavindum@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
+              `Name: ${fullname}\nEmail: ${email}\nMessage: ${message}`
+              )}`;
+
+              window.location.href = mailtoLink; 
+            });
+            </script>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="social-icons">
+        <a href="https://github.com/RavinduLaksara" target="_blank"
+          ><i class="bx bxl-github"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/ravindu-laksara-6bb355307"
+          target="_blank"
+          ><i class="bx bxl-linkedin-square"></i
+        ></a>
+        <a
+          href="https://www.instagram.com/laksararavindu/?utm_source=qr"
+          target="_blank"
+          ><i class="bx bxl-instagram-alt"></i
+        ></a>
+      </div>
+
+      <ul class="list">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <p class="copyright">&copy; Ravindu Laksara | All Rights Reserved</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        offset: 150,
+      });
+    </script>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
