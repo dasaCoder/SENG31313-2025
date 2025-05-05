@@ -8,6 +8,7 @@ This is a personal portfolio website for Kavindu Pabasara, showcasing skills, pr
 
 ## Live Hosted Link
 The portfolio is live and can be accessed at:
+[kavindupbsr.netlify.app]
 
 ## How to Run the Project Locally
 1. Clone the repository or download the project files.
