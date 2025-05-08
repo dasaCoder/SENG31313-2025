@@ -3,7 +3,7 @@
 ## 📌 Project Description
 
 This is my personal portfolio website developed for the SENG31313-2025 course module. It’s a clean, modern, and fully responsive site built using HTML, CSS, JavaScript, and Bootstrap. The goal is to showcase my personal projects, skills, and contact details with smooth animations and a user-friendly layout.
-The design emphasizes simplicity and clarity, making it easy for visitors to navigate and explore my work.
+The design emphasizes simplicity and clarity, making it easy for visitors to navigate and explore my work. 
 
 ## Technologies && Libraries Used
  HTML5 – Semantic structure of the website
