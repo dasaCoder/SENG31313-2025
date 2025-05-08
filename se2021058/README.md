@@ -12,7 +12,7 @@ A personal portfolio website showcasing my skills, projects, and services as a s
 
 ## Live Hosted Link
 
-[Visit Portfolio](https://ravindulaksara.netlify.app/)
+[Visit Portfolio](https://chamindudilshan.netlify.app/)
 
 ## How to Run the Project Locally
 
